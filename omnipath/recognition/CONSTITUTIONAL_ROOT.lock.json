@@ -1,0 +1,25 @@
+{
+  "schema": "omnipath.constitutional-root-lock/v1",
+  "order": "O21.4",
+  "status": "FROZEN",
+  "repository": "lilomateo2026-sudo/OMNIPATH-Recognition-Topology",
+  "branch_at_freeze": "main",
+  "constitutional_root": {
+    "commit_sha": "a730bba4e6a466e15b95c47998ae403c0ffe3a23",
+    "tree_sha": "404f6dce0908db9f5661e90bda0d870d677a7c20",
+    "contract_path": "omnipath/recognition/TRANSFER_CONTRACT.md",
+    "contract_blob_sha": "4386fb552b4d9c6095dd13537ed4cd95e0372934",
+    "root_order": "O21.3",
+    "root_commit_message": "O21.3: establish constitutional recognition transfer contract"
+  },
+  "freeze_rules": {
+    "descendants_must_retain_root_as_ancestor": true,
+    "root_contract_must_not_be_silently_rewritten": true,
+    "constitutional_changes_require_explicit_amendment_lineage": true,
+    "recognition_promotions_must_reference_root_or_valid_amendment": true,
+    "force_replacement_of_root_identity_is_nonconformant": true
+  },
+  "epistemic_ceiling": "VERIFIED_WITHIN_SCOPE",
+  "next_authorized_order": "O21.5",
+  "notes": "This artifact freezes the O21.3 commit as the canonical constitutional ancestry point. It is an in-repository lineage lock, not a claim that GitHub branch protection or cryptographic signing is enabled."
+}
