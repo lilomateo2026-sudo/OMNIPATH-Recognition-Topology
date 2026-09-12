@@ -1,0 +1,222 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lilomateo2026-sudo/OMNIPATH-Recognition-Topology/blob/main/omnipath/recognition/RECOGNITION_PATHOLOGY.schema.json",
+  "title": "OMNIPATH Recognition Pathology Record",
+  "description": "O22.1 constitutional schema for representing recognition-transfer failure modes without erasing contradictory evidence or inflating epistemic certainty.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "pathology_id",
+    "run_id",
+    "rail",
+    "pathology_type",
+    "severity",
+    "observed_evidence",
+    "observer_judgment",
+    "provenance",
+    "scope",
+    "promotion_effect"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "omnipath.recognition-pathology/v1"
+    },
+    "pathology_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rail": {
+      "enum": ["reference-transfer", "evidence-transfer", "cross-rail"]
+    },
+    "pathology_type": {
+      "enum": [
+        "FALSE_CONSENSUS",
+        "PROVENANCE_LOSS",
+        "SCOPE_INFLATION",
+        "OBSERVER_COLLAPSE",
+        "CONTRADICTION_ERASURE",
+        "REPLAY_DIVERGENCE",
+        "LINEAGE_CORRUPTION"
+      ]
+    },
+    "severity": {
+      "enum": ["INFO", "LOW", "MEDIUM", "HIGH", "CRITICAL"]
+    },
+    "observed_evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["evidence_id", "kind", "value", "source_ref"],
+        "properties": {
+          "evidence_id": {"type": "string", "minLength": 1},
+          "kind": {"type": "string", "minLength": 1},
+          "value": {},
+          "source_ref": {"type": "string", "minLength": 1},
+          "hash": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "observer_judgment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["observer_id", "judgment", "confidence"],
+      "properties": {
+        "observer_id": {"type": "string", "minLength": 1},
+        "judgment": {"type": "string", "minLength": 1},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "assumptions": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    },
+    "contradictions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["left_ref", "right_ref", "status"],
+        "properties": {
+          "left_ref": {"type": "string", "minLength": 1},
+          "right_ref": {"type": "string", "minLength": 1},
+          "status": {"enum": ["OPEN", "EXPLAINED", "RESOLVED"]},
+          "resolution_ref": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "replay": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "claimed_deterministic": {"type": "boolean"},
+        "replay_id": {"type": ["string", "null"]},
+        "expected_hash": {"type": ["string", "null"]},
+        "actual_hash": {"type": ["string", "null"]},
+        "match": {"type": ["boolean", "null"]}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["constitutional_root_sha", "parent_refs", "transform_refs"],
+      "properties": {
+        "constitutional_root_sha": {
+          "const": "a730bba4e6a466e15b95c47998ae403c0ffe3a23"
+        },
+        "root_freeze_sha": {
+          "const": "07f11ddf005f054d7172c7e1232c2b89a5a8ec65"
+        },
+        "parent_refs": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "transform_refs": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "model_identity": {"type": ["string", "null"]},
+        "prompt_hash": {"type": ["string", "null"]}
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["supports", "does_not_support"],
+      "properties": {
+        "supports": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "does_not_support": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    },
+    "promotion_effect": {
+      "enum": [
+        "NO_EFFECT",
+        "HOLD",
+        "REQUIRE_REPLAY",
+        "REQUIRE_ADJUDICATION",
+        "REJECT",
+        "ROLLBACK"
+      ]
+    },
+    "epistemic_state": {
+      "enum": [
+        "OBSERVED",
+        "COMPARED",
+        "REPLAYED",
+        "CONTRADICTED",
+        "VERIFIED_WITHIN_SCOPE",
+        "REJECTED",
+        "ROLLED_BACK"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {"pathology_type": {"const": "REPLAY_DIVERGENCE"}},
+        "required": ["pathology_type"]
+      },
+      "then": {
+        "required": ["replay"],
+        "properties": {
+          "replay": {
+            "required": ["match"],
+            "properties": {"match": {"const": false}}
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {"pathology_type": {"const": "CONTRADICTION_ERASURE"}},
+        "required": ["pathology_type"]
+      },
+      "then": {
+        "required": ["contradictions"],
+        "properties": {
+          "contradictions": {"minItems": 1}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "severity": {"enum": ["HIGH", "CRITICAL"]}
+        },
+        "required": ["severity"]
+      },
+      "then": {
+        "properties": {
+          "promotion_effect": {
+            "enum": ["HOLD", "REQUIRE_REPLAY", "REQUIRE_ADJUDICATION", "REJECT", "ROLLBACK"]
+          }
+        }
+      }
+    }
+  ],
+  "x-omnipath-constitutional-rules": {
+    "evidence_judgment_separation": true,
+    "contradictions_must_be_retained": true,
+    "agreement_is_not_absolute_proof": true,
+    "verification_ceiling": "VERIFIED_WITHIN_SCOPE",
+    "self_promotion_forbidden": true,
+    "root_contract": "omnipath/recognition/TRANSFER_CONTRACT.md",
+    "root_lock": "omnipath/recognition/CONSTITUTIONAL_ROOT.lock.json"
+  }
+}
