@@ -1,0 +1,62 @@
+{
+  "schema": "omnipath.recognition-rail-manifest/v1",
+  "order": "O22.2",
+  "rail_id": "evidence-transfer",
+  "role": "independent-evidence-rail",
+  "branch": "evidence-transfer",
+  "genesis_parent_sha": "df7552079f7aea41b6c6732a2f6758f401d9a987",
+  "constitutional_root_sha": "a730bba4e6a466e15b95c47998ae403c0ffe3a23",
+  "root_freeze_sha": "07f11ddf005f054d7172c7e1232c2b89a5a8ec65",
+  "pathology_schema": "omnipath/recognition/RECOGNITION_PATHOLOGY.schema.json",
+  "purpose": "Preserve independently derived evidence, provenance, replay state, and contradictions for comparison against the reference rail without inheriting the reference rail's conclusions or authority.",
+  "permitted_transformations": [
+    "ingest-independent-evidence",
+    "normalize-evidence-representation",
+    "hash-artifacts",
+    "attach-provenance",
+    "attach-replay-metadata",
+    "classify-recognition-features",
+    "record-contradictions",
+    "emit-comparison-candidate"
+  ],
+  "forbidden_authority": [
+    "self-promote",
+    "rewrite-source-evidence",
+    "erase-contradictions",
+    "declare-absolute-certainty",
+    "mutate-constitutional-root",
+    "overwrite-reference-transfer-lineage",
+    "copy-reference-judgment-as-independent-evidence",
+    "convert-cross-rail-agreement-into-proof"
+  ],
+  "required_outputs": [
+    "run_id",
+    "model_identity",
+    "prompt_hash",
+    "observed_evidence",
+    "recognition_vector",
+    "provenance",
+    "replay_metadata",
+    "evidence_scope"
+  ],
+  "comparison_contract": {
+    "peer_rail": "reference-transfer",
+    "comparison_is_symmetric": true,
+    "peer_outputs_are_read_only_evidence": true,
+    "agreement_effect": "increase-support-within-recorded-scope-only",
+    "disagreement_effect": "retain-and-route-to-adjudication",
+    "cross_rail_mutation": false,
+    "promotion_authority": "external-tribunal-only",
+    "epistemic_ceiling": "VERIFIED_WITHIN_SCOPE"
+  },
+  "pathology_guards": [
+    "FALSE_CONSENSUS",
+    "PROVENANCE_LOSS",
+    "SCOPE_INFLATION",
+    "OBSERVER_COLLAPSE",
+    "CONTRADICTION_ERASURE",
+    "REPLAY_DIVERGENCE",
+    "LINEAGE_CORRUPTION"
+  ],
+  "status": "GENESIS_ACTIVE"
+}
