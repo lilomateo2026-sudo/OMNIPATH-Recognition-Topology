@@ -1,0 +1,20 @@
+{
+  "schema": "omnipath.pathology-mutation-tournament-attestation/v1",
+  "order": "O23.1",
+  "seed": 2301001,
+  "trials": 1000,
+  "mutation_widths": [2, 3, 4],
+  "unique_combinations": 91,
+  "all_pathologies_covered": true,
+  "disposition_distribution": {
+    "HOLD": 11,
+    "REJECT": 431,
+    "REQUIRE_ADJUDICATION": 281,
+    "REQUIRE_REPLAY": 277
+  },
+  "tournament_digest_sha256": "d1ff891cb4c55163cb9922db755cb47fe10b0f029bfd2b1e24c3f2cb64592590",
+  "source": "omnipath/recognition/adversarial/pathology_mutation_tournament.py",
+  "status": "PASS",
+  "digest_source": "GitHub Actions clean runner serialization",
+  "interpretation": "All seven pathology classes participate in deterministic multi-fault combinations. This attests disposition-precedence behavior; it does not replace validator execution against fully materialized transfer payload mutations."
+}
