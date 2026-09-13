@@ -1,0 +1,95 @@
+{
+  "schema": "omnipath.durable-attestation-ledger/v1",
+  "order": "O29.5",
+  "status": "V4_PROMOTED_AND_ATTESTED_WITH_RECONCILED_BASE_DRIFT",
+  "relationship": "V4_PROMOTED_AND_ATTESTED_WITH_RECONCILED_BASE_DRIFT",
+  "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "repository": "lilomateo2026-sudo/OMNIPATH-Recognition-Topology",
+  "candidate": {
+    "pull_request": 14,
+    "branch": "o28.4-o28.5-v4-integration",
+    "head_sha": "46553b0cf42a0a1587b01b88ceadfb6bcea78a52",
+    "tribunal_branch": "o29.1-v4-promotion-tribunal",
+    "tribunal_commit": "a2b913c636d722f8c12e6fc2efb27c5602eabfbd",
+    "selected_genome": "D",
+    "selected_genome_commit": "d254194e0ce4f97b186b78b105e31b6204d9af0d",
+    "genome_a_commit": "8534245ffe2157a64f80ff878b9dbaadb6ac4938",
+    "genome_b_commit": "dbb49176cf52759e674e4107d61795cebcfa6312",
+    "genome_c_commit": "1fbb0570ca49ea9e6c192705cec248d6d261c23c",
+    "genomes_a_b_c_evidence_only": true
+  },
+  "authorization": {
+    "order": "O29.2",
+    "exact_candidate_head_verified": true,
+    "authorization_observed_main_sha": "e031ff386c426b6644c01d94da3009628c0cf1e4",
+    "main_base_stable_through_merge": false,
+    "tribunal_verified": true,
+    "premerge_ci_verified": true,
+    "artifact_digests_verified": true,
+    "user_directed_execution": true
+  },
+  "merge": {
+    "order": "O29.3",
+    "commit": "18068b6ac6438020ddef335c7e88f8c4a70961a4",
+    "rollback_parent": "1177185218b28c2f2a6f0c22127bb6e264e1680f",
+    "candidate_parent": "46553b0cf42a0a1587b01b88ceadfb6bcea78a52",
+    "github_verified": true,
+    "exact_head_guard_used": true,
+    "candidate_head_unchanged": true
+  },
+  "base_drift_reconciliation": {
+    "detected": true,
+    "authorization_observed_base": "e031ff386c426b6644c01d94da3009628c0cf1e4",
+    "actual_merge_base_parent": "1177185218b28c2f2a6f0c22127bb6e264e1680f",
+    "intervening_verified_merge": "1177185218b28c2f2a6f0c22127bb6e264e1680f",
+    "reconciliation_rule": "DO_NOT_HIDE_BASE_DRIFT; REQUIRE_POSTMERGE_RECOGNITION_AND_GENEALOGY_CI_ON_ACTUAL_MERGED_SHA",
+    "recognition_ci_reconciled": true,
+    "genealogy_ci_reconciled": true,
+    "promotion_claim_scope": "actual merged composite state only"
+  },
+  "premerge_ci": {
+    "run_id": 34778704170,
+    "run_number": 33,
+    "candidate_head_sha": "46553b0cf42a0a1587b01b88ceadfb6bcea78a52",
+    "conclusion": "success",
+    "replay_artifact": {"id": 10323349489, "digest": "sha256:4d38a33435e1d6fd6c3f40f7ff990771a82532dd89366633cc18430c6440b7b9", "expired": false},
+    "attestation_artifact": {"id": 10323904820, "digest": "sha256:21827a211b6b29b77c0a09b13b71b53a16a460a8da5f630505d44d5d8e611112", "expired": false}
+  },
+  "postmerge_ci": {
+    "order": "O29.4",
+    "workflow_run_id": 34785125459,
+    "run_number": 39,
+    "main_sha": "18068b6ac6438020ddef335c7e88f8c4a70961a4",
+    "clean_replay": "success",
+    "promotion_attestation_gate": "success",
+    "replay_artifact": {"id": 10326660650, "digest": "sha256:90651e0a174f6e1d21a9f573357e80ac3b46b2ce566ab71d767ee389dd3e1a36", "expired": false},
+    "attestation_artifact": {"id": 10326311651, "digest": "sha256:b46376c3d006b0d1027d8cd5b089f01c2b0eceb377a78e9a1847808b4bd6406c", "expired": false}
+  },
+  "genealogy_reconciliation_ci": {
+    "workflow": "O27.7 Deterministic Genealogy Index",
+    "run_id": 34785125466,
+    "run_number": 3,
+    "main_sha": "18068b6ac6438020ddef335c7e88f8c4a70961a4",
+    "conclusion": "success"
+  },
+  "v4_evidence": {
+    "tri_generation_full_payload_trials": 4200,
+    "tri_generation_full_payload_mismatches": 0,
+    "semantic_checks": 1800,
+    "semantic_mismatches": 0,
+    "cross_version_semantic_mismatches": 0,
+    "quartet_shared_discovery_ids": 0,
+    "quartet_shared_source_event_ids": 0,
+    "real_cross_generation_mismatches": 0,
+    "unresolved_real_counterexamples": 0,
+    "replay_rounds": 5000,
+    "replay_divergence_count": 0,
+    "replay_tournament_digest_sha256": "1374bc0be72ee1b05d3a644ff634b2edf15148bd87cf630cd62de51ff6632b95"
+  },
+  "authority": {
+    "candidate_self_promoted": false,
+    "ledger_grants_future_promotion_authority": false,
+    "v5_inherits_promotion_authority": false,
+    "future_promotion_rule": "REQUIRE_LEDGER_AND_GENEALOGY_VERIFICATION_PLUS_FRESH_DESCENDANT_ATTESTATION"
+  }
+}
