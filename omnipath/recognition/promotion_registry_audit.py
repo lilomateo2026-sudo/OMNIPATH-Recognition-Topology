@@ -1,6 +1,6 @@
 """Audit O22.8 registry integrity."""
 import copy
-from promotion_artifact_registry import ENTRY_SCHEMA, ORDER, REGISTRY_SCHEMA, _hash_without, _is_sha256
+from promotion_artifact_registry import ACCEPTING_GATE, ENTRY_SCHEMA, ORDER, REGISTRY_SCHEMA, REQUIRED_ENTRY_FIELDS, _hash_without, _is_sha256
 from promotion_manifest_gate import canonical_sha256
 
 
@@ -22,7 +22,9 @@ def audit_registry(registry):
         if not isinstance(entry, dict):
             failures.append(p + ":TYPE")
             continue
-        if entry.get("schema") != ENTRY_SCHEMA or entry.get("order") != ORDER:
+        if any(k not in entry for k in REQUIRED_ENTRY_FIELDS):
+            failures.append(p + ":MISSING_FIELD")
+        if entry.get("schema") != ENTRY_SCHEMA or entry.get("order") != ORDER or entry.get("accepted_by_gate") != ACCEPTING_GATE:
             failures.append(p + ":CONTRACT")
         if entry.get("lineage_version") != i:
             failures.append(p + ":VERSION")
