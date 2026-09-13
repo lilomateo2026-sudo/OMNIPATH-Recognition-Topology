@@ -1,0 +1,41 @@
+{
+  "schema": "omnipath.recognition-topology-v4-genesis/v1",
+  "order": "O28.1",
+  "status": "EXPERIMENTAL_GENESIS",
+  "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "parent": {
+    "ledger_order": "O27.5",
+    "ledgered_main_sha": "e031ff386c426b6644c01d94da3009628c0cf1e4",
+    "ledger_replay_run_id": 34776784449,
+    "ledger_replay_artifact_id": 10323682707,
+    "ledger_replay_artifact_digest": "sha256:4cd9fef05c8deca06ee9d96ddaf446c31002c3dfa577bf3460de57af072b2743",
+    "ledger_attestation_artifact_id": 10324171349,
+    "ledger_attestation_artifact_digest": "sha256:7ba43572984d427929e7906c9e53f75be6db6406fe6410b79b1c788b649b8d36"
+  },
+  "selected_v3_route": {
+    "genome": "A",
+    "genome_commit": "d8d979682876359e193b6e90009a9e38e6f34e60",
+    "v3_merge_sha": "ba8a83d3b2def74ded2bbf9154c6190940ebd888",
+    "b_c_remain_evidence_only": true
+  },
+  "cross_version_differential": {
+    "seed": 2801001,
+    "trials": 3500,
+    "mutation_widths": [1, 2, 3, 4, 5, 6],
+    "operator_count": 12,
+    "expected_mismatches": 0,
+    "expected_digest_sha256": "db09faf5548938577628aa9ef834ebba53bd21fb1f2a7b7d582e264c27daf5e5"
+  },
+  "authority_reset": {
+    "inherits_promotion_authority": false,
+    "self_promotion_forbidden": true,
+    "main_mutation_authority": false,
+    "promotion_state": "OBSERVED",
+    "fresh_descendant_ci_required": true,
+    "new_promotion_tribunal_required": true
+  },
+  "scope": {
+    "purpose": "Start V4 from the ledgered and independently re-attested V3 state, compare V3 and V4 under identical adversarial mutations, and preserve constitutional behavior without inheriting promotion authority.",
+    "claims_absolute_correctness": false
+  }
+}
