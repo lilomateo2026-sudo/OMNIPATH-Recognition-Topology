@@ -1,0 +1,15 @@
+{
+  "schema":"omnipath.v4-genome-quartet/v1",
+  "order":"O28.3",
+  "parent_sha":"3240d4051ca2ca4ca1cb50576ea3e17c32ece3ab",
+  "events_per_genome":700,
+  "genomes":{
+    "A":{"commit":"8534245ffe2157a64f80ff878b9dbaadb6ac4938","seed":2803001,"namespace":"v4-genome-A","stream_digest_sha256":"f2072e2bf9b9a866dc5943bdbd033f61f33907b80aae7d1e5f670fc2bde4ffab"},
+    "B":{"commit":"dbb49176cf52759e674e4107d61795cebcfa6312","seed":2803002,"namespace":"v4-genome-B","stream_digest_sha256":"9a91ca0a908ce6871c7c189d45d87dd2c2a4b733932bdc0dfa95705694a9493d"},
+    "C":{"commit":"1fbb0570ca49ea9e6c192705cec248d6d261c23c","seed":2803003,"namespace":"v4-genome-C","stream_digest_sha256":"734ad2e2ff180eb59692035055de7bd93caef4371d20dd1c7ec54bc5247ec0e0"},
+    "D":{"commit":"d254194e0ce4f97b186b78b105e31b6204d9af0d","seed":2803004,"namespace":"v4-genome-D","stream_digest_sha256":"34ceebb3bc7ab4b6dc8502839a9861d4bd92585f8d75865c805ff5df5071f86f"}
+  },
+  "expected_shared_discovery_ids":0,
+  "expected_shared_source_event_ids":0,
+  "promotion_authority":false
+}
