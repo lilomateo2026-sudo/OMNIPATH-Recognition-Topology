@@ -8,7 +8,7 @@
     "trials": 4200,
     "mutation_widths": [1,2,3,4,5,6],
     "expected_mismatches": 0,
-    "expected_digest_sha256": "d0a30b1ebfdbd538eefcda195984b85f6dd4a8df2f47273f0e7e66de9f5647e7"
+    "expected_digest_sha256": "9cb8de8fe68aa5b60953fec3e0aa6cbcb5bd455303805c7df45265ee39350836"
   },
   "semantic": {
     "seed": 2802002,
