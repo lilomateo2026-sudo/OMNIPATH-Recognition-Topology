@@ -1,0 +1,12 @@
+{
+  "schema":"omnipath.v5-semantic-drift-matrix/v1",
+  "order":"O30.2",
+  "epistemic_state":"VERIFIED_WITHIN_SCOPE",
+  "seed":3002001,
+  "cases":800,
+  "checks":5600,
+  "semantic_mismatches":0,
+  "cross_generation_mismatches":0,
+  "digest_sha256":"a173a6e77096e6c8c5e43b6282e6af04cee447d155991f0540ade33a84a724e5",
+  "experimental_only":true
+}
