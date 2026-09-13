@@ -1,0 +1,13 @@
+{
+  "schema": "omnipath.v3-independent-genome/v1",
+  "order": "O26.3",
+  "genome": "C",
+  "namespace": "C",
+  "seed": 2603003,
+  "events": 600,
+  "parent_sha": "5e804b84a29c2b1683f5f4b6b2d89d9beba8c630",
+  "stream_digest_sha256": "e4e9fca6ccb2d9d7e6d743f066ec11f443fe785cd98d8e5f89daf8c994953d31",
+  "shared_derived_evidence_allowed": false,
+  "promotion_authority": false,
+  "status": "EXPERIMENTAL"
+}
