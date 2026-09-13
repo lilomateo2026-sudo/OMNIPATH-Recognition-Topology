@@ -1,0 +1,90 @@
+{
+  "alias_map": {
+    "17d4db9907455d29d5ee2aa3e3120bd6bdfea87f": "O23.9:b7e1bde39d46afc255bc5db46e9f4aed6e1cb399",
+    "25af648f0a9696e34c08d948aeca987af812c5a0": "O25.5:4147562ee866bee2e96978907661a6fba9072779",
+    "4147562ee866bee2e96978907661a6fba9072779": "O25.5:4147562ee866bee2e96978907661a6fba9072779",
+    "ab1235e5cd90a9d327e7dca94464f35b71fdcde1": "O22.6:ab1235e5cd90a9d327e7dca94464f35b71fdcde1",
+    "abb5e16a373ee3f6fd826e0a7a336ab37e751812": "O27.5:ba8a83d3b2def74ded2bbf9154c6190940ebd888",
+    "b7e1bde39d46afc255bc5db46e9f4aed6e1cb399": "O23.9:b7e1bde39d46afc255bc5db46e9f4aed6e1cb399",
+    "ba8a83d3b2def74ded2bbf9154c6190940ebd888": "O27.5:ba8a83d3b2def74ded2bbf9154c6190940ebd888"
+  },
+  "entries": [
+    {
+      "aliases": [
+        "ab1235e5cd90a9d327e7dca94464f35b71fdcde1"
+      ],
+      "candidate_commit_sha": "ab1235e5cd90a9d327e7dca94464f35b71fdcde1",
+      "entry_id": "O22.6:ab1235e5cd90a9d327e7dca94464f35b71fdcde1",
+      "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+      "generation_order": "O22.6",
+      "ledger_order": "O22.8A",
+      "ledger_ref": "omnipath/recognition/attestation_ledger/v1/o22_6_main_ab1235e5/index.json",
+      "postmerge_workflow_run_id": 34739680620,
+      "promoted_main_sha": "ab1235e5cd90a9d327e7dca94464f35b71fdcde1",
+      "promotion_manifest_ref": "omnipath/recognition/attestation_ledger/v1/o22_6_main_ab1235e5/promotion_manifest.json",
+      "registry_entry_sha256": null,
+      "registry_ref": "omnipath/recognition/promotion_registry/registry.json",
+      "relationship": "historical_evidence_backfill_not_registry_entry"
+    },
+    {
+      "aliases": [
+        "17d4db9907455d29d5ee2aa3e3120bd6bdfea87f",
+        "b7e1bde39d46afc255bc5db46e9f4aed6e1cb399"
+      ],
+      "candidate_commit_sha": "17d4db9907455d29d5ee2aa3e3120bd6bdfea87f",
+      "entry_id": "O23.9:b7e1bde39d46afc255bc5db46e9f4aed6e1cb399",
+      "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+      "generation_order": "O23.9",
+      "ledger_order": "O23.9",
+      "ledger_ref": "omnipath/recognition/attestation_ledger/v1/o23_9_main_b7e1bde3/index.json",
+      "postmerge_workflow_run_id": 34756570191,
+      "promoted_main_sha": "b7e1bde39d46afc255bc5db46e9f4aed6e1cb399",
+      "promotion_manifest_ref": null,
+      "registry_entry_sha256": null,
+      "registry_ref": "omnipath/recognition/promotion_registry/registry.json",
+      "relationship": "ci_attested_promotion_genealogy"
+    },
+    {
+      "aliases": [
+        "25af648f0a9696e34c08d948aeca987af812c5a0",
+        "4147562ee866bee2e96978907661a6fba9072779"
+      ],
+      "candidate_commit_sha": "25af648f0a9696e34c08d948aeca987af812c5a0",
+      "entry_id": "O25.5:4147562ee866bee2e96978907661a6fba9072779",
+      "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+      "generation_order": "O25.5",
+      "ledger_order": "O25.5",
+      "ledger_ref": "omnipath/recognition/attestation_ledger/v1/o25_5_main_4147562e/index.json",
+      "postmerge_workflow_run_id": 34761158498,
+      "promoted_main_sha": "4147562ee866bee2e96978907661a6fba9072779",
+      "promotion_manifest_ref": null,
+      "registry_entry_sha256": null,
+      "registry_ref": "omnipath/recognition/promotion_registry/registry.json",
+      "relationship": "GENERATION_2_PROMOTED_AND_ATTESTED"
+    },
+    {
+      "aliases": [
+        "abb5e16a373ee3f6fd826e0a7a336ab37e751812",
+        "ba8a83d3b2def74ded2bbf9154c6190940ebd888"
+      ],
+      "candidate_commit_sha": "abb5e16a373ee3f6fd826e0a7a336ab37e751812",
+      "entry_id": "O27.5:ba8a83d3b2def74ded2bbf9154c6190940ebd888",
+      "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+      "generation_order": "O27.5",
+      "ledger_order": "O27.5",
+      "ledger_ref": "omnipath/recognition/attestation_ledger/v1/o27_5_main_ba8a83d3/index.json",
+      "postmerge_workflow_run_id": 34776741091,
+      "promoted_main_sha": "ba8a83d3b2def74ded2bbf9154c6190940ebd888",
+      "promotion_manifest_ref": null,
+      "registry_entry_sha256": null,
+      "registry_ref": "omnipath/recognition/promotion_registry/registry.json",
+      "relationship": "V3_PROMOTED_AND_ATTESTED"
+    }
+  ],
+  "entry_count": 4,
+  "index_sha256": "b66152a81c833cf2bfd6f32a492b47cc695854e0327dd26e35f126e2c34a54cc",
+  "order": "O27.7",
+  "registry_ref": "omnipath/recognition/promotion_registry/registry.json",
+  "schema": "omnipath.promotion-genealogy-index/v1",
+  "source_root": "omnipath/recognition/attestation_ledger/v1"
+}
