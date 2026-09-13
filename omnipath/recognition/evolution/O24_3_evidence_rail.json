@@ -1,0 +1,14 @@
+{
+  "schema": "omnipath.cross-rail-descendant/v1",
+  "order": "O24.3",
+  "rail": "evidence-transfer",
+  "parent_o24_2_sha": "397434ebeca79b077cd5e95142ebbfa3a936fde4",
+  "seed": 2403002,
+  "case_count": 512,
+  "discovery_digest_sha256": "dcf76ad3ab76a1c2c6ba7f9259c5350c098f795a26b8fc1c44da127ecc5b6ca7",
+  "evidence_namespace": "evidence-transfer:source",
+  "shared_root_allowed": true,
+  "derived_evidence_from_other_rail_allowed": false,
+  "authority_merge_allowed": false,
+  "promotion_allowed": false
+}
