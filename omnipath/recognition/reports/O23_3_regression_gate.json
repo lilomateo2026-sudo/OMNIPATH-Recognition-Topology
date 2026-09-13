@@ -1,0 +1,19 @@
+{
+  "schema": "omnipath.validator-regression-gate-attestation/v1",
+  "order": "O23.3",
+  "passed": true,
+  "errors": [],
+  "checks": {
+    "reference_fixtures": 8,
+    "evidence_fixtures": 8,
+    "tribunal_pairs": 8,
+    "pathology_asymmetry_pairs": 1,
+    "disposition_conflict_pairs": 0,
+    "mutation_trials": 1000,
+    "mutation_unique_combinations": 91,
+    "replay_rounds": 1000,
+    "replay_stable_rounds": 1000
+  },
+  "status": "PASS_PRE_CI",
+  "next_gate": "O23.4_INDEPENDENT_CI_ATTESTATION"
+}
