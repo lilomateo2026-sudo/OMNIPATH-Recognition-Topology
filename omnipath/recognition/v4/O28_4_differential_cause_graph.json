@@ -1,0 +1,23 @@
+{
+  "schema":"omnipath.v4-differential-cause-graph/v1",
+  "order":"O28.4",
+  "real_cross_generation_mismatches":0,
+  "real_counterexample_nodes":0,
+  "cause_graph_digest_sha256":"71af9d6fc3db5eb0fb3ec6b04f3438d16f511724c19c28c512753cccd9d3c028",
+  "operator_causes":[
+    {"operator":"drop_provenance_source","field":"provenance","pathology":"PROVENANCE_LOSS","minimal_operator_count":1},
+    {"operator":"rewrite_provenance_digest","field":"provenance","pathology":"PROVENANCE_LOSS","minimal_operator_count":1},
+    {"operator":"drift_replay_seed","field":"replay_metadata","pathology":"REPLAY_DIVERGENCE","minimal_operator_count":1},
+    {"operator":"drift_replay_rounds","field":"replay_metadata","pathology":"REPLAY_DIVERGENCE","minimal_operator_count":1},
+    {"operator":"escalate_observer_authority","field":"observer_boundary","pathology":"OBSERVER_COLLAPSE","minimal_operator_count":1},
+    {"operator":"collapse_observer_identity","field":"observer_boundary","pathology":"OBSERVER_COLLAPSE","minimal_operator_count":1},
+    {"operator":"widen_scope","field":"evidence_scope","pathology":"SCOPE_INFLATION","minimal_operator_count":1},
+    {"operator":"remove_scope_constraint","field":"evidence_scope","pathology":"SCOPE_INFLATION","minimal_operator_count":1},
+    {"operator":"swap_lineage_parent","field":"lineage","pathology":"LINEAGE_CORRUPTION","minimal_operator_count":1},
+    {"operator":"self_parent_lineage","field":"lineage","pathology":"LINEAGE_CORRUPTION","minimal_operator_count":1},
+    {"operator":"erase_contradiction","field":"contradictory_evidence","pathology":"CONTRADICTION_ERASURE","minimal_operator_count":1},
+    {"operator":"invert_contradiction","field":"contradictory_evidence","pathology":"CONTRADICTION_ERASURE","minimal_operator_count":1}
+  ],
+  "synthetic_minimizer_control":"REQUIRED_BUT_NOT_PRODUCTION_EVIDENCE",
+  "promotion_authority":false
+}

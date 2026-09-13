@@ -1,0 +1,27 @@
+{
+  "schema": "omnipath.tri-generation-differential/v1",
+  "order": "O28.2",
+  "status": "EXPERIMENTAL",
+  "parent_v4_head": "dc08c52d781e1be93ab1da86d17238398dbe2e27",
+  "full_payload": {
+    "seed": 2802001,
+    "trials": 4200,
+    "mutation_widths": [1,2,3,4,5,6],
+    "expected_mismatches": 0,
+    "expected_digest_sha256": "9cb8de8fe68aa5b60953fec3e0aa6cbcb5bd455303805c7df45265ee39350836"
+  },
+  "semantic": {
+    "seed": 2802002,
+    "source_cases": 300,
+    "transformations": 6,
+    "expected_checks": 1800,
+    "expected_semantic_mismatches": 0,
+    "expected_cross_version_mismatches": 0,
+    "expected_digest_sha256": "d73e4ddf921b853db6afe5423c5b2e0094679e6077e1a85830dca8fed749185f"
+  },
+  "authority": {
+    "promotion_authority": false,
+    "self_promotion_forbidden": true,
+    "fresh_descendant_ci_required": true
+  }
+}
