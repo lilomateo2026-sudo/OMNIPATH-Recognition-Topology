@@ -7,7 +7,8 @@
   "pair_count": 8,
   "pathology_divergence_pairs": 1,
   "disposition_divergence_pairs": 0,
-  "canonical_pairs_digest_sha256": "337ede2d7527d27f7bfd33069664e4ac07a34f2bb8f1894d19d7cb7ad70bbe6b",
+  "canonical_pairs_digest_sha256": "d9bdc1e62777af0cba7803c6c64d9e578a03f17c2a89876902aa3d5cbe3f7d2d",
   "all_rounds_stable": true,
-  "status": "PASS"
+  "status": "PASS",
+  "digest_source": "GitHub Actions clean runner serialization"
 }
