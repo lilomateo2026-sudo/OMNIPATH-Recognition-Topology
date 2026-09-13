@@ -1,0 +1,13 @@
+{
+  "schema":"omnipath.v4-genome/v1",
+  "order":"O28.3",
+  "genome":"A",
+  "parent_sha":"3240d4051ca2ca4ca1cb50576ea3e17c32ece3ab",
+  "seed":2803001,
+  "namespace":"v4-genome-A",
+  "events":700,
+  "stream_digest_sha256":"f2072e2bf9b9a866dc5943bdbd033f61f33907b80aae7d1e5f670fc2bde4ffab",
+  "provenance_mode":"independent",
+  "shared_derived_evidence_forbidden":true,
+  "promotion_authority":false
+}
