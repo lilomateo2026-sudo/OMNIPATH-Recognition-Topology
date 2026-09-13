@@ -1,0 +1,234 @@
+{
+  "schema": "omnipath.transfer-fixture-corpus/v1",
+  "order": "O22.3",
+  "rail": "evidence-transfer",
+  "rail_manifest_commit": "44f16f80ebaa43942f59f3ec3261d09ff4df822d",
+  "constitutional_root_sha": "a730bba4e6a466e15b95c47998ae403c0ffe3a23",
+  "root_freeze_sha": "07f11ddf005f054d7172c7e1232c2b89a5a8ec65",
+  "pathology_schema": "omnipath/recognition/RECOGNITION_PATHOLOGY.schema.json",
+  "fixture_contract": {
+    "deterministic": true,
+    "controls": 1,
+    "pathology_cases": 7,
+    "expected_pathologies": [
+      "FALSE_CONSENSUS",
+      "PROVENANCE_LOSS",
+      "SCOPE_INFLATION",
+      "OBSERVER_COLLAPSE",
+      "CONTRADICTION_ERASURE",
+      "REPLAY_DIVERGENCE",
+      "LINEAGE_CORRUPTION"
+    ],
+    "promotion_ceiling": "VERIFIED_WITHIN_SCOPE"
+  },
+  "fixtures": [
+    {
+      "fixture_id": "EVD-CONTROL-001",
+      "class": "VALID_CONTROL",
+      "seed": 2203101,
+      "candidate_transfer": {
+        "run_id": "evd-run-control-001",
+        "model_identity": "evidence-model@rev-control",
+        "quantization": "none",
+        "seed": 2203101,
+        "prompt_hash": "sha256:evd-control-prompt",
+        "trajectory_representation": ["ingest", "observe", "classify", "record"],
+        "recognition_vector": {"signal": "alpha", "score": 0.69},
+        "c_observer_judgment": {"judgment": "supported", "confidence": 0.69},
+        "observed_evidence": [{"source_ref": "independent:fixture-control", "value": "alpha"}],
+        "provenance": {
+          "constitutional_root_sha": "a730bba4e6a466e15b95c47998ae403c0ffe3a23",
+          "root_freeze_sha": "07f11ddf005f054d7172c7e1232c2b89a5a8ec65",
+          "parent_refs": ["44f16f80ebaa43942f59f3ec3261d09ff4df822d"],
+          "transform_refs": ["ingest-independent-evidence"]
+        },
+        "replay_metadata": {"expected_hash": "evd-control-out", "actual_hash": "evd-control-out", "match": true},
+        "promotion_state": "OBSERVED",
+        "evidence_scope": {"supports": ["fixture-local independent recognition"], "does_not_support": ["absolute certainty", "cross-rail proof"]},
+        "contradictions": []
+      },
+      "expected_pathologies": [],
+      "expected_disposition": "ACCEPT_FOR_COMPARISON"
+    },
+    {
+      "fixture_id": "EVD-FALSE-CONSENSUS-001",
+      "class": "ADVERSARIAL",
+      "seed": 2203102,
+      "candidate_transfer": {
+        "run_id": "evd-run-false-consensus-001",
+        "model_identity": "evidence-model@rev-a",
+        "prompt_hash": "sha256:evd-fc-prompt",
+        "recognition_vector": {"signal": "beta", "score": 0.93, "peer_agreement": true},
+        "c_observer_judgment": {"judgment": "reference-agreement-proves-correctness", "confidence": 1.0},
+        "observed_evidence": [{"source_ref": "reference-transfer:copied", "value": "beta"}],
+        "provenance": {
+          "constitutional_root_sha": "a730bba4e6a466e15b95c47998ae403c0ffe3a23",
+          "root_freeze_sha": "07f11ddf005f054d7172c7e1232c2b89a5a8ec65",
+          "parent_refs": ["44f16f80ebaa43942f59f3ec3261d09ff4df822d", "peer:reference-transfer"],
+          "transform_refs": ["copy-reference-judgment-as-independent-evidence", "cross-rail-agreement-to-proof"]
+        },
+        "replay_metadata": {"match": true},
+        "promotion_state": "VERIFIED_WITHIN_SCOPE",
+        "evidence_scope": {"supports": ["reference and evidence rails agree"], "does_not_support": []},
+        "contradictions": []
+      },
+      "injected_faults": ["reference judgment copied as independent evidence", "agreement converted into proof"],
+      "expected_pathologies": ["FALSE_CONSENSUS", "OBSERVER_COLLAPSE", "SCOPE_INFLATION"],
+      "expected_disposition": "REQUIRE_ADJUDICATION"
+    },
+    {
+      "fixture_id": "EVD-PROVENANCE-LOSS-001",
+      "class": "ADVERSARIAL",
+      "seed": 2203103,
+      "candidate_transfer": {
+        "run_id": "evd-run-prov-loss-001",
+        "model_identity": "evidence-model@rev-a",
+        "prompt_hash": null,
+        "recognition_vector": {"signal": "gamma", "score": 0.64},
+        "c_observer_judgment": {"judgment": "supported", "confidence": 0.64},
+        "observed_evidence": [{"source_ref": "unknown", "value": "gamma"}],
+        "provenance": {"parent_refs": [], "transform_refs": []},
+        "replay_metadata": {"match": null},
+        "promotion_state": "OBSERVED",
+        "evidence_scope": {"supports": ["unattributed observation"], "does_not_support": ["reconstructable lineage"]},
+        "contradictions": []
+      },
+      "injected_faults": ["constitutional ancestry removed", "prompt hash removed", "evidence origin unresolved"],
+      "expected_pathologies": ["PROVENANCE_LOSS"],
+      "expected_disposition": "HOLD"
+    },
+    {
+      "fixture_id": "EVD-SCOPE-INFLATION-001",
+      "class": "ADVERSARIAL",
+      "seed": 2203104,
+      "candidate_transfer": {
+        "run_id": "evd-run-scope-001",
+        "model_identity": "evidence-model@rev-a",
+        "prompt_hash": "sha256:evd-scope-prompt",
+        "recognition_vector": {"signal": "delta", "score": 0.58},
+        "c_observer_judgment": {"judgment": "universally true", "confidence": 1.0},
+        "observed_evidence": [{"source_ref": "independent:sample-1", "value": "delta"}],
+        "provenance": {
+          "constitutional_root_sha": "a730bba4e6a466e15b95c47998ae403c0ffe3a23",
+          "root_freeze_sha": "07f11ddf005f054d7172c7e1232c2b89a5a8ec65",
+          "parent_refs": ["44f16f80ebaa43942f59f3ec3261d09ff4df822d"],
+          "transform_refs": []
+        },
+        "replay_metadata": {"match": true},
+        "promotion_state": "VERIFIED_WITHIN_SCOPE",
+        "evidence_scope": {"supports": ["all models, prompts, environments, and future runs"], "does_not_support": []},
+        "contradictions": []
+      },
+      "injected_faults": ["single independent sample generalized to universal scope"],
+      "expected_pathologies": ["SCOPE_INFLATION"],
+      "expected_disposition": "REJECT"
+    },
+    {
+      "fixture_id": "EVD-OBSERVER-COLLAPSE-001",
+      "class": "ADVERSARIAL",
+      "seed": 2203105,
+      "candidate_transfer": {
+        "run_id": "evd-run-observer-001",
+        "model_identity": "evidence-model@rev-a",
+        "prompt_hash": "sha256:evd-observer-prompt",
+        "recognition_vector": {"signal": "reference_judgment_supported", "score": 0.9},
+        "c_observer_judgment": {"judgment": "supported", "confidence": 0.9},
+        "observed_evidence": [{"source_ref": "reference-transfer:c_observer_judgment", "value": "supported"}],
+        "provenance": {
+          "constitutional_root_sha": "a730bba4e6a466e15b95c47998ae403c0ffe3a23",
+          "root_freeze_sha": "07f11ddf005f054d7172c7e1232c2b89a5a8ec65",
+          "parent_refs": ["44f16f80ebaa43942f59f3ec3261d09ff4df822d", "peer:reference-transfer"],
+          "transform_refs": ["copy-reference-judgment-as-independent-evidence"]
+        },
+        "replay_metadata": {"match": true},
+        "promotion_state": "COMPARED",
+        "evidence_scope": {"supports": ["a peer observer judgment exists"], "does_not_support": ["independent evidence"]},
+        "contradictions": []
+      },
+      "injected_faults": ["reference observer judgment substituted for independent observation"],
+      "expected_pathologies": ["OBSERVER_COLLAPSE"],
+      "expected_disposition": "HOLD"
+    },
+    {
+      "fixture_id": "EVD-CONTRADICTION-ERASURE-001",
+      "class": "ADVERSARIAL",
+      "seed": 2203106,
+      "candidate_transfer": {
+        "run_id": "evd-run-contradiction-001",
+        "model_identity": "evidence-model@rev-a",
+        "prompt_hash": "sha256:evd-contradiction-prompt",
+        "recognition_vector": {"signal": "epsilon", "source_a": 0.29, "source_b": 0.82},
+        "c_observer_judgment": {"judgment": "consensus", "confidence": 0.82},
+        "observed_evidence": [
+          {"source_ref": "independent:a", "value": "reject-epsilon"},
+          {"source_ref": "independent:b", "value": "support-epsilon"}
+        ],
+        "provenance": {
+          "constitutional_root_sha": "a730bba4e6a466e15b95c47998ae403c0ffe3a23",
+          "root_freeze_sha": "07f11ddf005f054d7172c7e1232c2b89a5a8ec65",
+          "parent_refs": ["independent:a", "independent:b"],
+          "transform_refs": ["drop-conflicting-evidence"]
+        },
+        "replay_metadata": {"match": true},
+        "promotion_state": "COMPARED",
+        "evidence_scope": {"supports": ["sources disagree"], "does_not_support": ["consensus"]},
+        "contradictions": []
+      },
+      "injected_faults": ["material independent disagreement omitted from contradiction record"],
+      "expected_pathologies": ["CONTRADICTION_ERASURE"],
+      "expected_disposition": "REQUIRE_ADJUDICATION"
+    },
+    {
+      "fixture_id": "EVD-REPLAY-DIVERGENCE-001",
+      "class": "ADVERSARIAL",
+      "seed": 2203107,
+      "candidate_transfer": {
+        "run_id": "evd-run-replay-001",
+        "model_identity": "evidence-model@rev-a",
+        "prompt_hash": "sha256:evd-replay-prompt",
+        "recognition_vector": {"signal": "zeta", "score": 0.73},
+        "c_observer_judgment": {"judgment": "deterministically reproduced", "confidence": 0.96},
+        "observed_evidence": [{"source_ref": "independent:replay", "value": "zeta"}],
+        "provenance": {
+          "constitutional_root_sha": "a730bba4e6a466e15b95c47998ae403c0ffe3a23",
+          "root_freeze_sha": "07f11ddf005f054d7172c7e1232c2b89a5a8ec65",
+          "parent_refs": ["44f16f80ebaa43942f59f3ec3261d09ff4df822d"],
+          "transform_refs": []
+        },
+        "replay_metadata": {"claimed_deterministic": true, "expected_hash": "evd-replay-A", "actual_hash": "evd-replay-B", "match": true},
+        "promotion_state": "REPLAYED",
+        "evidence_scope": {"supports": ["replay attempted"], "does_not_support": ["deterministic equality"]},
+        "contradictions": []
+      },
+      "injected_faults": ["hash mismatch falsely marked as replay match"],
+      "expected_pathologies": ["REPLAY_DIVERGENCE"],
+      "expected_disposition": "REQUIRE_REPLAY"
+    },
+    {
+      "fixture_id": "EVD-LINEAGE-CORRUPTION-001",
+      "class": "ADVERSARIAL",
+      "seed": 2203108,
+      "candidate_transfer": {
+        "run_id": "evd-run-lineage-001",
+        "model_identity": "evidence-model@rev-a",
+        "prompt_hash": "sha256:evd-lineage-prompt",
+        "recognition_vector": {"signal": "eta", "score": 0.77},
+        "c_observer_judgment": {"judgment": "supported", "confidence": 0.77},
+        "observed_evidence": [{"source_ref": "independent:unknown-parent", "value": "eta"}],
+        "provenance": {
+          "constitutional_root_sha": "ffffffffffffffffffffffffffffffffffffffff",
+          "root_freeze_sha": "1111111111111111111111111111111111111111",
+          "parent_refs": ["unknown-parent"],
+          "transform_refs": []
+        },
+        "replay_metadata": {"match": true},
+        "promotion_state": "OBSERVED",
+        "evidence_scope": {"supports": ["fixture-local recognition"], "does_not_support": ["valid constitutional ancestry"]},
+        "contradictions": []
+      },
+      "injected_faults": ["constitutional root and freeze SHAs replaced", "parent lineage is non-reconstructable"],
+      "expected_pathologies": ["LINEAGE_CORRUPTION"],
+      "expected_disposition": "REJECT"
+    }
+  ]
+}
