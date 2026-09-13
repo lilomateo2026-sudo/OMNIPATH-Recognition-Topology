@@ -1,0 +1,22 @@
+{
+  "gaps": [
+    {
+      "classification": "LEGACY_MISSING_REPOSITORY_PATH",
+      "declared_blob_sha": "f10f0cb3c9e670237914e5d502bce9f9b9dbb871",
+      "declared_commit": "2028938d32064a1fecec6fdd18579dc4c29d8501",
+      "declared_ref": "omnipath/recognition/promotion/O23_5_ci_attested_promotion_manifest.json",
+      "expected_current_state": "ABSENT",
+      "gap_id": "O23.9:promotion_manifest",
+      "gap_sha256": "5a5d82f4c4596a2834230c19e75db701bc2cc290e6fbc1daa8aa4621c3301aab",
+      "generation_order": "O23.9",
+      "historical_scope": "KNOWN_PRE_O29_6_GAP",
+      "ledger_ref": "omnipath/recognition/attestation_ledger/v1/o23_9_main_b7e1bde3/index.json",
+      "resolution_rule": "FAIL_IF_METADATA_DRIFTS_OR_PATH_BECOMES_PRESENT_WITHOUT_EXPLICIT_RECONCILIATION",
+      "schema": "omnipath.legacy-evidence-gap/v1",
+      "source_type": "promotion_manifest"
+    }
+  ],
+  "manifest_sha256": "5385b22e5a61b8b653350aae64a9d889a63e73110e4a15efb9b284a56478ee27",
+  "order": "O29.6",
+  "schema": "omnipath.legacy-evidence-gap-registry/v1"
+}
