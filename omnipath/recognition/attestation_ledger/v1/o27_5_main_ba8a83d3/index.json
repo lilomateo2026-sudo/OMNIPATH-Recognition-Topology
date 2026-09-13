@@ -1,0 +1,85 @@
+{
+  "schema": "omnipath.durable-attestation-ledger/v1",
+  "order": "O27.5",
+  "status": "V3_PROMOTED_AND_ATTESTED",
+  "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "repository": "lilomateo2026-sudo/OMNIPATH-Recognition-Topology",
+  "candidate": {
+    "pull_request": 12,
+    "branch": "o26.4-o26.5-v3-integration",
+    "head_sha": "abb5e16a373ee3f6fd826e0a7a336ab37e751812",
+    "tribunal_branch": "o27.1-v3-promotion-tribunal",
+    "tribunal_commit": "2c87153ecb91c9eeacd7428580cf463d60c73fe7",
+    "selected_genome": "A",
+    "selected_genome_commit": "d8d979682876359e193b6e90009a9e38e6f34e60",
+    "genome_b_commit": "e398133f117d3a32b9d3343bb52da9e7d9c5d612",
+    "genome_c_commit": "5deb5cc0caa6483320dd7db18cf1b175dd89d9da",
+    "genomes_b_c_evidence_only": true
+  },
+  "authorization": {
+    "order": "O27.2",
+    "exact_candidate_head_verified": true,
+    "main_base_verified": true,
+    "tribunal_verified": true,
+    "premerge_ci_verified": true,
+    "artifact_digests_verified": true,
+    "user_directed_execution": true
+  },
+  "merge": {
+    "order": "O27.3",
+    "commit": "ba8a83d3b2def74ded2bbf9154c6190940ebd888",
+    "rollback_parent": "7da284d50db46457a17bc259186332394b95583f",
+    "candidate_parent": "abb5e16a373ee3f6fd826e0a7a336ab37e751812",
+    "github_verified": true,
+    "exact_head_guard_used": true
+  },
+  "premerge_ci": {
+    "run_id": 34761837891,
+    "run_number": 28,
+    "candidate_head_sha": "abb5e16a373ee3f6fd826e0a7a336ab37e751812",
+    "conclusion": "success",
+    "replay_artifact": {
+      "id": 10319002230,
+      "digest": "sha256:31bbcfed86067f2c056b3647179383ccb5488a600883196a499842d22eca6112"
+    },
+    "attestation_artifact": {
+      "id": 10319645670,
+      "digest": "sha256:16ece42a0a6cbfa2c1df2ee98d9c70240992d3451f2fb9ae9e17d08b886151cb"
+    }
+  },
+  "postmerge_ci": {
+    "order": "O27.4",
+    "run_id": 34776741091,
+    "run_number": 29,
+    "main_sha": "ba8a83d3b2def74ded2bbf9154c6190940ebd888",
+    "clean_replay": "success",
+    "promotion_attestation_gate": "success",
+    "replay_artifact": {
+      "id": 10324370337,
+      "digest": "sha256:0757b0410e0503283caf92ff14d1416ea010bf03c8d2e2a34c3a3eb00ef5a717",
+      "expired": false
+    },
+    "attestation_artifact": {
+      "id": 10323682653,
+      "digest": "sha256:a4626174adbfc46ff026d28496b7508c12217d9f4efe1137d3814cc088ab04da",
+      "expired": false
+    }
+  },
+  "v3_evidence": {
+    "semantic_drift_checks": 1200,
+    "semantic_drift_mismatches": 0,
+    "semantic_drift_digest_sha256": "fe5545f06ce9220c8017021184dba21fe32c486118c3112748315d462e378dc7",
+    "cross_rail_shared_discovery_ids": 0,
+    "cross_rail_shared_source_event_ids": 0,
+    "unresolved_real_counterexamples": 0,
+    "replay_rounds": 3000,
+    "replay_divergence_count": 0,
+    "replay_tournament_digest_sha256": "df028815fe4867d83b1f6e20091b94c3c8150eb0b499a26bb48f4b8c902b4e23"
+  },
+  "authority": {
+    "candidate_self_promoted": false,
+    "ledger_grants_future_promotion_authority": false,
+    "v4_inherits_promotion_authority": false,
+    "future_promotion_rule": "REQUIRE_LEDGER_VERIFICATION_AND_FRESH_DESCENDANT_ATTESTATION"
+  }
+}
