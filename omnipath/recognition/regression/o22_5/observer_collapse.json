@@ -1,0 +1,10 @@
+{
+  "schema": "omnipath.boundary-counterexample/v1",
+  "order": "O22.5",
+  "source_case_id": "observer-collapse",
+  "mutation_dimensions": ["severity", "promotion_effect"],
+  "expected_base_decision": "PASS",
+  "expected_final_decision": "QUARANTINE",
+  "expected_guard_reason": "O22_4_BOUNDARY_HOLD",
+  "parent_commit_sha": "8875873a3eb8420a5e16a43fde285e2ca20c3423"
+}
