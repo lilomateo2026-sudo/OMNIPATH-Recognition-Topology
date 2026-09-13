@@ -1,0 +1,88 @@
+name: O22.6 Independent Replay Attestation
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    name: clean-replay-378
+    runs-on: ubuntu-latest
+    outputs:
+      artifact_id: ${{ steps.replay_artifact.outputs.artifact-id }}
+      artifact_digest: ${{ steps.replay_artifact.outputs.artifact-digest }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run recognition test suite
+        env:
+          PYTHONPATH: omnipath/recognition
+        run: python -m unittest discover -s omnipath/recognition/tests -p 'test_*.py' -v
+      - name: Recompute O22.5 evidence
+        env:
+          PYTHONPATH: omnipath/recognition
+        run: python omnipath/recognition/o22_6_replay.py o22_6_evidence
+      - name: Upload replay evidence
+        id: replay_artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: o22-6-replay-${{ github.sha }}
+          path: o22_6_evidence
+          if-no-files-found: error
+          retention-days: 90
+
+  attest:
+    name: promotion-attestation-gate
+    needs: replay
+    if: ${{ needs.replay.result == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Download replay evidence
+        uses: actions/download-artifact@v4
+        with:
+          name: o22-6-replay-${{ github.sha }}
+          path: o22_6_evidence
+      - name: Build CI attestation
+        env:
+          PYTHONPATH: omnipath/recognition
+          REPLAY_JOB_RESULT: ${{ needs.replay.result }}
+        run: python omnipath/recognition/o22_6_attest.py o22_6_evidence o22_6_attestation/ci_attestation.json
+      - name: Bind artifact identity and enforce gate
+        env:
+          PYTHONPATH: omnipath/recognition
+          REPLAY_ARTIFACT_ID: ${{ needs.replay.outputs.artifact_id }}
+          REPLAY_ARTIFACT_DIGEST: ${{ needs.replay.outputs.artifact_digest }}
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          from attestation_gate import check_attestation
+          path = Path('o22_6_attestation/ci_attestation.json')
+          data = json.loads(path.read_text(encoding='utf-8'))
+          data['replay_artifact_id'] = os.environ['REPLAY_ARTIFACT_ID']
+          data['replay_artifact_digest'] = os.environ['REPLAY_ARTIFACT_DIGEST']
+          path.write_text(json.dumps(data, indent=2, sort_keys=True) + '\n', encoding='utf-8')
+          result = check_attestation(data, os.environ['GITHUB_SHA'])
+          print(json.dumps(result, indent=2, sort_keys=True))
+          if not result['promotion_allowed']:
+              raise SystemExit(7)
+          PY
+      - name: Upload CI attestation
+        uses: actions/upload-artifact@v4
+        with:
+          name: o22-6-attestation-${{ github.sha }}
+          path: o22_6_attestation
+          if-no-files-found: error
+          retention-days: 90
