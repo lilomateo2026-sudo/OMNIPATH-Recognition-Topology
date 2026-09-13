@@ -1,0 +1,24 @@
+name: O29.6 Closure
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  closure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify closure
+        env:
+          PYTHONPATH: omnipath/recognition
+        run: python omnipath/recognition/promotion_genealogy_closure.py --repository-root .
+      - name: Test closure
+        env:
+          PYTHONPATH: omnipath/recognition
+        run: python -m unittest omnipath.recognition.tests.test_o29_6_genealogy_closure -v
