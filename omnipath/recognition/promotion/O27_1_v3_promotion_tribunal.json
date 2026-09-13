@@ -1,0 +1,86 @@
+{
+  "schema": "omnipath.v3-promotion-tribunal/v1",
+  "order": "O27.1",
+  "status": "ELIGIBLE_FOR_EXPLICIT_PROMOTION_DECISION",
+  "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "candidate": {
+    "pull_request": 12,
+    "branch": "o26.4-o26.5-v3-integration",
+    "head_sha": "abb5e16a373ee3f6fd826e0a7a336ab37e751812",
+    "base_branch": "main",
+    "base_sha": "7da284d50db46457a17bc259186332394b95583f",
+    "merge_preview_sha": "f3978ef225a862466fb90aaf6e5cc8ff4351b285"
+  },
+  "selected_route": {
+    "genome": "A",
+    "genome_commit": "d8d979682876359e193b6e90009a9e38e6f34e60",
+    "canonical_digest_sha256": "5c7ec1ba9a134b5a9220382ae2c06eb069c3b0d8319bd137f89bb52eb22dd9a6",
+    "other_genomes_remain_evidence_only": true
+  },
+  "o26_2_semantic_drift": {
+    "checks": 1200,
+    "mismatches": 0,
+    "digest_sha256": "fe5545f06ce9220c8017021184dba21fe32c486118c3112748315d462e378dc7",
+    "result": "PASS"
+  },
+  "o26_3_independence": {
+    "genome_commits": {
+      "A": "d8d979682876359e193b6e90009a9e38e6f34e60",
+      "B": "e398133f117d3a32b9d3343bb52da9e7d9c5d612",
+      "C": "5deb5cc0caa6483320dd7db18cf1b175dd89d9da"
+    },
+    "shared_discovery_ids": 0,
+    "shared_source_event_ids": 0,
+    "result": "PASS"
+  },
+  "o26_4_minimization": {
+    "observed_real_mismatches": 0,
+    "unminimized_real_counterexamples": 0,
+    "synthetic_minimizer_control": "PASS",
+    "synthetic_control_is_production_evidence": false,
+    "result": "PASS"
+  },
+  "o26_5_replay": {
+    "total_replays": 3000,
+    "divergence_count": 0,
+    "selected_genome": "A",
+    "tournament_digest_sha256": "df028815fe4867d83b1f6e20091b94c3c8150eb0b499a26bb48f4b8c902b4e23",
+    "result": "PASS"
+  },
+  "external_ci": {
+    "workflow_run_id": 34761837891,
+    "workflow_run_number": 28,
+    "attested_head_sha": "abb5e16a373ee3f6fd826e0a7a336ab37e751812",
+    "clean_replay": "success",
+    "promotion_attestation_gate": "success",
+    "replay_artifact": {
+      "id": 10319002230,
+      "digest": "sha256:31bbcfed86067f2c056b3647179383ccb5488a600883196a499842d22eca6112",
+      "expired": false
+    },
+    "attestation_artifact": {
+      "id": 10319645670,
+      "digest": "sha256:16ece42a0a6cbfa2c1df2ee98d9c70240992d3451f2fb9ae9e17d08b886151cb",
+      "expired": false
+    }
+  },
+  "tribunal_decision": {
+    "differential_passed": true,
+    "independence_passed": true,
+    "minimization_passed": true,
+    "replay_passed": true,
+    "lineage_passed": true,
+    "fresh_external_ci_passed": true,
+    "eligible_for_explicit_promotion_decision": true,
+    "merge_authorized": false,
+    "merge_performed": false,
+    "candidate_self_promoted": false,
+    "required_exact_candidate_head_sha": "abb5e16a373ee3f6fd826e0a7a336ab37e751812"
+  },
+  "invalidation_rules": [
+    "Any change to the candidate head SHA requires fresh CI and a new tribunal record.",
+    "Any semantic-drift mismatch, identity overlap, unresolved real counterexample, or replay divergence blocks promotion.",
+    "Genome B and Genome C remain evidence-only unless a later independent tribunal reopens selection.",
+    "This tribunal records eligibility only and does not authorize or perform a merge."
+  ]
+}
