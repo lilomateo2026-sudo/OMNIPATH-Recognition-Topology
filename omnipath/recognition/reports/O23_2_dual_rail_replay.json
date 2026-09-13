@@ -1,0 +1,13 @@
+{
+  "schema": "omnipath.dual-rail-replay-attestation/v1",
+  "order": "O23.2",
+  "scope": "fixture-level-tribunal-state",
+  "rounds": 1000,
+  "stable_rounds": 1000,
+  "pair_count": 8,
+  "pathology_divergence_pairs": 1,
+  "disposition_divergence_pairs": 0,
+  "canonical_pairs_digest_sha256": "337ede2d7527d27f7bfd33069664e4ac07a34f2bb8f1894d19d7cb7ad70bbe6b",
+  "all_rounds_stable": true,
+  "status": "PASS"
+}
