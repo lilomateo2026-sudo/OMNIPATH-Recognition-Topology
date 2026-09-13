@@ -1,0 +1,39 @@
+{
+  "schema": "omnipath.exact-sha-merge-authorization/v1",
+  "order": "O25.2",
+  "status": "AUTHORIZED_FOR_EXACT_SHA_MERGE",
+  "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "repository": "lilomateo2026-sudo/OMNIPATH-Recognition-Topology",
+  "pull_request": 10,
+  "candidate_head_sha": "25af648f0a9696e34c08d948aeca987af812c5a0",
+  "expected_base_sha": "dc296965c43e75fd3fab53eea3a96aaccc381a10",
+  "tribunal_order": "O25.1",
+  "tribunal_status": "ELIGIBLE_FOR_EXPLICIT_PROMOTION_DECISION",
+  "external_ci": {
+    "workflow_run_id": 34757271173,
+    "workflow_run_number": 24,
+    "conclusion": "success",
+    "attested_head_sha": "25af648f0a9696e34c08d948aeca987af812c5a0",
+    "replay_artifact_id": 10316854086,
+    "replay_artifact_digest": "sha256:ad56701cec7352aa1eab0f6249c86c17408951396023b3afed1947aa35fa2232",
+    "attestation_artifact_id": 10316984831,
+    "attestation_artifact_digest": "sha256:98bc991115c26bb15a8e0551c5f0f22580942d72cdff3407358d87c89338bf83"
+  },
+  "gate_checks": {
+    "pr_open": true,
+    "pr_mergeable": true,
+    "candidate_sha_matches_tribunal": true,
+    "base_sha_matches_tribunal": true,
+    "fresh_ci_passed": true,
+    "artifacts_unexpired": true,
+    "unresolved_counterexamples": 0
+  },
+  "authorization": {
+    "exact_head_sha_required": true,
+    "force_merge_forbidden": true,
+    "candidate_self_promotion_forbidden": true,
+    "authorization_invalid_if_head_or_base_changes": true
+  },
+  "execution_state": "MERGE_NOT_PERFORMED_CONNECTOR_REJECTED_WRITE",
+  "downstream_orders_blocked_until_confirmed_merge": ["O25.4", "O25.5", "O26.1"]
+}
