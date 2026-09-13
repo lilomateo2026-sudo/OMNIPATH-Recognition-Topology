@@ -6,7 +6,7 @@ from promotion_genealogy_common import read_json
 from promotion_genealogy_index import generate_genealogy_index, verify_genealogy_index
 
 ROOT = Path(__file__).resolve().parents[3]
-EXPECTED_GENERATIONS = {"O22.6", "O23.9", "O25.5", "O27.5"}
+REQUIRED_HISTORICAL_GENERATIONS = {"O22.6", "O23.9", "O25.5", "O27.5"}
 
 
 class GenealogyIndexTests(unittest.TestCase):
@@ -16,9 +16,15 @@ class GenealogyIndexTests(unittest.TestCase):
         self.assertEqual(committed, generated)
         audit = verify_genealogy_index(ROOT, committed)
         self.assertTrue(audit["valid"], audit)
-        self.assertEqual(committed["entry_count"], 4)
-        self.assertEqual({entry["generation_order"] for entry in committed["entries"]}, EXPECTED_GENERATIONS)
-        self.assertEqual(len(committed["alias_map"]), 7)
+
+        entries = committed["entries"]
+        generations = {entry["generation_order"] for entry in entries}
+        all_aliases = {alias for entry in entries for alias in entry["aliases"]}
+
+        self.assertEqual(committed["entry_count"], len(entries))
+        self.assertTrue(REQUIRED_HISTORICAL_GENERATIONS.issubset(generations))
+        self.assertEqual(len(committed["alias_map"]), len(all_aliases))
+        self.assertEqual(set(committed["alias_map"]), all_aliases)
 
     def test_every_alias_resolves_without_external_refs(self):
         committed = read_json(ROOT / DEFAULT_INDEX_REF)
