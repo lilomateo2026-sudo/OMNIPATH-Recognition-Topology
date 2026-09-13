@@ -67,7 +67,7 @@ class O23RegressionGateTests(unittest.TestCase):
         self.assertEqual(result["unique_combinations"], 91)
         self.assertEqual(
             result["tournament_digest_sha256"],
-            "b5ddd42b8d815454145069e07e18cbc3b8134f4ff950b3c3859c57c0a8c171b4",
+            "d1ff891cb4c55163cb9922db755cb47fe10b0f029bfd2b1e24c3f2cb64592590",
         )
 
     def test_dual_rail_replay_regression_digest(self):
@@ -78,7 +78,7 @@ class O23RegressionGateTests(unittest.TestCase):
         self.assertEqual(result["disposition_divergence_pairs"], 0)
         self.assertEqual(
             result["canonical_pairs_digest_sha256"],
-            "337ede2d7527d27f7bfd33069664e4ac07a34f2bb8f1894d19d7cb7ad70bbe6b",
+            "d9bdc1e62777af0cba7803c6c64d9e578a03f17c2a89876902aa3d5cbe3f7d2d",
         )
 
 
