@@ -1,0 +1,15 @@
+{
+  "schema": "omnipath.metamorphic-recognition-invariants/v1",
+  "order": "O24.4",
+  "source_o24_2_digest": "65449a768f02abb149dcb1fe055949c2232bedc2bc09630d36f7e1b8e50dd956",
+  "seed": 2404001,
+  "source_cases": 100,
+  "transformations": 6,
+  "expected_checks": 600,
+  "expected_violations": 0,
+  "sensitivity_controls": 6,
+  "expected_sensitivity_pass": true,
+  "expected_digest_sha256": "8b5fc41548f639a97752985a4663b21df8b70d51b681015789b8e848cdf40e77",
+  "status": "PENDING_EXTERNAL_CI_REPLAY",
+  "promotion_allowed": false
+}
