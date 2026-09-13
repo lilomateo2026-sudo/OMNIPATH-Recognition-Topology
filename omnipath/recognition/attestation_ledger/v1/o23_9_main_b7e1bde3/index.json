@@ -1,0 +1,68 @@
+{
+  "schema": "omnipath.durable-attestation-ledger/v1",
+  "order": "O23.9",
+  "source_orders": ["O23.5", "O23.7", "O23.8"],
+  "recorded_epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "relationship": "ci_attested_promotion_genealogy",
+  "repository": "lilomateo2026-sudo/OMNIPATH-Recognition-Topology",
+  "candidate": {
+    "pull_request": 9,
+    "branch": "o22.5-cross-rail-tribunal",
+    "head_sha": "17d4db9907455d29d5ee2aa3e3120bd6bdfea87f"
+  },
+  "promotion_manifest": {
+    "branch": "o23.5-ci-attested-promotion-manifest",
+    "commit": "2028938d32064a1fecec6fdd18579dc4c29d8501",
+    "blob_sha": "f10f0cb3c9e670237914e5d502bce9f9b9dbb871",
+    "path": "omnipath/recognition/promotion/O23_5_ci_attested_promotion_manifest.json"
+  },
+  "merge": {
+    "commit": "b7e1bde39d46afc255bc5db46e9f4aed6e1cb399",
+    "rollback_parent": "6de2cf2f08b92ca5ec6ea29779d26914d15a092d",
+    "candidate_parent": "17d4db9907455d29d5ee2aa3e3120bd6bdfea87f",
+    "method": "merge",
+    "exact_sha_guard_used": true
+  },
+  "premerge_ci": {
+    "workflow_run_id": 34755828638,
+    "run_number": 15,
+    "conclusion": "success",
+    "attested_head_sha": "17d4db9907455d29d5ee2aa3e3120bd6bdfea87f",
+    "replay_artifact": {
+      "id": 10317735715,
+      "digest": "sha256:b253bce3294813b36df1e5a89ea2533d2d576d55a1c62ce33936142367af6962"
+    },
+    "attestation_artifact": {
+      "id": 10316876940,
+      "digest": "sha256:0dd8f47e2a38c4fbb02fa3aead2db7975be86d3ff2414886528d70918dd98c2f"
+    }
+  },
+  "postmerge_ci": {
+    "workflow_run_id": 34756570191,
+    "run_number": 16,
+    "event": "push",
+    "conclusion": "success",
+    "attested_main_sha": "b7e1bde39d46afc255bc5db46e9f4aed6e1cb399",
+    "replay_artifact": {
+      "id": 10317242909,
+      "digest": "sha256:3a7aef988ae61667980fa7205f114a2720f64f1b5ae3fbbbb48709daf00a2e7a"
+    },
+    "attestation_artifact": {
+      "id": 10317502597,
+      "digest": "sha256:4ec0fb59cab375325ee3885103cd5716bb1b4b104440824e4677bc499c1bafa5"
+    }
+  },
+  "promotion_evidence": {
+    "tribunal_pairs": 8,
+    "pathology_asymmetry_pairs": 1,
+    "disposition_conflict_pairs": 0,
+    "mutation_trials": 1000,
+    "mutation_unique_combinations": 91,
+    "dual_rail_replay_rounds": 1000,
+    "dual_rail_replay_stable_rounds": 1000,
+    "mutation_digest_sha256": "d1ff891cb4c55163cb9922db755cb47fe10b0f029bfd2b1e24c3f2cb64592590",
+    "replay_digest_sha256": "d9bdc1e62777af0cba7803c6c64d9e578a03f17c2a89876902aa3d5cbe3f7d2d"
+  },
+  "future_promotion_rule": "REQUIRE_LEDGER_VERIFICATION_AND_FRESH_DESCENDANT_ATTESTATION",
+  "candidate_self_promoted": false
+}
