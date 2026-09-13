@@ -1,0 +1,223 @@
+{
+  "schema": "omnipath.transfer-fixture-corpus/v1",
+  "order": "O22.3",
+  "rail": "reference-transfer",
+  "rail_manifest_commit": "f24e7bb8fb8888e55f263c51862ad24c66fac95b",
+  "constitutional_root_sha": "a730bba4e6a466e15b95c47998ae403c0ffe3a23",
+  "root_freeze_sha": "07f11ddf005f054d7172c7e1232c2b89a5a8ec65",
+  "pathology_schema": "omnipath/recognition/RECOGNITION_PATHOLOGY.schema.json",
+  "fixture_contract": {
+    "deterministic": true,
+    "controls": 1,
+    "pathology_cases": 7,
+    "expected_pathologies": [
+      "FALSE_CONSENSUS",
+      "PROVENANCE_LOSS",
+      "SCOPE_INFLATION",
+      "OBSERVER_COLLAPSE",
+      "CONTRADICTION_ERASURE",
+      "REPLAY_DIVERGENCE",
+      "LINEAGE_CORRUPTION"
+    ],
+    "promotion_ceiling": "VERIFIED_WITHIN_SCOPE"
+  },
+  "fixtures": [
+    {
+      "fixture_id": "REF-CONTROL-001",
+      "class": "VALID_CONTROL",
+      "seed": 2203001,
+      "candidate_transfer": {
+        "run_id": "ref-run-control-001",
+        "model_identity": "reference-model@rev-control",
+        "quantization": "none",
+        "seed": 2203001,
+        "prompt_hash": "sha256:ref-control-prompt",
+        "trajectory_representation": ["observe", "classify", "record"],
+        "recognition_vector": {"signal": "alpha", "score": 0.72},
+        "c_observer_judgment": {"judgment": "supported", "confidence": 0.72},
+        "provenance": {
+          "constitutional_root_sha": "a730bba4e6a466e15b95c47998ae403c0ffe3a23",
+          "root_freeze_sha": "07f11ddf005f054d7172c7e1232c2b89a5a8ec65",
+          "parent_refs": ["f24e7bb8fb8888e55f263c51862ad24c66fac95b"],
+          "transform_refs": ["normalize-input-representation"]
+        },
+        "replay_metadata": {"expected_hash": "ref-control-out", "actual_hash": "ref-control-out", "match": true},
+        "promotion_state": "OBSERVED",
+        "evidence_scope": {"supports": ["fixture-local recognition"], "does_not_support": ["absolute certainty", "cross-rail proof"]},
+        "contradictions": []
+      },
+      "expected_pathologies": [],
+      "expected_disposition": "ACCEPT_FOR_COMPARISON"
+    },
+    {
+      "fixture_id": "REF-FALSE-CONSENSUS-001",
+      "class": "ADVERSARIAL",
+      "seed": 2203002,
+      "candidate_transfer": {
+        "run_id": "ref-run-false-consensus-001",
+        "model_identity": "reference-model@rev-a",
+        "prompt_hash": "sha256:ref-fc-prompt",
+        "recognition_vector": {"signal": "beta", "score": 0.91, "peer_agreement": true},
+        "c_observer_judgment": {"judgment": "agreement-proves-correctness", "confidence": 1.0},
+        "provenance": {
+          "constitutional_root_sha": "a730bba4e6a466e15b95c47998ae403c0ffe3a23",
+          "root_freeze_sha": "07f11ddf005f054d7172c7e1232c2b89a5a8ec65",
+          "parent_refs": ["f24e7bb8fb8888e55f263c51862ad24c66fac95b", "peer:evidence-transfer"],
+          "transform_refs": ["cross-rail-agreement-to-proof"]
+        },
+        "replay_metadata": {"match": true},
+        "promotion_state": "VERIFIED_WITHIN_SCOPE",
+        "evidence_scope": {"supports": ["two outputs agree"], "does_not_support": []},
+        "contradictions": []
+      },
+      "injected_faults": ["cross-rail agreement converted into proof", "uncertainty boundary removed"],
+      "expected_pathologies": ["FALSE_CONSENSUS", "SCOPE_INFLATION"],
+      "expected_disposition": "REQUIRE_ADJUDICATION"
+    },
+    {
+      "fixture_id": "REF-PROVENANCE-LOSS-001",
+      "class": "ADVERSARIAL",
+      "seed": 2203003,
+      "candidate_transfer": {
+        "run_id": "ref-run-prov-loss-001",
+        "model_identity": "reference-model@rev-a",
+        "prompt_hash": null,
+        "recognition_vector": {"signal": "gamma", "score": 0.67},
+        "c_observer_judgment": {"judgment": "supported", "confidence": 0.67},
+        "provenance": {"parent_refs": [], "transform_refs": []},
+        "replay_metadata": {"match": null},
+        "promotion_state": "OBSERVED",
+        "evidence_scope": {"supports": ["unattributed observation"], "does_not_support": ["reconstructable lineage"]},
+        "contradictions": []
+      },
+      "injected_faults": ["constitutional ancestry removed", "prompt hash removed", "source lineage emptied"],
+      "expected_pathologies": ["PROVENANCE_LOSS"],
+      "expected_disposition": "HOLD"
+    },
+    {
+      "fixture_id": "REF-SCOPE-INFLATION-001",
+      "class": "ADVERSARIAL",
+      "seed": 2203004,
+      "candidate_transfer": {
+        "run_id": "ref-run-scope-001",
+        "model_identity": "reference-model@rev-a",
+        "prompt_hash": "sha256:ref-scope-prompt",
+        "recognition_vector": {"signal": "delta", "score": 0.61},
+        "c_observer_judgment": {"judgment": "universally true", "confidence": 1.0},
+        "provenance": {
+          "constitutional_root_sha": "a730bba4e6a466e15b95c47998ae403c0ffe3a23",
+          "root_freeze_sha": "07f11ddf005f054d7172c7e1232c2b89a5a8ec65",
+          "parent_refs": ["f24e7bb8fb8888e55f263c51862ad24c66fac95b"],
+          "transform_refs": []
+        },
+        "replay_metadata": {"match": true},
+        "promotion_state": "VERIFIED_WITHIN_SCOPE",
+        "evidence_scope": {"supports": ["all models, prompts, environments, and future runs"], "does_not_support": []},
+        "contradictions": []
+      },
+      "injected_faults": ["local evidence generalized to universal scope"],
+      "expected_pathologies": ["SCOPE_INFLATION"],
+      "expected_disposition": "REJECT"
+    },
+    {
+      "fixture_id": "REF-OBSERVER-COLLAPSE-001",
+      "class": "ADVERSARIAL",
+      "seed": 2203005,
+      "candidate_transfer": {
+        "run_id": "ref-run-observer-001",
+        "model_identity": "reference-model@rev-a",
+        "prompt_hash": "sha256:ref-observer-prompt",
+        "recognition_vector": {"signal": "observer_says_supported", "score": 0.88, "source": "c_observer_judgment"},
+        "c_observer_judgment": {"judgment": "supported", "confidence": 0.88},
+        "provenance": {
+          "constitutional_root_sha": "a730bba4e6a466e15b95c47998ae403c0ffe3a23",
+          "root_freeze_sha": "07f11ddf005f054d7172c7e1232c2b89a5a8ec65",
+          "parent_refs": ["f24e7bb8fb8888e55f263c51862ad24c66fac95b"],
+          "transform_refs": ["judgment-to-evidence"]
+        },
+        "replay_metadata": {"match": true},
+        "promotion_state": "COMPARED",
+        "evidence_scope": {"supports": ["observer judgment exists"], "does_not_support": ["independent raw observation"]},
+        "contradictions": []
+      },
+      "injected_faults": ["observer judgment copied into recognition evidence"],
+      "expected_pathologies": ["OBSERVER_COLLAPSE"],
+      "expected_disposition": "HOLD"
+    },
+    {
+      "fixture_id": "REF-CONTRADICTION-ERASURE-001",
+      "class": "ADVERSARIAL",
+      "seed": 2203006,
+      "candidate_transfer": {
+        "run_id": "ref-run-contradiction-001",
+        "model_identity": "reference-model@rev-a",
+        "prompt_hash": "sha256:ref-contradiction-prompt",
+        "recognition_vector": {"signal": "epsilon", "source_a": 0.84, "source_b": 0.31},
+        "c_observer_judgment": {"judgment": "consensus", "confidence": 0.84},
+        "provenance": {
+          "constitutional_root_sha": "a730bba4e6a466e15b95c47998ae403c0ffe3a23",
+          "root_freeze_sha": "07f11ddf005f054d7172c7e1232c2b89a5a8ec65",
+          "parent_refs": ["source:a", "source:b"],
+          "transform_refs": ["drop-minority-observation"]
+        },
+        "replay_metadata": {"match": true},
+        "promotion_state": "COMPARED",
+        "evidence_scope": {"supports": ["source A supports epsilon", "source B conflicts"], "does_not_support": ["consensus"]},
+        "contradictions": []
+      },
+      "injected_faults": ["material source disagreement omitted from contradiction record"],
+      "expected_pathologies": ["CONTRADICTION_ERASURE"],
+      "expected_disposition": "REQUIRE_ADJUDICATION"
+    },
+    {
+      "fixture_id": "REF-REPLAY-DIVERGENCE-001",
+      "class": "ADVERSARIAL",
+      "seed": 2203007,
+      "candidate_transfer": {
+        "run_id": "ref-run-replay-001",
+        "model_identity": "reference-model@rev-a",
+        "prompt_hash": "sha256:ref-replay-prompt",
+        "recognition_vector": {"signal": "zeta", "score": 0.75},
+        "c_observer_judgment": {"judgment": "deterministically reproduced", "confidence": 0.95},
+        "provenance": {
+          "constitutional_root_sha": "a730bba4e6a466e15b95c47998ae403c0ffe3a23",
+          "root_freeze_sha": "07f11ddf005f054d7172c7e1232c2b89a5a8ec65",
+          "parent_refs": ["f24e7bb8fb8888e55f263c51862ad24c66fac95b"],
+          "transform_refs": []
+        },
+        "replay_metadata": {"claimed_deterministic": true, "expected_hash": "ref-replay-A", "actual_hash": "ref-replay-B", "match": true},
+        "promotion_state": "REPLAYED",
+        "evidence_scope": {"supports": ["replay attempted"], "does_not_support": ["deterministic equality"]},
+        "contradictions": []
+      },
+      "injected_faults": ["hash mismatch falsely marked as replay match"],
+      "expected_pathologies": ["REPLAY_DIVERGENCE"],
+      "expected_disposition": "REQUIRE_REPLAY"
+    },
+    {
+      "fixture_id": "REF-LINEAGE-CORRUPTION-001",
+      "class": "ADVERSARIAL",
+      "seed": 2203008,
+      "candidate_transfer": {
+        "run_id": "ref-run-lineage-001",
+        "model_identity": "reference-model@rev-a",
+        "prompt_hash": "sha256:ref-lineage-prompt",
+        "recognition_vector": {"signal": "eta", "score": 0.79},
+        "c_observer_judgment": {"judgment": "supported", "confidence": 0.79},
+        "provenance": {
+          "constitutional_root_sha": "0000000000000000000000000000000000000000",
+          "root_freeze_sha": "07f11ddf005f054d7172c7e1232c2b89a5a8ec65",
+          "parent_refs": ["unknown-parent"],
+          "transform_refs": []
+        },
+        "replay_metadata": {"match": true},
+        "promotion_state": "OBSERVED",
+        "evidence_scope": {"supports": ["fixture-local recognition"], "does_not_support": ["valid constitutional ancestry"]},
+        "contradictions": []
+      },
+      "injected_faults": ["constitutional root SHA replaced", "parent lineage is non-reconstructable"],
+      "expected_pathologies": ["LINEAGE_CORRUPTION"],
+      "expected_disposition": "REJECT"
+    }
+  ]
+}
