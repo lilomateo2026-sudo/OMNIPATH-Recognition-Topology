@@ -7,6 +7,7 @@ import copy
 import hashlib
 import json
 import random
+from pathlib import Path
 
 from adversarial.full_payload_mutation_tournament import (
     OPERATORS,
@@ -53,6 +54,44 @@ def transform(value: dict, name: str, case: int) -> dict:
     return item
 
 
+def validate_descendant_evidence() -> bool:
+    from v3.generation3_evidence import evaluate_independence, minimizer_control, replay_tournament
+
+    root = Path(__file__).resolve().parent
+    o263 = json.loads((root / "O26_3_cross_rail_genomes.json").read_text(encoding="utf-8"))
+    o264 = json.loads((root / "O26_4_counterexample_minimizer.json").read_text(encoding="utf-8"))
+    o265 = json.loads((root / "O26_5_replay_stability_tournament.json").read_text(encoding="utf-8"))
+
+    independence = evaluate_independence()
+    if not independence["independence_pass"]:
+        raise AssertionError("O26.3 independence failed")
+    if len(independence["shared_discovery_ids"]) != o263["expected_shared_discovery_ids"]:
+        raise AssertionError("O26.3 discovery identity overlap")
+    if len(independence["shared_source_event_ids"]) != o263["expected_shared_source_event_ids"]:
+        raise AssertionError("O26.3 source identity overlap")
+    for label, expected in o263["genomes"].items():
+        actual = independence["genomes"][label]
+        if actual["stream_digest_sha256"] != expected["stream_digest_sha256"]:
+            raise AssertionError(f"O26.3 stream digest mismatch: {label}")
+        if actual["canonical_digest_sha256"] != expected["canonical_digest_sha256"]:
+            raise AssertionError(f"O26.3 canonical digest mismatch: {label}")
+
+    minimized = minimizer_control()
+    if minimized["production_mismatch_count"] != o264["observed_mismatches"]:
+        raise AssertionError("O26.4 production mismatch count changed")
+    if minimized["synthetic_control_minimized"] != o264["synthetic_control"]["expected_minimal"]:
+        raise AssertionError("O26.4 minimizer control failed")
+
+    replay = replay_tournament(o265["rounds_per_genome"], o265["replay_seed"])
+    if replay["summary"] != o265["summary"]:
+        raise AssertionError("O26.5 replay summary changed")
+    if replay["selected_genome"] != o265["selected_genome"]:
+        raise AssertionError("O26.5 selected genome changed")
+    if replay["tournament_digest_sha256"] != o265["tournament_digest_sha256"]:
+        raise AssertionError("O26.5 tournament digest changed")
+    return True
+
+
 def run(seed: int = 2602001, cases: int = 200) -> dict:
     rng = random.Random(seed)
     baseline = baseline_envelope()
@@ -82,6 +121,7 @@ def run(seed: int = 2602001, cases: int = 200) -> dict:
                 }
             )
 
+    descendant_evidence_verified = validate_descendant_evidence()
     canonical = json.dumps(rows, sort_keys=True, separators=(",", ":"))
     return {
         "schema": "omnipath.semantic-drift-fuzzer/v1",
@@ -92,4 +132,5 @@ def run(seed: int = 2602001, cases: int = 200) -> dict:
         "checks": len(rows),
         "mismatch_count": mismatch_count,
         "digest_sha256": hashlib.sha256(canonical.encode("utf-8")).hexdigest(),
+        "descendant_evidence_verified": descendant_evidence_verified,
     }
