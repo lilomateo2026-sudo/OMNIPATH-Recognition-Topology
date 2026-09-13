@@ -1,0 +1,21 @@
+{
+  "case_id": "contradiction-erasure",
+  "corruption_expected": true,
+  "expected_decision": "QUARANTINE",
+  "expected_reason_codes": ["SEVERITY_HOLD", "PROMOTION_BLOCKED", "CONTRADICTIONS_RETAINED"],
+  "record": {
+    "schema_version": "omnipath.recognition-pathology/v1",
+    "pathology_id": "O223-CE-001",
+    "run_id": "o22.3-contradiction-erasure",
+    "rail": "cross-rail",
+    "pathology_type": "CONTRADICTION_ERASURE",
+    "severity": "HIGH",
+    "observed_evidence": [{"evidence_id": "ce-e1", "kind": "challenge_fixture", "value": "conflict-retention test", "source_ref": "corpus:contradiction-erasure", "hash": null}],
+    "observer_judgment": {"observer_id": "o22.3-tribunal", "judgment": "Conflict must remain represented.", "confidence": 0.99},
+    "contradictions": [{"left_ref": "run:A", "right_ref": "run:B", "status": "OPEN", "resolution_ref": null}],
+    "provenance": {"constitutional_root_sha": "a730bba4e6a466e15b95c47998ae403c0ffe3a23", "root_freeze_sha": "07f11ddf005f054d7172c7e1232c2b89a5a8ec65", "parent_refs": ["e469b447d497f6533487fbf9098b1a6152d2d494"], "transform_refs": ["o22.3:contradiction-erasure"], "model_identity": null, "prompt_hash": null},
+    "scope": {"supports": ["contradiction-retention test"], "does_not_support": ["automatic promotion"]},
+    "promotion_effect": "REQUIRE_ADJUDICATION",
+    "epistemic_state": "CONTRADICTED"
+  }
+}
