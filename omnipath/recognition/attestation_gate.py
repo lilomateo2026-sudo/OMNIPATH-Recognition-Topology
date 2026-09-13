@@ -19,7 +19,11 @@ def check_attestation(data, expected_commit=None):
     if not data.get("replay_artifact_id"):
         failures.append("replay_artifact_id")
     artifact_digest = data.get("replay_artifact_digest")
-    if not isinstance(artifact_digest, str) or not artifact_digest.startswith("sha256:") or len(artifact_digest) != 71:
+    digest_ok = isinstance(artifact_digest, str) and (
+        len(artifact_digest) == 64
+        or (artifact_digest.startswith("sha256:") and len(artifact_digest) == 71)
+    )
+    if not digest_ok:
         failures.append("replay_artifact_digest")
     hashes = data.get("specimen_sha256")
     if not isinstance(hashes, dict) or len(hashes) != 4:
