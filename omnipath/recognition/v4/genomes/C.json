@@ -1,0 +1,13 @@
+{
+  "schema":"omnipath.v4-genome/v1",
+  "order":"O28.3",
+  "genome":"C",
+  "parent_sha":"3240d4051ca2ca4ca1cb50576ea3e17c32ece3ab",
+  "seed":2803003,
+  "namespace":"v4-genome-C",
+  "events":700,
+  "stream_digest_sha256":"734ad2e2ff180eb59692035055de7bd93caef4371d20dd1c7ec54bc5247ec0e0",
+  "provenance_mode":"independent",
+  "shared_derived_evidence_forbidden":true,
+  "promotion_authority":false
+}
