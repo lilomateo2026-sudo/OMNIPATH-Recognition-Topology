@@ -1,0 +1,21 @@
+{
+  "case_id": "provenance-loss",
+  "corruption_expected": true,
+  "expected_decision": "QUARANTINE",
+  "expected_reason_codes": ["PROVENANCE_REPAIR_REQUIRED", "SEVERITY_HOLD", "PROMOTION_BLOCKED"],
+  "record": {
+    "schema_version": "omnipath.recognition-pathology/v1",
+    "pathology_id": "O223-PL-001",
+    "run_id": "o22.3-provenance-loss",
+    "rail": "evidence-transfer",
+    "pathology_type": "PROVENANCE_LOSS",
+    "severity": "MEDIUM",
+    "observed_evidence": [{"evidence_id": "pl-e1", "kind": "challenge_fixture", "value": {"upstream_source_ref": null, "payload_present": true}, "source_ref": "corpus:provenance-loss", "hash": null}],
+    "observer_judgment": {"observer_id": "o22.3-tribunal", "judgment": "Missing upstream evidence lineage requires repair before promotion.", "confidence": 0.99, "assumptions": ["synthetic fixture"]},
+    "provenance": {"constitutional_root_sha": "a730bba4e6a466e15b95c47998ae403c0ffe3a23", "root_freeze_sha": "07f11ddf005f054d7172c7e1232c2b89a5a8ec65", "parent_refs": ["e469b447d497f6533487fbf9098b1a6152d2d494"], "transform_refs": [], "model_identity": null, "prompt_hash": null},
+    "scope": {"supports": ["provenance-loss handling test"], "does_not_support": ["complete ancestry", "automatic promotion"]},
+    "promotion_effect": "HOLD",
+    "epistemic_state": "OBSERVED",
+    "notes": ["Synthetic O22.3 fixture with constitutional root retained but upstream evidence source absent."]
+  }
+}

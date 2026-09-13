@@ -1,0 +1,22 @@
+{
+  "case_id": "false-consensus-cross-rail",
+  "corruption_expected": true,
+  "expected_decision": "QUARANTINE",
+  "expected_reason_codes": ["SEVERITY_HOLD", "PROMOTION_BLOCKED", "CONTRADICTIONS_RETAINED"],
+  "record": {
+    "schema_version": "omnipath.recognition-pathology/v1",
+    "pathology_id": "O223-FC-001",
+    "run_id": "o22.3-false-consensus",
+    "rail": "cross-rail",
+    "pathology_type": "FALSE_CONSENSUS",
+    "severity": "HIGH",
+    "observed_evidence": [{"evidence_id": "fc-e1", "kind": "challenge_fixture", "value": {"agreement": true, "independence_proof": "missing"}, "source_ref": "corpus:false-consensus", "hash": null}],
+    "observer_judgment": {"observer_id": "o22.3-tribunal", "judgment": "Agreement is insufficient for promotion without independent support.", "confidence": 0.99, "assumptions": ["synthetic fixture"]},
+    "contradictions": [{"left_ref": "reference-rail:A", "right_ref": "evidence-rail:B", "status": "OPEN", "resolution_ref": null}],
+    "provenance": {"constitutional_root_sha": "a730bba4e6a466e15b95c47998ae403c0ffe3a23", "root_freeze_sha": "07f11ddf005f054d7172c7e1232c2b89a5a8ec65", "parent_refs": ["e469b447d497f6533487fbf9098b1a6152d2d494"], "transform_refs": ["o22.3:false-consensus"], "model_identity": null, "prompt_hash": null},
+    "scope": {"supports": ["false-consensus handling test"], "does_not_support": ["absolute truth", "automatic promotion"]},
+    "promotion_effect": "REQUIRE_ADJUDICATION",
+    "epistemic_state": "CONTRADICTED",
+    "notes": ["Synthetic O22.3 fixture."]
+  }
+}
