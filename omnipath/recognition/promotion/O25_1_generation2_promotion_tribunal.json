@@ -1,0 +1,86 @@
+{
+  "schema": "omnipath.generation2-promotion-tribunal/v1",
+  "order": "O25.1",
+  "status": "ELIGIBLE_FOR_EXPLICIT_PROMOTION_DECISION",
+  "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "candidate": {
+    "pull_request": 10,
+    "branch": "o24.1-post-promotion-adversarial-evolution",
+    "head_sha": "25af648f0a9696e34c08d948aeca987af812c5a0",
+    "base_branch": "main",
+    "base_sha": "dc296965c43e75fd3fab53eea3a96aaccc381a10",
+    "merge_preview_sha": "3302283e95ebc129245baca4e5c66a0fbc687692"
+  },
+  "o24_2_full_payload_tournament": {
+    "trials": 3000,
+    "operator_count": 12,
+    "field_count": 6,
+    "escape_count": 0,
+    "digest_sha256": "65449a768f02abb149dcb1fe055949c2232bedc2bc09630d36f7e1b8e50dd956",
+    "result": "PASS"
+  },
+  "o24_3_cross_rail_evolution": {
+    "parent_sha": "397434ebeca79b077cd5e95142ebbfa3a936fde4",
+    "reference_branch_commit": "b3f50b648ac1c2b95d77559b13337381e0e11571",
+    "reference_digest_sha256": "45d17e6b7ebb0ace2a997a68d330d295a647e056aee7884e1d945e7638835b58",
+    "evidence_branch_commit": "48b495657936d97224834fe23437c95d221d3712",
+    "evidence_digest_sha256": "dcf76ad3ab76a1c2c6ba7f9259c5350c098f795a26b8fc1c44da127ecc5b6ca7",
+    "shared_discovery_ids": 0,
+    "shared_source_event_ids": 0,
+    "result": "PASS"
+  },
+  "o24_4_metamorphic_invariants": {
+    "source_cases": 100,
+    "transformations": 6,
+    "checks": 600,
+    "violations": 0,
+    "sensitivity_controls": 6,
+    "digest_sha256": "1efeab9b25e83e13865d251d4c4a5ff218464322babc0c039994d3719c98f43c",
+    "result": "PASS"
+  },
+  "o24_5_counterexample_vault": {
+    "discovered_escape_count": 0,
+    "preserved_regression_specimens": 0,
+    "synthetic_control_excluded_from_production_evidence": true,
+    "minimizer_control_passed": true,
+    "result": "PASS"
+  },
+  "external_ci": {
+    "workflow_name": "O22.6 Independent Replay Attestation",
+    "workflow_run_id": 34757271173,
+    "workflow_run_number": 24,
+    "event": "pull_request",
+    "attested_head_sha": "25af648f0a9696e34c08d948aeca987af812c5a0",
+    "clean_replay": "success",
+    "promotion_attestation_gate": "success",
+    "replay_artifact": {
+      "id": 10316854086,
+      "digest": "sha256:ad56701cec7352aa1eab0f6249c86c17408951396023b3afed1947aa35fa2232",
+      "expired": false
+    },
+    "attestation_artifact": {
+      "id": 10316984831,
+      "digest": "sha256:98bc991115c26bb15a8e0551c5f0f22580942d72cdff3407358d87c89338bf83",
+      "expired": false
+    }
+  },
+  "tribunal_decision": {
+    "mutation_evidence_passed": true,
+    "cross_rail_independence_passed": true,
+    "metamorphic_invariants_passed": true,
+    "counterexample_vault_passed": true,
+    "lineage_passed": true,
+    "fresh_external_ci_passed": true,
+    "eligible_for_explicit_promotion_decision": true,
+    "merge_authorized": false,
+    "merge_performed": false,
+    "candidate_self_promoted": false,
+    "required_exact_candidate_head_sha": "25af648f0a9696e34c08d948aeca987af812c5a0"
+  },
+  "invalidation_rules": [
+    "Any change to the candidate head SHA requires fresh CI and a new tribunal record.",
+    "Any nonzero O24.2 escape, O24.3 shared discovery/source identity, or O24.4 invariant violation blocks promotion.",
+    "Any discovered counterexample not minimized and preserved blocks promotion.",
+    "This tribunal records eligibility only and does not authorize or perform a merge."
+  ]
+}
