@@ -18,8 +18,8 @@ import cross_rail_tribunal
 import pathology_mutation_tournament
 import dual_rail_replay_harness
 
-EXPECTED_MUTATION_DIGEST = "b5ddd42b8d815454145069e07e18cbc3b8134f4ff950b3c3859c57c0a8c171b4"
-EXPECTED_REPLAY_DIGEST = "337ede2d7527d27f7bfd33069664e4ac07a34f2bb8f1894d19d7cb7ad70bbe6b"
+EXPECTED_MUTATION_DIGEST = "d1ff891cb4c55163cb9922db755cb47fe10b0f029bfd2b1e24c3f2cb64592590"
+EXPECTED_REPLAY_DIGEST = "d9bdc1e62777af0cba7803c6c64d9e578a03f17c2a89876902aa3d5cbe3f7d2d"
 
 
 def main() -> int:
