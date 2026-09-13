@@ -1,0 +1,31 @@
+name: O27.7 Deterministic Genealogy Index
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  genealogy-index:
+    name: regenerate-and-resolve-genealogy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Regenerate committed genealogy index
+        env:
+          PYTHONPATH: omnipath/recognition
+        run: >-
+          python omnipath/recognition/promotion_genealogy_index.py
+          --check omnipath/recognition/promotion_genealogy/index.json
+      - name: Verify candidate-only resolver
+        env:
+          PYTHONPATH: omnipath/recognition
+        run: python -m unittest omnipath.recognition.tests.test_o27_7_genealogy_index -v
