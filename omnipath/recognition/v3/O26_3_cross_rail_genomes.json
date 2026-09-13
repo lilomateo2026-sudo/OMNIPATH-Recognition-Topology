@@ -1,0 +1,33 @@
+{
+  "schema": "omnipath.v3-cross-rail-genomes/v1",
+  "order": "O26.3",
+  "status": "EXPERIMENTAL",
+  "neutral_parent_sha": "5e804b84a29c2b1683f5f4b6b2d89d9beba8c630",
+  "genomes": {
+    "A": {
+      "commit": "d8d979682876359e193b6e90009a9e38e6f34e60",
+      "seed": 2603001,
+      "events": 600,
+      "stream_digest_sha256": "85bea21799f144cfdb294a0151db16aab5e0ed8918d3720b0579a06c407e8900",
+      "canonical_digest_sha256": "5c7ec1ba9a134b5a9220382ae2c06eb069c3b0d8319bd137f89bb52eb22dd9a6"
+    },
+    "B": {
+      "commit": "e398133f117d3a32b9d3343bb52da9e7d9c5d612",
+      "seed": 2603002,
+      "events": 600,
+      "stream_digest_sha256": "560b8ddb622a3975ebb7a5d49fe3df9d142ba07b604d636d68b5f8d607831930",
+      "canonical_digest_sha256": "e55629cf9d31840d75f29180bf014d4dc92d8091da56173b34a211eb74c00c2d"
+    },
+    "C": {
+      "commit": "5deb5cc0caa6483320dd7db18cf1b175dd89d9da",
+      "seed": 2603003,
+      "events": 600,
+      "stream_digest_sha256": "e4e9fca6ccb2d9d7e6d743f066ec11f443fe785cd98d8e5f89daf8c994953d31",
+      "canonical_digest_sha256": "d18198821d8cb5cb89b77292aa566ed08a113fac71de69c3771a9cb749a26746"
+    }
+  },
+  "expected_shared_discovery_ids": 0,
+  "expected_shared_source_event_ids": 0,
+  "shared_derived_evidence_allowed": false,
+  "promotion_authority": false
+}

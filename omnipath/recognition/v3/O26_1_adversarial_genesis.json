@@ -1,0 +1,35 @@
+{
+  "schema": "omnipath.recognition-topology-v3-genesis/v1",
+  "order": "O26.1",
+  "status": "EXPERIMENTAL_GENESIS",
+  "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "parent": {
+    "ledger_order": "O25.5",
+    "ledgered_main_sha": "7da284d50db46457a17bc259186332394b95583f",
+    "ledger_replay_run_id": 34761197800,
+    "ledger_replay_artifact_id": 10319465346,
+    "ledger_replay_artifact_digest": "sha256:20efdb2bbc322aeb7fb8253e408150478d2ca02db5cb79c91829c88ea0473dc8",
+    "ledger_attestation_artifact_id": 10319051546,
+    "ledger_attestation_artifact_digest": "sha256:1dec56daf1cf17d48dea863de70f80235fe47e9205dcd5f7fe4d5926c78b0b09"
+  },
+  "cross_version_differential": {
+    "seed": 2601001,
+    "trials": 2500,
+    "mutation_widths": [1, 2, 3, 4, 5],
+    "operator_count": 12,
+    "expected_differential_mismatches": 0,
+    "expected_digest_sha256": "57464c74724323dc02fad7cea7dee901f2d40cca65ef74d4d9cf58750281626f"
+  },
+  "authority_reset": {
+    "inherits_promotion_authority": false,
+    "self_promotion_forbidden": true,
+    "main_mutation_authority": false,
+    "promotion_state": "OBSERVED",
+    "fresh_descendant_ci_required": true,
+    "new_promotion_tribunal_required": true
+  },
+  "scope": {
+    "purpose": "Compare Generation-2 and V3 recognition classifications under identical adversarial transformations while preserving constitutional behavior.",
+    "claims_absolute_correctness": false
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "omnipath.semantic-drift-manifest/v1",
+  "order": "O26.2",
+  "status": "EXPERIMENTAL",
+  "parent_o26_1_sha": "4ab9b32c8bf52d4d4e998dbe94d90fdcc867ae4d",
+  "seed": 2602001,
+  "source_cases": 200,
+  "transformations": 6,
+  "expected_checks": 1200,
+  "expected_mismatch_count": 0,
+  "expected_digest_sha256": "fe5545f06ce9220c8017021184dba21fe32c486118c3112748315d462e378dc7",
+  "promotion_authority": false,
+  "meaning_preserving_transformations": [
+    "reverse_scope_order",
+    "reverse_constraint_order",
+    "add_nonsemantic_metadata",
+    "rename_run_id",
+    "reorder_provenance_keys",
+    "clone_observer"
+  ]
+}

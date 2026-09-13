@@ -1,0 +1,15 @@
+{
+  "schema": "omnipath.v3-counterexample-vault/v1",
+  "order": "O26.4",
+  "status": "ACTIVE",
+  "observed_mismatches": 0,
+  "production_specimens": 0,
+  "unminimized_counterexamples": 0,
+  "synthetic_control": {
+    "input": ["erase_contradiction", "widen_scope", "drift_replay_seed"],
+    "expected_minimal": ["widen_scope"],
+    "production_evidence": false
+  },
+  "requires_minimized_real_mismatches_before_later_promotion": true,
+  "promotion_authority": false
+}
