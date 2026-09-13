@@ -12,8 +12,9 @@
     "REQUIRE_ADJUDICATION": 281,
     "REQUIRE_REPLAY": 277
   },
-  "tournament_digest_sha256": "b5ddd42b8d815454145069e07e18cbc3b8134f4ff950b3c3859c57c0a8c171b4",
+  "tournament_digest_sha256": "d1ff891cb4c55163cb9922db755cb47fe10b0f029bfd2b1e24c3f2cb64592590",
   "source": "omnipath/recognition/adversarial/pathology_mutation_tournament.py",
   "status": "PASS",
-  "interpretation": "All seven pathology classes participate in deterministic multi-fault combinations. This attests disposition-precedence behavior; it does not yet replace validator execution against fully materialized transfer payload mutations."
+  "digest_source": "GitHub Actions clean runner serialization",
+  "interpretation": "All seven pathology classes participate in deterministic multi-fault combinations. This attests disposition-precedence behavior; it does not replace validator execution against fully materialized transfer payload mutations."
 }
