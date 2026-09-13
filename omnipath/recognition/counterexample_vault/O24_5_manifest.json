@@ -1,0 +1,16 @@
+{
+  "schema": "omnipath.counterexample-minimization-vault/v1",
+  "order": "O24.5",
+  "source_order": "O24.2",
+  "source_tournament_digest": "65449a768f02abb149dcb1fe055949c2232bedc2bc09630d36f7e1b8e50dd956",
+  "discovered_escape_count": 0,
+  "preserved_regression_specimens": [],
+  "synthetic_minimizer_control": {
+    "input": ["drop_provenance_source", "swap_lineage_parent", "erase_contradiction"],
+    "expected_minimal": ["swap_lineage_parent"],
+    "production_evidence": false
+  },
+  "rule": "every discovered escape must be minimized and preserved before promotion",
+  "status": "PENDING_EXTERNAL_CI_REPLAY",
+  "promotion_allowed": false
+}

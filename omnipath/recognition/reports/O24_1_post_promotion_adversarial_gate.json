@@ -1,0 +1,45 @@
+{
+  "schema": "omnipath.post-promotion-adversarial-gate/v1",
+  "order": "O24.1",
+  "status": "ADVERSARIAL_EVOLUTION_OPEN_CI_REQUIRED",
+  "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "genesis": {
+    "branch": "o24.1-post-promotion-adversarial-evolution",
+    "parent_main_sha": "dc296965c43e75fd3fab53eea3a96aaccc381a10",
+    "promoted_merge_sha": "b7e1bde39d46afc255bc5db46e9f4aed6e1cb399",
+    "candidate_sha": "17d4db9907455d29d5ee2aa3e3120bd6bdfea87f"
+  },
+  "preconditions": {
+    "promotion_ledger_present": true,
+    "promotion_ledger_order": "O23.9",
+    "ledgered_main_ci_run_id": 34756638795,
+    "ledgered_main_ci_run_number": 17,
+    "ledgered_main_ci_conclusion": "success",
+    "ledgered_main_replay_artifact": {
+      "id": 10317427921,
+      "digest": "sha256:9e26877f3726ae161243c17a033ea195ff0adab10ce32fd4f99b3274f3a2ca9b"
+    },
+    "ledgered_main_attestation_artifact": {
+      "id": 10317886396,
+      "digest": "sha256:f8a4f4682033c298a35f95dd84e02702e9b2ad57f54b34abed9810dfea82e3be"
+    },
+    "replay_and_lineage_verified": true
+  },
+  "adversarial_baseline": {
+    "engine": "omnipath/recognition/adversarial/pathology_mutation_tournament.py",
+    "seed": 2401001,
+    "trials": 2000,
+    "mutation_widths": [2, 3, 4],
+    "expected_unique_combinations": 91,
+    "expected_all_pathologies_covered": true,
+    "expected_digest_sha256": "4ab0014ae68bbfaf0d7c968694bd05be71f007c7a66daefd5895d36484e058d8"
+  },
+  "authority_boundary": {
+    "experimental_branch_only": true,
+    "promotion_allowed": false,
+    "self_promotion_forbidden": true,
+    "main_mutation_allowed_by_this_gate": false,
+    "fresh_descendant_ci_required_before_any_promotion": true
+  },
+  "decision": "BEGIN_NEXT_GENERATION_AS_ADVERSARIAL_EXPERIMENT_ONLY"
+}
