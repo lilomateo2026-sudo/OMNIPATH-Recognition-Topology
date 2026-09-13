@@ -1,0 +1,13 @@
+{
+  "schema": "omnipath.v3-independent-genome/v1",
+  "order": "O26.3",
+  "genome": "A",
+  "namespace": "A",
+  "seed": 2603001,
+  "events": 600,
+  "parent_sha": "5e804b84a29c2b1683f5f4b6b2d89d9beba8c630",
+  "stream_digest_sha256": "85bea21799f144cfdb294a0151db16aab5e0ed8918d3720b0579a06c407e8900",
+  "shared_derived_evidence_allowed": false,
+  "promotion_authority": false,
+  "status": "EXPERIMENTAL"
+}
