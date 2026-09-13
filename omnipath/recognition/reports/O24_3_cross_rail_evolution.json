@@ -1,0 +1,27 @@
+{
+  "schema": "omnipath.cross-rail-evolution-manifest/v1",
+  "order": "O24.3",
+  "parent_o24_2_sha": "397434ebeca79b077cd5e95142ebbfa3a936fde4",
+  "reference_rail": {
+    "branch": "o24.3-reference-rail",
+    "commit": "b3f50b648ac1c2b95d77559b13337381e0e11571",
+    "seed": 2403001,
+    "cases": 512,
+    "digest_sha256": "45d17e6b7ebb0ace2a997a68d330d295a647e056aee7884e1d945e7638835b58"
+  },
+  "evidence_rail": {
+    "branch": "o24.3-evidence-rail",
+    "commit": "48b495657936d97224834fe23437c95d221d3712",
+    "seed": 2403002,
+    "cases": 512,
+    "digest_sha256": "dcf76ad3ab76a1c2c6ba7f9259c5350c098f795a26b8fc1c44da127ecc5b6ca7"
+  },
+  "independence_rules": {
+    "shared_root_permitted": true,
+    "shared_discovery_ids_permitted": false,
+    "shared_source_event_ids_permitted": false,
+    "derived_evidence_cross_claim_permitted": false,
+    "authority_merge_permitted": false
+  },
+  "promotion_allowed": false
+}
