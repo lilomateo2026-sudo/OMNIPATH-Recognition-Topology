@@ -3,16 +3,22 @@
 from __future__ import annotations
 
 import copy
-import json
-from pathlib import Path
 from typing import Any
 
-from promotion_manifest_gate import canonical_sha256, evaluate_promotion
+from promotion_manifest_gate import canonical_sha256
 
 REGISTRY_SCHEMA = "omnipath.o22-8-promotion-artifact-registry/v1"
 ENTRY_SCHEMA = "omnipath.o22-8-promotion-artifact/v1"
 ORDER = "O22.8"
 ACCEPTING_GATE = "O22.7"
+REQUIRED_ENTRY_FIELDS = (
+    "schema", "order", "accepted_by_gate", "lineage_version", "candidate_id",
+    "candidate_commit_sha", "parent_commit_sha", "rollback_commit_sha",
+    "constitutional_root_sha", "checkpoint_commits", "promotion_manifest_sha256",
+    "promotion_decision_sha256", "o22_6_attestation_sha256", "o22_6_workflow_run_id",
+    "o22_6_replay_artifact_id", "o22_6_replay_artifact_digest",
+    "previous_entry_sha256", "entry_sha256",
+)
 
 
 def _hash_without(value: dict[str, Any], key: str) -> str:
