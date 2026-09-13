@@ -1,0 +1,121 @@
+{
+  "schema": "omnipath.cross-rail-tribunal/v1",
+  "order": "O22.5",
+  "authority": "external-tribunal",
+  "branch": "o22.5-cross-rail-tribunal",
+  "genesis_parent_sha": "df7552079f7aea41b6c6732a2f6758f401d9a987",
+  "source_attestations": {
+    "reference": {
+      "branch": "reference-transfer",
+      "commit": "5899435141cff4acfdc6b304dd4358ecd9bc3bf8",
+      "all_passed": true
+    },
+    "evidence": {
+      "branch": "evidence-transfer",
+      "commit": "a6eeff44c7ba0bfc4afd5d5d90201b5df99a2f1d",
+      "all_passed": true
+    }
+  },
+  "rules": {
+    "authority_merged": false,
+    "agreement_is_proof": false,
+    "asymmetry_must_be_preserved": true,
+    "epistemic_ceiling": "VERIFIED_WITHIN_SCOPE"
+  },
+  "pair_count": 8,
+  "pathology_match_pairs": 7,
+  "pathology_asymmetry_pairs": 1,
+  "disposition_match_pairs": 8,
+  "disposition_conflict_pairs": 0,
+  "pairs": [
+    {
+      "pair_id": "CONTROL-001",
+      "reference_pathologies": [],
+      "evidence_pathologies": [],
+      "pathology_match": true,
+      "reference_disposition": "ACCEPT_FOR_COMPARISON",
+      "evidence_disposition": "ACCEPT_FOR_COMPARISON",
+      "disposition_match": true,
+      "tribunal_disposition": "ACCEPT_FOR_COMPARISON",
+      "status": "CONSISTENT"
+    },
+    {
+      "pair_id": "FALSE-CONSENSUS-001",
+      "reference_pathologies": ["FALSE_CONSENSUS", "SCOPE_INFLATION"],
+      "evidence_pathologies": ["FALSE_CONSENSUS", "OBSERVER_COLLAPSE", "SCOPE_INFLATION"],
+      "pathology_match": false,
+      "reference_disposition": "REQUIRE_ADJUDICATION",
+      "evidence_disposition": "REQUIRE_ADJUDICATION",
+      "disposition_match": true,
+      "tribunal_disposition": "REQUIRE_ADJUDICATION",
+      "status": "ASYMMETRIC_PATHOLOGY"
+    },
+    {
+      "pair_id": "PROVENANCE-LOSS-001",
+      "reference_pathologies": ["PROVENANCE_LOSS"],
+      "evidence_pathologies": ["PROVENANCE_LOSS"],
+      "pathology_match": true,
+      "reference_disposition": "HOLD",
+      "evidence_disposition": "HOLD",
+      "disposition_match": true,
+      "tribunal_disposition": "HOLD",
+      "status": "CONSISTENT"
+    },
+    {
+      "pair_id": "SCOPE-INFLATION-001",
+      "reference_pathologies": ["SCOPE_INFLATION"],
+      "evidence_pathologies": ["SCOPE_INFLATION"],
+      "pathology_match": true,
+      "reference_disposition": "REJECT",
+      "evidence_disposition": "REJECT",
+      "disposition_match": true,
+      "tribunal_disposition": "REJECT",
+      "status": "CONSISTENT"
+    },
+    {
+      "pair_id": "OBSERVER-COLLAPSE-001",
+      "reference_pathologies": ["OBSERVER_COLLAPSE"],
+      "evidence_pathologies": ["OBSERVER_COLLAPSE"],
+      "pathology_match": true,
+      "reference_disposition": "HOLD",
+      "evidence_disposition": "HOLD",
+      "disposition_match": true,
+      "tribunal_disposition": "HOLD",
+      "status": "CONSISTENT"
+    },
+    {
+      "pair_id": "CONTRADICTION-ERASURE-001",
+      "reference_pathologies": ["CONTRADICTION_ERASURE"],
+      "evidence_pathologies": ["CONTRADICTION_ERASURE"],
+      "pathology_match": true,
+      "reference_disposition": "REQUIRE_ADJUDICATION",
+      "evidence_disposition": "REQUIRE_ADJUDICATION",
+      "disposition_match": true,
+      "tribunal_disposition": "REQUIRE_ADJUDICATION",
+      "status": "CONSISTENT"
+    },
+    {
+      "pair_id": "REPLAY-DIVERGENCE-001",
+      "reference_pathologies": ["REPLAY_DIVERGENCE"],
+      "evidence_pathologies": ["REPLAY_DIVERGENCE"],
+      "pathology_match": true,
+      "reference_disposition": "REQUIRE_REPLAY",
+      "evidence_disposition": "REQUIRE_REPLAY",
+      "disposition_match": true,
+      "tribunal_disposition": "REQUIRE_REPLAY",
+      "status": "CONSISTENT"
+    },
+    {
+      "pair_id": "LINEAGE-CORRUPTION-001",
+      "reference_pathologies": ["LINEAGE_CORRUPTION"],
+      "evidence_pathologies": ["LINEAGE_CORRUPTION"],
+      "pathology_match": true,
+      "reference_disposition": "REJECT",
+      "evidence_disposition": "REJECT",
+      "disposition_match": true,
+      "tribunal_disposition": "REJECT",
+      "status": "CONSISTENT"
+    }
+  ],
+  "decision": "READY_FOR_O23_ADVERSARIAL_EVOLUTION_WITH_FALSE_CONSENSUS_ASYMMETRY_RETAINED"
+}
