@@ -1,0 +1,26 @@
+{
+  "schema": "omnipath.v3-replay-stability-tournament/v1",
+  "order": "O26.5",
+  "status": "EXPERIMENTAL",
+  "rounds_per_genome": 1000,
+  "total_replays": 3000,
+  "replay_seed": 2605001,
+  "summary": {
+    "A": {
+      "canonical_digest_sha256": "5c7ec1ba9a134b5a9220382ae2c06eb069c3b0d8319bd137f89bb52eb22dd9a6",
+      "divergence_count": 0
+    },
+    "B": {
+      "canonical_digest_sha256": "e55629cf9d31840d75f29180bf014d4dc92d8091da56173b34a211eb74c00c2d",
+      "divergence_count": 0
+    },
+    "C": {
+      "canonical_digest_sha256": "d18198821d8cb5cb89b77292aa566ed08a113fac71de69c3771a9cb749a26746",
+      "divergence_count": 0
+    }
+  },
+  "selected_genome": "A",
+  "selection_rule": "minimum divergence count, then canonical digest, then genome label",
+  "tournament_digest_sha256": "df028815fe4867d83b1f6e20091b94c3c8150eb0b499a26bb48f4b8c902b4e23",
+  "promotion_authority": false
+}
