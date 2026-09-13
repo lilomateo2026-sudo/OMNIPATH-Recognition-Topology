@@ -1,0 +1,21 @@
+{
+  "schema":"omnipath.v4-replay-counterexample-tournament/v1",
+  "order":"O28.5",
+  "rounds_per_genome":1250,
+  "total_replays":5000,
+  "schedule_offsets":[100,200,300,400,500],
+  "rounds_per_schedule":250,
+  "genomes":{
+    "A":{"divergences":0,"replay_digest_sha256":"432a6a6293903fe066fe1534512ccbb58141a47f846525befb5650162a231016","stream_digest_sha256":"f2072e2bf9b9a866dc5943bdbd033f61f33907b80aae7d1e5f670fc2bde4ffab"},
+    "B":{"divergences":0,"replay_digest_sha256":"66d083cfafcd2a8f078d4baf1d91c0c5dc447788476f2f7a203cbc56f49a7bb6","stream_digest_sha256":"9a91ca0a908ce6871c7c189d45d87dd2c2a4b733932bdc0dfa95705694a9493d"},
+    "C":{"divergences":0,"replay_digest_sha256":"b741015f76a895bf736eac1431953ac98257d94a0552073fcff685f2b9a10e2d","stream_digest_sha256":"734ad2e2ff180eb59692035055de7bd93caef4371d20dd1c7ec54bc5247ec0e0"},
+    "D":{"divergences":0,"replay_digest_sha256":"429363682143347e888744a45983daf2906456c1ae3aabe36f12e38367997e02","stream_digest_sha256":"34ceebb3bc7ab4b6dc8502839a9861d4bd92585f8d75865c805ff5df5071f86f"}
+  },
+  "real_counterexample_count":0,
+  "unminimized_real_counterexamples":0,
+  "synthetic_minimizer_control":"PASS_REQUIRED_NON_PRODUCTION",
+  "selection_rule":["fewest_divergences","lexicographically_smallest_stream_digest","genome_id"],
+  "selected_genome":"D",
+  "tournament_digest_sha256":"1374bc0be72ee1b05d3a644ff634b2edf15148bd87cf630cd62de51ff6632b95",
+  "promotion_authority":false
+}
