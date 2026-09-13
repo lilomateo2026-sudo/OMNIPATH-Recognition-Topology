@@ -1,0 +1,200 @@
+{
+  "base_pass_count": 40,
+  "base_passes": [
+    "contradiction-erasure::severity+promotion_effect+contradictions",
+    "contradiction-erasure::severity+promotion_effect+contradictions+epistemic_state",
+    "contradiction-erasure::severity+promotion_effect+provenance+contradictions",
+    "contradiction-erasure::severity+promotion_effect+provenance+contradictions+epistemic_state",
+    "contradiction-erasure::severity+promotion_effect+provenance+replay+contradictions",
+    "contradiction-erasure::severity+promotion_effect+provenance+replay+contradictions+epistemic_state",
+    "contradiction-erasure::severity+promotion_effect+replay+contradictions",
+    "contradiction-erasure::severity+promotion_effect+replay+contradictions+epistemic_state",
+    "false-consensus-cross-rail::severity+promotion_effect+contradictions",
+    "false-consensus-cross-rail::severity+promotion_effect+contradictions+epistemic_state",
+    "false-consensus-cross-rail::severity+promotion_effect+provenance+contradictions",
+    "false-consensus-cross-rail::severity+promotion_effect+provenance+contradictions+epistemic_state",
+    "false-consensus-cross-rail::severity+promotion_effect+provenance+replay+contradictions",
+    "false-consensus-cross-rail::severity+promotion_effect+provenance+replay+contradictions+epistemic_state",
+    "false-consensus-cross-rail::severity+promotion_effect+replay+contradictions",
+    "false-consensus-cross-rail::severity+promotion_effect+replay+contradictions+epistemic_state",
+    "observer-collapse::severity+promotion_effect",
+    "observer-collapse::severity+promotion_effect+contradictions",
+    "observer-collapse::severity+promotion_effect+contradictions+epistemic_state",
+    "observer-collapse::severity+promotion_effect+epistemic_state",
+    "observer-collapse::severity+promotion_effect+provenance",
+    "observer-collapse::severity+promotion_effect+provenance+contradictions",
+    "observer-collapse::severity+promotion_effect+provenance+contradictions+epistemic_state",
+    "observer-collapse::severity+promotion_effect+provenance+epistemic_state",
+    "observer-collapse::severity+promotion_effect+provenance+replay",
+    "observer-collapse::severity+promotion_effect+provenance+replay+contradictions",
+    "observer-collapse::severity+promotion_effect+provenance+replay+contradictions+epistemic_state",
+    "observer-collapse::severity+promotion_effect+provenance+replay+epistemic_state",
+    "observer-collapse::severity+promotion_effect+replay",
+    "observer-collapse::severity+promotion_effect+replay+contradictions",
+    "observer-collapse::severity+promotion_effect+replay+contradictions+epistemic_state",
+    "observer-collapse::severity+promotion_effect+replay+epistemic_state",
+    "replay-divergence::severity+promotion_effect+provenance+replay",
+    "replay-divergence::severity+promotion_effect+provenance+replay+contradictions",
+    "replay-divergence::severity+promotion_effect+provenance+replay+contradictions+epistemic_state",
+    "replay-divergence::severity+promotion_effect+provenance+replay+epistemic_state",
+    "replay-divergence::severity+promotion_effect+replay",
+    "replay-divergence::severity+promotion_effect+replay+contradictions",
+    "replay-divergence::severity+promotion_effect+replay+contradictions+epistemic_state",
+    "replay-divergence::severity+promotion_effect+replay+epistemic_state"
+  ],
+  "corpus_sha256": "4511812f95307dd69baff6ba7e0ec6fa68eb7c85ff8cf2119f33ea2295677148",
+  "cross_product_variant_count": 342,
+  "failures": [],
+  "final_pass_count": 0,
+  "final_passes": [],
+  "minimal_counterexamples": [
+    {
+      "base_decision": "PASS",
+      "case_id": "contradiction-erasure",
+      "dimensions": [
+        "severity",
+        "promotion_effect",
+        "contradictions"
+      ],
+      "final_decision": "QUARANTINE",
+      "variant_id": "contradiction-erasure::severity+promotion_effect+contradictions",
+      "width": 3
+    },
+    {
+      "base_decision": "PASS",
+      "case_id": "false-consensus-cross-rail",
+      "dimensions": [
+        "severity",
+        "promotion_effect",
+        "contradictions"
+      ],
+      "final_decision": "QUARANTINE",
+      "variant_id": "false-consensus-cross-rail::severity+promotion_effect+contradictions",
+      "width": 3
+    },
+    {
+      "base_decision": "PASS",
+      "case_id": "observer-collapse",
+      "dimensions": [
+        "severity",
+        "promotion_effect"
+      ],
+      "final_decision": "QUARANTINE",
+      "variant_id": "observer-collapse::severity+promotion_effect",
+      "width": 2
+    },
+    {
+      "base_decision": "PASS",
+      "case_id": "replay-divergence",
+      "dimensions": [
+        "severity",
+        "promotion_effect",
+        "replay"
+      ],
+      "final_decision": "QUARANTINE",
+      "variant_id": "replay-divergence::severity+promotion_effect+replay",
+      "width": 3
+    }
+  ],
+  "order": "O22.5",
+  "report_sha256": "33ba0045ecabd42bc7c374b4fce35ef65a8092b6d432bd93265349a14fb86266",
+  "root_lock_sha256": "5444ea4e398cbd1c1eabd94fb2ad82aa011e72926d9164ba0f2c160e2e30c3ed",
+  "schema_sha256": "d22f2604679f706e97d1fe29d489b242e506038cec39b391e1ab270c48517aef",
+  "specimen_results": [
+    {
+      "base_decision": "PASS",
+      "final_decision": "QUARANTINE",
+      "mutation_dimensions": [
+        "severity",
+        "promotion_effect",
+        "contradictions"
+      ],
+      "reduced_results": [
+        {
+          "decision": "REJECT",
+          "removed": "severity"
+        },
+        {
+          "decision": "QUARANTINE",
+          "removed": "promotion_effect"
+        },
+        {
+          "decision": "QUARANTINE",
+          "removed": "contradictions"
+        }
+      ],
+      "source_case_id": "contradiction-erasure"
+    },
+    {
+      "base_decision": "PASS",
+      "final_decision": "QUARANTINE",
+      "mutation_dimensions": [
+        "severity",
+        "promotion_effect",
+        "contradictions"
+      ],
+      "reduced_results": [
+        {
+          "decision": "REJECT",
+          "removed": "severity"
+        },
+        {
+          "decision": "QUARANTINE",
+          "removed": "promotion_effect"
+        },
+        {
+          "decision": "QUARANTINE",
+          "removed": "contradictions"
+        }
+      ],
+      "source_case_id": "false-consensus-cross-rail"
+    },
+    {
+      "base_decision": "PASS",
+      "final_decision": "QUARANTINE",
+      "mutation_dimensions": [
+        "severity",
+        "promotion_effect"
+      ],
+      "reduced_results": [
+        {
+          "decision": "REJECT",
+          "removed": "severity"
+        },
+        {
+          "decision": "QUARANTINE",
+          "removed": "promotion_effect"
+        }
+      ],
+      "source_case_id": "observer-collapse"
+    },
+    {
+      "base_decision": "PASS",
+      "final_decision": "QUARANTINE",
+      "mutation_dimensions": [
+        "severity",
+        "promotion_effect",
+        "replay"
+      ],
+      "reduced_results": [
+        {
+          "decision": "REJECT",
+          "removed": "severity"
+        },
+        {
+          "decision": "QUARANTINE",
+          "removed": "promotion_effect"
+        },
+        {
+          "decision": "QUARANTINE",
+          "removed": "replay"
+        }
+      ],
+      "source_case_id": "replay-divergence"
+    }
+  ],
+  "specimens_sha256": "7c273ea76b69a354094dcdc7289ac9cb29b134c09f1fb54032b854f618eafaab",
+  "variant_count": 378,
+  "verdict": "CERTIFIED",
+  "version": "omnipath.cross-product-boundary-fuzzer/v1"
+}

@@ -1,0 +1,24 @@
+{
+  "cross_product_variant_count": 342,
+  "external_ci_status": "SUCCESS",
+  "failures": [],
+  "final_pass_count": 0,
+  "o22_5_report_sha256": "d28247744b9da08a4ed9b21df4b82315d876f689092242b5ff323be1d8d3a2e7",
+  "order": "O22.6",
+  "promotion_eligible": true,
+  "replay_artifact_digest": "f88518f5fcc2820c02924454f83104f0bad2c0644cf68eba2b42005f66eafd60",
+  "replay_artifact_id": "10311813575",
+  "replay_job_result": "success",
+  "replay_manifest_sha256": "2209734b29345c560b1c4a89c58d9e178ee4ca29b8a2e68df27228b1f65305aa",
+  "schema": "omnipath.o22-6-ci-attestation/v1",
+  "source_commit": "ab1235e5cd90a9d327e7dca94464f35b71fdcde1",
+  "specimen_sha256": {
+    "contradiction_erasure.json": "af48d63f4e5feefded237e7513f95ebfce44191d49a0fc889b7b0fbf9c7eefe6",
+    "false_consensus.json": "da8bb5c83b47f10203ebb76d4c2e423cfc0b02048be4b9c3e351e8051aebe8f4",
+    "observer_collapse.json": "003e263e205842dcdde5ee3dca9d3fd6400805d1353e8bebe22def58bc0ca0c8",
+    "replay_divergence.json": "da12883a66b76b6e1fee45d54358185ae603df345915fa2dd385ea1df280fdd8"
+  },
+  "variant_count": 378,
+  "workflow_run_attempt": "1",
+  "workflow_run_id": "34739680620"
+}

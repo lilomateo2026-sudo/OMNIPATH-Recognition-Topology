@@ -1,0 +1,10 @@
+{
+  "decision_source": "O22.6 promotion-attestation-gate",
+  "recorded_promotion_allowed": true,
+  "recorded_epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "external_ci_status": "SUCCESS",
+  "artifact_retention_independent": true,
+  "future_promotion_rule": "REQUIRE_LEDGER_VERIFICATION_AND_FRESH_DESCENDANT_ATTESTATION",
+  "candidate_self_promoted": false,
+  "rollback_commit": "f8ca61a8e08723232afd8037f9eb9a639847d0b7"
+}
