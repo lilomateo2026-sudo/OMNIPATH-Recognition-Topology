@@ -1,0 +1,18 @@
+{
+  "components": {
+    "artifacts.json": "938f4bf2b5ef82f7e7d2c74dca62a50cee75992a627664de46f59440f88ebcb4",
+    "checkpoint_lineage.json": "efa83142a9df9cb06699046aefda24bf7a83afaa4ff9cbf077ef5ae3a63e5295",
+    "ci_attestation.json": "43999ccc9b4b0afbcb143fb4f0c7adbdc131dce0bb234de8d33ba14abfc58435",
+    "evidence_hashes.json": "c94b613cdd247b4d29e1544ad16608addae78d0a2a04efc0885dba5ad93e8536",
+    "index.json": "58a960ef3b3e1d560fcea4d57c3c4530c669b2fa71904bdcdb84a7e0d85a415f",
+    "o22_5_report.json": "d28247744b9da08a4ed9b21df4b82315d876f689092242b5ff323be1d8d3a2e7",
+    "promotion_record.json": "8f04c86a715510b708b1b5fc42faedaef4727d3f69a95067c6352b8df1250647",
+    "replay_manifest.json": "2209734b29345c560b1c4a89c58d9e178ee4ca29b8a2e68df27228b1f65305aa",
+    "specimen_hashes.json": "3e778ebff99ca8bfa515f5af213fd3dd35f658f8cad6695aec15e6096bda03d5"
+  },
+  "integration_parent_commit": "17b38851949ac5d61185b7b4fd03dca80073eaea",
+  "order": "O22.8A",
+  "record_set_sha256": "32c2b50c668d04972951788b7d580d259f7ce11534290ec693a30f72cbc62cf2",
+  "schema": "omnipath.durable-promotion-evidence-manifest/v1",
+  "source_commit": "ab1235e5cd90a9d327e7dca94464f35b71fdcde1"
+}

@@ -1,0 +1,14 @@
+{
+  "replay": {
+    "artifact_id": 10311813575,
+    "digest": "sha256:f88518f5fcc2820c02924454f83104f0bad2c0644cf68eba2b42005f66eafd60",
+    "name": "o22-6-replay-ab1235e5cd90a9d327e7dca94464f35b71fdcde1",
+    "expires_at": "2026-12-12T05:11:21Z"
+  },
+  "attestation": {
+    "artifact_id": 10312247510,
+    "digest": "sha256:5cf91f17b6ce77bef3c7f4f6b42b14cedbaa3a6139d291c2b377ec0c3808e082",
+    "name": "o22-6-attestation-ab1235e5cd90a9d327e7dca94464f35b71fdcde1",
+    "expires_at": "2026-12-12T05:11:21Z"
+  }
+}

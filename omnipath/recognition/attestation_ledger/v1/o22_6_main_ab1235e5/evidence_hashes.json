@@ -1,0 +1,11 @@
+{
+  "o22_5_report_file_sha256": "d28247744b9da08a4ed9b21df4b82315d876f689092242b5ff323be1d8d3a2e7",
+  "o22_5_report_material_sha256": "33ba0045ecabd42bc7c374b4fce35ef65a8092b6d432bd93265349a14fb86266",
+  "replay_manifest_file_sha256": "2209734b29345c560b1c4a89c58d9e178ee4ca29b8a2e68df27228b1f65305aa",
+  "ci_attestation_file_sha256": "43999ccc9b4b0afbcb143fb4f0c7adbdc131dce0bb234de8d33ba14abfc58435",
+  "variant_count": 378,
+  "cross_product_variant_count": 342,
+  "base_pass_count": 40,
+  "final_pass_count": 0,
+  "minimal_counterexample_count": 4
+}
