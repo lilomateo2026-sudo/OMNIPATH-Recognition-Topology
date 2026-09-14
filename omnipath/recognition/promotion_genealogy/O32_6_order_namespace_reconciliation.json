@@ -1,0 +1,47 @@
+{
+  "schema": "omnipath.order-namespace-reconciliation/v1",
+  "order": "O32.6",
+  "status": "NON_DESTRUCTIVE_NAMESPACE_RECONCILIATION",
+  "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "collision": {
+    "historical_order_label": "O31.8",
+    "count": 2,
+    "history_rewritten": false,
+    "historical_order_fields_changed": false
+  },
+  "qualified_identities": [
+    {
+      "qualified_id": "O31.8::composite-main-reattestation",
+      "historical_order": "O31.8",
+      "role": "V6_EXPERIMENTAL_ROOT_REATTESTATION",
+      "branch": "o31.8-composite-main-attestation",
+      "commit": "48dc9f87a4f824fabfe07b7644b0aa8e934a4b70",
+      "path": "omnipath/recognition/promotion/O31_8_composite_main_reattestation.json",
+      "attested_root_sha": "c19551d92c306236b7c80c9422eb44a1afacb1af",
+      "grants_promotion_authority": false
+    },
+    {
+      "qualified_id": "O31.8::content-addressed-recovery-vault",
+      "historical_order": "O31.8",
+      "role": "HISTORICAL_EVIDENCE_RECOVERY_VAULT",
+      "integration_commit": "822085dee5ee7761fcfb29bb296cc4f4f401fba8",
+      "ledger_path": "omnipath/recognition/attestation_ledger/v1/o31_8_main_c19551d9/index.json",
+      "promoted_main_sha_field": "c19551d92c306236b7c80c9422eb44a1afacb1af",
+      "relationship": "HISTORICAL_EVIDENCE_CONTENT_ADDRESSED_VAULT",
+      "grants_promotion_authority": false
+    }
+  ],
+  "resolution_policy": {
+    "qualified_ids_are_interpretive_aliases_only": true,
+    "canonical_git_history_remains_unchanged": true,
+    "existing_genealogy_aliases_remain_unchanged": true,
+    "existing_ledgers_remain_unchanged": true,
+    "future_records_must_use_qualified_id_when_referring_to_either_o31_8_role": true,
+    "unqualified_o31_8_reference_is_ambiguous_after_this_record": true
+  },
+  "authority": {
+    "reconciliation_grants_promotion_authority": false,
+    "reconciliation_grants_merge_authority": false,
+    "reconciliation_can_mutate_main": false
+  }
+}
