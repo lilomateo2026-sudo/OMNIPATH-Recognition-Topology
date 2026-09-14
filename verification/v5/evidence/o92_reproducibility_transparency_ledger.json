@@ -1,0 +1,18 @@
+{
+  "version": "O92-v1",
+  "ledger_type": "content-addressed-reproducibility-transparency",
+  "entries": [
+    {
+      "sequence": 1,
+      "certificate_version": "O91-v1",
+      "certificate_digest": "3b1f0b0c5060391bf49fecc66ca711c924db50d5498c3b6fb4b4bd6096809643",
+      "certificate_status": "V5_DURABLY_REPRODUCIBLE",
+      "certified_commit": "5c5010459dee0b801d6b28335e187f51e1dcdb02",
+      "runner_blob_sha": "9c2b47fd4db4bbf96ce982ae2ddbf28eef9654ac",
+      "previous_entry_digest": "GENESIS",
+      "entry_digest": "223e3b624b7cc273f3c94113ec15fd93468976af1f290eb33ac762835993e23c"
+    }
+  ],
+  "ledger_root": "223e3b624b7cc273f3c94113ec15fd93468976af1f290eb33ac762835993e23c",
+  "ledger_digest": "05e859ecdbedf5b64a63e98f7e38d7b551f00ab92f4979cd36cea7bad0f0eac8"
+}
