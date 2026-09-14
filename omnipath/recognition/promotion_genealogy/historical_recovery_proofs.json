@@ -1,0 +1,19 @@
+{
+  "gap_registry_manifest_sha256": "5385b22e5a61b8b653350aae64a9d889a63e73110e4a15efb9b284a56478ee27",
+  "order": "O31.7",
+  "proof_set_sha256": "b155732d6614914ad95eb8994ea3095a009ecefe4050c98713e5bf701d8d4711",
+  "proofs": [
+    {
+      "classification": "HISTORICALLY_REACHABLE",
+      "content_sha256": "486993dc1843c8f35876ed3dc02c1d2ce4c3a66ed96a3d27c00bd08c42a57eb6",
+      "declared_commit": "2028938d32064a1fecec6fdd18579dc4c29d8501",
+      "declared_ref": "omnipath/recognition/promotion/O23_5_ci_attested_promotion_manifest.json",
+      "expected_blob_sha": "f10f0cb3c9e670237914e5d502bce9f9b9dbb871",
+      "gap_id": "O23.9:promotion_manifest",
+      "git_hash_object_sha": "f10f0cb3c9e670237914e5d502bce9f9b9dbb871",
+      "observed_path_blob_sha": "f10f0cb3c9e670237914e5d502bce9f9b9dbb871",
+      "observed_tree_sha": "e7a74eab39d78e66ce7b9d4719aa9626855cf75c"
+    }
+  ],
+  "schema": "omnipath.historical-recovery-proof/v1"
+}
