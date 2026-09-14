@@ -2,7 +2,7 @@ from __future__ import annotations
 import argparse, hashlib, json, subprocess
 from pathlib import Path
 
-ORDER="O31.5"
+ORDER="O31.7"
 SCHEMA="omnipath.historical-recovery-proof/v1"
 GAPS="omnipath/recognition/promotion_genealogy/legacy_evidence_gaps.json"
 
