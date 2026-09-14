@@ -22,11 +22,13 @@ def load(ref: str) -> dict:
 class O296GenealogyClosureTests(unittest.TestCase):
     def test_live_genealogy_is_closed(self) -> None:
         result = audit_genealogy_closure(ROOT)
+        index = load(INDEX_REF)
         self.assertTrue(result["closed"], result["failures"])
-        self.assertEqual(result["ledger_count"], 5)
-        self.assertEqual(result["index_entry_count"], 5)
-        self.assertEqual(result["alias_count"], 9)
-        self.assertEqual(result["promoted_main_with_durable_evidence"], 5)
+        self.assertGreater(result["ledger_count"], 0)
+        self.assertEqual(result["ledger_count"], result["index_entry_count"])
+        self.assertEqual(result["index_entry_count"], index["entry_count"])
+        self.assertEqual(result["alias_count"], len(index["alias_map"]))
+        self.assertEqual(result["promoted_main_with_durable_evidence"], result["ledger_count"])
         self.assertEqual(result["legacy_gap_count"], 1)
         self.assertEqual(result["legacy_gap_ids"], ["O23.9:promotion_manifest"])
 
