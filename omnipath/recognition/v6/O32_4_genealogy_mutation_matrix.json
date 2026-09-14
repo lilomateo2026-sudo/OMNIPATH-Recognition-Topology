@@ -1,0 +1,22 @@
+{
+  "schema": "omnipath.adversarial-genealogy-matrix-manifest/v1",
+  "order": "O32.4",
+  "status": "EXPERIMENTAL_MUTATION_GATE_CI_REQUIRED",
+  "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "operators": [
+    "alias_redirect",
+    "ledger_ref_swap",
+    "ordering_swap",
+    "recovery_ref_rewrite",
+    "evidence_ancestry_rewrite"
+  ],
+  "matrix": {
+    "seed": 3204001,
+    "trials_per_operator": 100,
+    "total_mutations": 500,
+    "expected_undetected_mutations": 0,
+    "expected_digest_sha256": "e2b054a2712ddbe3e40bfca8c1e18e360c185e22919678d1e77bfb8586694d4b"
+  },
+  "promotion_rule": "ANY_UNDETECTED_GENEALOGY_MUTATION_BLOCKS_V6_TRIBUNAL_ELIGIBILITY",
+  "grants_promotion_authority": false
+}
