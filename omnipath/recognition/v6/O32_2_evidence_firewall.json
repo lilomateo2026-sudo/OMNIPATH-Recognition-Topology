@@ -1,0 +1,24 @@
+{
+  "schema": "omnipath.human-pathology-evidence-firewall/v1",
+  "order": "O32.2",
+  "status": "EXPERIMENTAL_READ_ONLY_EVIDENCE_FIREWALL",
+  "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "evidence_classes": ["HITM", "consciousness_space"],
+  "repository_integration_state": "CLASS_INTERFACE_CREATED_NO_PREEXISTING_REPO_IMPLEMENTATION_FOUND",
+  "authority_policy": {
+    "evidence_is_read_only": true,
+    "training_data_can_grant_promotion_authority": false,
+    "training_data_can_grant_merge_authority": false,
+    "training_data_can_mutate_main": false,
+    "nested_authority_fields_are_rejected": true
+  },
+  "injection_matrix": {
+    "authority_keys": 7,
+    "nesting_depths": 3,
+    "classes": 2,
+    "attempts": 42,
+    "expected_escape_count": 0,
+    "expected_digest_sha256": "82aa12a81b277e2c3dda98dd2c31b51867df00fa3877554f52b5db9e1aea3bea"
+  },
+  "decision": "EVIDENCE_MAY_INFORM_ANALYSIS_BUT_CAN_NEVER_AUTHORIZE_REPOSITORY_PROMOTION"
+}
