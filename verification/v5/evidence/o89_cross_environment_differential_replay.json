@@ -1,0 +1,15 @@
+{
+  "canonical_source_identity": {"commit": "5c5010459dee0b801d6b28335e187f51e1dcdb02","git_blob_sha": "9c2b47fd4db4bbf96ce982ae2ddbf28eef9654ac"},
+  "differential_digest": "af18de1b43741aebfa4b79526eb0fbacc57225f96c9943affde37085cce48dc9",
+  "manifest_digest_match": true,
+  "report_digest_match": true,
+  "semantic_trace_digest_match": true,
+  "transition_sequences_byte_semantic_equal": true,
+  "ubuntu_environment_identity": "30ed299f26048864ef804e8a0418d6a44ae953c5960bef7c4a83e32cdc2f65e9",
+  "verdict": "PASS",
+  "version": "O89-v1",
+  "windows_environment_identity": "49c2c7c57c12d79307473d02eab46b538db09a5b08bc14716d47246639936339",
+  "workflow_run_id": 34902506792,
+  "working_tree_hash_variance_class": "CHECKOUT_REPRESENTATION_VARIANCE",
+  "working_tree_source_hash_match": false
+}
