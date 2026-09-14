@@ -1,0 +1,62 @@
+{
+  "schema": "omnipath.composite-main-reattestation/v1",
+  "order": "O31.8",
+  "status": "COMPOSITE_MAIN_REATTESTED",
+  "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "repository": "lilomateo2026-sudo/OMNIPATH-Recognition-Topology",
+  "attested_root": {
+    "sha": "c19551d92c306236b7c80c9422eb44a1afacb1af",
+    "github_merge_verified": true,
+    "first_parent_o31_6_closed_state": "d1bdb30a0fffb17f6367cbf2c274541fb2dda59c",
+    "second_parent_o31_7_recovery_head": "bb4bd836b5ed226362cdbe3b18300990576e51c2",
+    "o31_7_pull_request": 21
+  },
+  "recognition": {
+    "run_id": 34818118021,
+    "run_number": 66,
+    "result": "success",
+    "replay_artifact": {
+      "id": 10336773901,
+      "digest": "sha256:be8a2cf7fbb53b76c4e3f41ea53e8ac141704a9f4417000fec459835152a8661",
+      "expired": false
+    },
+    "attestation_artifact": {
+      "id": 10336449711,
+      "digest": "sha256:7592accf8ca523f0e6956b8b06b3621e82c2c32295dc05464ac3c4b5de27b7ba",
+      "expired": false
+    }
+  },
+  "genealogy": {
+    "run_id": 34818118080,
+    "run_number": 30,
+    "result": "success"
+  },
+  "closure": {
+    "run_id": 34818117969,
+    "run_number": 23,
+    "result": "success"
+  },
+  "historical_recovery": {
+    "run_id": 34818118093,
+    "run_number": 2,
+    "result": "success",
+    "artifact": {
+      "id": 10336837265,
+      "digest": "sha256:554f8ae1a1f4bcb033b9f92088685d3c02e4322dd36c719273eb1f12406501f5",
+      "expired": false
+    },
+    "proof_set_sha256": "b155732d6614914ad95eb8994ea3095a009ecefe4050c98713e5bf701d8d4711",
+    "legacy_gap_id": "O23.9:promotion_manifest",
+    "classification": "HISTORICALLY_REACHABLE",
+    "historical_commit": "2028938d32064a1fecec6fdd18579dc4c29d8501",
+    "expected_blob_sha": "f10f0cb3c9e670237914e5d502bce9f9b9dbb871",
+    "observed_path_blob_sha": "f10f0cb3c9e670237914e5d502bce9f9b9dbb871",
+    "git_hash_object_sha": "f10f0cb3c9e670237914e5d502bce9f9b9dbb871"
+  },
+  "decision": {
+    "eligible_as_v6_experimental_root": true,
+    "grants_promotion_authority": false,
+    "future_generation_inherits_promotion_authority": false,
+    "root_drift_requires_new_reattestation": true
+  }
+}
