@@ -1,0 +1,48 @@
+name: O95 V5 Reproducibility Drift Watch
+
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'verification/v5/o95_drift_check.py'
+      - '.github/workflows/o95-v5-drift-watch.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  drift-watch:
+    name: ${{ matrix.os }} / Python ${{ matrix.python }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            python: '3.12'
+          - os: windows-latest
+            python: '3.12'
+          - os: macos-latest
+            python: '3.12'
+          - os: ubuntu-latest
+            python: '3.13'
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Replay certified corpus
+        env:
+          O87_RUNNER_ID: o95-${{ matrix.os }}-py${{ matrix.python }}-${{ github.run_id }}
+        run: python verification/v5/o87_runner.py
+      - name: Classify drift
+        run: python verification/v5/o95_drift_check.py
+      - name: Upload drift evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: o95-drift-${{ matrix.os }}-py${{ matrix.python }}
+          path: verification/v5/artifacts/
+          if-no-files-found: error
+          retention-days: 90
