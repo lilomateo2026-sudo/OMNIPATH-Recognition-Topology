@@ -1,0 +1,20 @@
+{
+  "schema":"omnipath.v5-replay-pathology-tournament/v1",
+  "order":"O30.5",
+  "rounds_per_genome":1500,
+  "total_replays":7500,
+  "schedule_offsets":[101,211,307,401,503,607],
+  "rounds_per_schedule":250,
+  "genomes":{
+    "A":{"divergences":0,"replay_digest_sha256":"f6218c1ff1a6f0124f4bedf30b0960cd8918503a80772d92689696fdc3282962","stream_digest_sha256":"ba0d7c776cd6b34c7bbf70357e94b8556d02f99e5bd86d042773df6bc75c3d4a"},
+    "B":{"divergences":0,"replay_digest_sha256":"ab9957f17a93ec05061cf4208040f2577113cf0174b995f452a652f99dd9c35d","stream_digest_sha256":"be8f8c2c36fd654dfda10a932f23d60f8116caa577c2030ba80b1120136c31d0"},
+    "C":{"divergences":0,"replay_digest_sha256":"56f44a752fa5e9bbd195608959aeeb76fa97effeb0b62ec701e6f988a3b1c69e","stream_digest_sha256":"4b5f39baf11d990a7da53870320f863ed7ab6fb9679deebdea43113156007d05"},
+    "D":{"divergences":0,"replay_digest_sha256":"5c427a1f5d2a02e4da683803b5f5091d0d0400b03ee99e4d9cd9cdb1fa9346d0","stream_digest_sha256":"b77c00b187fa5affe8955318a423a3b50d0d42a7302b0dffc7fd0ee9f1002786"},
+    "E":{"divergences":0,"replay_digest_sha256":"baaf89312ee30a9f18bb9a47e23bf2ea5e2c0b28e25850c2f6b13488323dc4f8","stream_digest_sha256":"db240f6a1b66e5bad99a20597238a7c495ed2a08c6174518c0beaa4851b38add"}
+  },
+  "real_counterexample_count":0,
+  "unminimized_real_counterexamples":0,
+  "selected_genome":"C",
+  "tournament_digest_sha256":"d9fd861fb8e2d89fd06e60d199a6a6c99a70a670efed609874c5f8cb667c5067",
+  "experimental_only":true
+}

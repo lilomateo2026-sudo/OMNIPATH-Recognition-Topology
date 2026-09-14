@@ -1,0 +1,11 @@
+{
+  "schema":"omnipath.v5-causal-counterexample-graph/v1",
+  "order":"O30.4",
+  "semantic_real_counterexamples":0,
+  "cross_generation_real_counterexamples":0,
+  "operator_control_count":12,
+  "semantic_transform_control_count":7,
+  "cause_graph_digest_sha256":"8d5d1bc07b001cabb41d19de6f61321e5856590ae2ac64144c70491f3ffcbde6",
+  "synthetic_controls_are_not_production_evidence":true,
+  "experimental_only":true
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "omnipath.v5-genesis/v1",
+  "order": "O30.1",
+  "status": "EXPERIMENTAL_V5_GENESIS_CI_REQUIRED",
+  "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "parent_main_sha": "bcb87448524ceaf7ca353277b5445dec9f1b4168",
+  "v4_promoted_merge_sha": "18068b6ac6438020ddef335c7e88f8c4a70961a4",
+  "o29_5_ledger_ref": "omnipath/recognition/attestation_ledger/v1/o29_5_main_18068b6a/index.json",
+  "o29_5_genealogy_index_sha256": "441e2dc1340b571c8e6dcfd6f7ef148070fdace35431d494e22b02f93123418e",
+  "parent_verification": {
+    "recognition_run_id": 34785397316,
+    "recognition_run_number": 42,
+    "recognition_result": "success",
+    "genealogy_run_id": 34785397307,
+    "genealogy_run_number": 6,
+    "genealogy_result": "success",
+    "replay_artifact": {
+      "id": 10325694788,
+      "digest": "sha256:1cf76696d1bd0e132c4c5d368c5e95b1f0cea8ac1765b86a3bd98a218613bbfe"
+    },
+    "attestation_artifact": {
+      "id": 10326780596,
+      "digest": "sha256:3574627158573c209c804d80f62a0b31b0d62f04500f46c02b530af181c79a2e"
+    }
+  },
+  "four_generation_differential": {
+    "seed": 3001001,
+    "trials": 5000,
+    "mutation_widths": [1, 2, 3, 4, 5, 6, 7],
+    "operator_count": 12,
+    "expected_mismatches": 0,
+    "expected_digest_sha256": "6e3144f65c639801c811812824e8a9dc66bb6b2bbd4791f8a442e50d8ec270cd"
+  },
+  "authority_reset": {
+    "inherits_promotion_authority": false,
+    "self_promotion_forbidden": true,
+    "main_mutation_authority": false,
+    "promotion_state": "OBSERVED",
+    "fresh_descendant_ci_required": true,
+    "fresh_genealogy_ci_required": true,
+    "new_promotion_tribunal_required": true
+  },
+  "decision": "BEGIN_V5_AS_FOUR_GENERATION_DIFFERENTIAL_EXPERIMENT_ONLY"
+}
