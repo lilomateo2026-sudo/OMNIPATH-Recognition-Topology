@@ -1,0 +1,23 @@
+{
+  "schema": "omnipath.external-recovery-replica-attestation/v1",
+  "order": "O31.9",
+  "candidate_head_sha": "b4d87ebe2f86e1557a1d75d4c2ba006781d151f3",
+  "provider": "google_drive",
+  "drive_file_id": "1bkPjEXa3hGm1cjvtlyA8fnzNhUWw3pqw",
+  "drive_file_name": "OMNIPATH-O31.9-replica-B-db441d55.zip",
+  "github_source_artifact": {
+    "artifact_id": 10344534627,
+    "artifact_digest": "sha256:3aed58b008be751f8096852fa5fd8f22cb084aff8cbc9c3643f627502b9b830b",
+    "workflow_run_id": 34839438849
+  },
+  "external_readback": {
+    "file_size_bytes": 3929,
+    "zip_sha256": "3aed58b008be751f8096852fa5fd8f22cb084aff8cbc9c3643f627502b9b830b",
+    "payload_representation_sha256": "ac267dcd72cf746d59ee739b6b3433d624906b35ef5a3b1d01f56c3a351d4dfd",
+    "decoded_byte_count": 5527,
+    "decoded_content_sha256": "486993dc1843c8f35876ed3dc02c1d2ce4c3a66ed96a3d27c00bd08c42a57eb6",
+    "decoded_git_blob_sha": "f10f0cb3c9e670237914e5d502bce9f9b9dbb871"
+  },
+  "cross_provider_identity_match": true,
+  "verified_within_scope": true
+}
