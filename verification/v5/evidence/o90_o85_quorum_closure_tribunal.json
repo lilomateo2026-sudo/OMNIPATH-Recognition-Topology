@@ -1,0 +1,16 @@
+{
+  "accepted_runs": 2,
+  "canonical_blob_identity_bound": true,
+  "closes_o85": true,
+  "closure_digest": "86ed09342482dc2b967ddae124781d320f99a12c79910c47970a1bc0a9546fe3",
+  "constitutional_failures": 0,
+  "distinct_environments": 2,
+  "o88_court_digest": "4aa46dd3b643ee45120457c840c0ada06ef94041c65f1eb2fc9c7ae909de57f1",
+  "o89_differential_digest": "af18de1b43741aebfa4b79526eb0fbacc57225f96c9943affde37085cce48dc9",
+  "required_distinct_environments": 2,
+  "same_commit": true,
+  "same_repository": true,
+  "semantic_consensus": true,
+  "status": "CLOSED",
+  "version": "O90-v1"
+}
