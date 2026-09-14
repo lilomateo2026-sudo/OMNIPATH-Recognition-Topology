@@ -9,17 +9,23 @@ MANIFEST = ROOT / "omnipath" / "recognition" / "v6" / "O32_3_cross_ledger_replay
 
 
 class O323CrossLedgerReplayAuditTests(unittest.TestCase):
-    def test_every_durable_generation_reconstructs(self):
+    def test_every_target_promotion_generation_reconstructs(self):
         expected = json.loads(MANIFEST.read_text(encoding="utf-8"))["expected"]
         result = audit(ROOT)
         for key, value in expected.items():
             self.assertEqual(result[key], value, key)
+        self.assertGreaterEqual(result["index_entry_count"], result["promotion_ledger_count"])
 
-    def test_all_rows_are_lineage_and_alias_consistent(self):
+    def test_all_promotion_rows_are_lineage_alias_and_replay_consistent(self):
         result = audit(ROOT)
         self.assertTrue(all(row["lineage_ok"] for row in result["rows"]))
         self.assertTrue(all(row["alias_ok"] for row in result["rows"]))
         self.assertTrue(all(row["replay_identity_ok"] for row in result["rows"]))
+
+    def test_nonpromotion_genealogy_is_separate_but_consistent(self):
+        result = audit(ROOT)
+        self.assertEqual(result["nonpromotion_integrity_failures"], 0)
+        self.assertTrue(all(row["lineage_ok"] and row["alias_ok"] for row in result["nonpromotion_rows"]))
 
     def test_only_historical_backfill_uses_workflow_only_identity(self):
         rows = audit(ROOT)["rows"]
