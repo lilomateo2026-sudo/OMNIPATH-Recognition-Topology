@@ -1,0 +1,162 @@
+name: O31.9 Independent Recovery Replica Quorum
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replica-a:
+    runs-on: ubuntu-latest
+    outputs:
+      artifact_id: ${{ steps.upload.outputs.artifact-id }}
+      artifact_digest: ${{ steps.upload.outputs.artifact-digest }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Seed raw replica A
+        run: python omnipath/recognition/recovery_replica_quorum.py seed --replica-id A --medium raw --output replica-a
+      - name: Upload replica A
+        id: upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: o31-9-replica-a-${{ github.sha }}
+          path: replica-a
+          if-no-files-found: error
+          retention-days: 90
+
+  replica-b:
+    runs-on: ubuntu-latest
+    outputs:
+      artifact_id: ${{ steps.upload.outputs.artifact-id }}
+      artifact_digest: ${{ steps.upload.outputs.artifact-digest }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Seed base64 replica B
+        run: python omnipath/recognition/recovery_replica_quorum.py seed --replica-id B --medium base64 --output replica-b
+      - name: Upload replica B
+        id: upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: o31-9-replica-b-${{ github.sha }}
+          path: replica-b
+          if-no-files-found: error
+          retention-days: 90
+
+  quorum-restore:
+    needs: [replica-a, replica-b]
+    runs-on: ubuntu-latest
+    outputs:
+      artifact_id: ${{ steps.upload.outputs.artifact-id }}
+      artifact_digest: ${{ steps.upload.outputs.artifact-digest }}
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Assert destructive restore isolation
+        run: |
+          test ! -d .git
+          test ! -e omnipath/recognition/recovery_vault
+      - uses: actions/download-artifact@v4
+        with:
+          name: o31-9-replica-a-${{ github.sha }}
+          path: replica-a
+      - uses: actions/download-artifact@v4
+        with:
+          name: o31-9-replica-b-${{ github.sha }}
+          path: replica-b
+      - name: Restore from replicas and require quorum
+        env:
+          REPLICA_A_ARTIFACT_ID: ${{ needs.replica-a.outputs.artifact_id }}
+          REPLICA_A_ARTIFACT_DIGEST: ${{ needs.replica-a.outputs.artifact_digest }}
+          REPLICA_B_ARTIFACT_ID: ${{ needs.replica-b.outputs.artifact_id }}
+          REPLICA_B_ARTIFACT_DIGEST: ${{ needs.replica-b.outputs.artifact_digest }}
+        run: |
+          python - <<'PY'
+          import base64, hashlib, json, os
+          from pathlib import Path
+
+          expected_sha256 = '486993dc1843c8f35876ed3dc02c1d2ce4c3a66ed96a3d27c00bd08c42a57eb6'
+          expected_git = 'f10f0cb3c9e670237914e5d502bce9f9b9dbb871'
+
+          def sha256(data):
+              return hashlib.sha256(data).hexdigest()
+
+          def git_blob_sha(data):
+              return hashlib.sha1(f'blob {len(data)}\0'.encode('ascii') + data).hexdigest()
+
+          def load_replica(root):
+              root = Path(root)
+              manifest = json.loads((root / 'manifest.json').read_text(encoding='utf-8'))
+              stored = (root / manifest['payload_ref']).read_bytes()
+              assert sha256(stored) == manifest['stored_representation_sha256']
+              if manifest['medium'] == 'raw':
+                  payload = stored
+              elif manifest['medium'] == 'base64':
+                  payload = base64.b64decode(stored, validate=False)
+              else:
+                  raise AssertionError('unsupported medium')
+              assert sha256(payload) == expected_sha256 == manifest['content_sha256']
+              assert git_blob_sha(payload) == expected_git == manifest['git_blob_sha']
+              return manifest, payload
+
+          ma, a = load_replica('replica-a')
+          mb, b = load_replica('replica-b')
+          assert ma['replica_id'] == 'A'
+          assert mb['replica_id'] == 'B'
+          assert ma['medium'] != mb['medium']
+          assert a == b
+          assert not Path('.git').exists()
+          assert not Path('omnipath/recognition/recovery_vault').exists()
+
+          out = Path('quorum-output')
+          out.mkdir()
+          (out / 'restored-from-a.bin').write_bytes(a)
+          (out / 'restored-from-b.bin').write_bytes(b)
+          attestation = {
+              'schema': 'omnipath.recovery-replica-quorum-attestation/v1',
+              'order': 'O31.9',
+              'head_sha': os.environ.get('GITHUB_SHA'),
+              'quorum': '2-of-2',
+              'content_sha256': sha256(a),
+              'git_blob_sha': git_blob_sha(a),
+              'byte_count': len(a),
+              'replica_a': {
+                  'artifact_id': os.environ['REPLICA_A_ARTIFACT_ID'],
+                  'artifact_digest': os.environ['REPLICA_A_ARTIFACT_DIGEST'],
+                  'medium': ma['medium'],
+              },
+              'replica_b': {
+                  'artifact_id': os.environ['REPLICA_B_ARTIFACT_ID'],
+                  'artifact_digest': os.environ['REPLICA_B_ARTIFACT_DIGEST'],
+                  'medium': mb['medium'],
+              },
+              'repository_checkout_present': False,
+              'git_object_database_present': False,
+              'canonical_vault_present': False,
+              'verdict': 'PASS',
+          }
+          (out / 'quorum-attestation.json').write_text(json.dumps(attestation, indent=2, sort_keys=True) + '\n', encoding='utf-8')
+          print(json.dumps(attestation, indent=2, sort_keys=True))
+          PY
+      - name: Upload quorum attestation
+        id: upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: o31-9-quorum-${{ github.sha }}
+          path: quorum-output
+          if-no-files-found: error
+          retention-days: 90
