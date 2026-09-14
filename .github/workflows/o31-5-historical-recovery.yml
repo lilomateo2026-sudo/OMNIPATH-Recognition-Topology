@@ -1,0 +1,28 @@
+name: O31.5 Historical Recovery Proof
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  recovery-proof:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch historical commit
+        run: git fetch --no-tags --depth=1 origin 2028938d32064a1fecec6fdd18579dc4c29d8501
+      - name: Verify committed recovery proof
+        run: python omnipath/recognition/historical_recovery_proof.py --check omnipath/recognition/promotion_genealogy/historical_recovery_proofs.json
+      - name: Emit recovery proof
+        run: python omnipath/recognition/historical_recovery_proof.py --write recovery-proof.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: o31-5-historical-recovery-${{ github.sha }}
+          path: recovery-proof.json
+          if-no-files-found: error
