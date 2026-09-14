@@ -1,0 +1,28 @@
+{
+  "schema": "omnipath.v6-genesis/v1",
+  "order": "O32.1",
+  "status": "EXPERIMENTAL_V6_GENESIS_CI_REQUIRED",
+  "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "parent_main_sha": "c19551d92c306236b7c80c9422eb44a1afacb1af",
+  "o31_8_attestation_branch": "o31.8-composite-main-attestation",
+  "o31_8_attestation_commit": "48dc9f87a4f824fabfe07b7644b0aa8e934a4b70",
+  "five_generation_differential": {
+    "seed": 3201001,
+    "trials": 6000,
+    "mutation_widths": [1, 2, 3, 4, 5, 6, 7, 8],
+    "operator_count": 12,
+    "expected_mismatches": 0,
+    "expected_digest_sha256": "1f8f458941ba98034bead7161c3d9fca0943d0df799a1de28ebd4654338207af"
+  },
+  "authority_reset": {
+    "inherits_promotion_authority": false,
+    "self_promotion_forbidden": true,
+    "main_mutation_authority": false,
+    "promotion_state": "OBSERVED",
+    "fresh_descendant_ci_required": true,
+    "fresh_genealogy_ci_required": true,
+    "fresh_closure_ci_required": true,
+    "new_promotion_tribunal_required": true
+  },
+  "decision": "BEGIN_V6_AS_FIVE_GENERATION_DIFFERENTIAL_EXPERIMENT_ONLY"
+}
