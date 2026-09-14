@@ -1,0 +1,49 @@
+name: O94 Third-Environment Expansion
+
+on:
+  push:
+    paths:
+      - '.github/workflows/o94-third-environment.yml'
+      - 'verification/v5/o87_runner.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  macos-third-environment:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run certified V5 corpus
+        env:
+          O87_RUNNER_ID: o94-macos-py312-${{ github.run_id }}
+        run: python verification/v5/o87_runner.py
+      - name: Verify semantic digests against O91 baseline
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, pathlib, sys
+          a=pathlib.Path('verification/v5/artifacts')
+          report=json.loads((a/'conformance_report.json').read_text())
+          manifest=json.loads((a/'v5_attestation.json').read_text())
+          trace=json.loads((a/'o89_transition_trace.json').read_text())
+          expected={
+            'report':'5ee98bf9d0e90b4eec7eec45bf28e33b2296f010bd1cb5690b7b951d7e410ce6',
+            'manifest':'fa2d8eb05e3d9934c8df1deccf9d5e24a1a900d26734904d5e63d5c11fefa904',
+            'trace':'945900bad3070247d1d240c9b3e5f8a25743f52d99a4d250dde3ce3d53234daa'
+          }
+          observed={'report':report['report_digest'],'manifest':manifest['manifest_digest'],'trace':trace['semantic_trace_digest']}
+          print(json.dumps({'expected':expected,'observed':observed,'match':observed==expected}, indent=2))
+          if observed != expected: sys.exit(3)
+          PY
+      - name: Upload O94 evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: o94-third-environment-macos-py312
+          path: verification/v5/artifacts/
+          if-no-files-found: error
+          retention-days: 90
