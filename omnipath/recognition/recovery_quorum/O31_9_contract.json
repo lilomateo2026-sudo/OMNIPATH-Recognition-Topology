@@ -1,0 +1,39 @@
+{
+  "schema": "omnipath.recovery-replica-quorum-contract/v1",
+  "order": "O31.9",
+  "parent_order": "O31.8",
+  "parent_main_sha": "822085dee5ee7761fcfb29bb296cc4f4f401fba8",
+  "canonical_evidence": {
+    "content_sha256": "486993dc1843c8f35876ed3dc02c1d2ce4c3a66ed96a3d27c00bd08c42a57eb6",
+    "git_blob_sha": "f10f0cb3c9e670237914e5d502bce9f9b9dbb871",
+    "byte_count": 5527
+  },
+  "replica_a": {
+    "replica_id": "A",
+    "seed_medium": "raw",
+    "seed_runner_isolated": true,
+    "staging_provider": "github_actions_artifact"
+  },
+  "replica_b": {
+    "replica_id": "B",
+    "seed_medium": "base64",
+    "seed_runner_isolated": true,
+    "staging_provider": "github_actions_artifact",
+    "external_provider_target": "google_drive"
+  },
+  "restore_drill": {
+    "quorum": "2-of-2",
+    "restore_job_repository_checkout": false,
+    "restore_job_git_object_access": false,
+    "require_distinct_media": true,
+    "require_equal_reconstructed_bytes": true,
+    "require_content_sha256_match": true,
+    "require_git_blob_sha_match": true
+  },
+  "trust_scope": {
+    "git_object_database_independence": true,
+    "repository_worktree_independence_during_restore": true,
+    "cross_provider_replica_required_for_final_closure": true,
+    "cross_provider_target": "google_drive"
+  }
+}
