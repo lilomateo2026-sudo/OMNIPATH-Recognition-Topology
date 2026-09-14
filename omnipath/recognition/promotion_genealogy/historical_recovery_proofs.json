@@ -1,7 +1,7 @@
 {
   "gap_registry_manifest_sha256": "5385b22e5a61b8b653350aae64a9d889a63e73110e4a15efb9b284a56478ee27",
-  "order": "O31.5",
-  "proof_set_sha256": "23e9c8c13f354e0fa7394da171312d649cb99bcfad9999eb331847138763fd1d",
+  "order": "O31.7",
+  "proof_set_sha256": "b155732d6614914ad95eb8994ea3095a009ecefe4050c98713e5bf701d8d4711",
   "proofs": [
     {
       "classification": "HISTORICALLY_REACHABLE",
