@@ -11,8 +11,17 @@
       "runner_blob_sha": "9c2b47fd4db4bbf96ce982ae2ddbf28eef9654ac",
       "previous_entry_digest": "GENESIS",
       "entry_digest": "223e3b624b7cc273f3c94113ec15fd93468976af1f290eb33ac762835993e23c"
+    },
+    {
+      "sequence": 2,
+      "certificate_version": "O96-v1",
+      "certificate_digest": "572919fc280594ceda8b95e4b934ac1f2cd17bb98e326981af329aa339ee8876",
+      "certificate_status": "V5_CONSTITUTIONAL_RELEASE_SEALED",
+      "release_tag": "v5.0.0-rc1",
+      "previous_entry_digest": "223e3b624b7cc273f3c94113ec15fd93468976af1f290eb33ac762835993e23c",
+      "entry_digest": "7a7cdd98dcf2beb2712c407fb9b1a19f8862bdc579f73dcf0b9611a664edbee9"
     }
   ],
-  "ledger_root": "223e3b624b7cc273f3c94113ec15fd93468976af1f290eb33ac762835993e23c",
-  "ledger_digest": "05e859ecdbedf5b64a63e98f7e38d7b551f00ab92f4979cd36cea7bad0f0eac8"
+  "ledger_root": "7a7cdd98dcf2beb2712c407fb9b1a19f8862bdc579f73dcf0b9611a664edbee9",
+  "ledger_digest": "be9b26d446226012e9bff2f18d980288b49f65f98bb36f661ca5041d604f8824"
 }
