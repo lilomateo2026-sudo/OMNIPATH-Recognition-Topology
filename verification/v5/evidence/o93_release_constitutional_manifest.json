@@ -1,0 +1,13 @@
+{
+  "version": "O93-v1",
+  "release_candidate": "v5.0.0-rc1",
+  "tag_target_policy": "tag the commit containing this manifest and O92 ledger",
+  "certified_runtime_commit": "5c5010459dee0b801d6b28335e187f51e1dcdb02",
+  "canonical_runner_blob_sha": "9c2b47fd4db4bbf96ce982ae2ddbf28eef9654ac",
+  "o91_certificate_digest": "3b1f0b0c5060391bf49fecc66ca711c924db50d5498c3b6fb4b4bd6096809643",
+  "transparency_ledger_root": "223e3b624b7cc273f3c94113ec15fd93468976af1f290eb33ac762835993e23c",
+  "constitutional_evidence_root": "2016b141c3c6bbe959a5da5d3f3af6a8a1e5e30ba699fb228161639309356cc1",
+  "evidence_genealogy": ["O70","O71","O72","O73","O74","O75","O76","O77","O78","O79","O80","O81","O82","O83","O84","O85","O86","O87","O88","O89","O90","O91","O92","O93"],
+  "scope": "V5 synthetic constitutional verification release candidate",
+  "manifest_digest": "5301f5a4254fa697abf0f61f6cc1701f96ce660ab750b6e7c931889edda0f42c"
+}
