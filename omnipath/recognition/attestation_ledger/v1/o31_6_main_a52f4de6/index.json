@@ -1,0 +1,100 @@
+{
+  "schema": "omnipath.durable-attestation-ledger/v1",
+  "order": "O31.6",
+  "status": "V5_PROMOTED_AND_POSTMERGE_ATTESTED",
+  "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "repository": "lilomateo2026-sudo/OMNIPATH-Recognition-Topology",
+  "selected_genome": {
+    "id": "C",
+    "evidence_commit": "c26fce3c823814c50f25de646c93fb47732ee15d"
+  },
+  "candidate": {
+    "canonical_sha": "cc5cf15d28274aa6d18f8737d44becc965934beb",
+    "reconciliation_order": "O31.2",
+    "promotion_pull_request": 19,
+    "promotion_branch": "v5-candidate-cc5cf15d",
+    "tribunal_commit": "79ee6536006c95d6cace41eed9e3917639f58d17",
+    "tribunal_record": "omnipath/recognition/v5/O31_1_v5_promotion_tribunal.json",
+    "tribunal_only_descendant_was_excluded_from_merge": true
+  },
+  "authorization": {
+    "order": "O31.3",
+    "current_base_sha": "410f668ad69f468c7d7ac42ae3f8c2abca1a2aac",
+    "exact_candidate_head_verified": true,
+    "user_batch_authorization": "1-5",
+    "fresh_recognition_run_id": 34817343682,
+    "fresh_recognition_run_number": 59,
+    "fresh_genealogy_run_id": 34817343728,
+    "fresh_genealogy_run_number": 23,
+    "fresh_closure_run_id": 34817343712,
+    "fresh_closure_run_number": 16,
+    "all_premerge_gates_success": true,
+    "premerge_replay_artifact": {
+      "id": 10337101895,
+      "digest": "sha256:61cb519e797ea87b9eb7ca4f727d073967e48902aadde81827157d42266ddc56",
+      "expired": false
+    },
+    "premerge_attestation_artifact": {
+      "id": 10337101911,
+      "digest": "sha256:0fb1b56a5d97b4b2d96c540949c12d0447928d28aff3ed2d4ba7f302e632a81d",
+      "expired": false
+    }
+  },
+  "merge": {
+    "order": "O31.4",
+    "commit": "a52f4de61adb9fd2101dafa34daa92c951fca6c2",
+    "rollback_parent": "410f668ad69f468c7d7ac42ae3f8c2abca1a2aac",
+    "candidate_parent": "cc5cf15d28274aa6d18f8737d44becc965934beb",
+    "github_verified": true,
+    "exact_head_guard_used": true
+  },
+  "postmerge": {
+    "order": "O31.5",
+    "main_sha": "a52f4de61adb9fd2101dafa34daa92c951fca6c2",
+    "recognition_run_id": 34817460440,
+    "recognition_run_number": 60,
+    "recognition_result": "success",
+    "genealogy_run_id": 34817460413,
+    "genealogy_run_number": 24,
+    "genealogy_result": "success",
+    "closure_run_id": 34817460419,
+    "closure_run_number": 17,
+    "closure_result": "success",
+    "replay_artifact": {
+      "id": 10337520270,
+      "digest": "sha256:c6498954cc400b1c9ce04b332033c0c037333c67fc04e32c6ad7bcccdb468b82",
+      "expired": false
+    },
+    "attestation_artifact": {
+      "id": 10336443459,
+      "digest": "sha256:3c1124f1067b6618fd1852f44c62febbbb3d135749336967ae37e7860be5fef7",
+      "expired": false
+    }
+  },
+  "v5_evidence": {
+    "o30_1_four_generation_trials": 5000,
+    "o30_1_cross_generation_mismatches": 0,
+    "o30_1_digest_sha256": "6e3144f65c639801c811812824e8a9dc66bb6b2bbd4791f8a442e50d8ec270cd",
+    "o30_2_semantic_checks": 5600,
+    "o30_2_semantic_mismatches": 0,
+    "o30_2_cross_generation_mismatches": 0,
+    "o30_2_digest_sha256": "a173a6e77096e6c8c5e43b6282e6af04cee447d155991f0540ade33a84a724e5",
+    "o30_3_shared_discovery_ids": 0,
+    "o30_3_shared_source_event_ids": 0,
+    "o30_3_digest_sha256": "0ccf3f0b514ec499c8d57078a6bc0f80376cd84ece94af7f25d18f326370d3ea",
+    "o30_4_real_counterexamples": 0,
+    "o30_4_digest_sha256": "8d5d1bc07b001cabb41d19de6f61321e5856590ae2ac64144c70491f3ffcbde6",
+    "o30_5_total_replays": 7500,
+    "o30_5_replay_divergences": 0,
+    "o30_5_real_counterexamples": 0,
+    "o30_5_unminimized_real_counterexamples": 0,
+    "o30_5_selected_genome": "C",
+    "o30_5_digest_sha256": "d9fd861fb8e2d89fd06e60d199a6a6c99a70a670efed609874c5f8cb667c5067"
+  },
+  "authority": {
+    "candidate_self_promoted": false,
+    "ledger_grants_future_promotion_authority": false,
+    "future_generation_inherits_promotion_authority": false,
+    "future_promotion_rule": "REQUIRE_DURABLE_LEDGER_PLUS_FRESH_RECOGNITION_GENEALOGY_CLOSURE_AND_EXPLICIT_EXACT_SHA_AUTHORIZATION"
+  }
+}
