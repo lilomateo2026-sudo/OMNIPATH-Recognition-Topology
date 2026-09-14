@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""O32.3 deterministic replay-identity audit across all durable promotion ledgers."""
+"""O32.3 deterministic replay-identity audit across durable promotion ledgers."""
 from __future__ import annotations
 
 import hashlib
@@ -7,6 +7,7 @@ import json
 from pathlib import Path
 
 INDEX_REF = "omnipath/recognition/promotion_genealogy/index.json"
+PROMOTION_ORDERS = {"O22.6", "O23.9", "O25.5", "O27.5", "O29.5", "O31.6"}
 
 
 def _read(root: Path, ref: str) -> dict:
@@ -46,17 +47,29 @@ def audit(repository_root: str | Path = ".") -> dict:
     root = Path(repository_root).resolve()
     index = _read(root, INDEX_REF)
     rows = []
+    nonpromotion_rows = []
     replay_ids = []
     for entry in index["entries"]:
         ledger = _read(root, entry["ledger_ref"])
         candidate = _candidate(ledger)
         promoted = _promoted(ledger)
+        lineage_ok = candidate == entry["candidate_commit_sha"] and promoted == entry["promoted_main_sha"]
+        alias_ok = all(index["alias_map"].get(alias) == entry["entry_id"] for alias in entry["aliases"])
+
+        if entry["generation_order"] not in PROMOTION_ORDERS:
+            nonpromotion_rows.append({
+                "entry_id": entry["entry_id"],
+                "generation_order": entry["generation_order"],
+                "relationship": ledger.get("relationship"),
+                "lineage_ok": lineage_ok,
+                "alias_ok": alias_ok,
+            })
+            continue
+
         post = _postmerge(ledger)
         replay = _artifact(post, "replay_artifact")
         attestation = _artifact(post, "attestation_artifact")
         historical = ledger.get("relationship") == "historical_evidence_backfill_not_registry_entry"
-        lineage_ok = candidate == entry["candidate_commit_sha"] and promoted == entry["promoted_main_sha"]
-        alias_ok = all(index["alias_map"].get(alias) == entry["entry_id"] for alias in entry["aliases"])
         artifact_ok = historical or (
             isinstance(replay, dict)
             and isinstance(replay.get("id"), int)
@@ -87,7 +100,10 @@ def audit(repository_root: str | Path = ".") -> dict:
     return {
         "schema": "omnipath.cross-ledger-replay-identity-audit/v1",
         "order": "O32.3",
-        "ledger_count": len(rows),
+        "index_entry_count": len(index["entries"]),
+        "promotion_ledger_count": len(rows),
+        "nonpromotion_count": len(nonpromotion_rows),
+        "nonpromotion_integrity_failures": sum(not (row["lineage_ok"] and row["alias_ok"]) for row in nonpromotion_rows),
         "artifact_bound_count": sum(row["identity_level"] == "artifact_bound" for row in rows),
         "workflow_only_historical_count": sum(row["identity_level"] == "workflow_only_historical_backfill" for row in rows),
         "lineage_mismatches": sum(not row["lineage_ok"] for row in rows),
@@ -96,4 +112,5 @@ def audit(repository_root: str | Path = ".") -> dict:
         "duplicate_replay_ids": len(replay_ids) - len(set(replay_ids)),
         "audit_digest_sha256": hashlib.sha256(canonical.encode("utf-8")).hexdigest(),
         "rows": rows,
+        "nonpromotion_rows": nonpromotion_rows,
     }
