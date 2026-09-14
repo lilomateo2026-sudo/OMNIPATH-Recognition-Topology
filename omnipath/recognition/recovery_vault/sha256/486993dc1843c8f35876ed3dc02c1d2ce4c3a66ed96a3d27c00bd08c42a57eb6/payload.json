@@ -1,0 +1,125 @@
+{
+  "schema": "omnipath.ci-attested-promotion-manifest/v1",
+  "order": "O23.5",
+  "status": "CI_ATTESTED_AWAITING_EXPLICIT_MERGE_AUTHORIZATION",
+  "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "repository": "lilomateo2026-sudo/OMNIPATH-Recognition-Topology",
+  "candidate": {
+    "pull_request": 9,
+    "base_branch": "main",
+    "base_sha_at_attestation": "6de2cf2f08b92ca5ec6ea29779d26914d15a092d",
+    "candidate_branch": "o22.5-cross-rail-tribunal",
+    "candidate_head_sha": "17d4db9907455d29d5ee2aa3e3120bd6bdfea87f",
+    "pull_request_merge_preview_sha": "f539c80939b7647f13c6c240dd35860eb346eb1d",
+    "pull_request_state_at_manifest_creation": "open",
+    "pull_request_mergeable_at_manifest_creation": true
+  },
+  "ci_attestation": {
+    "workflow_name": "O22.6 Independent Replay Attestation",
+    "workflow_id": 356916730,
+    "workflow_run_id": 34755828638,
+    "workflow_run_number": 15,
+    "event": "pull_request",
+    "status": "completed",
+    "conclusion": "success",
+    "attested_head_sha": "17d4db9907455d29d5ee2aa3e3120bd6bdfea87f",
+    "attested_branch": "o22.5-cross-rail-tribunal",
+    "created_at": "2026-09-13T11:58:46Z",
+    "updated_at": "2026-09-13T11:59:06Z"
+  },
+  "ci_artifacts": {
+    "replay_evidence": {
+      "artifact_id": 10317735715,
+      "name": "o22-6-replay-f539c80939b7647f13c6c240dd35860eb346eb1d",
+      "digest": "sha256:b253bce3294813b36df1e5a89ea2533d2d576d55a1c62ce33936142367af6962",
+      "size_in_bytes": 1704,
+      "expired_at_manifest_creation": false,
+      "expires_at": "2026-12-12T11:58:46Z",
+      "bound_head_sha": "17d4db9907455d29d5ee2aa3e3120bd6bdfea87f"
+    },
+    "promotion_attestation": {
+      "artifact_id": 10316876940,
+      "name": "o22-6-attestation-f539c80939b7647f13c6c240dd35860eb346eb1d",
+      "digest": "sha256:0dd8f47e2a38c4fbb02fa3aead2db7975be86d3ff2414886528d70918dd98c2f",
+      "size_in_bytes": 825,
+      "expired_at_manifest_creation": false,
+      "expires_at": "2026-12-12T11:58:46Z",
+      "bound_head_sha": "17d4db9907455d29d5ee2aa3e3120bd6bdfea87f"
+    }
+  },
+  "tribunal_evidence": {
+    "path": "omnipath/recognition/reports/O22_5_cross_rail_tribunal.json",
+    "blob_sha": "e6897c6c51238d0fa6dd01701742307d233f8c3c",
+    "authority": "external-tribunal",
+    "source_reference_attestation_commit": "5899435141cff4acfdc6b304dd4358ecd9bc3bf8",
+    "source_evidence_attestation_commit": "a6eeff44c7ba0bfc4afd5d5d90201b5df99a2f1d",
+    "pair_count": 8,
+    "pathology_match_pairs": 7,
+    "pathology_asymmetry_pairs": 1,
+    "disposition_match_pairs": 8,
+    "disposition_conflict_pairs": 0,
+    "agreement_is_proof": false,
+    "authority_merged": false,
+    "retained_asymmetry": "FALSE-CONSENSUS-001: evidence rail additionally detects OBSERVER_COLLAPSE"
+  },
+  "adversarial_evidence": {
+    "mutation_tournament": {
+      "path": "omnipath/recognition/reports/O23_1_mutation_tournament.json",
+      "blob_sha": "c87794325b0398a016a0934f455e4d40ef99462a",
+      "seed": 2301001,
+      "trials": 1000,
+      "unique_combinations": 91,
+      "all_pathologies_covered": true,
+      "digest_sha256": "d1ff891cb4c55163cb9922db755cb47fe10b0f029bfd2b1e24c3f2cb64592590",
+      "digest_source": "GitHub Actions clean runner serialization",
+      "status": "PASS"
+    },
+    "dual_rail_replay": {
+      "path": "omnipath/recognition/reports/O23_2_dual_rail_replay.json",
+      "blob_sha": "11f877962914ad7c38c93e6b3f0d1110d0aa648e",
+      "rounds": 1000,
+      "stable_rounds": 1000,
+      "pair_count": 8,
+      "pathology_divergence_pairs": 1,
+      "disposition_divergence_pairs": 0,
+      "digest_sha256": "d9bdc1e62777af0cba7803c6c64d9e578a03f17c2a89876902aa3d5cbe3f7d2d",
+      "digest_source": "GitHub Actions clean runner serialization",
+      "status": "PASS"
+    },
+    "regression_gate": {
+      "path": "omnipath/recognition/reports/O23_3_regression_gate.json",
+      "blob_sha": "3e3b73048995de47a1634416249250861e3c7c5a",
+      "passed": true,
+      "errors": [],
+      "reference_fixtures": 8,
+      "evidence_fixtures": 8,
+      "tribunal_pairs": 8,
+      "mutation_trials": 1000,
+      "mutation_unique_combinations": 91,
+      "replay_rounds": 1000,
+      "replay_stable_rounds": 1000
+    }
+  },
+  "promotion_decision": {
+    "candidate_evidence_complete": true,
+    "ci_attested": true,
+    "eligible_for_explicit_merge_decision": true,
+    "merge_authorized": false,
+    "merge_performed": false,
+    "self_promotion_forbidden": true,
+    "required_exact_candidate_head_sha": "17d4db9907455d29d5ee2aa3e3120bd6bdfea87f",
+    "decision": "ELIGIBLE_FOR_HUMAN_AUTHORIZED_MERGE_WITHIN_ATTESTED_SCOPE"
+  },
+  "invalidation_rules": [
+    "If PR #9 head SHA changes from 17d4db9907455d29d5ee2aa3e3120bd6bdfea87f, this manifest does not authorize that new head and fresh CI evidence is required.",
+    "If the referenced CI workflow run or artifact identities do not match this manifest, promotion must be held.",
+    "If tribunal disposition conflicts become nonzero or the retained false-consensus asymmetry is erased, promotion must be held for adjudication.",
+    "This manifest records eligibility only; it does not itself merge, authorize merge, or mutate main."
+  ],
+  "manifest_lineage": {
+    "manifest_branch": "o23.5-ci-attested-promotion-manifest",
+    "manifest_parent_sha": "17d4db9907455d29d5ee2aa3e3120bd6bdfea87f",
+    "candidate_branch_is_not_modified_by_manifest": true,
+    "reason": "The promotion object is stored on a separate descendant branch so the CI-attested candidate SHA remains unchanged."
+  }
+}

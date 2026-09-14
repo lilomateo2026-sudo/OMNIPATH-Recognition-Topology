@@ -2,6 +2,7 @@
   "alias_map": {
     "17d4db9907455d29d5ee2aa3e3120bd6bdfea87f": "O23.9:b7e1bde39d46afc255bc5db46e9f4aed6e1cb399",
     "18068b6ac6438020ddef335c7e88f8c4a70961a4": "O29.5:18068b6ac6438020ddef335c7e88f8c4a70961a4",
+    "2028938d32064a1fecec6fdd18579dc4c29d8501": "O31.8:c19551d92c306236b7c80c9422eb44a1afacb1af",
     "25af648f0a9696e34c08d948aeca987af812c5a0": "O25.5:4147562ee866bee2e96978907661a6fba9072779",
     "4147562ee866bee2e96978907661a6fba9072779": "O25.5:4147562ee866bee2e96978907661a6fba9072779",
     "46553b0cf42a0a1587b01b88ceadfb6bcea78a52": "O29.5:18068b6ac6438020ddef335c7e88f8c4a70961a4",
@@ -10,6 +11,7 @@
     "abb5e16a373ee3f6fd826e0a7a336ab37e751812": "O27.5:ba8a83d3b2def74ded2bbf9154c6190940ebd888",
     "b7e1bde39d46afc255bc5db46e9f4aed6e1cb399": "O23.9:b7e1bde39d46afc255bc5db46e9f4aed6e1cb399",
     "ba8a83d3b2def74ded2bbf9154c6190940ebd888": "O27.5:ba8a83d3b2def74ded2bbf9154c6190940ebd888",
+    "c19551d92c306236b7c80c9422eb44a1afacb1af": "O31.8:c19551d92c306236b7c80c9422eb44a1afacb1af",
     "cc5cf15d28274aa6d18f8737d44becc965934beb": "O31.6:a52f4de61adb9fd2101dafa34daa92c951fca6c2"
   },
   "entries": [
@@ -119,10 +121,28 @@
       "registry_entry_sha256": null,
       "registry_ref": "omnipath/recognition/promotion_registry/registry.json",
       "relationship": "V5_PROMOTED_AND_POSTMERGE_ATTESTED"
+    },
+    {
+      "aliases": [
+        "2028938d32064a1fecec6fdd18579dc4c29d8501",
+        "c19551d92c306236b7c80c9422eb44a1afacb1af"
+      ],
+      "candidate_commit_sha": "2028938d32064a1fecec6fdd18579dc4c29d8501",
+      "entry_id": "O31.8:c19551d92c306236b7c80c9422eb44a1afacb1af",
+      "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+      "generation_order": "O31.8",
+      "ledger_order": "O31.8",
+      "ledger_ref": "omnipath/recognition/attestation_ledger/v1/o31_8_main_c19551d9/index.json",
+      "postmerge_workflow_run_id": null,
+      "promoted_main_sha": "c19551d92c306236b7c80c9422eb44a1afacb1af",
+      "promotion_manifest_ref": null,
+      "registry_entry_sha256": null,
+      "registry_ref": "omnipath/recognition/promotion_registry/registry.json",
+      "relationship": "HISTORICAL_EVIDENCE_CONTENT_ADDRESSED_VAULT"
     }
   ],
-  "entry_count": 6,
-  "index_sha256": "d9715c4941877acee92bcb3fe4d96dc8dcb0e7a23357ec96bc7ec2d595315d3c",
+  "entry_count": 7,
+  "index_sha256": "8f32f31ddfba94b0a4b83c4bbc6251b218ed1a6c598e3341ae49f8cd8b437e40",
   "order": "O27.7",
   "registry_ref": "omnipath/recognition/promotion_registry/registry.json",
   "schema": "omnipath.promotion-genealogy-index/v1",

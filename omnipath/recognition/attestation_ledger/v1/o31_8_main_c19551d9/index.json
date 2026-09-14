@@ -1,0 +1,36 @@
+{
+  "schema": "omnipath.recovery-vault-ledger-link/v1",
+  "order": "O31.8",
+  "source_order": "O31.8",
+  "status": "HISTORICAL_EVIDENCE_VAULTED",
+  "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "parent_main_sha": "c19551d92c306236b7c80c9422eb44a1afacb1af",
+  "gap_id": "O23.9:promotion_manifest",
+  "candidate": {
+    "head_sha": "2028938d32064a1fecec6fdd18579dc4c29d8501"
+  },
+  "merge": {
+    "commit": "c19551d92c306236b7c80c9422eb44a1afacb1af",
+    "candidate_parent": "2028938d32064a1fecec6fdd18579dc4c29d8501"
+  },
+  "relationship": "HISTORICAL_EVIDENCE_CONTENT_ADDRESSED_VAULT",
+  "source": {
+    "commit": "2028938d32064a1fecec6fdd18579dc4c29d8501",
+    "tree": "e7a74eab39d78e66ce7b9d4719aa9626855cf75c",
+    "path": "omnipath/recognition/promotion/O23_5_ci_attested_promotion_manifest.json",
+    "git_blob_sha": "f10f0cb3c9e670237914e5d502bce9f9b9dbb871",
+    "content_sha256": "486993dc1843c8f35876ed3dc02c1d2ce4c3a66ed96a3d27c00bd08c42a57eb6",
+    "o31_7_proof_set_sha256": "b155732d6614914ad95eb8994ea3095a009ecefe4050c98713e5bf701d8d4711"
+  },
+  "vault": {
+    "payload_path": "omnipath/recognition/recovery_vault/sha256/486993dc1843c8f35876ed3dc02c1d2ce4c3a66ed96a3d27c00bd08c42a57eb6/payload.json",
+    "payload_git_blob_sha": "f10f0cb3c9e670237914e5d502bce9f9b9dbb871",
+    "record_path": "omnipath/recognition/recovery_vault/sha256/486993dc1843c8f35876ed3dc02c1d2ce4c3a66ed96a3d27c00bd08c42a57eb6/record.json",
+    "record_git_blob_sha": "37cbeac8b6eebfc07670672ad2d891e8b49bd228",
+    "original_path_restored": false
+  },
+  "reconstruction": {
+    "deterministic": true,
+    "historical_git_required": false
+  }
+}

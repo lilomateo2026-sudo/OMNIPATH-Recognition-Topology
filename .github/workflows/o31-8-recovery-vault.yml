@@ -1,0 +1,28 @@
+name: O31.8 Content-Addressed Recovery Vault
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  verify-recovery:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify current-tree recovery vault
+        run: python omnipath/recognition/recovery_vault.py --report recovery-vault-report.json
+      - name: Reconstruct preserved evidence
+        run: python omnipath/recognition/recovery_vault.py --reconstruct reconstructed-evidence.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: o31-8-recovery-vault-${{ github.sha }}
+          path: |
+            recovery-vault-report.json
+            reconstructed-evidence.json
+          if-no-files-found: error

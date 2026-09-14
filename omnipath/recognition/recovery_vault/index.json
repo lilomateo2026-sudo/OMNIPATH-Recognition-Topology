@@ -1,0 +1,16 @@
+{
+  "schema": "omnipath.content-addressed-recovery-vault/v1",
+  "order": "O31.8",
+  "entries": [
+    {
+      "gap_id": "O23.9:promotion_manifest",
+      "sha256": "486993dc1843c8f35876ed3dc02c1d2ce4c3a66ed96a3d27c00bd08c42a57eb6",
+      "payload_path": "omnipath/recognition/recovery_vault/sha256/486993dc1843c8f35876ed3dc02c1d2ce4c3a66ed96a3d27c00bd08c42a57eb6/payload.json",
+      "payload_git_blob_sha": "f10f0cb3c9e670237914e5d502bce9f9b9dbb871",
+      "record_path": "omnipath/recognition/recovery_vault/sha256/486993dc1843c8f35876ed3dc02c1d2ce4c3a66ed96a3d27c00bd08c42a57eb6/record.json",
+      "record_git_blob_sha": "37cbeac8b6eebfc07670672ad2d891e8b49bd228",
+      "ledger_path": "omnipath/recognition/attestation_ledger/v1/o31_8_main_c19551d9/index.json",
+      "ledger_git_blob_sha": "7b6a7acff442063305c67b8122802928950ff733"
+    }
+  ]
+}
