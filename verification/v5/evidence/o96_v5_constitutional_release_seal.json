@@ -1,0 +1,52 @@
+{
+  "version": "O96-v1",
+  "status": "V5_CONSTITUTIONAL_RELEASE_SEALED",
+  "scope": "V5 synthetic constitutional verification runner release-grade evidence seal; not certification of a production security appliance or real-world network system.",
+  "release_candidate": {
+    "tag": "v5.0.0-rc1",
+    "tag_object_sha": "f4713e0a55137160e411ea57b0c78156c817efce",
+    "tagged_commit": "40de449c7daad94fabc955d8e558992aa8ca390a",
+    "tag_signed": false,
+    "o93_manifest_digest": "5301f5a4254fa697abf0f61f6cc1701f96ce660ab750b6e7c931889edda0f42c"
+  },
+  "certified_runtime": {
+    "o91_certificate_digest": "3b1f0b0c5060391bf49fecc66ca711c924db50d5498c3b6fb4b4bd6096809643",
+    "certified_commit": "5c5010459dee0b801d6b28335e187f51e1dcdb02",
+    "canonical_runner_blob_sha": "9c2b47fd4db4bbf96ce982ae2ddbf28eef9654ac",
+    "report_digest": "5ee98bf9d0e90b4eec7eec45bf28e33b2296f010bd1cb5690b7b951d7e410ce6",
+    "manifest_digest": "fa2d8eb05e3d9934c8df1deccf9d5e24a1a900d26734904d5e63d5c11fefa904",
+    "semantic_trace_digest": "945900bad3070247d1d240c9b3e5f8a25743f52d99a4d250dde3ce3d53234daa"
+  },
+  "transparency_preseal": {
+    "o92_ledger_root": "223e3b624b7cc273f3c94113ec15fd93468976af1f290eb33ac762835993e23c",
+    "o92_ledger_digest": "05e859ecdbedf5b64a63e98f7e38d7b551f00ab92f4979cd36cea7bad0f0eac8"
+  },
+  "third_environment": {
+    "verified": true,
+    "o94_summary_digest": "0dffecb18f2f731ea181a4e7a590545455234e4b0c787b74ecb46b137de5dc2d",
+    "workflow_run_id": 34903102887,
+    "environment_identity_digest": "593860c79e35dd458a7abbbbeb5ef28910a2813d1045c533579bb363d6d5415e",
+    "environment": "Darwin arm64 / CPython 3.12.10",
+    "artifact_archive_digest": "sha256:3808b67c4d87d2255750dc32e53c38260e14c41c6008ecab170861483ab620eb"
+  },
+  "drift_baseline": {
+    "established": true,
+    "semantic_regression_at_seal": false,
+    "o95_summary_digest": "a211adb8314bc510704453cf4bc35f3e35cc622f47ed0a74ecdd9673969d16a0",
+    "o95_baseline_root": "24cda5ef38bd11b5b9582d4fa4a7afe3bb194aaaa0ee1f476bbae2101ef36043",
+    "workflow_run_id": 34903136350,
+    "matrix_result_count": 4,
+    "classifications": {"ENVIRONMENT_OR_LINEAGE_DRIFT_ONLY": 4},
+    "schedule": "17 6 * * 1"
+  },
+  "gates": {
+    "o91_cross_machine_verified": true,
+    "o92_transparency_history_present": true,
+    "o93_release_identity_present": true,
+    "o94_third_environment_verified": true,
+    "o95_initial_drift_watch_passed": true,
+    "semantic_roots_unchanged": true
+  },
+  "genealogy": ["O70","O71","O72","O73","O74","O75","O76","O77","O78","O79","O80","O81","O82","O83","O84","O85","O86","O87","O88","O89","O90","O91","O92","O93","O94","O95","O96"],
+  "seal_digest": "572919fc280594ceda8b95e4b934ac1f2cd17bb98e326981af329aa339ee8876"
+}
