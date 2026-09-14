@@ -1,0 +1,64 @@
+{
+  "version": "O95-v1",
+  "status": "PASS",
+  "workflow_run_id": 34903136350,
+  "workflow_head_sha": "eeb4e47f61f6a81a8155c62b80b5de851c7de19e",
+  "schedule": "17 6 * * 1",
+  "matrix_result_count": 4,
+  "semantic_regressions": 0,
+  "classifications": {"ENVIRONMENT_OR_LINEAGE_DRIFT_ONLY": 4},
+  "baseline_root": "24cda5ef38bd11b5b9582d4fa4a7afe3bb194aaaa0ee1f476bbae2101ef36043",
+  "runs": [
+    {
+      "artifact_name": "o95-drift-macos-latest-py3.12",
+      "artifact_id": 10370434985,
+      "artifact_archive_digest": "sha256:656e91d6457db384cdf0d5b62fd6b66732296632708956f5c4a3777f0a2ef767",
+      "classification": "ENVIRONMENT_OR_LINEAGE_DRIFT_ONLY",
+      "semantic_match": true,
+      "source_lineage_changed": true,
+      "drift_record_digest": "91ef0d6e2f0f68d75ad309298394d4eecdb160f2c4794eacc5bf3e36c4d438ae",
+      "environment_identity_digest": "9c447d5ec62fc4d51b9ecf940ef70d029e921807f06618a5e7917ff92aec37dc",
+      "environment": {"implementation":"CPython","python":"3.12.10","os":"Darwin","os_release":"25.6.0","machine":"arm64","libc":["", ""],"executable_name":"python"}
+    },
+    {
+      "artifact_name": "o95-drift-ubuntu-latest-py3.12",
+      "artifact_id": 10371670315,
+      "artifact_archive_digest": "sha256:a1ab052211004856442a1a34718b584f4becd885b89b52c0e95ff17a4733af42",
+      "classification": "ENVIRONMENT_OR_LINEAGE_DRIFT_ONLY",
+      "semantic_match": true,
+      "source_lineage_changed": true,
+      "drift_record_digest": "1042799fe5e422015239b677c60b8902f77fa5e1681018e02ffcbff30d519778",
+      "environment_identity_digest": "da0cd12424d73b4c714071b4b5393d08ed871a6ddffd14258fb3a410fd81a467",
+      "environment": {"implementation":"CPython","python":"3.12.14","os":"Linux","os_release":"6.17.0-1022-azure","machine":"x86_64","libc":["glibc","2.39"],"executable_name":"python"}
+    },
+    {
+      "artifact_name": "o95-drift-ubuntu-latest-py3.13",
+      "artifact_id": 10371675860,
+      "artifact_archive_digest": "sha256:ce1c7a0270b4d27ad80eba648d4a6544a799e38f943b26f0cf74b309acb61013",
+      "classification": "ENVIRONMENT_OR_LINEAGE_DRIFT_ONLY",
+      "semantic_match": true,
+      "source_lineage_changed": true,
+      "drift_record_digest": "7568bf86d2d5c30941b53f3b3b16568ec167983360fe2073c9d13278835850e5",
+      "environment_identity_digest": "a147c017a1740613c46f07b28d81a1d0da5fea2e739f0dd96ccf8c7d37fabc21",
+      "environment": {"implementation":"CPython","python":"3.13.15","os":"Linux","os_release":"6.17.0-1022-azure","machine":"x86_64","libc":["glibc","2.39"],"executable_name":"python"}
+    },
+    {
+      "artifact_name": "o95-drift-windows-latest-py3.12",
+      "artifact_id": 10370524771,
+      "artifact_archive_digest": "sha256:c2f6fe82616d666cd9d8bb70674877c48a485e0684ac4221088ab452ec082305",
+      "classification": "ENVIRONMENT_OR_LINEAGE_DRIFT_ONLY",
+      "semantic_match": true,
+      "source_lineage_changed": true,
+      "drift_record_digest": "62334b2848fd6f4f47a6a9a0f3024a8c170c206483e85fbf52f010599c85e68a",
+      "environment_identity_digest": "d1daccb1ab1994033d22b76bb60808d9455077b1b92694f680d3ff702e4b0161",
+      "environment": {"implementation":"CPython","python":"3.12.10","os":"Windows","os_release":"2025Server","machine":"AMD64","libc":["", ""],"executable_name":"python.exe"}
+    }
+  ],
+  "semantic_roots": {
+    "report_digest": "5ee98bf9d0e90b4eec7eec45bf28e33b2296f010bd1cb5690b7b951d7e410ce6",
+    "manifest_digest": "fa2d8eb05e3d9934c8df1deccf9d5e24a1a900d26734904d5e63d5c11fefa904",
+    "semantic_trace_digest": "945900bad3070247d1d240c9b3e5f8a25743f52d99a4d250dde3ce3d53234daa"
+  },
+  "rule": "Semantic digest mismatch is a release-blocking regression; environment/source-lineage drift is recorded separately.",
+  "summary_digest": "a211adb8314bc510704453cf4bc35f3e35cc622f47ed0a74ecdd9673969d16a0"
+}
