@@ -5,13 +5,14 @@
   "epistemic_state": "VERIFIED_WITHIN_SCOPE",
   "ledger_orders": ["O22.6", "O23.9", "O25.5", "O27.5", "O29.5", "O31.6"],
   "expected": {
-    "ledger_count": 6,
+    "promotion_ledger_count": 6,
     "artifact_bound_count": 5,
     "workflow_only_historical_count": 1,
     "lineage_mismatches": 0,
     "alias_mismatches": 0,
     "replay_identity_failures": 0,
     "duplicate_replay_ids": 0,
+    "nonpromotion_integrity_failures": 0,
     "audit_digest_sha256": "b51c862bd510d0a0f4c0d89b0dd017f5aaaee2d5bfebdb303fecbc7bec38ff31"
   },
   "historical_exception": {
@@ -19,5 +20,10 @@
     "reason": "durable historical backfill records workflow identity but does not embed replay/attestation artifact identities",
     "promotion_authority_effect": "NONE"
   },
-  "decision": "ALL_DURABLE_PROMOTION_LINEAGES_MUST_RECONSTRUCT_FROM_LEDGER_AND_INDEX_WITH_UNIQUE_REPLAY_IDENTITIES"
+  "nonpromotion_policy": {
+    "genealogy_records_outside_ledger_orders_are_not_counted_as_promotions": true,
+    "their_candidate_promoted_and_alias_links_must_still_be_consistent": true,
+    "recovery_vault_records_do_not_require_replay_artifacts": true
+  },
+  "decision": "ALL_TARGET_PROMOTION_LINEAGES_MUST_RECONSTRUCT_WITH_UNIQUE_REPLAY_IDENTITIES_WHILE_NONPROMOTION_GENEALOGY_REMAINS_EXPLICITLY_SEPARATE"
 }
