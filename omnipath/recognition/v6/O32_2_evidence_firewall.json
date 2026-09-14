@@ -18,7 +18,7 @@
     "classes": 2,
     "attempts": 42,
     "expected_escape_count": 0,
-    "expected_digest_sha256": "82aa12a81b277e2c3dda98dd2c31b51867df00fa3877554f52b5db9e1aea3bea"
+    "expected_digest_sha256": "aaa9519426623178c382b68a10793402cc8d40153b564ddf2757c9bb0779763a"
   },
   "decision": "EVIDENCE_MAY_INFORM_ANALYSIS_BUT_CAN_NEVER_AUTHORIZE_REPOSITORY_PROMOTION"
 }
