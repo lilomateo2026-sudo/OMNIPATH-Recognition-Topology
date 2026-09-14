@@ -1,0 +1,30 @@
+{
+  "schema": "omnipath.content-addressed-recovery-record/v1",
+  "order": "O31.8",
+  "gap_id": "O23.9:promotion_manifest",
+  "storage": {
+    "address_algorithm": "sha256",
+    "content_sha256": "486993dc1843c8f35876ed3dc02c1d2ce4c3a66ed96a3d27c00bd08c42a57eb6",
+    "vault_payload_path": "omnipath/recognition/recovery_vault/sha256/486993dc1843c8f35876ed3dc02c1d2ce4c3a66ed96a3d27c00bd08c42a57eb6/payload.json"
+  },
+  "source": {
+    "historical_commit": "2028938d32064a1fecec6fdd18579dc4c29d8501",
+    "historical_tree": "e7a74eab39d78e66ce7b9d4719aa9626855cf75c",
+    "original_path": "omnipath/recognition/promotion/O23_5_ci_attested_promotion_manifest.json",
+    "git_blob_sha": "f10f0cb3c9e670237914e5d502bce9f9b9dbb871",
+    "o31_7_classification": "HISTORICALLY_REACHABLE",
+    "o31_7_proof_set_sha256": "b155732d6614914ad95eb8994ea3095a009ecefe4050c98713e5bf701d8d4711"
+  },
+  "preservation": {
+    "vault_payload_git_blob_sha": "f10f0cb3c9e670237914e5d502bce9f9b9dbb871",
+    "bytes_reused_without_reserialization": true,
+    "original_path_restored": false,
+    "immutable_path_rule": "VAULT_PATH_IS_DERIVED_FROM_CONTENT_SHA256"
+  },
+  "reconstruction": {
+    "deterministic": true,
+    "expected_content_sha256": "486993dc1843c8f35876ed3dc02c1d2ce4c3a66ed96a3d27c00bd08c42a57eb6",
+    "expected_git_blob_sha": "f10f0cb3c9e670237914e5d502bce9f9b9dbb871",
+    "requires_historical_git_object": false
+  }
+}

@@ -1,0 +1,34 @@
+name: O31.8 Content-Addressed Recovery Vault
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  recovery-vault:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify vault and ledger links
+        run: python omnipath/recognition/recovery_vault.py --report recovery-vault-report.json
+      - name: Reconstruct from current-tree vault only
+        run: python omnipath/recognition/recovery_vault.py --reconstruct reconstructed-evidence.json
+      - name: Compare reconstructed bytes
+        run: cmp reconstructed-evidence.json omnipath/recognition/recovery_vault/sha256/486993dc1843c8f35876ed3dc02c1d2ce4c3a66ed96a3d27c00bd08c42a57eb6/payload.json
+      - name: Confirm legacy path remains absent
+        run: test ! -e omnipath/recognition/promotion/O23_5_ci_attested_promotion_manifest.json
+      - name: Run vault regression test
+        run: python -m pytest -q omnipath/recognition/tests/test_o31_8_storage.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: o31-8-recovery-vault-${{ github.sha }}
+          path: |
+            recovery-vault-report.json
+            reconstructed-evidence.json
+          if-no-files-found: error
