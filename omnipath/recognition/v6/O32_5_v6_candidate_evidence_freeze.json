@@ -1,0 +1,116 @@
+{
+  "schema": "omnipath.v6-candidate-evidence-freeze/v1",
+  "order": "O32.5",
+  "status": "V6_CANDIDATE_EVIDENCE_FROZEN",
+  "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "repository": "lilomateo2026-sudo/OMNIPATH-Recognition-Topology",
+  "candidate": {
+    "pull_request": 23,
+    "branch": "o32-v6-experimental",
+    "head_sha": "9110e1b81aa2a64b6f89256a972ad515482ac893",
+    "validation_merge_preview_sha": "0646905ba5b7dbdf6fce906c99bc2cf956adaa51",
+    "candidate_self_promoted": false
+  },
+  "scientific_root": {
+    "order": "O31.8-composite-main-reattestation",
+    "root_sha": "c19551d92c306236b7c80c9422eb44a1afacb1af",
+    "attestation_branch": "o31.8-composite-main-attestation",
+    "attestation_commit": "48dc9f87a4f824fabfe07b7644b0aa8e934a4b70",
+    "attestation_path": "omnipath/recognition/promotion/O31_8_composite_main_reattestation.json",
+    "first_parent_o31_6_closed_state": "d1bdb30a0fffb17f6367cbf2c274541fb2dda59c",
+    "second_parent_o31_7_recovery_head": "bb4bd836b5ed226362cdbe3b18300990576e51c2"
+  },
+  "current_base_drift": {
+    "observed_main_sha": "822085dee5ee7761fcfb29bb296cc4f4f401fba8",
+    "drift_from_scientific_root": true,
+    "main_first_parent_is_scientific_root": true,
+    "main_first_parent": "c19551d92c306236b7c80c9422eb44a1afacb1af",
+    "main_second_parent": "621bf303f4056644367a585f79e6d6b3703a2f8a",
+    "relationship": "GITHUB_VERIFIED_RECOVERY_VAULT_DESCENDANT",
+    "candidate_rebased": false,
+    "scientific_root_rewritten": false
+  },
+  "o32_evidence": {
+    "O32.1": {
+      "five_generation_trials": 6000,
+      "expected_mismatches": 0,
+      "digest_sha256": "1f8f458941ba98034bead7161c3d9fca0943d0df799a1de28ebd4654338207af"
+    },
+    "O32.2": {
+      "authority_injection_attempts": 42,
+      "expected_escape_count": 0,
+      "digest_sha256": "aaa9519426623178c382b68a10793402cc8d40153b564ddf2757c9bb0779763a"
+    },
+    "O32.3": {
+      "promotion_ledger_count": 6,
+      "artifact_bound_count": 5,
+      "workflow_only_historical_count": 1,
+      "lineage_mismatches": 0,
+      "alias_mismatches": 0,
+      "replay_identity_failures": 0,
+      "duplicate_replay_ids": 0,
+      "nonpromotion_integrity_failures": 0,
+      "digest_sha256": "b51c862bd510d0a0f4c0d89b0dd017f5aaaee2d5bfebdb303fecbc7bec38ff31"
+    },
+    "O32.4": {
+      "genealogy_mutations": 500,
+      "expected_undetected_mutations": 0,
+      "digest_sha256": "e2b054a2712ddbe3e40bfca8c1e18e360c185e22919678d1e77bfb8586694d4b"
+    }
+  },
+  "external_validation": {
+    "recognition": {
+      "run_id": 34839187146,
+      "run_number": 75,
+      "conclusion": "success",
+      "replay_artifact": {
+        "id": 10345676069,
+        "digest": "sha256:a12975a46eac60ac9816372c48d743cf5288fd5d5d53b47d13095d047e642773",
+        "expired": false
+      },
+      "attestation_artifact": {
+        "id": 10345416907,
+        "digest": "sha256:2471eb903a12fb0999a0ec846b05e7b9ab7f3cafdc73360c2a14dd617765a718",
+        "expired": false
+      }
+    },
+    "genealogy": {
+      "run_id": 34839187247,
+      "run_number": 39,
+      "conclusion": "success"
+    },
+    "closure": {
+      "run_id": 34839187116,
+      "run_number": 32,
+      "conclusion": "success"
+    },
+    "historical_recovery": {
+      "run_id": 34839187115,
+      "run_number": 11,
+      "conclusion": "success",
+      "artifact": {
+        "id": 10345690981,
+        "digest": "sha256:e1c2f2880c10a9f1bc6c977937bfeba453cc24082722789258861bc0981d9512",
+        "expired": false
+      }
+    },
+    "recovery_vault": {
+      "run_id": 34839187124,
+      "run_number": 9,
+      "conclusion": "success",
+      "artifact": {
+        "id": 10344619237,
+        "digest": "sha256:3e3fcbc49ba285181c71036cf08f2461d772c57076f91501b4f5638f531160e2",
+        "expired": false
+      }
+    }
+  },
+  "authority": {
+    "promotion_state": "OBSERVED",
+    "freeze_grants_promotion_authority": false,
+    "candidate_self_promotion_forbidden": true,
+    "merge_performed": false,
+    "future_step_requires_independent_tribunal": true,
+    "exact_candidate_sha_required": "9110e1b81aa2a64b6f89256a972ad515482ac893"
+  }
+}
