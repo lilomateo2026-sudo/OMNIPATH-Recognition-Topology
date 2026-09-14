@@ -1,0 +1,74 @@
+{
+  "schema": "omnipath.v6-promotion-tribunal/v1",
+  "order": "O33.1",
+  "status": "ELIGIBLE_FOR_EXACT_SHA_AUTHORIZATION",
+  "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "repository": "lilomateo2026-sudo/OMNIPATH-Recognition-Topology",
+  "candidate": {
+    "pull_request": 23,
+    "branch": "o32-v6-experimental",
+    "head_sha": "9110e1b81aa2a64b6f89256a972ad515482ac893",
+    "scientific_root_sha": "c19551d92c306236b7c80c9422eb44a1afacb1af",
+    "current_validated_base_sha": "822085dee5ee7761fcfb29bb296cc4f4f401fba8"
+  },
+  "frozen_evidence": {
+    "branch": "o32.5-v6-candidate-freeze",
+    "commit": "29c4bd3cec0fe20a39a2d5ede80fd01197643b3f",
+    "freeze_commit": "fa9ea2613f15e9f49f9a0fd502f576c32c696af3",
+    "freeze_path": "omnipath/recognition/v6/O32_5_v6_candidate_evidence_freeze.json",
+    "freeze_blob_sha": "219c06a7b23c8ef89f13f68657015661bf9e2507",
+    "namespace_path": "omnipath/recognition/promotion_genealogy/O32_6_order_namespace_reconciliation.json",
+    "namespace_blob_sha": "f74db937161db8db39cb201681e5b4965f3fdb8e"
+  },
+  "judgment": {
+    "o32_1_five_generation_differential_passed": true,
+    "o32_2_authority_firewall_passed": true,
+    "o32_3_cross_ledger_replay_identity_passed": true,
+    "o32_4_genealogy_mutation_matrix_passed": true,
+    "o32_5_candidate_freeze_complete": true,
+    "o32_6_namespace_reconciliation_complete": true,
+    "root_ancestry_passed": true,
+    "base_drift_reconciled_without_rewriting_scientific_root": true,
+    "recognition_ci_passed": true,
+    "genealogy_ci_passed": true,
+    "closure_ci_passed": true,
+    "historical_recovery_ci_passed": true,
+    "recovery_vault_ci_passed": true,
+    "artifacts_bound_and_unexpired": true,
+    "unresolved_counterexamples": 0,
+    "eligible_for_exact_sha_authorization": true
+  },
+  "deterministic_evidence": {
+    "o32_1_digest_sha256": "1f8f458941ba98034bead7161c3d9fca0943d0df799a1de28ebd4654338207af",
+    "o32_2_digest_sha256": "aaa9519426623178c382b68a10793402cc8d40153b564ddf2757c9bb0779763a",
+    "o32_3_digest_sha256": "b51c862bd510d0a0f4c0d89b0dd017f5aaaee2d5bfebdb303fecbc7bec38ff31",
+    "o32_4_digest_sha256": "e2b054a2712ddbe3e40bfca8c1e18e360c185e22919678d1e77bfb8586694d4b"
+  },
+  "external_ci": {
+    "recognition_run_id": 34839187146,
+    "genealogy_run_id": 34839187247,
+    "closure_run_id": 34839187116,
+    "historical_recovery_run_id": 34839187115,
+    "recovery_vault_run_id": 34839187124,
+    "all_conclusions": "success"
+  },
+  "authority": {
+    "tribunal_is_eligibility_only": true,
+    "merge_authorized": false,
+    "merge_performed": false,
+    "candidate_self_promoted": false,
+    "tribunal_grants_future_promotion_authority": false,
+    "required_exact_candidate_head_sha": "9110e1b81aa2a64b6f89256a972ad515482ac893"
+  },
+  "invalidation_rules": [
+    "ANY_CANDIDATE_HEAD_SHA_CHANGE_REQUIRES_FRESH_CI_AND_NEW_TRIBUNAL",
+    "ANY_MAIN_CHANGE_BEFORE_AUTHORIZATION_REQUIRES_EXACT_BASE_REVALIDATION",
+    "ANY_FAILED_OR_MISSING_CI_GATE_BLOCKS_AUTHORIZATION",
+    "ANY_EXPIRED_OR_DIGEST_MISMATCHED_BOUND_ARTIFACT_BLOCKS_AUTHORIZATION",
+    "ANY_O32_1_MISMATCH_BLOCKS_AUTHORIZATION",
+    "ANY_O32_2_AUTHORITY_ESCAPE_BLOCKS_AUTHORIZATION",
+    "ANY_O32_3_REPLAY_IDENTITY_OR_LINEAGE_FAILURE_BLOCKS_AUTHORIZATION",
+    "ANY_O32_4_UNDETECTED_GENEALOGY_MUTATION_BLOCKS_AUTHORIZATION",
+    "ANY_UNRESOLVED_COUNTEREXAMPLE_BLOCKS_AUTHORIZATION"
+  ]
+}
