@@ -1,0 +1,86 @@
+{
+  "schema": "omnipath.v6-exact-sha-authorization/v1",
+  "order": "O33.2",
+  "status": "AUTHORIZED_FOR_CONTROLLED_V6_MERGE",
+  "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "repository": "lilomateo2026-sudo/OMNIPATH-Recognition-Topology",
+  "candidate": {
+    "pull_request": 23,
+    "branch": "o32-v6-experimental",
+    "required_head_sha": "9110e1b81aa2a64b6f89256a972ad515482ac893",
+    "required_live_base_sha": "2d9250445ebaaf40eb322da7ca495c9e0c53dc08",
+    "scientific_root_sha": "c19551d92c306236b7c80c9422eb44a1afacb1af"
+  },
+  "judgment_chain": {
+    "freeze_commit": "fa9ea2613f15e9f49f9a0fd502f576c32c696af3",
+    "freeze_blob_sha": "219c06a7b23c8ef89f13f68657015661bf9e2507",
+    "namespace_reconciliation_commit": "29c4bd3cec0fe20a39a2d5ede80fd01197643b3f",
+    "namespace_blob_sha": "f74db937161db8db39cb201681e5b4965f3fdb8e",
+    "tribunal_commit": "ed396e9afb17725e34980043501312680f52b6e5",
+    "tribunal_blob_sha": "c38cff50c3adaa52f7b0e33682b7038e8a0b2782",
+    "tribunal_status": "ELIGIBLE_FOR_EXACT_SHA_AUTHORIZATION"
+  },
+  "base_drift_revalidation": {
+    "tribunal_observed_base_sha": "822085dee5ee7761fcfb29bb296cc4f4f401fba8",
+    "authorization_live_base_sha": "2d9250445ebaaf40eb322da7ca495c9e0c53dc08",
+    "drift_detected": true,
+    "drift_descends_from_tribunal_base": true,
+    "candidate_head_changed": false,
+    "candidate_rebased": false,
+    "fresh_current_base_validation_required": true,
+    "fresh_current_base_validation_passed": true
+  },
+  "synthetic_composite": {
+    "tested_merge_preview_sha": "27491a767f542b8785d720215efcef98b2140ab9",
+    "tested_tree_sha": "cf58a3bc1ee3a9a54dafb811ceffe5cabb802540",
+    "tested_parent_base_sha": "2d9250445ebaaf40eb322da7ca495c9e0c53dc08",
+    "tested_parent_candidate_sha": "9110e1b81aa2a64b6f89256a972ad515482ac893",
+    "current_preview_sha_at_authorization": "00c00ae7db4f0930bb93e1380785b3c7a6846529",
+    "current_preview_tree_sha": "cf58a3bc1ee3a9a54dafb811ceffe5cabb802540",
+    "current_preview_parent_base_sha": "2d9250445ebaaf40eb322da7ca495c9e0c53dc08",
+    "current_preview_parent_candidate_sha": "9110e1b81aa2a64b6f89256a972ad515482ac893",
+    "synthetic_preview_sha_churn_reconciled": true,
+    "composite_tree_and_parents_identical": true
+  },
+  "fresh_current_base_ci": {
+    "recognition": {"run_id": 34900725298, "run_number": 80, "conclusion": "success", "tested_merge_preview_sha": "27491a767f542b8785d720215efcef98b2140ab9", "test_count": 85},
+    "genealogy": {"run_id": 34900725297, "run_number": 44, "conclusion": "success"},
+    "closure": {"run_id": 34900725312, "run_number": 37, "conclusion": "success"},
+    "historical_recovery": {"run_id": 34900725316, "run_number": 16, "conclusion": "success"},
+    "recovery_vault": {"run_id": 34900725386, "run_number": 14, "conclusion": "success"},
+    "replica_quorum": {"run_id": 34900725374, "run_number": 4, "conclusion": "success"}
+  },
+  "fresh_artifacts": {
+    "recognition_replay": {"id": 10370886289, "digest": "sha256:0114e4b95b550b90bd6135d33a673e4b31b3b6afa0932dcbf4bf8b42d3fdfdd9", "expired": false},
+    "recognition_attestation": {"id": 10369944955, "digest": "sha256:adb340dcbca7efe904d4c9d132ea74abdfb27d75fe1a5497ce490931a61adca7", "expired": false},
+    "historical_recovery": {"id": 10370821637, "digest": "sha256:051b435903810d94cd9437ffe0d86a965996d3e7602b6578588f9f6f6584762e", "expired": false},
+    "recovery_vault": {"id": 10370946075, "digest": "sha256:8c51a2f708803abe1abf0181b73959b6cdf503b381d02a38ed5e67ad1b94b77f", "expired": false},
+    "replica_a": {"id": 10371195027, "digest": "sha256:4abaa3c759c3aa3ebc7cc5d23b806362bca481299bc30614bdf247f7d7b94112", "expired": false},
+    "replica_b": {"id": 10369544710, "digest": "sha256:7c105f08cc9cec739df1c5b57196ce106418c62ba32e1d2d1c741ff3caf39ab8", "expired": false},
+    "replica_quorum": {"id": 10370199537, "digest": "sha256:d9f2a0e87626cb935d4b6e9a7299065ce77c1b534c6d9b785cbcf41b540c6501", "expired": false}
+  },
+  "o32_invariants": {
+    "five_generation_mismatches": 0,
+    "authority_firewall_escapes": 0,
+    "replay_identity_failures": 0,
+    "genealogy_undetected_mutations": 0,
+    "unresolved_counterexamples": 0
+  },
+  "authorization": {
+    "authorization_source": "user_explicit_batch_decision_including_O33.3",
+    "human_directed_merge_authorization": true,
+    "candidate_self_promoted": false,
+    "tribunal_self_authorized": false,
+    "merge_authorized": true,
+    "merge_performed": false,
+    "merge_method_required": "merge",
+    "expected_head_sha_guard_required": true
+  },
+  "invalidation_rules": [
+    "ANY_CHANGE_TO_REQUIRED_HEAD_SHA_BEFORE_MERGE_INVALIDATES_AUTHORIZATION",
+    "ANY_CHANGE_TO_REQUIRED_LIVE_BASE_SHA_BEFORE_MERGE_INVALIDATES_AUTHORIZATION",
+    "ANY_FAILED_OR_MISSING_FRESH_CURRENT_BASE_GATE_INVALIDATES_AUTHORIZATION",
+    "ANY_BOUND_ARTIFACT_EXPIRATION_OR_DIGEST_MISMATCH_INVALIDATES_AUTHORIZATION",
+    "ANY_NEW_UNRESOLVED_COUNTEREXAMPLE_INVALIDATES_AUTHORIZATION"
+  ]
+}
