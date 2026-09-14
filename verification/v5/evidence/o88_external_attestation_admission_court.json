@@ -1,0 +1,33 @@
+{
+  "admissions": [
+    {
+      "admission_digest": "88c931c15dd48dca5f75964babeabcb490e1ee39be2d3259c98df69d29c3b051",
+      "artifact_archive_sha256": "d0a6dd8de15039dbabe9918c2dda87e46bf592399228a61307c02474eaf47201",
+      "artifact_id": 10371237926,
+      "canonical_runner_blob_sha": "9c2b47fd4db4bbf96ce982ae2ddbf28eef9654ac",
+      "canonical_source_commit": "5c5010459dee0b801d6b28335e187f51e1dcdb02",
+      "checks": {"attestation_self_digest": true,"manifest_digest_present": true,"report_digest_present": true,"repository_match": true,"reproduction_passed": true,"semantic_trace_digest_present": true,"workflow_run_match": true},
+      "environment": "ubuntu",
+      "status": "ADMITTED",
+      "working_tree_runner_sha256": "6e23a2f1d00ff432117c0a6bdc90a221a252022bc46d8f1e7bbe0ed2e6b4035b"
+    },
+    {
+      "admission_digest": "8380afee23891f7e6d30779cbca3583ad7597da63d4173fb72e3691b3cf0e744",
+      "artifact_archive_sha256": "5c306b0636e006b034d4002d11de614b8e015e6d0aacd810e261156ca0c01fe5",
+      "artifact_id": 10371382723,
+      "canonical_runner_blob_sha": "9c2b47fd4db4bbf96ce982ae2ddbf28eef9654ac",
+      "canonical_source_commit": "5c5010459dee0b801d6b28335e187f51e1dcdb02",
+      "checks": {"attestation_self_digest": true,"manifest_digest_present": true,"report_digest_present": true,"repository_match": true,"reproduction_passed": true,"semantic_trace_digest_present": true,"workflow_run_match": true},
+      "environment": "windows",
+      "status": "ADMITTED",
+      "working_tree_runner_sha256": "c616f22ca2d168b4884d547032a1ff4ed3543d04ebe7750ebd4c71a62c1c8f74"
+    }
+  ],
+  "canonical_runner_blob_sha": "9c2b47fd4db4bbf96ce982ae2ddbf28eef9654ac",
+  "court_digest": "4aa46dd3b643ee45120457c840c0ada06ef94041c65f1eb2fc9c7ae909de57f1",
+  "source_commit": "5c5010459dee0b801d6b28335e187f51e1dcdb02",
+  "source_repository": "lilomateo2026-sudo/OMNIPATH-Recognition-Topology",
+  "transport_repair": {"original_o77_capsule_transport": "REJECTED_MISMATCH","replacement_basis": "commit-bound runner at canonical Git blob"},
+  "version": "O88-v1",
+  "workflow_run_id": 34902506792
+}
