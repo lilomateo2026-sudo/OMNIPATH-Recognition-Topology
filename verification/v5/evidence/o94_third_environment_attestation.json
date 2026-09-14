@@ -1,0 +1,25 @@
+{
+  "version": "O94-v1",
+  "status": "PASS",
+  "workflow_run_id": 34903102887,
+  "workflow_head_sha": "ab43abb196892d404694476a86e95051c35ebab3",
+  "artifact_id": 10371606053,
+  "artifact_archive_digest": "sha256:3808b67c4d87d2255750dc32e53c38260e14c41c6008ecab170861483ab620eb",
+  "environment": {
+    "executable_name": "python",
+    "implementation": "CPython",
+    "libc": ["", ""],
+    "machine": "arm64",
+    "os": "Darwin",
+    "os_release": "25.6.0",
+    "python": "3.12.10"
+  },
+  "environment_identity_digest": "593860c79e35dd458a7abbbbeb5ef28910a2813d1045c533579bb363d6d5415e",
+  "attestation_digest": "7981e9b80ef319269163553c5beb1a5217ff66992e276b960ce8c5baa861d51d",
+  "report_digest": "5ee98bf9d0e90b4eec7eec45bf28e33b2296f010bd1cb5690b7b951d7e410ce6",
+  "manifest_digest": "fa2d8eb05e3d9934c8df1deccf9d5e24a1a900d26734904d5e63d5c11fefa904",
+  "semantic_trace_digest": "945900bad3070247d1d240c9b3e5f8a25743f52d99a4d250dde3ce3d53234daa",
+  "baseline_match": true,
+  "qualification": "third independent OS/architecture profile: macOS/Darwin arm64, CPython 3.12.10",
+  "summary_digest": "0dffecb18f2f731ea181a4e7a590545455234e4b0c787b74ecb46b137de5dc2d"
+}
