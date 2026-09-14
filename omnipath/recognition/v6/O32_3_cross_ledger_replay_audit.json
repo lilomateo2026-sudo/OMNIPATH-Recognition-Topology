@@ -1,0 +1,23 @@
+{
+  "schema": "omnipath.cross-ledger-replay-audit-manifest/v1",
+  "order": "O32.3",
+  "status": "EXPERIMENTAL_AUDIT_CI_REQUIRED",
+  "epistemic_state": "VERIFIED_WITHIN_SCOPE",
+  "ledger_orders": ["O22.6", "O23.9", "O25.5", "O27.5", "O29.5", "O31.6"],
+  "expected": {
+    "ledger_count": 6,
+    "artifact_bound_count": 5,
+    "workflow_only_historical_count": 1,
+    "lineage_mismatches": 0,
+    "alias_mismatches": 0,
+    "replay_identity_failures": 0,
+    "duplicate_replay_ids": 0,
+    "audit_digest_sha256": "b51c862bd510d0a0f4c0d89b0dd017f5aaaee2d5bfebdb303fecbc7bec38ff31"
+  },
+  "historical_exception": {
+    "entry": "O22.6",
+    "reason": "durable historical backfill records workflow identity but does not embed replay/attestation artifact identities",
+    "promotion_authority_effect": "NONE"
+  },
+  "decision": "ALL_DURABLE_PROMOTION_LINEAGES_MUST_RECONSTRUCT_FROM_LEDGER_AND_INDEX_WITH_UNIQUE_REPLAY_IDENTITIES"
+}
