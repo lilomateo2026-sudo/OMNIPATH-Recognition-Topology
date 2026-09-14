@@ -1,0 +1,38 @@
+name: O93 V5 Release Tag
+
+on:
+  push:
+    paths:
+      - 'verification/v5/evidence/o92_reproducibility_transparency_ledger.json'
+      - 'verification/v5/evidence/o93_release_constitutional_manifest.json'
+      - '.github/workflows/o93-v5-release-tag.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  tag-release-candidate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Verify release evidence exists
+        run: |
+          test -f verification/v5/evidence/o92_reproducibility_transparency_ledger.json
+          test -f verification/v5/evidence/o93_release_constitutional_manifest.json
+      - name: Create immutable V5 RC tag
+        shell: bash
+        run: |
+          set -euo pipefail
+          TAG=v5.0.0-rc1
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if git rev-parse "refs/tags/$TAG" >/dev/null 2>&1; then
+            EXISTING=$(git rev-list -n 1 "$TAG")
+            test "$EXISTING" = "$GITHUB_SHA"
+          else
+            git tag -a "$TAG" "$GITHUB_SHA" -m 'OMNIPATH V5 constitutional release candidate O93'
+            git push origin "refs/tags/$TAG"
+          fi
