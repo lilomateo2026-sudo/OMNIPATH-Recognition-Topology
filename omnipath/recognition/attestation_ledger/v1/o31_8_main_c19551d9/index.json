@@ -1,9 +1,19 @@
 {
   "schema": "omnipath.recovery-vault-ledger-link/v1",
   "order": "O31.8",
+  "source_order": "O31.8",
   "status": "HISTORICAL_EVIDENCE_VAULTED",
+  "epistemic_state": "VERIFIED_WITHIN_SCOPE",
   "parent_main_sha": "c19551d92c306236b7c80c9422eb44a1afacb1af",
   "gap_id": "O23.9:promotion_manifest",
+  "candidate": {
+    "head_sha": "2028938d32064a1fecec6fdd18579dc4c29d8501"
+  },
+  "merge": {
+    "commit": "c19551d92c306236b7c80c9422eb44a1afacb1af",
+    "candidate_parent": "2028938d32064a1fecec6fdd18579dc4c29d8501"
+  },
+  "relationship": "HISTORICAL_EVIDENCE_CONTENT_ADDRESSED_VAULT",
   "source": {
     "commit": "2028938d32064a1fecec6fdd18579dc4c29d8501",
     "tree": "e7a74eab39d78e66ce7b9d4719aa9626855cf75c",
