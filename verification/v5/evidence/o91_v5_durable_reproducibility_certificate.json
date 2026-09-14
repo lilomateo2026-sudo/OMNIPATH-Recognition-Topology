@@ -1,0 +1,20 @@
+{
+  "canonical_runner_blob_sha": "9c2b47fd4db4bbf96ce982ae2ddbf28eef9654ac",
+  "certificate_digest": "3b1f0b0c5060391bf49fecc66ca711c924db50d5498c3b6fb4b4bd6096809643",
+  "certificate_status": "V5_DURABLY_REPRODUCIBLE",
+  "commit_sha": "5c5010459dee0b801d6b28335e187f51e1dcdb02",
+  "cross_machine_verified": true,
+  "environment_attestation_digests": ["39d38644d5c9a536da6123dc2dae607d918fae28d2ecfa90c8755939cd425bf9","1a000a2905fe3d21a5d75300ffc15897f07e09607451605bb7cdb2a608f554fa"],
+  "genealogy": ["O70","O71","O72","O73","O74","O75","O76","O77","O78","O79","O80","O81","O82","O83","O84","O85","O86","O87","O88","O89","O90","O91"],
+  "manifest_digest": "fa2d8eb05e3d9934c8df1deccf9d5e24a1a900d26734904d5e63d5c11fefa904",
+  "o88_court_digest": "4aa46dd3b643ee45120457c840c0ada06ef94041c65f1eb2fc9c7ae909de57f1",
+  "o89_differential_digest": "af18de1b43741aebfa4b79526eb0fbacc57225f96c9943affde37085cce48dc9",
+  "o90_closure_digest": "86ed09342482dc2b967ddae124781d320f99a12c79910c47970a1bc0a9546fe3",
+  "qualification_note": "Original O77 capsule transport representation was rejected after hash mismatch; O87 qualification uses the canonical Git commit/blob runner and preserves that repair in lineage.",
+  "report_digest": "5ee98bf9d0e90b4eec7eec45bf28e33b2296f010bd1cb5690b7b951d7e410ce6",
+  "repository": "lilomateo2026-sudo/OMNIPATH-Recognition-Topology",
+  "scope": "Commit-bound V5 synthetic constitutional verification runner",
+  "semantic_trace_digest": "945900bad3070247d1d240c9b3e5f8a25743f52d99a4d250dde3ce3d53234daa",
+  "version": "O91-v1",
+  "workflow_run_id": 34902506792
+}
