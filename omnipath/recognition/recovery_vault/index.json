@@ -10,7 +10,7 @@
       "record_path": "omnipath/recognition/recovery_vault/sha256/486993dc1843c8f35876ed3dc02c1d2ce4c3a66ed96a3d27c00bd08c42a57eb6/record.json",
       "record_git_blob_sha": "37cbeac8b6eebfc07670672ad2d891e8b49bd228",
       "ledger_path": "omnipath/recognition/attestation_ledger/v1/o31_8_main_c19551d9/index.json",
-      "ledger_git_blob_sha": "8b4c98e8ecfcea8c2a69e4f827bb30f99d951d8a"
+      "ledger_git_blob_sha": "7b6a7acff442063305c67b8122802928950ff733"
     }
   ]
 }
