@@ -1,0 +1,50 @@
+name: O98-O100 V5 Provenance and Historical Rebuild
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/o98-o100-provenance-historical-rebuild.yml'
+
+permissions:
+  contents: read
+  id-token: write
+  attestations: write
+
+jobs:
+  historical-rebuild:
+    name: Historical RC1 / ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: v5.0.0-rc1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Replay historical certified runner
+        env:
+          O87_RUNNER_ID: o100-${{ matrix.os }}-${{ github.run_id }}
+        run: python verification/v5/o87_runner.py
+      - name: Verify certified semantic roots
+        shell: python
+        run: |
+          import json, pathlib
+          p=pathlib.Path('verification/v5/artifacts')
+          a=json.loads((p/'o87_external_attestation.json').read_text())
+          expected={
+            'report_digest':'5ee98bf9d0e90b4eec7eec45bf28e33b2296f010bd1cb5690b7b951d7e410ce6',
+            'manifest_digest':'fa2d8eb05e3d9934c8df1deccf9d5e24a1a900d26734904d5e63d5c11fefa904',
+            'semantic_trace_digest':'945900bad3070247d1d240c9b3e5f8a25743f52d99a4d250dde3ce3d53234daa'}
+          bad={k:(a.get(k),v) for k,v in expected.items() if a.get(k)!=v}
+          if bad: raise SystemExit(f'SEMANTIC_REGRESSION: {bad}')
+          print('HISTORICAL_REBUILD_PASS')
+      - uses: actions/upload-artifact@v4
+        with:
+          name: o100-historical-${{ matrix.os }}
+          path: verification/v5/artifacts/
+          retention-days: 90
