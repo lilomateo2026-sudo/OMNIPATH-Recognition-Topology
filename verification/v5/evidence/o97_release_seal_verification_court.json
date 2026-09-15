@@ -1,0 +1,14 @@
+{
+  "version": "O97-v1",
+  "name": "Release Seal Verification Court",
+  "status": "PASS",
+  "repository": "lilomateo2026-sudo/OMNIPATH-Recognition-Topology",
+  "observed_main": "197413cc16276e8e8fc70efb4cb9f8cd6a57776d",
+  "o96_seal_digest": "572919fc280594ceda8b95e4b934ac1f2cd17bb98e326981af329aa339ee8876",
+  "o92_final_ledger_root": "7a7cdd98dcf2beb2712c407fb9b1a19f8862bdc579f73dcf0b9611a664edbee9",
+  "o93_manifest_digest": "5301f5a4254fa697abf0f61f6cc1701f96ce660ab750b6e7c931889edda0f42c",
+  "tag": "v5.0.0-rc1",
+  "tagged_runner_blob_sha": "9c2b47fd4db4bbf96ce982ae2ddbf28eef9654ac",
+  "checks": {"seal_present": true, "ledger_contains_o91_and_o96": true, "tag_resolves_runner": true, "genealogy_contiguous_o70_o96": true},
+  "court_digest": "7df3b76c605a8380bca29b187eb84c1639e4b613b1c863b5e1e93d7cb7f399c4"
+}
