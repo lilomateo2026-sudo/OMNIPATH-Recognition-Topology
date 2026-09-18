@@ -1,0 +1,52 @@
+name: O98 V5 Signed Provenance Upgrade
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/o98-signed-provenance.yml'
+
+permissions:
+  contents: read
+  id-token: write
+  attestations: write
+
+jobs:
+  provenance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build provenance subject
+        shell: python
+        run: |
+          import json, pathlib, hashlib
+          def digest(o):
+              return hashlib.sha256(json.dumps(o, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
+          p = pathlib.Path('verification/v5/provenance')
+          p.mkdir(parents=True, exist_ok=True)
+          subject = {
+            'version':'O98-provenance-subject-v1',
+            'repository':'${{ github.repository }}',
+            'workflow_ref':'${{ github.workflow_ref }}',
+            'workflow_sha':'${{ github.sha }}',
+            'release_tag':'v5.0.0-rc1',
+            'tag_object_sha':'f4713e0a55137160e411ea57b0c78156c817efce',
+            'tagged_commit':'40de449c7daad94fabc955d8e558992aa8ca390a',
+            'certified_runtime_commit':'5c5010459dee0b801d6b28335e187f51e1dcdb02',
+            'canonical_runner_blob_sha':'9c2b47fd4db4bbf96ce982ae2ddbf28eef9654ac',
+            'o96_seal_digest':'572919fc280594ceda8b95e4b934ac1f2cd17bb98e326981af329aa339ee8876',
+            'report_digest':'5ee98bf9d0e90b4eec7eec45bf28e33b2296f010bd1cb5690b7b951d7e410ce6',
+            'manifest_digest':'fa2d8eb05e3d9934c8df1deccf9d5e24a1a900d26734904d5e63d5c11fefa904',
+            'semantic_trace_digest':'945900bad3070247d1d240c9b3e5f8a25743f52d99a4d250dde3ce3d53234daa'
+          }
+          subject['claim_digest']=digest(subject)
+          (p/'o98_provenance_subject.json').write_text(json.dumps(subject, indent=2, sort_keys=True)+'\n')
+      - name: Attest provenance subject
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: verification/v5/provenance/o98_provenance_subject.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: o98-signed-provenance-subject
+          path: verification/v5/provenance/o98_provenance_subject.json
+          retention-days: 90
