@@ -50,3 +50,5 @@ jobs:
           name: o98-signed-provenance-subject
           path: verification/v5/provenance/o98_provenance_subject.json
           retention-days: 90
+
+# activate O98 provenance
