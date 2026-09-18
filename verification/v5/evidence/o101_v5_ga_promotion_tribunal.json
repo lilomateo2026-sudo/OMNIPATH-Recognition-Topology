@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "o100_macos_pass": true,
+    "o100_ubuntu_pass": true,
+    "o100_windows_pass": true,
+    "o96_release_sealed": true,
+    "o97_court_pass": true,
+    "o98_rekor_record_present": true,
+    "o98_signed_provenance_present": true,
+    "o99_registry_ready": true,
+    "semantic_roots_match_certified": true
+  },
+  "decision": "APPROVED_FOR_GA_TAG",
+  "o100_run_id": 35359985446,
+  "o96_seal_digest": "572919fc280594ceda8b95e4b934ac1f2cd17bb98e326981af329aa339ee8876",
+  "o97_court_digest": "7df3b76c605a8380bca29b187eb84c1639e4b613b1c863b5e1e93d7cb7f399c4",
+  "o98_attestation_id": 48474410,
+  "o98_rekor_log_index": 2886202457,
+  "o99_registry_root": "91ba77d4fa47e067e914336ef7a6be89623218c41a7bf61471b0f6059cb89fc7",
+  "scope": "V5 synthetic constitutional verification runner",
+  "source_release": "v5.0.0-rc1",
+  "target_tag": "v5.0.0",
+  "tribunal_digest": "41d6c1e3f9614281d7bd7324bc6f8ad0e8c3a13f901feed44d8835ff15f03afa",
+  "version": "O101-v1",
+  "workflow_run_id": 35360559080,
+  "workflow_sha": "1e501da135a3d29dedb98409c9e7ea9b85389c0b"
+}
