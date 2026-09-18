@@ -1,0 +1,19 @@
+{
+  "version": "O100-v1",
+  "name": "Historical Clean-Rebuild Qualification",
+  "status": "PASS",
+  "workflow_run_id": 35359985446,
+  "qualified_tag": "v5.0.0-rc1",
+  "checked_out_tag_commit": "40de449c7daad94fabc955d8e558992aa8ca390a",
+  "semantic_roots": {
+    "report_digest": "5ee98bf9d0e90b4eec7eec45bf28e33b2296f010bd1cb5690b7b951d7e410ce6",
+    "manifest_digest": "fa2d8eb05e3d9934c8df1deccf9d5e24a1a900d26734904d5e63d5c11fefa904",
+    "semantic_trace_digest": "945900bad3070247d1d240c9b3e5f8a25743f52d99a4d250dde3ce3d53234daa"
+  },
+  "environments": {
+    "ubuntu-latest": {"job_id":105648583997,"result":"PASS","artifact_id":10554367454,"archive_sha256":"a9c71cadf35264e0b3febdbe59bf1dc665583280c5c3250073548fb9d6a8f5fa"},
+    "windows-latest": {"job_id":105648583557,"result":"PASS","artifact_id":10553627951,"archive_sha256":"7e88e2b2ff13717f91dbe972c5c9989c166e799ddba2b2a4e1601748594249ca"},
+    "macos-latest": {"job_id":105648583875,"result":"PASS","artifact_id":10554227683,"archive_sha256":"11711e11107b03f401949a3200748f7921ed6b03f4bfac984b968d18320302fb"}
+  },
+  "invariant": "The historical RC1 tag reproduces the certified semantic roots in all three clean hosted environments."
+}
