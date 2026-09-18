@@ -1,0 +1,98 @@
+name: O101 V5 General Availability Promotion Tribunal
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/o101-v5-ga-promotion.yml'
+
+permissions:
+  contents: write
+  id-token: write
+  attestations: write
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Verify O97-O100 gates and build GA decision
+        shell: python
+        run: |
+          import json, pathlib, hashlib, os
+          root=pathlib.Path('verification/v5')
+          def load(p): return json.loads((root/p).read_text())
+          def digest(o): return hashlib.sha256(json.dumps(o,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+          o96=load('evidence/o96_v5_constitutional_release_seal.json')
+          o97=load('evidence/o97_release_seal_verification_court.json')
+          o99=load('evidence/o99_immutable_release_artifact_registry.json')
+          checks={
+            'o96_release_sealed': o96.get('status')=='V5_CONSTITUTIONAL_RELEASE_SEALED',
+            'o97_court_pass': o97.get('status')=='PASS',
+            'o99_registry_ready': o99.get('status')=='IMMUTABLE_RELEASE_ARTIFACT_REGISTRY_READY',
+            'o98_signed_provenance_present': bool(o99.get('o98_signed_provenance',{}).get('attestation_id')),
+            'o98_rekor_record_present': bool(o99.get('o98_signed_provenance',{}).get('rekor_log_index')),
+            'o100_ubuntu_pass': o99['o100_historical_rebuild']['environments']['ubuntu']['status']=='PASS',
+            'o100_macos_pass': o99['o100_historical_rebuild']['environments']['macos']['status']=='PASS',
+            'o100_windows_pass': o99['o100_historical_rebuild']['environments']['windows']['status']=='PASS',
+            'semantic_roots_match_certified': o99['o100_historical_rebuild']['expected_semantic_roots']['report_digest']=='5ee98bf9d0e90b4eec7eec45bf28e33b2296f010bd1cb5690b7b951d7e410ce6'
+              and o99['o100_historical_rebuild']['expected_semantic_roots']['manifest_digest']=='fa2d8eb05e3d9934c8df1deccf9d5e24a1a900d26734904d5e63d5c11fefa904'
+              and o99['o100_historical_rebuild']['expected_semantic_roots']['semantic_trace_digest']=='945900bad3070247d1d240c9b3e5f8a25743f52d99a4d250dde3ce3d53234daa'
+          }
+          if not all(checks.values()):
+              raise SystemExit('GA_GATE_FAILURE '+json.dumps(checks,sort_keys=True))
+          rec={
+            'version':'O101-v1',
+            'decision':'APPROVED_FOR_GA_TAG',
+            'target_tag':'v5.0.0',
+            'source_release':'v5.0.0-rc1',
+            'scope':'V5 synthetic constitutional verification runner',
+            'workflow_run_id':int(os.environ['GITHUB_RUN_ID']),
+            'workflow_sha':os.environ['GITHUB_SHA'],
+            'o96_seal_digest':o96['seal_digest'],
+            'o97_court_digest':o97['court_digest'],
+            'o99_registry_root':o99['registry_root'],
+            'o98_attestation_id':o99['o98_signed_provenance']['attestation_id'],
+            'o98_rekor_log_index':o99['o98_signed_provenance']['rekor_log_index'],
+            'o100_run_id':o99['o100_historical_rebuild']['workflow_run_id'],
+            'checks':checks
+          }
+          rec['tribunal_digest']=digest(rec)
+          p=root/'evidence/o101_v5_ga_promotion_tribunal.json'
+          p.write_text(json.dumps(rec,indent=2,sort_keys=True)+'\n')
+          print(json.dumps(rec,indent=2))
+
+      - name: Attest GA decision record
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: verification/v5/evidence/o101_v5_ga_promotion_tribunal.json
+
+      - name: Commit GA decision and create v5.0.0 tag
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add verification/v5/evidence/o101_v5_ga_promotion_tribunal.json
+          git commit -m "O101 approve V5 general availability promotion"
+          git pull --rebase origin main
+          git push origin HEAD:main
+          TARGET="$(git rev-parse HEAD)"
+          if git ls-remote --exit-code --tags origin refs/tags/v5.0.0 >/dev/null 2>&1; then
+            echo "v5.0.0 tag already exists; refusing replacement"
+            exit 2
+          fi
+          git tag -a v5.0.0 "$TARGET" -m "V5 General Availability - O101 verified promotion"
+          git push origin refs/tags/v5.0.0
+          echo "GA_TARGET=$TARGET" >> "$GITHUB_ENV"
+
+      - name: Upload O101 tribunal evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: o101-v5-ga-promotion
+          path: verification/v5/evidence/o101_v5_ga_promotion_tribunal.json
+          retention-days: 90
