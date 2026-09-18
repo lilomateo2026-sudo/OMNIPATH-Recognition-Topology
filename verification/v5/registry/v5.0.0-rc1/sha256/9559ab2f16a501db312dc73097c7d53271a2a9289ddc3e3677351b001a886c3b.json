@@ -1,0 +1,11 @@
+{
+  "attestation_digest":"38d3e16165a2c35b839f94a6e04aad918566fa75ea539357f668616140c79def",
+  "environment":{"executable_name":"python","implementation":"CPython","libc":["",""],"machine":"arm64","os":"Darwin","os_release":"25.6.0","python":"3.12.10"},
+  "environment_identity_digest":"37a4409bb337f25bc167cc7455e68886d7aa8331b7012b49b6c5a426aaea4315",
+  "manifest_digest":"fa2d8eb05e3d9934c8df1deccf9d5e24a1a900d26734904d5e63d5c11fefa904",
+  "report_digest":"5ee98bf9d0e90b4eec7eec45bf28e33b2296f010bd1cb5690b7b951d7e410ce6",
+  "reproduction_status":"PASS","runner_id":"o100-macos-latest-35359985446",
+  "semantic_trace_digest":"945900bad3070247d1d240c9b3e5f8a25743f52d99a4d250dde3ce3d53234daa",
+  "source":{"commit_sha":"9ee58c586a068a0a2fe810f993e3dbede1727df8","repository":"lilomateo2026-sudo/OMNIPATH-Recognition-Topology","runner_source_sha256":"6e23a2f1d00ff432117c0a6bdc90a221a252022bc46d8f1e7bbe0ed2e6b4035b"},
+  "version":"O87-external-attestation-v1"
+}
