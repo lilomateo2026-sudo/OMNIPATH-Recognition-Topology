@@ -96,3 +96,5 @@ jobs:
           name: o101-v5-ga-promotion
           path: verification/v5/evidence/o101_v5_ga_promotion_tribunal.json
           retention-days: 90
+
+# activate O101 GA promotion
