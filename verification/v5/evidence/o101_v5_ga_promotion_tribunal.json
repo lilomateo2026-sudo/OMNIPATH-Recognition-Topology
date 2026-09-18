@@ -20,8 +20,8 @@
   "scope": "V5 synthetic constitutional verification runner",
   "source_release": "v5.0.0-rc1",
   "target_tag": "v5.0.0",
-  "tribunal_digest": "5b3095853890a1defa1c58076923136baa77f9b9364b1da3a6cdf8684b539fae",
+  "tribunal_digest": "41d6c1e3f9614281d7bd7324bc6f8ad0e8c3a13f901feed44d8835ff15f03afa",
   "version": "O101-v1",
-  "workflow_run_id": 35360617393,
-  "workflow_sha": "29286f233f1d3ca03266963630b42b9896973733"
+  "workflow_run_id": 35360559080,
+  "workflow_sha": "1e501da135a3d29dedb98409c9e7ea9b85389c0b"
 }
