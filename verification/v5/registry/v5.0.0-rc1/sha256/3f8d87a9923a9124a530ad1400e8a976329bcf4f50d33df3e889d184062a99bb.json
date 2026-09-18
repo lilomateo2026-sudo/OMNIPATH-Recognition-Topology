@@ -1,11 +1,27 @@
 {
   "attestation_digest": "9059a991357d694e7479c4a832e7abf5a36980fcfa1d86111f77c54f1fe47393",
-  "environment": {"executable_name":"python","implementation":"CPython","libc":["glibc","2.39"],"machine":"x86_64","os":"Linux","os_release":"6.17.0-1022-azure","python":"3.12.14"},
-  "environment_identity_digest":"82ecae2888ccd48d63bfe8b73a51251724d7d77877b50f3f2d6d1868ec48fadc",
-  "manifest_digest":"fa2d8eb05e3d9934c8df1deccf9d5e24a1a900d26734904d5e63d5c11fefa904",
-  "report_digest":"5ee98bf9d0e90b4eec7eec45bf28e33b2296f010bd1cb5690b7b951d7e410ce6",
-  "reproduction_status":"PASS","runner_id":"o100-ubuntu-latest-35359985446",
-  "semantic_trace_digest":"945900bad3070247d1d240c9b3e5f8a25743f52d99a4d250dde3ce3d53234daa",
-  "source":{"commit_sha":"9ee58c586a068a0a2fe810f993e3dbede1727df8","repository":"lilomateo2026-sudo/OMNIPATH-Recognition-Topology","runner_source_sha256":"6e23a2f1d00ff432117c0a6bdc90a221a252022bc46d8f1e7bbe0ed2e6b4035b"},
-  "version":"O87-external-attestation-v1"
+  "environment": {
+    "executable_name": "python",
+    "implementation": "CPython",
+    "libc": [
+      "glibc",
+      "2.39"
+    ],
+    "machine": "x86_64",
+    "os": "Linux",
+    "os_release": "6.17.0-1022-azure",
+    "python": "3.12.14"
+  },
+  "environment_identity_digest": "82ecae2888ccd48d63bfe8b73a51251724d7d77877b50f3f2d6d1868ec48fadc",
+  "manifest_digest": "fa2d8eb05e3d9934c8df1deccf9d5e24a1a900d26734904d5e63d5c11fefa904",
+  "report_digest": "5ee98bf9d0e90b4eec7eec45bf28e33b2296f010bd1cb5690b7b951d7e410ce6",
+  "reproduction_status": "PASS",
+  "runner_id": "o100-ubuntu-latest-35359985446",
+  "semantic_trace_digest": "945900bad3070247d1d240c9b3e5f8a25743f52d99a4d250dde3ce3d53234daa",
+  "source": {
+    "commit_sha": "9ee58c586a068a0a2fe810f993e3dbede1727df8",
+    "repository": "lilomateo2026-sudo/OMNIPATH-Recognition-Topology",
+    "runner_source_sha256": "6e23a2f1d00ff432117c0a6bdc90a221a252022bc46d8f1e7bbe0ed2e6b4035b"
+  },
+  "version": "O87-external-attestation-v1"
 }
