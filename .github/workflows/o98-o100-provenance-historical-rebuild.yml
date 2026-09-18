@@ -48,3 +48,5 @@ jobs:
           name: o100-historical-${{ matrix.os }}
           path: verification/v5/artifacts/
           retention-days: 90
+
+# OMNIPATH O98/O100 activation marker
