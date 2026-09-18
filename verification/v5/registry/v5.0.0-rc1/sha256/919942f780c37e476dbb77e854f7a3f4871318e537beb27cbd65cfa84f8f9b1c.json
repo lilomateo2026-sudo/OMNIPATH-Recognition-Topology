@@ -1,0 +1,14 @@
+{
+  "canonical_runner_blob_sha":"9c2b47fd4db4bbf96ce982ae2ddbf28eef9654ac",
+  "certified_runtime_commit":"5c5010459dee0b801d6b28335e187f51e1dcdb02",
+  "claim_digest":"5f7747d4f9f0acb44f8f59bce3daafdaa3645fc778f20616f08199c8639abba4",
+  "manifest_digest":"fa2d8eb05e3d9934c8df1deccf9d5e24a1a900d26734904d5e63d5c11fefa904",
+  "o96_seal_digest":"572919fc280594ceda8b95e4b934ac1f2cd17bb98e326981af329aa339ee8876",
+  "release_tag":"v5.0.0-rc1","report_digest":"5ee98bf9d0e90b4eec7eec45bf28e33b2296f010bd1cb5690b7b951d7e410ce6",
+  "repository":"lilomateo2026-sudo/OMNIPATH-Recognition-Topology",
+  "semantic_trace_digest":"945900bad3070247d1d240c9b3e5f8a25743f52d99a4d250dde3ce3d53234daa",
+  "tag_object_sha":"f4713e0a55137160e411ea57b0c78156c817efce","tagged_commit":"40de449c7daad94fabc955d8e558992aa8ca390a",
+  "version":"O98-provenance-subject-v1",
+  "workflow_ref":"lilomateo2026-sudo/OMNIPATH-Recognition-Topology/.github/workflows/o98-signed-provenance.yml@refs/heads/main",
+  "workflow_sha":"42b4024f61089375b147888bf9176db3f035ff88"
+}
