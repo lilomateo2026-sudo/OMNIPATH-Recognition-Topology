@@ -1,0 +1,22 @@
+{
+  "version": "O101-receipt-v1",
+  "status": "V5_GA_PROMOTED",
+  "release_tag": "v5.0.0",
+  "tag_object_sha": "f7703f6323ca64ca96a40c80a5a8446660ef68f4",
+  "tag_target_commit": "8479062b9fd876aeb86d873a67c4d0ae135cbb6d",
+  "successful_workflow_run_id": 35360559080,
+  "successful_job_id": 105650485415,
+  "tribunal_digest": "41d6c1e3f9614281d7bd7324bc6f8ad0e8c3a13f901feed44d8835ff15f03afa",
+  "tribunal_subject_sha256": "75eee19cdc56000ccdd52ae9c1566f07f347ad1acb323ff997ea1fb2a7fc9663",
+  "provenance_attestation_id": 48475693,
+  "artifact_id": 10553808855,
+  "artifact_archive_sha256": "49dbb9bde4d0d1460432adce62d2ecefa26646772c1eaafe43b8e2cbe30f6215",
+  "all_promotion_steps_passed": true,
+  "duplicate_activation": {
+    "workflow_run_id": 35360617393,
+    "result": "SAFE_REFUSAL",
+    "reason": "v5.0.0 already existed; workflow refused replacement",
+    "tag_modified": false
+  },
+  "scope": "V5 synthetic constitutional verification runner; this does not certify a production security appliance or real-world network system."
+}
