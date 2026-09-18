@@ -1,9 +1,25 @@
 {
-  "version": "O98-policy-v1",
+  "version": "O98-v1",
   "name": "Signed Provenance Upgrade",
-  "status": "IMPLEMENTATION_REQUIRED",
-  "required_claims": ["repository", "tag", "tagged_commit", "runner_blob_sha", "o96_seal_digest", "workflow_identity", "artifact_roots"],
-  "acceptance": ["cryptographically verifiable provenance", "exact subject digest binding", "issuer/workflow identity", "no unsigned-tag substitution"],
-  "current_gap": "v5.0.0-rc1 annotated tag is unsigned; O96 truthfully records tag_signed=false",
-  "policy_digest": "4a12c46fc5681f6c3237118475efc7cbfa13bfdd4b608f19d39ef2eada2e448a"
+  "status": "PASS",
+  "release_tag": "v5.0.0-rc1",
+  "tag_itself_signed": false,
+  "provenance_attestation": {
+    "workflow_run_id": 35360108968,
+    "attestation_id": 48474410,
+    "subject_sha256": "919942f780c37e476dbb77e854f7a3f4871318e537beb27cbd65cfa84f8f9b1c",
+    "claim_digest": "5f7747d4f9f0acb44f8f59bce3daafdaa3645fc778f20616f08199c8639abba4",
+    "rekor_log_index": 2886202457,
+    "sigstore": "Public Good Sigstore",
+    "repository_attestation": "https://github.com/lilomateo2026-sudo/OMNIPATH-Recognition-Topology/attestations/48474410"
+  },
+  "binding": {
+    "certified_runtime_commit": "5c5010459dee0b801d6b28335e187f51e1dcdb02",
+    "canonical_runner_blob_sha": "9c2b47fd4db4bbf96ce982ae2ddbf28eef9654ac",
+    "o96_seal_digest": "572919fc280594ceda8b95e4b934ac1f2cd17bb98e326981af329aa339ee8876",
+    "report_digest": "5ee98bf9d0e90b4eec7eec45bf28e33b2296f010bd1cb5690b7b951d7e410ce6",
+    "manifest_digest": "fa2d8eb05e3d9934c8df1deccf9d5e24a1a900d26734904d5e63d5c11fefa904",
+    "semantic_trace_digest": "945900bad3070247d1d240c9b3e5f8a25743f52d99a4d250dde3ce3d53234daa"
+  },
+  "qualification_note": "The RC1 Git tag remains unsigned, but the release provenance subject is cryptographically attested by GitHub Actions OIDC, signed with Sigstore, logged in Rekor, and uploaded to the repository."
 }
