@@ -1,0 +1,9 @@
+{
+  "schema": "tosh.engine.capsule.v1",
+  "engine": "omnipath",
+  "role": "path-planner-and-batch-governor",
+  "registry_path": "engines/omnipath",
+  "runtime_contract": "dependency-aware path selection, risk batches, checkpoints, rollback",
+  "authority": "plans and ranks; does not expand execution authority",
+  "resurrection_required": true
+}
