@@ -1,0 +1,15 @@
+{
+  "bridge_version": "O32.1",
+  "source_repository": "lilomateo2026-sudo/Omni-verses-",
+  "source_ref": "design-pathology/omniverse-book-portal-seed",
+  "source_pr": 1,
+  "certificate_hash": "74ad06ac512ea5beafc81078af5f8e01d382c07d300abfb2c209d8840055d1fd",
+  "constitutional_root": "7125447f5fb1db9bf3c12157087cb11643f4f6252c70947ffc925f5b21249bf6",
+  "release_seal_hash": "ffc04ac39014aed92a3a59250c7bacdda69f361b5c541798f017cd5ecbc59140",
+  "release_candidate_evidence": "evidence/O28_O32_RELEASE_CANDIDATE.json",
+  "promotion_state": "AWAITING_AUTHORIZED_HUMAN_SIGNATURE",
+  "release_state": "RELEASE_CANDIDATE_NOT_PROMOTED",
+  "evidence_policy": "REFERENCE_ONLY_NO_DUPLICATION",
+  "authority_transfer": false,
+  "consumer_rule": "OMNIPATH may route by this identity but must resolve authoritative evidence from the source repository and must not rewrite its certificate genealogy."
+}
