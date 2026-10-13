@@ -1,7 +1,10 @@
 {
-  "bridge_version": "O32.1",
+  "bridge_version": "O32.2",
   "source_repository": "lilomateo2026-sudo/Omni-verses-",
-  "source_ref": "design-pathology/omniverse-book-portal-seed",
+  "source_ref": "9ef1f2645aa18af412a7a5290a939eaac5109c27",
+  "source_commit": "9ef1f2645aa18af412a7a5290a939eaac5109c27",
+  "authoritative_evidence_commit": "82479057c38139a19cb963a3715ac3dd4ea55f3b",
+  "source_evidence_blob_sha": "dde4da5bb71407c8ea35504386519a1dba08a097",
   "source_pr": 1,
   "certificate_hash": "74ad06ac512ea5beafc81078af5f8e01d382c07d300abfb2c209d8840055d1fd",
   "constitutional_root": "7125447f5fb1db9bf3c12157087cb11643f4f6252c70947ffc925f5b21249bf6",
