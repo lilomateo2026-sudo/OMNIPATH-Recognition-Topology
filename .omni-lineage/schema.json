@@ -1,0 +1,8 @@
+{
+  "schema": "omni-git-lineage/v2",
+  "history_policy": "NO_REWRITE",
+  "native_git_oid_retained": true,
+  "additional_hash": "SHA-256",
+  "metadata_branch": "omni-lineage/index-v1",
+  "pathology_policy": "evidence-triggered only"
+}

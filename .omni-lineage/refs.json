@@ -1,0 +1,320 @@
+[
+  {
+    "ref": "refs/heads/evidence-transfer",
+    "kind": "BRANCH",
+    "target_oid": "a6eeff44c7ba0bfc4afd5d5d90201b5df99a2f1d",
+    "ref_id": "REF-e34946984c708cc43411"
+  },
+  {
+    "ref": "refs/heads/historical-recovery-v2",
+    "kind": "BRANCH",
+    "target_oid": "661025b76e7f0474c49e2d9f7769fd535d6a3c0b",
+    "ref_id": "REF-fce9847568c934385024"
+  },
+  {
+    "ref": "refs/heads/ledger-backfill",
+    "kind": "BRANCH",
+    "target_oid": "3ddf4d0d9ae02fe8cf699faee00d64cef405959f",
+    "ref_id": "REF-fa9852cf1ecb92da837f"
+  },
+  {
+    "ref": "refs/heads/main",
+    "kind": "BRANCH",
+    "target_oid": "1d336494ec68ecc8cf2f7763ca87dd14fde02959",
+    "ref_id": "REF-9d3be40ddcfb37511057"
+  },
+  {
+    "ref": "refs/heads/o22-7-promotion-manifest",
+    "kind": "BRANCH",
+    "target_oid": "2970a91da61f6d451eddacdbe25bda2d7a70f56f",
+    "ref_id": "REF-4d845ca7ce645ed03071"
+  },
+  {
+    "ref": "refs/heads/o22-8-promotion-artifact-registry",
+    "kind": "BRANCH",
+    "target_oid": "8314365c3fe04a522dbd48b21b253f9bb4a07d31",
+    "ref_id": "REF-a5915e0dd4c45aa934b7"
+  },
+  {
+    "ref": "refs/heads/o22.2-recognition-conformance-gate",
+    "kind": "BRANCH",
+    "target_oid": "c92f9364de4e3d09c046d5541ff797d4d26f64cf",
+    "ref_id": "REF-45e5dcf11e0800e56dd1"
+  },
+  {
+    "ref": "refs/heads/o22.3-pathology-tribunal",
+    "kind": "BRANCH",
+    "target_oid": "fac12953c41928276b75c31e6afdb759168887e7",
+    "ref_id": "REF-35f06c7b81ba7eb516d4"
+  },
+  {
+    "ref": "refs/heads/o22.5-cross-rail-tribunal",
+    "kind": "BRANCH",
+    "target_oid": "17d4db9907455d29d5ee2aa3e3120bd6bdfea87f",
+    "ref_id": "REF-1e67421a0c9401f2b03b"
+  },
+  {
+    "ref": "refs/heads/o23.5-ci-attested-promotion-manifest",
+    "kind": "BRANCH",
+    "target_oid": "2028938d32064a1fecec6fdd18579dc4c29d8501",
+    "ref_id": "REF-cd9f6e4e7b29c6938021"
+  },
+  {
+    "ref": "refs/heads/o24.1-post-promotion-adversarial-evolution",
+    "kind": "BRANCH",
+    "target_oid": "25af648f0a9696e34c08d948aeca987af812c5a0",
+    "ref_id": "REF-708e696c7ffe1d3f324c"
+  },
+  {
+    "ref": "refs/heads/o24.3-evidence-rail",
+    "kind": "BRANCH",
+    "target_oid": "48b495657936d97224834fe23437c95d221d3712",
+    "ref_id": "REF-7ce5bb21abd86a7eab18"
+  },
+  {
+    "ref": "refs/heads/o24.3-reference-rail",
+    "kind": "BRANCH",
+    "target_oid": "b3f50b648ac1c2b95d77559b13337381e0e11571",
+    "ref_id": "REF-045a1845c5823d8f26d9"
+  },
+  {
+    "ref": "refs/heads/o25.1-generation2-promotion-tribunal",
+    "kind": "BRANCH",
+    "target_oid": "0d2072dfc315c517e242d6da03d6ca328a58573d",
+    "ref_id": "REF-6b8bd15aa23f0a51c269"
+  },
+  {
+    "ref": "refs/heads/o26.1-recognition-topology-v3-adversarial-genesis",
+    "kind": "BRANCH",
+    "target_oid": "4ab9b32c8bf52d4d4e998dbe94d90fdcc867ae4d",
+    "ref_id": "REF-54db339fddcc88160ad8"
+  },
+  {
+    "ref": "refs/heads/o26.2-cross-version-semantic-drift",
+    "kind": "BRANCH",
+    "target_oid": "5e804b84a29c2b1683f5f4b6b2d89d9beba8c630",
+    "ref_id": "REF-f70aa220c58da43a8dda"
+  },
+  {
+    "ref": "refs/heads/o26.3-genome-a",
+    "kind": "BRANCH",
+    "target_oid": "d8d979682876359e193b6e90009a9e38e6f34e60",
+    "ref_id": "REF-b6d77800b7deacbf5586"
+  },
+  {
+    "ref": "refs/heads/o26.3-genome-beta",
+    "kind": "BRANCH",
+    "target_oid": "e398133f117d3a32b9d3343bb52da9e7d9c5d612",
+    "ref_id": "REF-640319d46a8aa84290e9"
+  },
+  {
+    "ref": "refs/heads/o26.3-genome-gamma",
+    "kind": "BRANCH",
+    "target_oid": "5deb5cc0caa6483320dd7db18cf1b175dd89d9da",
+    "ref_id": "REF-9de31ee8b8377ca15dc0"
+  },
+  {
+    "ref": "refs/heads/o26.4-o26.5-v3-integration",
+    "kind": "BRANCH",
+    "target_oid": "abb5e16a373ee3f6fd826e0a7a336ab37e751812",
+    "ref_id": "REF-1e9a74a42e7566d01ed2"
+  },
+  {
+    "ref": "refs/heads/o27-6-promotion-genealogy",
+    "kind": "BRANCH",
+    "target_oid": "ef75793ce12b7dc2667996e79db95087a17bae87",
+    "ref_id": "REF-c56de57b283cd8e3da08"
+  },
+  {
+    "ref": "refs/heads/o27-7-genealogy-index",
+    "kind": "BRANCH",
+    "target_oid": "fa91d84bfd55e8266fa76f508c400187bf4b7107",
+    "ref_id": "REF-2e5396bc5d369c32a7b5"
+  },
+  {
+    "ref": "refs/heads/o27.1-v3-promotion-tribunal",
+    "kind": "BRANCH",
+    "target_oid": "2c87153ecb91c9eeacd7428580cf463d60c73fe7",
+    "ref_id": "REF-b0b1e348e073c65a6c8d"
+  },
+  {
+    "ref": "refs/heads/o28.1-recognition-topology-v4-genesis",
+    "kind": "BRANCH",
+    "target_oid": "dc08c52d781e1be93ab1da86d17238398dbe2e27",
+    "ref_id": "REF-b94604af13150b24e7fa"
+  },
+  {
+    "ref": "refs/heads/o28.2-tri-generation-differential",
+    "kind": "BRANCH",
+    "target_oid": "3240d4051ca2ca4ca1cb50576ea3e17c32ece3ab",
+    "ref_id": "REF-969f38ed1be83e8447c9"
+  },
+  {
+    "ref": "refs/heads/o28.3-v4-genome-a",
+    "kind": "BRANCH",
+    "target_oid": "8534245ffe2157a64f80ff878b9dbaadb6ac4938",
+    "ref_id": "REF-f935835fc8715b321295"
+  },
+  {
+    "ref": "refs/heads/o28.3-v4-genome-b",
+    "kind": "BRANCH",
+    "target_oid": "dbb49176cf52759e674e4107d61795cebcfa6312",
+    "ref_id": "REF-ad505366da1fffe8a3aa"
+  },
+  {
+    "ref": "refs/heads/o28.3-v4-genome-c",
+    "kind": "BRANCH",
+    "target_oid": "1fbb0570ca49ea9e6c192705cec248d6d261c23c",
+    "ref_id": "REF-0059e253335f9d460a82"
+  },
+  {
+    "ref": "refs/heads/o28.3-v4-genome-d",
+    "kind": "BRANCH",
+    "target_oid": "d254194e0ce4f97b186b78b105e31b6204d9af0d",
+    "ref_id": "REF-139435a29ad5bfb6d7c3"
+  },
+  {
+    "ref": "refs/heads/o28.4-o28.5-v4-integration",
+    "kind": "BRANCH",
+    "target_oid": "46553b0cf42a0a1587b01b88ceadfb6bcea78a52",
+    "ref_id": "REF-e9513500ea9c383b59e3"
+  },
+  {
+    "ref": "refs/heads/o29-6-genealogy-closure",
+    "kind": "BRANCH",
+    "target_oid": "e32af68438462c7e4e3af16620f65068b0fbfdff",
+    "ref_id": "REF-f104da2e1a60c44562c5"
+  },
+  {
+    "ref": "refs/heads/o29-7-historical-recovery",
+    "kind": "BRANCH",
+    "target_oid": "5e570202bdff311e5b3b852e31c96681622755bd",
+    "ref_id": "REF-f7a331262ff565a42ef5"
+  },
+  {
+    "ref": "refs/heads/o29.1-v4-promotion-tribunal",
+    "kind": "BRANCH",
+    "target_oid": "a2b913c636d722f8c12e6fc2efb27c5602eabfbd",
+    "ref_id": "REF-fd2196a4444adb3b791e"
+  },
+  {
+    "ref": "refs/heads/o30.1-recognition-topology-v5-genesis",
+    "kind": "BRANCH",
+    "target_oid": "79ee6536006c95d6cace41eed9e3917639f58d17",
+    "ref_id": "REF-c6605aefc2f754f06155"
+  },
+  {
+    "ref": "refs/heads/o31-8",
+    "kind": "BRANCH",
+    "target_oid": "621bf303f4056644367a585f79e6d6b3703a2f8a",
+    "ref_id": "REF-90af6a1b872c2abed6c4"
+  },
+  {
+    "ref": "refs/heads/o31-9",
+    "kind": "BRANCH",
+    "target_oid": "140d58cc77df16ff2b6a0531af1d44a508605b05",
+    "ref_id": "REF-5388eb1336269449385a"
+  },
+  {
+    "ref": "refs/heads/o31.8-composite-main-attestation",
+    "kind": "BRANCH",
+    "target_oid": "48dc9f87a4f824fabfe07b7644b0aa8e934a4b70",
+    "ref_id": "REF-2afbb19ef1126abf86f4"
+  },
+  {
+    "ref": "refs/heads/o32-cross-repo-bridge-qualification",
+    "kind": "BRANCH",
+    "target_oid": "852b1410771c69f1cc82dff1ef2bc4c8cd1b5d08",
+    "ref_id": "REF-69c7135a7d1100cce437"
+  },
+  {
+    "ref": "refs/heads/o32-v6-experimental",
+    "kind": "BRANCH",
+    "target_oid": "9110e1b81aa2a64b6f89256a972ad515482ac893",
+    "ref_id": "REF-de68c160aaa312acffc1"
+  },
+  {
+    "ref": "refs/heads/o32.5-v6-candidate-freeze",
+    "kind": "BRANCH",
+    "target_oid": "29c4bd3cec0fe20a39a2d5ede80fd01197643b3f",
+    "ref_id": "REF-5bb31b224fd227b3776e"
+  },
+  {
+    "ref": "refs/heads/o33.1-v6-promotion-tribunal",
+    "kind": "BRANCH",
+    "target_oid": "ed396e9afb17725e34980043501312680f52b6e5",
+    "ref_id": "REF-f14933620f7d6003459d"
+  },
+  {
+    "ref": "refs/heads/o33.2-v6-exact-sha-authorization",
+    "kind": "BRANCH",
+    "target_oid": "7682bff53e07f12dac3cb17afe70aca8e353e790",
+    "ref_id": "REF-b1c572fdf4443e9dac0d"
+  },
+  {
+    "ref": "refs/heads/recovery-proof-final",
+    "kind": "BRANCH",
+    "target_oid": "bb4bd836b5ed226362cdbe3b18300990576e51c2",
+    "ref_id": "REF-e789484222cbd842cf0b"
+  },
+  {
+    "ref": "refs/heads/reference-transfer",
+    "kind": "BRANCH",
+    "target_oid": "5899435141cff4acfdc6b304dd4358ecd9bc3bf8",
+    "ref_id": "REF-70a9d8e3efdd98606556"
+  },
+  {
+    "ref": "refs/heads/v5-candidate-cc5cf15d",
+    "kind": "BRANCH",
+    "target_oid": "cc5cf15d28274aa6d18f8737d44becc965934beb",
+    "ref_id": "REF-82d439263fbe81db03b8"
+  },
+  {
+    "ref": "refs/heads/v5-candidate-cc5cf15d-check",
+    "kind": "BRANCH",
+    "target_oid": "cc5cf15d28274aa6d18f8737d44becc965934beb",
+    "ref_id": "REF-3391d2fd851aa6170aa9"
+  },
+  {
+    "ref": "refs/heads/v5-gd",
+    "kind": "BRANCH",
+    "target_oid": "7f43c91d295e46ffa82beb25d1ab90dc65e03703",
+    "ref_id": "REF-b33645e4c644c867eaa9"
+  },
+  {
+    "ref": "refs/heads/v5-ge",
+    "kind": "BRANCH",
+    "target_oid": "53041ef4a4d9f035930fee3f4d4830530bc74120",
+    "ref_id": "REF-a0b44ef6ffde235d1894"
+  },
+  {
+    "ref": "refs/heads/v5-genome-a",
+    "kind": "BRANCH",
+    "target_oid": "31cb695de94c4c20567f25cd2d86e75fb785cb1b",
+    "ref_id": "REF-a32c558623d6b89010f5"
+  },
+  {
+    "ref": "refs/heads/v5-genome-b",
+    "kind": "BRANCH",
+    "target_oid": "2fe530da2777c134d91a5e5c23f305d644182b01",
+    "ref_id": "REF-7488a88f9889a656c5ad"
+  },
+  {
+    "ref": "refs/heads/v5-genome-c",
+    "kind": "BRANCH",
+    "target_oid": "c26fce3c823814c50f25de646c93fb47732ee15d",
+    "ref_id": "REF-b0cac9847f4389962f6d"
+  },
+  {
+    "ref": "refs/tags/v5.0.0",
+    "kind": "TAG",
+    "target_oid": "f7703f6323ca64ca96a40c80a5a8446660ef68f4",
+    "ref_id": "REF-e75171c480be9fb55ccd"
+  },
+  {
+    "ref": "refs/tags/v5.0.0-rc1",
+    "kind": "TAG",
+    "target_oid": "f4713e0a55137160e411ea57b0c78156c817efce",
+    "ref_id": "REF-28ca943dde223a25c376"
+  }
+]
