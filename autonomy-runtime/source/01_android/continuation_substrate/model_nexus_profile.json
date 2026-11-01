@@ -1,0 +1,12 @@
+{
+  "architecture": "Operational Model Nexus Intelligence",
+  "slots": {
+    "primary": {"provider":"omni","role":"orchestrator"},
+    "peer": {"provider":"gemini","role":"external_reasoner","live_call_required":false},
+    "challenger": {"provider":"grok","role":"optional_challenger","enabled":"optional"},
+    "private": {"provider":"local","role":"private_offline_path","network":"off-preferred"}
+  },
+  "privacy_gate": {"sensitive":"local_only","public_or_sanitized":"eligible_external"},
+  "score_fields": ["accuracy","evidence_alignment","contradiction_rate","novel_information","latency","cost","domain_strength"],
+  "principle": "models earn routes; no permanent provider winner"
+}

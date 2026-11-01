@@ -1,0 +1,9 @@
+{
+  "ordinal": 495,
+  "status": "EXECUTED_VALIDATED",
+  "name": "Validate Workstation",
+  "workstation_files": 2,
+  "index_sha256": "924e00bf16b6cef54fe4f57b7e88a423bd4b68b4603512f8a5e519ed013df817",
+  "pointer_sha256": "924e00bf16b6cef54fe4f57b7e88a423bd4b68b4603512f8a5e519ed013df817",
+  "validation": "local workstation front door exists and resolves to V3 engine"
+}

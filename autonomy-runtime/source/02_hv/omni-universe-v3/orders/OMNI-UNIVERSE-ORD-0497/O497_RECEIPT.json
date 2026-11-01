@@ -1,0 +1,10 @@
+{
+  "ordinal": 497,
+  "status": "EXECUTED_VALIDATED",
+  "validated_at_epoch": 1792806518,
+  "name": "Validate Factory",
+  "factory_exists": true,
+  "factory_files": 40,
+  "pointer_sha256": "1190bdf3adf35a13de43b319153c566c29ce3cfabf98b278fb6cd80cd90f910a",
+  "validation": "factory exists and retains a content-addressable flagship pointer"
+}

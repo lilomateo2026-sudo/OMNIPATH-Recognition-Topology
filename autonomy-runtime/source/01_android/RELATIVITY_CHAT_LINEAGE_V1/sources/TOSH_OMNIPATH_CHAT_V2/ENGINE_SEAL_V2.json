@@ -1,0 +1,68 @@
+{
+  "sealed_at": "2026-10-15T20:43:35.760558+00:00",
+  "overlay_id": "TOSH-CHAT-V2-c6f862b5d934ae6a",
+  "files": 12,
+  "manifest_sha256": "706f0dff341a2fc0cbfc63bb458dc0f4edfb14ab85b539308a25df8cb642eeac",
+  "manifest": [
+    {
+      "path": "CURRENT_SESSION_CAPSULE_V2.md",
+      "sha256": "c6f862b5d934ae6afd5f8f7f1f593389e7bd241255057dcb062cfcf97b2885a5",
+      "bytes": 3306
+    },
+    {
+      "path": "FULL_CHAT_COGNITIVE_MENU_V2.txt",
+      "sha256": "fa55c23b203fbaeaee7cdc1fa2a9c08cd759b145ce50bb0d1485aca5b2fe76ae",
+      "bytes": 4698
+    },
+    {
+      "path": "orders/chat_cognitive_overlay_v2.json",
+      "sha256": "351d545d6952a2d4db38f8c26bdd0b66538d88cc78a3e28ff99006cbe1fe1f6d",
+      "bytes": 84181
+    },
+    {
+      "path": "orders/chat_cognitive_overlay_v2.jsonl",
+      "sha256": "3ea94e7ac06a7fc003873fc4533acdcf1e4719a66721c7be6c616bca49945e4a",
+      "bytes": 61791
+    },
+    {
+      "path": "receipts/TOSH-ORD-0099.json",
+      "sha256": "73bb15597abec4c8ca1df97b3f6751a17ed86d9537411705d057566d8d4789d5",
+      "bytes": 373
+    },
+    {
+      "path": "receipts/TOSH-ORD-0100.json",
+      "sha256": "6b79fc52ebbec3b8c0ff9ca34bd0de5819d587ed48ffffc6a21439c050839bc7",
+      "bytes": 381
+    },
+    {
+      "path": "receipts/TOSH-ORD-0101.json",
+      "sha256": "fd79ef93d64df92cf7d276cf0f7f01afcf8ae26b001c5fbb8d2da5286e9c5f93",
+      "bytes": 377
+    },
+    {
+      "path": "receipts/TOSH-ORD-0102.json",
+      "sha256": "21230919f9e236d686859ae5a35b803c642551b89f23c46d9af08b40e427da6c",
+      "bytes": 378
+    },
+    {
+      "path": "receipts/TOSH-ORD-0103.json",
+      "sha256": "9f06ee1595985b4c629d26e769776e993c5519d7cbd87d54bf16eed6f8a56b0f",
+      "bytes": 376
+    },
+    {
+      "path": "semantic/neural_lattice_chat_v2.jsonl",
+      "sha256": "0d2c29e5747d4aa34af1b4c0a9a5091a2ad504cc20117d4c84611e900aba2ede",
+      "bytes": 14650
+    },
+    {
+      "path": "state/LIVE_SHELL_STATE_V2.json",
+      "sha256": "73c986b84e4d8ab1bbd256c10223388faef61d497c3d8a448b0e1e16a4915fc4",
+      "bytes": 507
+    },
+    {
+      "path": "tosh_chat_v2_shell.py",
+      "sha256": "ba01bc94323a78b3d02e1ffd540902860d760cec167ec2fd516499e3ca320f70",
+      "bytes": 1103
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "ordinal": 470,
+  "name": "Inventory Menu Gen",
+  "status": "EXECUTED",
+  "roadmap_orders": 400,
+  "historical_base_orders": 432,
+  "imported_menu_instances": 39,
+  "live_shell": "07_SHELL/omni-universe"
+}

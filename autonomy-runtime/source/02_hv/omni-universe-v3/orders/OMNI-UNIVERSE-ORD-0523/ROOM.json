@@ -1,0 +1,18 @@
+{
+  "ordinal": 523,
+  "order_id": "OMNI-UNIVERSE-ORD-0523",
+  "domain": "ARCHITECT_GRADE",
+  "stage": "Normalize",
+  "name": "Normalize Architect Grade",
+  "receipt_file": "O523_RECEIPT.json",
+  "receipt_sha256": "ced8674712efe7d27db9561313689f133b967d9496f574c248f687ccab645419",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

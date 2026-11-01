@@ -1,0 +1,8 @@
+{
+  "ordinal": 484,
+  "status": "EXECUTED",
+  "name": "Inventory Image Replicator",
+  "profile_sha256": "9e8cf3d2a69fe8c41a0a0ee466f3a48dfc355c75f8f6d2259a2cef9da067a266",
+  "replicator_module_sha256": "3bcb45256d699f9ee4f7751d8ed4f03643f65d31b2f11e4c39667dd7bf9c469b",
+  "systems": 9
+}

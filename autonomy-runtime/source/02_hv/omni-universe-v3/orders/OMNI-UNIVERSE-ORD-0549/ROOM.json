@@ -1,0 +1,18 @@
+{
+  "ordinal": 549,
+  "order_id": "OMNI-UNIVERSE-ORD-0549",
+  "domain": "RAG_LOCKSMITH",
+  "stage": "Trace",
+  "name": "Trace Rag Locksmith",
+  "receipt_file": "O549_RECEIPT.json",
+  "receipt_sha256": "ad934972eb97d6057c9e262f7551ac1ed2961dc178794dbffd8cb0f56b4c13a3",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

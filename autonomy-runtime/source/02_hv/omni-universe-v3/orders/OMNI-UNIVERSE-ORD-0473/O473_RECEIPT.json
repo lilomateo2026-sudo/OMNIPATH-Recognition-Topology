@@ -1,0 +1,11 @@
+{
+  "ordinal": 473,
+  "status": "EXECUTED",
+  "name": "Inventory TOSH Harness",
+  "build_files": 5,
+  "root_files": 18,
+  "root_lineage_sha256": "240a6a1697156f08ba3cd163912054b7a72ea79201471aaeb00fd96d3b70db18",
+  "integration_files": 2,
+  "governance_files": 1,
+  "role": "semantic interpreter, reasoning governor, lineage-aware execution"
+}

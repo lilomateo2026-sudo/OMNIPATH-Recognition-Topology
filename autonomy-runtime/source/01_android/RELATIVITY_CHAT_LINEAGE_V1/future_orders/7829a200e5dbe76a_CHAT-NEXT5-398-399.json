@@ -1,0 +1,14 @@
+{
+  "schema": "omni.execution-order-batch.v1",
+  "id": "CHAT-NEXT5-398-395-397-396-399",
+  "state": "PROPOSED_NOT_EXECUTED",
+  "order_unity_rate": "1000x_per_order",
+  "orders": [
+    {"order_id":398,"name":"Finality Certificate & Historical Proof DAG"},
+    {"order_id":395,"name":"Cross-Federation Recovery Drill / Failover Orchestrator"},
+    {"order_id":397,"name":"Adversarial Finality-Rewrite, Rollback-Equivocation & Recovery-Capture Tournament"},
+    {"order_id":396,"name":"OmniTeach Constitutional Disaster-Recovery Mastery Forge"},
+    {"order_id":399,"name":"Sovereign Federation Continuity, Reconstitution & Constitutional Rebirth Kernel"}
+  ],
+  "route": "RELATIVITY"
+}

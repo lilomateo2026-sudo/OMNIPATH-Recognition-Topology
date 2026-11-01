@@ -1,0 +1,8 @@
+{
+  "ordinal": 464,
+  "name": "Architect Router Training + Federation Acknowledgement Tribunal",
+  "status": "EXECUTED",
+  "source_artifact": "04_GRADING/ARCHITECT_GRADING_V3.json",
+  "source_sha256": "9a5e252827ac2461b29a1852500e91d687dd464a111608d5aee078c8824e8d55",
+  "policy": "Measured evidence, no permanent winner; route by task fit, determinism, provenance, latency, memory efficiency, recovery, and tool reach."
+}

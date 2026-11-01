@@ -1,0 +1,18 @@
+{
+  "ordinal": 500,
+  "order_id": "OMNI-UNIVERSE-ORD-0500",
+  "domain": "ODYSSEY",
+  "stage": "Validate",
+  "name": "Validate Odyssey",
+  "receipt_file": "O500_RECEIPT.json",
+  "receipt_sha256": "4caf2372103d52dbbb87dac1a43ea3a6cc3ceb160970d4e266348d116e76a358",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

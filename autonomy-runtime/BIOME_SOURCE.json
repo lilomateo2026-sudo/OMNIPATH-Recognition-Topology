@@ -1,0 +1,39 @@
+{
+  "schema": "omni.github-biome.module-source/v1",
+  "generated_at": "2026-11-01T00:33:42.646296+00:00",
+  "repo": "OMNIPATH-Recognition-Topology",
+  "target_subdir": "autonomy-runtime",
+  "reason": "OMNIPATH already has a canonical repository; add autonomy as a descendant/module.",
+  "sources": [
+    {
+      "zone": "android",
+      "path": "/data/data/com.termux/files/home/OMNI_AI_WORKSPACE/24_OMNIPATH_AUTONOMY"
+    },
+    {
+      "zone": "hv",
+      "path": "/srv/omni/tosh-engines/omnipath"
+    }
+  ],
+  "copy_report": [
+    {
+      "source": {
+        "zone": "android",
+        "path": "/data/data/com.termux/files/home/OMNI_AI_WORKSPACE/24_OMNIPATH_AUTONOMY"
+      },
+      "ok": true,
+      "copied": 45,
+      "skipped": 29,
+      "bytes": 268422
+    },
+    {
+      "source": {
+        "zone": "hv",
+        "path": "/srv/omni/tosh-engines/omnipath"
+      },
+      "ok": true,
+      "copied": 190,
+      "bytes": 80198
+    }
+  ],
+  "policy": "safe source only; secrets/raw personal data/model weights/state caches excluded"
+}

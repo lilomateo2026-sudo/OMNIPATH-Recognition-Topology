@@ -1,0 +1,18 @@
+{
+  "ordinal": 522,
+  "order_id": "OMNI-UNIVERSE-ORD-0522",
+  "domain": "MODEL_ARBITRATION",
+  "stage": "Normalize",
+  "name": "Normalize Model Arbitration",
+  "receipt_file": "O522_RECEIPT.json",
+  "receipt_sha256": "df444dcce56b5e81b2776b6ce6b5c92a374f680831b216ecc36988523c8ca0ec",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

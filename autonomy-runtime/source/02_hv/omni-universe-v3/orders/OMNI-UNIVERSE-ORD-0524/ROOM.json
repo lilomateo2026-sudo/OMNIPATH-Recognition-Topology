@@ -1,0 +1,18 @@
+{
+  "ordinal": 524,
+  "order_id": "OMNI-UNIVERSE-ORD-0524",
+  "domain": "IMAGE_REPLICATOR",
+  "stage": "Normalize",
+  "name": "Normalize Image Replicator",
+  "receipt_file": "O524_RECEIPT.json",
+  "receipt_sha256": "0343b16a2949c93bc4e83d4b6e2c160eb4257b6fb986e74a82ed09cb1c05495f",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "ordinal": 486,
+  "status": "EXECUTED_VALIDATED",
+  "name": "Validate Chat Census",
+  "global_manifest_sha256": "deb278cf6ad7f7536c0e9c75dbdc8722f62d370242fd96869c48c0dfc178aa0a",
+  "global_chats": 400,
+  "global_messages": 39174,
+  "candidate_registry_chats": 115,
+  "candidate_registry_messages": 13057,
+  "validation": "counts readable; project membership remains evidence-bounded"
+}

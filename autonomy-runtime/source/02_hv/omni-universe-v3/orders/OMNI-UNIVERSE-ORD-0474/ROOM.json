@@ -1,0 +1,18 @@
+{
+  "ordinal": 474,
+  "order_id": "OMNI-UNIVERSE-ORD-0474",
+  "domain": "OMNI_HARNESS",
+  "stage": "Inventory",
+  "name": "Inventory Omni Harness",
+  "receipt_file": "O474_RECEIPT.json",
+  "receipt_sha256": "0b2295f30730c6fe60be1856c7658a1feda0a88a0c83632ca293556a9cd75db9",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

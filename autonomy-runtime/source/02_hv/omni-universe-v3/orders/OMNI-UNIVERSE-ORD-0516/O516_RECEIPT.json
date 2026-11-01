@@ -1,0 +1,19 @@
+{
+  "ordinal": 516,
+  "status": "EXECUTED_NORMALIZED",
+  "name": "WAREHOUSE",
+  "artifact": "13_NORMALIZED/WAREHOUSE.normalized.json",
+  "schema": "omni.normalized.runtime.v1",
+  "domain": "WAREHOUSE",
+  "role": "content-addressed storage, lineage, capsules, datasets and receipts",
+  "local_root": "/data/data/com.termux/files/home/OmniDocuments/TOSH_ENGINE_WAREHOUSE",
+  "file_count": 60,
+  "canonical_remote": "/srv/omni/tosh-engines/warehouse/omni-universe-v3",
+  "contract": [
+    "admit",
+    "store",
+    "address",
+    "retrieve",
+    "verify"
+  ]
+}

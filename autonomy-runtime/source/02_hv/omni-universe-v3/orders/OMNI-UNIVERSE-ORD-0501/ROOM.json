@@ -1,0 +1,18 @@
+{
+  "ordinal": 501,
+  "order_id": "OMNI-UNIVERSE-ORD-0501",
+  "domain": "SEMANTIC_MAP",
+  "stage": "Validate",
+  "name": "Validate Semantic Map",
+  "receipt_file": "O501_RECEIPT.json",
+  "receipt_sha256": "913ce4580b4394fc0c19d7f8918d2e3b92e414cbba4176c73169b8d9d7bf5ed6",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

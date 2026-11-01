@@ -1,0 +1,18 @@
+{
+  "ordinal": 495,
+  "order_id": "OMNI-UNIVERSE-ORD-0495",
+  "domain": "WORKSTATION",
+  "stage": "Validate",
+  "name": "Validate Workstation",
+  "receipt_file": "O495_RECEIPT.json",
+  "receipt_sha256": "62ed459c938825a98bae4e08e8908f2268ff853089722c317fe286d62ca83db2",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

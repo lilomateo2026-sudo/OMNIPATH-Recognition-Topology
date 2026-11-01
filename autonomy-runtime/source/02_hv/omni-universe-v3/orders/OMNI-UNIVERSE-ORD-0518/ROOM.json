@@ -1,0 +1,18 @@
+{
+  "ordinal": 518,
+  "order_id": "OMNI-UNIVERSE-ORD-0518",
+  "domain": "HIVELOCITY",
+  "stage": "Normalize",
+  "name": "Normalize Hivelocity",
+  "receipt_file": "O518_RECEIPT.json",
+  "receipt_sha256": "759f4e9f8fac6f62cc646e0f8dbe6e183d7e9ba0c839a3de0fb7335b5141f61e",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

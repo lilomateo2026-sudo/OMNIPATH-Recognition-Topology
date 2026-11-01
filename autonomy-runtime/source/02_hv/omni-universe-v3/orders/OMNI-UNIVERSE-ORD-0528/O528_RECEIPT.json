@@ -1,0 +1,10 @@
+{
+  "ordinal": 528,
+  "status": "EXECUTED_INDEXED",
+  "name": "Index Vector Trace",
+  "index_artifact": "/data/data/com.termux/files/home/OmniDocuments/OMNI_UNIVERSE_PROJECT_ENGINE_V3/15_INDEX/VECTOR_TRACE.index.json",
+  "index_artifact_sha256": "235b309ce3e6b8de4af72a18c093b7f445acdb5f731819dc0408f21b0109c05e",
+  "sparse_records": 39174,
+  "dense_records": 64,
+  "sqlite_sha256": "d26530dc161b9cfd36f46e732aa475c410ccd814c3df8000ee00b89a780311ed"
+}

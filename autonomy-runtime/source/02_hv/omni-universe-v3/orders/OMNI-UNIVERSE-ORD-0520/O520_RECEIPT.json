@@ -1,0 +1,16 @@
+{
+  "ordinal": 520,
+  "status": "EXECUTED_NORMALIZED",
+  "name": "ODYSSEY",
+  "artifact": "13_NORMALIZED/ODYSSEY.normalized.json",
+  "schema": "omni.normalized.runtime.v1",
+  "domain": "ODYSSEY",
+  "role": "Hivelocity descendant/runtime project-engine lane",
+  "canonical_remote": "/opt/omni-sfc/odyssey-v2-hive/project_engines/omni-universe-v3",
+  "contract": [
+    "consume_receipts",
+    "replay",
+    "compare",
+    "descend"
+  ]
+}

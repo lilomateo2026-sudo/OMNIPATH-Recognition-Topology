@@ -1,0 +1,18 @@
+{
+  "ordinal": 472,
+  "order_id": "OMNI-UNIVERSE-ORD-0472",
+  "domain": "OMNIPATH",
+  "stage": "Inventory",
+  "name": "Inventory Omnipath",
+  "receipt_file": "O472_RECEIPT.json",
+  "receipt_sha256": "20d9bfbf83ad323daa6f312ae57aa762bca13e08db76765b1ce06a70101503e3",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "ordinal": 486,
+  "order_id": "OMNI-UNIVERSE-ORD-0486",
+  "domain": "CHAT_CENSUS",
+  "stage": "Validate",
+  "name": "Validate Chat Census",
+  "receipt_file": "O486_RECEIPT.json",
+  "receipt_sha256": "6709e04478e130462e817d3165ace6c7793efcca3a988085d049c503aa939708",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

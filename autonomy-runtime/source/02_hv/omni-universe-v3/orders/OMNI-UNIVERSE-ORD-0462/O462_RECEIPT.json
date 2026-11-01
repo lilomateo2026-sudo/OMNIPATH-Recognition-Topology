@@ -1,0 +1,8 @@
+{
+  "ordinal": 462,
+  "name": "Project Membership / Full-Chat SHA Closure Tribunal",
+  "status": "EXECUTED_EVIDENCE_BOUNDARY",
+  "source_artifact": "01_CHAT_LINEAGE/PROJECT_MEMBERSHIP_TRIBUNAL.json",
+  "source_sha256": "35961d057f5e6d3a26599b5247568de1463783752594d48e7ce36e83c766effe",
+  "decision": "Keep inferred project-chat membership provisional unless explicit membership evidence exists."
+}

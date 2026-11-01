@@ -1,0 +1,8 @@
+{
+  "ordinal": 477,
+  "status": "EXECUTED",
+  "name": "Inventory Factory",
+  "factory_files": 1,
+  "engine_module_files": 2,
+  "role": "build, benchmark, reconstruct and compile descendant engines"
+}

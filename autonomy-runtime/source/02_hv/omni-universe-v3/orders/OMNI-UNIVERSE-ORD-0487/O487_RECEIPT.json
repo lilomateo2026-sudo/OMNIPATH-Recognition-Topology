@@ -1,0 +1,10 @@
+{
+  "ordinal": 487,
+  "status": "EXECUTED_VALIDATED",
+  "name": "Validate SHA Lineage",
+  "packet_rows": 39174,
+  "source_sha_rows": 35,
+  "sampled_packets": 200,
+  "sample_identity_fields_present": true,
+  "validation": "lineage remains content-addressable"
+}

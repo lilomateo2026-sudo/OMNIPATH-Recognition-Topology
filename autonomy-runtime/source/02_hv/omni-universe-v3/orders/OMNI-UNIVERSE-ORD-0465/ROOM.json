@@ -1,0 +1,18 @@
+{
+  "ordinal": 465,
+  "order_id": "OMNI-UNIVERSE-ORD-0465",
+  "domain": "LEGACY_OR_COMPOUND",
+  "stage": "legacy",
+  "name": "O465_RELEASE_STATUS",
+  "receipt_file": "O465_RELEASE_STATUS.txt",
+  "receipt_sha256": "a03ab0ec57bcdb4939314cd4d7fbbe0d16ced50c33a6427e1ed81b524e31ac4d",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

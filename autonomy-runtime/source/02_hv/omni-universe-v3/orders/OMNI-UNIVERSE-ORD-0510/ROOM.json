@@ -1,0 +1,18 @@
+{
+  "ordinal": 510,
+  "order_id": "OMNI-UNIVERSE-ORD-0510",
+  "domain": "MENU_GEN",
+  "stage": "Normalize",
+  "name": "Normalize Menu Gen",
+  "receipt_file": "O510_RECEIPT.json",
+  "receipt_sha256": "e9dabcc61e8f883bdf6cac87d6355e9099fa2ec630cbf873e5ad5035846c9836",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

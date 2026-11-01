@@ -1,0 +1,18 @@
+{
+  "ordinal": 471,
+  "order_id": "OMNI-UNIVERSE-ORD-0471",
+  "domain": "SMARTFLOW",
+  "stage": "Inventory",
+  "name": "Inventory Smartflow",
+  "receipt_file": "O471_RECEIPT.json",
+  "receipt_sha256": "711105daed67595ad7dfbc1f7d165202f5867d4055cbf77e17548ed37e68996f",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

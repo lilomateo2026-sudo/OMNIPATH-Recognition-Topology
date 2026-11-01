@@ -1,0 +1,9 @@
+{
+  "ordinal": 471,
+  "status": "EXECUTED",
+  "name": "Inventory SmartFlow",
+  "execution_pack_files": 23,
+  "smartflow_300_rows": 300,
+  "menu_variants": 14,
+  "policy": "permute orchestration references while preserving source-packet SHA identity"
+}

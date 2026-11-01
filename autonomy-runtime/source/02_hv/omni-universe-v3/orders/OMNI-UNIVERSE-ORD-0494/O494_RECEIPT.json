@@ -1,0 +1,9 @@
+{
+  "ordinal": 494,
+  "status": "EXECUTED_VALIDATED",
+  "name": "Validate OMNI Harness",
+  "workspace_files": 469,
+  "forest_files": 88,
+  "profile_sha256": "66a1c52b2e79945077a3b9b445ce32ff5774f2f66115b315647037f2dfb0d5ce",
+  "validation": "OMNI harness sources/profile readable; orchestration role retained"
+}

@@ -1,0 +1,8 @@
+{
+  "ordinal": 476,
+  "status": "EXECUTED",
+  "name": "Inventory Warehouse",
+  "warehouse_files": 1,
+  "linked_capsule_sha256": "e62d3956355b499483e02cbee13363d7ce853942e74f495aae0a9701d42f588f",
+  "role": "content-addressed capsules, data, lineage and receipts"
+}

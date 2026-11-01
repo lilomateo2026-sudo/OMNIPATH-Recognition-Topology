@@ -1,0 +1,18 @@
+{
+  "ordinal": 467,
+  "order_id": "OMNI-UNIVERSE-ORD-0467",
+  "domain": "SHA_LINEAGE",
+  "stage": "Inventory",
+  "name": "Inventory Sha Lineage",
+  "receipt_file": "O467_RECEIPT.json",
+  "receipt_sha256": "5e5f3a376b3015533e64950fb654945cfa09252dc08fee44ab2c1611183019fc",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

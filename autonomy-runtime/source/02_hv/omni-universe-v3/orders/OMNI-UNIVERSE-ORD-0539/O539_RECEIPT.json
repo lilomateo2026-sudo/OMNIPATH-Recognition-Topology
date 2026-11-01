@@ -1,0 +1,11 @@
+{
+  "schema": "omni.index.runtime-fabric.v1",
+  "ordinal": 539,
+  "domain": "TERMUX",
+  "source": "/data/data/com.termux/files/home/OmniDocuments/OMNI_UNIVERSE_PROJECT_ENGINE_V3/13_NORMALIZED/TERMUX.normalized.json",
+  "source_sha256": "3c9dfdb53b58c10080542b97447234deb4a121dc5e1f389382f63445acbaba7c",
+  "sqlite_table": "runtime_fabric",
+  "status": "EXECUTED_INDEXED",
+  "name": "Index Termux",
+  "index_artifact": "/data/data/com.termux/files/home/OmniDocuments/OMNI_UNIVERSE_PROJECT_ENGINE_V3/15_INDEX/TERMUX.index.json"
+}

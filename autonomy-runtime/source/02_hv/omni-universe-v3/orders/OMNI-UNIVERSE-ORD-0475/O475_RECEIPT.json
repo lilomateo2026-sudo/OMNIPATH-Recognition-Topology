@@ -1,0 +1,9 @@
+{
+  "ordinal": 475,
+  "status": "EXECUTED",
+  "name": "Inventory Workstation",
+  "workstation_files": 2,
+  "v3_workstation_index_sha256": "924e00bf16b6cef54fe4f57b7e88a423bd4b68b4603512f8a5e519ed013df817",
+  "linked_capsule_sha256": "e62d3956355b499483e02cbee13363d7ce853942e74f495aae0a9701d42f588f",
+  "front_door": "11_WORKSTATION/INDEX.json"
+}

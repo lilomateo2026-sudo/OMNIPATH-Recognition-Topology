@@ -1,0 +1,10 @@
+OMNI_RELATIVITY_CHAT_LINEAGE_V1
+local_room=COLLECTED_AND_MIRRORED
+package=OMNI_RELATIVITY_CHAT_LINEAGE_V1_20261020_v2.tar.gz
+package_sha256=8303b868dcd58f57a92a5ac038cd07476c3f3d908d7e17daa309622bffff1f06
+artifact_transport_handoff=PASS
+execution_order_transport_handoff=PASS
+hivelocity_sector_registration=REQUESTED_PENDING_REMOTE_CONFIRMATION
+future_sync_service=RUNNING
+future_sync_service_name=omni-relativity-sync
+next5=398,395,397,396,399

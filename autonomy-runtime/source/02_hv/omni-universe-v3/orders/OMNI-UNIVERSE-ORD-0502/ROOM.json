@@ -1,0 +1,18 @@
+{
+  "ordinal": 502,
+  "order_id": "OMNI-UNIVERSE-ORD-0502",
+  "domain": "MODEL_ARBITRATION",
+  "stage": "Validate",
+  "name": "Validate Model Arbitration",
+  "receipt_file": "O502_RECEIPT.json",
+  "receipt_sha256": "65ac51fe46180075d72a0efca4b01f7a3e23f9ec71aab3e6ae116de37c3ea9e7",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

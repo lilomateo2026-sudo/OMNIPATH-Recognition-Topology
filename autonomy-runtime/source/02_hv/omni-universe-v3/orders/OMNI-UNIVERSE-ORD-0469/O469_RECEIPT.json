@@ -1,0 +1,13 @@
+{
+  "ordinal": 469,
+  "name": "Inventory RAG Locksmith",
+  "status": "EXECUTED",
+  "database": "/data/data/com.termux/files/home/OmniDocuments/ODYSSEY_CHAT_INDEX/odyssey_chat_semantic.sqlite3",
+  "tables": [
+    "conversations",
+    "embeddings",
+    "messages"
+  ],
+  "retrievable_signatures": 35769,
+  "policy": "retrieve observable signatures/provenance; do not infer hidden reasoning"
+}

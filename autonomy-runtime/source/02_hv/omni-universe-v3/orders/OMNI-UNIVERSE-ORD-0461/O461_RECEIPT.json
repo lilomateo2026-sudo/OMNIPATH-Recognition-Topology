@@ -1,0 +1,15 @@
+{
+  "order": 461,
+  "status": "EXECUTED_BOUNDED",
+  "candidate_chats": 115,
+  "nomic_before": 32,
+  "nomic_added": 16,
+  "nomic_after": 48,
+  "embedding_latency_s": 51.7006,
+  "errors": [],
+  "low_contention_llm": {
+    "model": "tosh-mini-qwen-normal-champion:latest",
+    "status": "ERROR:TimeoutExpired"
+  },
+  "policy": "retain sparse-512 and dense-768 receipts together"
+}

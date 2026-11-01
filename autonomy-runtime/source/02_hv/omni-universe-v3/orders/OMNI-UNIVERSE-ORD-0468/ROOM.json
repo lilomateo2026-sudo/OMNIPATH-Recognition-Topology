@@ -1,0 +1,18 @@
+{
+  "ordinal": 468,
+  "order_id": "OMNI-UNIVERSE-ORD-0468",
+  "domain": "VECTOR_TRACE",
+  "stage": "Inventory",
+  "name": "Inventory Vector Trace",
+  "receipt_file": "O468_RECEIPT.json",
+  "receipt_sha256": "6701c925bfcf16cb97ebc4bd2273b801b4a4239d79aad1f6cd0853f21d10bc5b",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

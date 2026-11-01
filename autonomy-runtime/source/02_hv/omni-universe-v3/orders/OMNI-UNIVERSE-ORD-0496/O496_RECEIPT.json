@@ -1,0 +1,10 @@
+{
+  "ordinal": 496,
+  "status": "EXECUTED_VALIDATED",
+  "validated_at_epoch": 1792806518,
+  "name": "Validate Warehouse",
+  "warehouse_exists": true,
+  "warehouse_files": 40,
+  "pointer_sha256": "abe7b9ccad7bd35468c017e9c9f4ed27597d84ba6ea2568b2f95359cd62f8a08",
+  "validation": "warehouse exists and retains a content-addressable flagship pointer"
+}

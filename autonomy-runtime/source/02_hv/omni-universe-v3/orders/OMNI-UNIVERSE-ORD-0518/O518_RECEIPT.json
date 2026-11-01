@@ -1,0 +1,17 @@
+{
+  "ordinal": 518,
+  "status": "EXECUTED_NORMALIZED",
+  "name": "HIVELOCITY",
+  "artifact": "13_NORMALIZED/HIVELOCITY.normalized.json",
+  "schema": "omni.normalized.runtime.v1",
+  "domain": "HIVELOCITY",
+  "role": "remote canonical execution and routing node",
+  "ssh_alias": "omni-hv",
+  "canonical_project_root": "/root/OmniDocuments/.omni_engine/omni-universe-project-engine-v3",
+  "sector_root": "/srv/omni/tosh-engines",
+  "transport": [
+    "ssh",
+    "scp"
+  ],
+  "verification": "basename+sha256 receipt-set equality"
+}

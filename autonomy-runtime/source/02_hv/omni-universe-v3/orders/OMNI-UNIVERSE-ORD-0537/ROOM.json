@@ -1,0 +1,18 @@
+{
+  "ordinal": 537,
+  "order_id": "OMNI-UNIVERSE-ORD-0537",
+  "domain": "FACTORY",
+  "stage": "Index",
+  "name": "Index Factory",
+  "receipt_file": "O537_RECEIPT.json",
+  "receipt_sha256": "bc74fc78c0e80c7126b275d48b220cf574146c1455553258d42bcd15f0fc8877",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

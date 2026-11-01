@@ -1,0 +1,9 @@
+{
+  "ordinal": 479,
+  "status": "EXECUTED",
+  "name": "Inventory Termux",
+  "local_engine_root": "/data/data/com.termux/files/home/OmniDocuments/OMNI_UNIVERSE_PROJECT_ENGINE_V3",
+  "local_linked_capsule": "/data/data/com.termux/files/home/OmniDocuments/OMNI_UNIVERSE_PROJECT_ENGINE_V3/14_ARCHIVE/OMNI_UNIVERSE_V3_LINKED_CAPSULE_2026-10-21.zip",
+  "local_sha256": "e62d3956355b499483e02cbee13363d7ce853942e74f495aae0a9701d42f588f",
+  "desktop_commander_bridge": "LIVE"
+}

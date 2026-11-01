@@ -1,0 +1,18 @@
+{
+  "ordinal": 508,
+  "order_id": "OMNI-UNIVERSE-ORD-0508",
+  "domain": "VECTOR_TRACE",
+  "stage": "Normalize",
+  "name": "Normalize Vector Trace",
+  "receipt_file": "O508_RECEIPT.json",
+  "receipt_sha256": "da10a8e92ecf4ea9a94233f4bc754c1655bae460f6fe5d241c3b418269fb0056",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

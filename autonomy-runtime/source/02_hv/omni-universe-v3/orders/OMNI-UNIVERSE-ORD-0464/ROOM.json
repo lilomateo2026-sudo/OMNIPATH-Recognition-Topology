@@ -1,0 +1,18 @@
+{
+  "ordinal": 464,
+  "order_id": "OMNI-UNIVERSE-ORD-0464",
+  "domain": "LEGACY_OR_COMPOUND",
+  "stage": "legacy",
+  "name": "O464_RECEIPT",
+  "receipt_file": "O464_RECEIPT.json",
+  "receipt_sha256": "2c3ae09d4055c0cf3fce479139756a210e5367051e63bbbf36de43afa1fc2633",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

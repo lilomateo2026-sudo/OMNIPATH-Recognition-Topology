@@ -1,0 +1,20 @@
+{
+  "order_id": "TOSH-ORD-0102",
+  "name": "Bridge SHA Handshake",
+  "executed_at": "2026-10-15T20:43:35.759134+00:00",
+  "status": "PASS",
+  "suborders": [
+    {
+      "name": "validate inputs",
+      "status": "PASS"
+    },
+    {
+      "name": "execute operation",
+      "status": "PASS"
+    },
+    {
+      "name": "trace and route outputs",
+      "status": "PASS"
+    }
+  ]
+}

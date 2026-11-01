@@ -1,0 +1,21 @@
+# Current Chat Application / System Registry
+
+- OMNI Hivelocity coordinator and persistent state/evidence node.
+- Android/Termux portable controller-worker and bridge origin.
+- Windows worker/counterpart nodes.
+- iPhone/WORLD-04 native-edge candidate.
+- TOSH/OMNI Master Script Engine Generator and TOSH_OMNIPATH_CHAT_V2.
+- OMNIPATH continuation/arbitration engine.
+- OmniTeach learning and mastery layer.
+- OMNI TEMPLE / Shadow-Omega research and continuity sector.
+- Recollection / CrossRAG memory and retrieval graph.
+- FileBridge source/data plane.
+- OMNIFIRE autonomous research system.
+- Critters, Orchid Brood Mother, and Galaxy News Radio observability metaphors/runtimes.
+- O-PHI-FG reproducibility, deterministic-build, and byte-drift family.
+- OMNI-NEXTGEN repository/deployment lineage.
+- IMAGINE AI Creative Suite, StoryHub, Astro AI Music, Notebook, image-generation lineage, tournaments, and cross-engine handoff.
+- OMNIVERSE world/node routing and Story Vault / Akashic / recursion archives.
+- Omni Network Atlas / semantic graph and Relativity relation layer.
+- Federated verification, polycentric governance, treaty/jurisdiction, succession, and recovery runtimes.
+- OMNICORE continuation console as the human-facing convergence target.

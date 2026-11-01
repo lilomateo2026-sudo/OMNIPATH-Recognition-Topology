@@ -1,0 +1,18 @@
+{
+  "ordinal": 519,
+  "order_id": "OMNI-UNIVERSE-ORD-0519",
+  "domain": "TERMUX",
+  "stage": "Normalize",
+  "name": "Normalize Termux",
+  "receipt_file": "O519_RECEIPT.json",
+  "receipt_sha256": "f2d0644c1a4f2eada437f082eba3ca2040cac15a9daad1beeb5335cf03db0481",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

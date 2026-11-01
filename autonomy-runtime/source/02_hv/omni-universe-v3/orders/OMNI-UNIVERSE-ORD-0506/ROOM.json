@@ -1,0 +1,18 @@
+{
+  "ordinal": 506,
+  "order_id": "OMNI-UNIVERSE-ORD-0506",
+  "domain": "CHAT_CENSUS",
+  "stage": "Normalize",
+  "name": "Normalize Chat Census",
+  "receipt_file": "O506_RECEIPT.json",
+  "receipt_sha256": "4203466dc319affa092aa59d6edbba3d50ea76ac1534857899ae36309f1a9599",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

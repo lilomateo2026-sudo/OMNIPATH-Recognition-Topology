@@ -1,0 +1,18 @@
+{
+  "ordinal": 545,
+  "order_id": "OMNI-UNIVERSE-ORD-0545",
+  "domain": "WORLD_CIVILIZATION",
+  "stage": "Index",
+  "name": "Index World Civilization",
+  "receipt_file": "O545_RECEIPT.json",
+  "receipt_sha256": "1bd6bb44663c734bae0ed84b8fc810222da33b3225aa5a4f6620b7cb730e5e01",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "ordinal": 483,
+  "order_id": "OMNI-UNIVERSE-ORD-0483",
+  "domain": "ARCHITECT_GRADE",
+  "stage": "Inventory",
+  "name": "Inventory Architect Grade",
+  "receipt_file": "O483_RECEIPT.json",
+  "receipt_sha256": "b0c9d8fff51a146b9534a7cb3ede0db2313ba99040c1343e0e0565cf3c6b9351",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "ordinal": 521,
+  "order_id": "OMNI-UNIVERSE-ORD-0521",
+  "domain": "SEMANTIC_MAP",
+  "stage": "Normalize",
+  "name": "Normalize Semantic Map",
+  "receipt_file": "O521_RECEIPT.json",
+  "receipt_sha256": "a156cfa308aabd70d5b8177b08d593b1072e9b1ffbc7eb06311de6b61ac38b13",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

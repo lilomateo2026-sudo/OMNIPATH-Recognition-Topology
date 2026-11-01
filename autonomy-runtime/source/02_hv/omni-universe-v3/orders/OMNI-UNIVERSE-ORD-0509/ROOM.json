@@ -1,0 +1,18 @@
+{
+  "ordinal": 509,
+  "order_id": "OMNI-UNIVERSE-ORD-0509",
+  "domain": "RAG_LOCKSMITH",
+  "stage": "Normalize",
+  "name": "Normalize Rag Locksmith",
+  "receipt_file": "O509_RECEIPT.json",
+  "receipt_sha256": "e4d65d6b8fffda49f954bf16082c995f2437ef1282fee486054e4b1093cf8ac1",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

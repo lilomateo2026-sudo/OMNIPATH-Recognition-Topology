@@ -1,0 +1,18 @@
+{
+  "ordinal": 480,
+  "order_id": "OMNI-UNIVERSE-ORD-0480",
+  "domain": "ODYSSEY",
+  "stage": "Inventory",
+  "name": "Inventory Odyssey",
+  "receipt_file": "O480_RECEIPT.json",
+  "receipt_sha256": "d5addc0312b4cd51792b8fb7235d64bb8a188a2fa4d2786823568b7d648b3b4a",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "ordinal": 501,
+  "status": "EXECUTED_VALIDATED",
+  "name": "Validate Semantic Map",
+  "source_exists": true,
+  "source_files": 3,
+  "project_semantic_exists": true,
+  "project_semantic_files": 1,
+  "validation": "semantic mapping roots readable and project lane present"
+}

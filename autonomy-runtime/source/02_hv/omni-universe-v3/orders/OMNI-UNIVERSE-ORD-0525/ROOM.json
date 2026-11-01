@@ -1,0 +1,18 @@
+{
+  "ordinal": 525,
+  "order_id": "OMNI-UNIVERSE-ORD-0525",
+  "domain": "WORLD_CIVILIZATION",
+  "stage": "Normalize",
+  "name": "Normalize World Civilization",
+  "receipt_file": "O525_RECEIPT.json",
+  "receipt_sha256": "4b7cada754556ca1e59d060a3b0318eff8c90fc2819307bdf81c0584462ad8e5",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

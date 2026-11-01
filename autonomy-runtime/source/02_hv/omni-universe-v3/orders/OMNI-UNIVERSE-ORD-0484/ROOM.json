@@ -1,0 +1,18 @@
+{
+  "ordinal": 484,
+  "order_id": "OMNI-UNIVERSE-ORD-0484",
+  "domain": "IMAGE_REPLICATOR",
+  "stage": "Inventory",
+  "name": "Inventory Image Replicator",
+  "receipt_file": "O484_RECEIPT.json",
+  "receipt_sha256": "5597d5689a30f3d5b805bd6860247997da4caa6ecb21e7ab7079e359d590b84c",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

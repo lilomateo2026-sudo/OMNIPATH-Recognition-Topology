@@ -1,0 +1,9 @@
+{
+  "ordinal": 491,
+  "status": "EXECUTED_VALIDATED",
+  "name": "Validate SmartFlow",
+  "smartflow_rows": 300,
+  "execution_pack_files": 23,
+  "source_sha_preservation_policy": true,
+  "validation": "orchestration permutations remain distinct from immutable source identity"
+}

@@ -1,0 +1,16 @@
+{
+  "ordinal": 499,
+  "status": "EXECUTED_VALIDATED",
+  "validated_at_epoch": 1792806519,
+  "name": "Validate Termux",
+  "python": "/data/data/com.termux/files/usr/bin/python3",
+  "platform": "Android-17-aarch64-64bit",
+  "roots": {
+    ".omni": true,
+    ".tosh": true,
+    ".odyssey": true,
+    "OmniDocuments": true,
+    "omni-runtime": true
+  },
+  "validation": "Termux human-node roots and runtime front door are present"
+}

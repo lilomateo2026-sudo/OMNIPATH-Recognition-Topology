@@ -1,0 +1,18 @@
+{
+  "ordinal": 550,
+  "order_id": "OMNI-UNIVERSE-ORD-0550",
+  "domain": "MENU_GEN",
+  "stage": "Trace",
+  "name": "Trace Menu Gen",
+  "receipt_file": "O550_RECEIPT.json",
+  "receipt_sha256": "3d52619251e548edfaae18d149fb5a674bfccd9ac86d50c9ade6b529d580da8a",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "ordinal": 492,
+  "order_id": "OMNI-UNIVERSE-ORD-0492",
+  "domain": "OMNIPATH",
+  "stage": "Validate",
+  "name": "Validate Omnipath",
+  "receipt_file": "O492_RECEIPT.json",
+  "receipt_sha256": "d1d7d3c74d7d41b6eb63ad4d17e16ef90d93f11e930ad46d1408b416f762976e",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

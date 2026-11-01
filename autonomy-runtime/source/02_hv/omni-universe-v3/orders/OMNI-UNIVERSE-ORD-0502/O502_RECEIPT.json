@@ -1,0 +1,9 @@
+{
+  "ordinal": 502,
+  "status": "EXECUTED_VALIDATED",
+  "name": "Validate Model Arbitration",
+  "tournament_scripts": 144,
+  "deep_arbitration_exists": true,
+  "deep_arbitration_sha256": "080c7d2139c93ad072e54eff49dccc463c901681fc6e0bcad5403af277a3fd3b",
+  "validation": "arbitration/tournament code paths present; no universal winner asserted"
+}

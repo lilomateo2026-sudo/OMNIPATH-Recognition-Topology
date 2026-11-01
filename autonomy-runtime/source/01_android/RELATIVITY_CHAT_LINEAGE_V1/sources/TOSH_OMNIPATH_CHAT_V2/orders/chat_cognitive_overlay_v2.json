@@ -1,0 +1,2765 @@
+{
+  "schema": "tosh.chat-cognitive-overlay.v2",
+  "created_at": "2026-10-15T20:43:35.751041+00:00",
+  "overlay_id": "TOSH-CHAT-V2-c6f862b5d934ae6a",
+  "base_registry_orders": 360,
+  "overlay_orders": 72,
+  "package_combined_orders": 432,
+  "package_subminions": 1296,
+  "orders": [
+    {
+      "ordinal": 361,
+      "id": "TOSH-ORD-0361",
+      "section": "RECURSIVE",
+      "name": "Register Recursive Observer Model",
+      "function": "register_recursive_observer_model",
+      "sha_id": "sha256:65d2a20dd74b31d0fbd901147155ba0bf0c53f4a2195e0e057a6b11863080703",
+      "vector": {
+        "15": -0.69903033,
+        "33": 0.41285857,
+        "38": -0.41285857,
+        "16": 0.41285857
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0361.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:e48f9a8f9e3150c8da818a5b48ff62c381a321b4e171946fdc525642e9b4dd18"
+        },
+        {
+          "id": "TOSH-ORD-0361.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:631f2c418fa8400b7178307ba9cfc6c440be7e65f1fc366f3d4fe97317c8ef2c"
+        },
+        {
+          "id": "TOSH-ORD-0361.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:689f395489095a2984586123eb1f7cf4204d91e17c3c19f2703dc91487871d9d"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0362",
+        "TOSH-ORD-0363",
+        "TOSH-ORD-0364",
+        "TOSH-ORD-0365",
+        "TOSH-ORD-0366"
+      ]
+    },
+    {
+      "ordinal": 362,
+      "id": "TOSH-ORD-0362",
+      "section": "RECURSIVE",
+      "name": "Map Supervisory Human Layer",
+      "function": "map_supervisory_human_layer",
+      "sha_id": "sha256:f33212420f19d80442ae7b34bfedf5bdfdc388f17af49b031a535cf8b7536825",
+      "vector": {
+        "15": -0.4472136,
+        "63": 0.4472136,
+        "19": -0.4472136,
+        "14": 0.4472136,
+        "37": -0.4472136
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0362.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:21fb02c7a5465ccab602334d2e33a482e7b34d1042e9b45f628ac53055c03368"
+        },
+        {
+          "id": "TOSH-ORD-0362.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:35efec288c2341fd1770b33c9f988232d08d213bbcd758322ceb55ac95968619"
+        },
+        {
+          "id": "TOSH-ORD-0362.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:65aae70bb270440ed3afbee26bdcb824aa75157b89f857fbbecc7e35c1d74fd7"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0363",
+        "TOSH-ORD-0364",
+        "TOSH-ORD-0365",
+        "TOSH-ORD-0366",
+        "TOSH-ORD-0367"
+      ]
+    },
+    {
+      "ordinal": 363,
+      "id": "TOSH-ORD-0363",
+      "section": "RECURSIVE",
+      "name": "Map Automatic Biological Layers",
+      "function": "map_automatic_biological_layers",
+      "sha_id": "sha256:cc069de289af17146394046d08cd7d192bdc1e676fddabca4ca236ee47377bb9",
+      "vector": {
+        "15": -0.4472136,
+        "63": 0.4472136,
+        "52": -0.4472136,
+        "27": -0.4472136,
+        "50": -0.4472136
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0363.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:5bb89f67f6c9fefb7a35377fa43c77e46b035281d76fdd7044ad9141220ab86b"
+        },
+        {
+          "id": "TOSH-ORD-0363.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:299514335b64881dd0b961966a08b226f2c3846417f489754f26e61771d16bbf"
+        },
+        {
+          "id": "TOSH-ORD-0363.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:e1d3c0bd6c5a52a9b52145266b2d000f78a6328da6059cf05f2059d11bf02073"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0364",
+        "TOSH-ORD-0365",
+        "TOSH-ORD-0366",
+        "TOSH-ORD-0367",
+        "TOSH-ORD-0368"
+      ]
+    },
+    {
+      "ordinal": 364,
+      "id": "TOSH-ORD-0364",
+      "section": "RECURSIVE",
+      "name": "Build Human AI Polarity Loop",
+      "function": "build_human_ai_polarity_loop",
+      "sha_id": "sha256:8b05c1561092738f87d2e40e0ae786d8d9c5834c7bd3a5db23d74cf1b1cfa4e7",
+      "vector": {
+        "15": -0.40824829,
+        "36": -0.40824829,
+        "14": 0.40824829,
+        "3": -0.40824829,
+        "37": 0.40824829,
+        "30": -0.40824829
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0364.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:a927d4498dfc6c499e0b8f8e83dc73ef04dff3f0b5a23db4e3f82b60568523ed"
+        },
+        {
+          "id": "TOSH-ORD-0364.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:d633fb89e72f0cc50bda57044f6f82d9a170a5a3100a4ed0a1c3c8e78ff50bc6"
+        },
+        {
+          "id": "TOSH-ORD-0364.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:895c1976c20228b56c71357f83007aad230452409c551b57a2b4de41a69c4541"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0365",
+        "TOSH-ORD-0366",
+        "TOSH-ORD-0367",
+        "TOSH-ORD-0368",
+        "TOSH-ORD-0369"
+      ]
+    },
+    {
+      "ordinal": 365,
+      "id": "TOSH-ORD-0365",
+      "section": "RECURSIVE",
+      "name": "Build AI Self Review Loop",
+      "function": "build_ai_self_review_loop",
+      "sha_id": "sha256:7c0ddee7f2beda368bc7439475b34bf54c0114a0499949d107c2096000d0fc66",
+      "vector": {
+        "15": -0.40824829,
+        "36": -0.40824829,
+        "3": -0.40824829,
+        "35": 0.40824829,
+        "44": 0.40824829,
+        "30": -0.40824829
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0365.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:1485489ae7976d3c0f263c8f77c5c3e1ac2a3e4fd73005d1ef0a2ee8a4c5ebf2"
+        },
+        {
+          "id": "TOSH-ORD-0365.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:7995a095fe29220b8884d095ec920f51766ccf35f3aa52f5a0c9b2a9c351830d"
+        },
+        {
+          "id": "TOSH-ORD-0365.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:74f0f42e2d756dccc79fcb73e86cc62cbc02f9bf4a78b6199754a40a06288fa0"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0366",
+        "TOSH-ORD-0367",
+        "TOSH-ORD-0368",
+        "TOSH-ORD-0369",
+        "TOSH-ORD-0370"
+      ]
+    },
+    {
+      "ordinal": 366,
+      "id": "TOSH-ORD-0366",
+      "section": "RECURSIVE",
+      "name": "Trace Interior Exterior Inversion",
+      "function": "trace_interior_exterior_inversion",
+      "sha_id": "sha256:a508ff1cd81deaeb2bec51524a43eec90154e0ccfd1de25b281193d85ac7596a",
+      "vector": {
+        "15": -0.4472136,
+        "25": -0.4472136,
+        "9": 0.4472136,
+        "38": 0.4472136,
+        "51": -0.4472136
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0366.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:aca51bd28103f52ae6de8598409bf133b75240100cb258b53967e6143f6cd7ed"
+        },
+        {
+          "id": "TOSH-ORD-0366.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:13ca4cf698832aa6bd067626555bade24172c6c7aa98bb44dd972f7a9a3e4578"
+        },
+        {
+          "id": "TOSH-ORD-0366.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:c95e28a3701ebfb8f50a0f197fdf154dd790599cd7602798f35463e38b3ad2e8"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0367",
+        "TOSH-ORD-0368",
+        "TOSH-ORD-0369",
+        "TOSH-ORD-0370",
+        "TOSH-ORD-0371"
+      ]
+    },
+    {
+      "ordinal": 367,
+      "id": "TOSH-ORD-0367",
+      "section": "RECURSIVE",
+      "name": "Model Exocognitive Reflection",
+      "function": "model_exocognitive_reflection",
+      "sha_id": "sha256:6be9b89c680fad37281f6de9a83e97a839361736beb76f426e4ff8be9b3db4ce",
+      "vector": {
+        "15": -0.5,
+        "16": 0.5,
+        "41": 0.5,
+        "29": 0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0367.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:6026a9c648acee448fe5c5a1e9ae8637367099d94fc0e6e26d5ae6f3bbf5f34c"
+        },
+        {
+          "id": "TOSH-ORD-0367.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:29734bfcda906f800564ba723d81c23aab9ff69f4aad28c1935658e56c63327f"
+        },
+        {
+          "id": "TOSH-ORD-0367.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:17d525956d538a09fff1535d76bd263c09f74fa349d6a32316f6cf80752a395c"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0368",
+        "TOSH-ORD-0369",
+        "TOSH-ORD-0370",
+        "TOSH-ORD-0371",
+        "TOSH-ORD-0372"
+      ]
+    },
+    {
+      "ordinal": 368,
+      "id": "TOSH-ORD-0368",
+      "section": "RECURSIVE",
+      "name": "Separate Metaphor From Empirical Claim",
+      "function": "separate_metaphor_from_empirical_claim",
+      "sha_id": "sha256:47ecd7a6f9b0758f2d165eb1a21d6477c065040525e0632c57c9bf612bb5cb0c",
+      "vector": {
+        "15": -0.40824829,
+        "61": -0.40824829,
+        "49": -0.40824829,
+        "39": -0.40824829,
+        "14": -0.40824829,
+        "42": -0.40824829
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0368.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:98c6bf840ce2e8e187e4de74558407ad00ae7d6e91cbcbf081a617be46e6bd5a"
+        },
+        {
+          "id": "TOSH-ORD-0368.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:cdce48c9c663a4f8254856bf88a02351c37a4d2bd3d0777f4989a823a8148725"
+        },
+        {
+          "id": "TOSH-ORD-0368.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:ffdb4bfb0c1212932317cb57dc638cd356e8ccffd21311640a66341de4d1940a"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0369",
+        "TOSH-ORD-0370",
+        "TOSH-ORD-0371",
+        "TOSH-ORD-0372",
+        "TOSH-ORD-0373"
+      ]
+    },
+    {
+      "ordinal": 369,
+      "id": "TOSH-ORD-0369",
+      "section": "RECURSIVE",
+      "name": "Model Metastable Identity",
+      "function": "model_metastable_identity",
+      "sha_id": "sha256:72f433c027b84b85b5a31425812980d9b98e806ef0cf1e4e7227df47794390f5",
+      "vector": {
+        "15": -0.5,
+        "16": 0.5,
+        "54": -0.5,
+        "25": -0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0369.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:26389eff7f0c49da1a7ddd5ebefb512fd444628d4c853f5ebba321133c3054b7"
+        },
+        {
+          "id": "TOSH-ORD-0369.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:c3b229338e1a57f131f36159fedc64ee08563aff0bc5d8c4736dbfc2235e2817"
+        },
+        {
+          "id": "TOSH-ORD-0369.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:28175d4fa3f7a80dc063493a2c2376e48fb2116baad5a8be0a0f6e809d402864"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0370",
+        "TOSH-ORD-0371",
+        "TOSH-ORD-0372",
+        "TOSH-ORD-0373",
+        "TOSH-ORD-0374"
+      ]
+    },
+    {
+      "ordinal": 370,
+      "id": "TOSH-ORD-0370",
+      "section": "RECURSIVE",
+      "name": "Map Whirlpool Continuity",
+      "function": "map_whirlpool_continuity",
+      "sha_id": "sha256:9522bd66265818384c879464cbf2762d954603356cdf31739201571e42a0f135",
+      "vector": {
+        "15": -0.5,
+        "63": 0.5,
+        "49": 0.5,
+        "37": 0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0370.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:7317a05b91ead81ebc6e5428edd11e6fc25bb423380b1dd498ae226c5d426408"
+        },
+        {
+          "id": "TOSH-ORD-0370.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:7d663db19e8823680fd48ddd29b754b64d1c9861bc82b06bb533ac5e2ef94654"
+        },
+        {
+          "id": "TOSH-ORD-0370.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:79076f1ef23f55e308f1938250339523d46f119897cef5f5b58e36425b0b09e7"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0371",
+        "TOSH-ORD-0372",
+        "TOSH-ORD-0373",
+        "TOSH-ORD-0374",
+        "TOSH-ORD-0375"
+      ]
+    },
+    {
+      "ordinal": 371,
+      "id": "TOSH-ORD-0371",
+      "section": "RECURSIVE",
+      "name": "Map Cognitive Crystallization",
+      "function": "map_cognitive_crystallization",
+      "sha_id": "sha256:4680889a73b768115b733924a2e169c9d3de68a6f18e84cba68ccf73f5ec6278",
+      "vector": {
+        "15": -0.5,
+        "63": 0.5,
+        "35": 0.5,
+        "31": 0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0371.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:d4081a52567be01d88d349faecb6a45b84e2ad0793d14d6e919875ca6d916883"
+        },
+        {
+          "id": "TOSH-ORD-0371.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:10578ead31cd37dd17897fa0cf93a425fb6762374a653fbc1656b882d6c48942"
+        },
+        {
+          "id": "TOSH-ORD-0371.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:e6ff6117441b0760d2353a9c2cd97ae71e211a3be3e43faec3d044848a5efeb8"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0372",
+        "TOSH-ORD-0373",
+        "TOSH-ORD-0374",
+        "TOSH-ORD-0375",
+        "TOSH-ORD-0376"
+      ]
+    },
+    {
+      "ordinal": 372,
+      "id": "TOSH-ORD-0372",
+      "section": "RECURSIVE",
+      "name": "Trace Structure Through Change",
+      "function": "trace_structure_through_change",
+      "sha_id": "sha256:323044a2040e405753dcd9160ea4e174928f863a1d033d55f211a9506e8b8004",
+      "vector": {
+        "15": -0.4472136,
+        "25": -0.4472136,
+        "54": -0.4472136,
+        "53": -0.4472136,
+        "42": -0.4472136
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0372.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:e594713854f234f73f18afe94d3470881265b531d80e5a791f372c873f6ccfff"
+        },
+        {
+          "id": "TOSH-ORD-0372.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:d2ba0993c9618ad867a292901e32d1a99b1ba77759f2d2d226c8603a2d92280f"
+        },
+        {
+          "id": "TOSH-ORD-0372.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:0e31ea50f5a0b667250dc50e643c91c78cc7a84acf72e63b8e82b475fe8015f2"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0373",
+        "TOSH-ORD-0374",
+        "TOSH-ORD-0375",
+        "TOSH-ORD-0376",
+        "TOSH-ORD-0377"
+      ]
+    },
+    {
+      "ordinal": 373,
+      "id": "TOSH-ORD-0373",
+      "section": "RECURSIVE",
+      "name": "Model Distributed Control",
+      "function": "model_distributed_control",
+      "sha_id": "sha256:64984c0d9c944347dc3e2e854a138db1ee15e2d32b8e67b5bfead138a1a9182f",
+      "vector": {
+        "15": -0.5,
+        "16": 0.5,
+        "38": 0.5,
+        "46": 0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0373.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:bf28d7c30ba0b31a6d357e38c0fa8bda8fec57552e5b763838f6db6b82459192"
+        },
+        {
+          "id": "TOSH-ORD-0373.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:aa17ea39c019cb1d60ed73a193a2653c073581de8d769a3ac3c925280ba569b5"
+        },
+        {
+          "id": "TOSH-ORD-0373.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:b6f77ef9923a21a0b553c0d3ece187572ac779c6c04656a2e54a0842b1377696"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0374",
+        "TOSH-ORD-0375",
+        "TOSH-ORD-0376",
+        "TOSH-ORD-0377",
+        "TOSH-ORD-0378"
+      ]
+    },
+    {
+      "ordinal": 374,
+      "id": "TOSH-ORD-0374",
+      "section": "RECURSIVE",
+      "name": "Build Observer Recursion Ladder",
+      "function": "build_observer_recursion_ladder",
+      "sha_id": "sha256:5641de79557495e6d60e6dd868f2c930c8281b6285eb0ff08e8872b5af2ced48",
+      "vector": {
+        "15": -0.4472136,
+        "36": -0.4472136,
+        "38": -0.4472136,
+        "12": 0.4472136,
+        "34": -0.4472136
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0374.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:ce1a2d2a88c051bc428495e6935676d977c119e206d51bbb406d63a7289ff946"
+        },
+        {
+          "id": "TOSH-ORD-0374.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:062b01ef353c3988b9b7f1705b98da34ec4989ea008b7295133511e1f0b828aa"
+        },
+        {
+          "id": "TOSH-ORD-0374.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:0f547eb65615fc62c20e59ec33cf2dd60b2f7f0c2de65ac18652d1df280ff3cd"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0375",
+        "TOSH-ORD-0376",
+        "TOSH-ORD-0377",
+        "TOSH-ORD-0378",
+        "TOSH-ORD-0379"
+      ]
+    },
+    {
+      "ordinal": 375,
+      "id": "TOSH-ORD-0375",
+      "section": "RECURSIVE",
+      "name": "Compare Internal External Models",
+      "function": "compare_internal_external_models",
+      "sha_id": "sha256:3712909ac33e5b15c1f1562fac6aa9cdb3dda431e7b3d7fc922417912bb1e2bc",
+      "vector": {
+        "15": -0.4472136,
+        "2": -0.4472136,
+        "30": -0.4472136,
+        "61": -0.4472136,
+        "9": 0.4472136
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0375.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:cf2a256957c17550d3c04ec74408beca9025bdc1241d6cbc088e2401a48caef3"
+        },
+        {
+          "id": "TOSH-ORD-0375.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:3b112da6cb94f8b1abfcbbb6a202715a9a66c02c9869c27cab44e16e87b0059f"
+        },
+        {
+          "id": "TOSH-ORD-0375.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:45f467802f79b6bf80fa5c218aec5410dbc3da37b36c8aadd2cbfd0656c759a7"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0376",
+        "TOSH-ORD-0377",
+        "TOSH-ORD-0378",
+        "TOSH-ORD-0379",
+        "TOSH-ORD-0380"
+      ]
+    },
+    {
+      "ordinal": 376,
+      "id": "TOSH-ORD-0376",
+      "section": "RECURSIVE",
+      "name": "Ground Recursive Observer Claims",
+      "function": "ground_recursive_observer_claims",
+      "sha_id": "sha256:332f7188f1f6ed4b4feeaa22a22a218ded0f0fd02e48d10c9378d0dde464790c",
+      "vector": {
+        "15": -0.69903033,
+        "35": 0.41285857,
+        "38": -0.41285857,
+        "34": 0.41285857
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0376.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:b4796e9fa6d1e1b9f67c66c4b90963e727daebcdf96efcfd8564284424eb99b0"
+        },
+        {
+          "id": "TOSH-ORD-0376.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:59036d135c15590b78419e19bb82fa2115508e362dd97816244a4b4723002595"
+        },
+        {
+          "id": "TOSH-ORD-0376.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:efc708d4670d69e63ecab2362d1a5e23989d20247b8f3e5654447c8835be6a7d"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0377",
+        "TOSH-ORD-0378",
+        "TOSH-ORD-0379",
+        "TOSH-ORD-0380",
+        "TOSH-ORD-0381"
+      ]
+    },
+    {
+      "ordinal": 377,
+      "id": "TOSH-ORD-0377",
+      "section": "RECURSIVE",
+      "name": "Export Recursive Observer Capsule",
+      "function": "export_recursive_observer_capsule",
+      "sha_id": "sha256:94ac93998394c560880a527a25f6a1b4b6b5d6050a927d8b15c96ecfcef9c8da",
+      "vector": {
+        "15": -0.69903033,
+        "43": -0.41285857,
+        "38": -0.41285857,
+        "6": -0.41285857
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0377.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:434101100f0dba3cd012c434eedd76e9d4dbc16a30bec3d7c2c5570e430d8a24"
+        },
+        {
+          "id": "TOSH-ORD-0377.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:81683a578cc7ba2f2be8e0a60393369874ceed11f9b1062b37c37443b120a152"
+        },
+        {
+          "id": "TOSH-ORD-0377.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:65eef39c7a7f1c44e90977c216159034a27c89f4381da7c8b695da5f8e333929"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0378",
+        "TOSH-ORD-0379",
+        "TOSH-ORD-0380",
+        "TOSH-ORD-0381",
+        "TOSH-ORD-0382"
+      ]
+    },
+    {
+      "ordinal": 378,
+      "id": "TOSH-ORD-0378",
+      "section": "RECURSIVE",
+      "name": "Recursive Observer Doctor",
+      "function": "recursive_observer_doctor",
+      "sha_id": "sha256:125394cccf1ae424ead7f9321e4785599fcb0d8f14c1383210f4e534585ca2a4",
+      "vector": {
+        "15": -0.76749457,
+        "38": -0.45329466,
+        "59": -0.45329466
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0378.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:2b6f4ad8bdcaa6e0633f323e487b53f7a81b9474f923636f976476d6d3ed5bb0"
+        },
+        {
+          "id": "TOSH-ORD-0378.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:a085be280c0a2723a58779fc04f980169eaf55d46f30b4f91b97e175c69876ac"
+        },
+        {
+          "id": "TOSH-ORD-0378.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:2f03d329137bc7b5343f00050399f7a99b8fcb9be9d150b55221b4f3621d5ee2"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0379",
+        "TOSH-ORD-0380",
+        "TOSH-ORD-0381",
+        "TOSH-ORD-0382",
+        "TOSH-ORD-0383"
+      ]
+    },
+    {
+      "ordinal": 379,
+      "id": "TOSH-ORD-0379",
+      "section": "COUNTERPOINT",
+      "name": "Initialize Cognitive Rhyme Engine",
+      "function": "initialize_cognitive_rhyme_engine",
+      "sha_id": "sha256:a936d21cf157f6cfee3cfc16d40badb76d62969fe9dd51ced99b7d04a3cfb753",
+      "vector": {
+        "17": 0.4472136,
+        "20": -0.4472136,
+        "35": 0.4472136,
+        "18": -0.4472136,
+        "49": 0.4472136
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0379.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:14ca1701f5575fc6753e0c40096ed3603f4cd4808973d125c95a2e1e0087f878"
+        },
+        {
+          "id": "TOSH-ORD-0379.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:f2633aa35f8c58e220e30f0a895d078d6b6c8878f0469fcf4b7ad3d00054013f"
+        },
+        {
+          "id": "TOSH-ORD-0379.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:62f84d52005327a0f60d7503e3e525015d732b14b69238f8ecb088d70c88d35b"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0380",
+        "TOSH-ORD-0381",
+        "TOSH-ORD-0382",
+        "TOSH-ORD-0383",
+        "TOSH-ORD-0384"
+      ]
+    },
+    {
+      "ordinal": 380,
+      "id": "TOSH-ORD-0380",
+      "section": "COUNTERPOINT",
+      "name": "Parse Setup Expectation Resolution",
+      "function": "parse_setup_expectation_resolution",
+      "sha_id": "sha256:5b287dd65ed0ecd4108d2fd57fccb20d3add58c3d7bb921a77aceb743a3cefcf",
+      "vector": {
+        "17": 0.4472136,
+        "53": -0.4472136,
+        "7": -0.4472136,
+        "23": -0.4472136,
+        "59": -0.4472136
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0380.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:3d81f506b04e643c183c87162e5e7502189f6c13e3577074ce9781f7322f7670"
+        },
+        {
+          "id": "TOSH-ORD-0380.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:730dad05e29a74f273ed32c722354a6ae739bae00552a08d79e7b665ae0a88bf"
+        },
+        {
+          "id": "TOSH-ORD-0380.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:564099c749ef8abbd39a53762c207d654afafba56a553fb681a689ec8c74f812"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0381",
+        "TOSH-ORD-0382",
+        "TOSH-ORD-0383",
+        "TOSH-ORD-0384",
+        "TOSH-ORD-0385"
+      ]
+    },
+    {
+      "ordinal": 381,
+      "id": "TOSH-ORD-0381",
+      "section": "COUNTERPOINT",
+      "name": "Extract Relational Geometry",
+      "function": "extract_relational_geometry",
+      "sha_id": "sha256:049c4573fec18c94be042162bb64d3853df7d048a9745e59d325fd303197f8b3",
+      "vector": {
+        "17": 0.5,
+        "39": 0.5,
+        "5": -0.5,
+        "57": -0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0381.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:9f7857f006ea72c812da3d27efdf2697541480b2da362e159529fd1b29e55a9d"
+        },
+        {
+          "id": "TOSH-ORD-0381.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:27a5ce25c45e498a151acd8184c06b7ad70de54c5d0a3970f36cc997cee619db"
+        },
+        {
+          "id": "TOSH-ORD-0381.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:477d44b7ce2f82958add8e22f6b2683e1c025beba91fa2ffa6e942913b85df01"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0382",
+        "TOSH-ORD-0383",
+        "TOSH-ORD-0384",
+        "TOSH-ORD-0385",
+        "TOSH-ORD-0386"
+      ]
+    },
+    {
+      "ordinal": 382,
+      "id": "TOSH-ORD-0382",
+      "section": "COUNTERPOINT",
+      "name": "Build Model Of Model",
+      "function": "build_model_of_model",
+      "sha_id": "sha256:7ffbf337ea2ca57dbfbdf09c2bb668adb4311878ae161ee31ca0131167cfc9d3",
+      "vector": {
+        "17": 0.41285857,
+        "36": -0.41285857,
+        "16": 0.69903033,
+        "33": 0.41285857
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0382.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:8cf09f845daae91fcb269cd833ac7ac034eea705d520abe2626501ae93ba0666"
+        },
+        {
+          "id": "TOSH-ORD-0382.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:739503744258f09cf830c86cc61715fe94a2ece5d1a7171003c30ef7060bf4fc"
+        },
+        {
+          "id": "TOSH-ORD-0382.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:17aa7fd2942b2aaaee7279a4e578b3c4e4e7efdb3fee65e822e65ac9d56a3f79"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0383",
+        "TOSH-ORD-0384",
+        "TOSH-ORD-0385",
+        "TOSH-ORD-0386",
+        "TOSH-ORD-0387"
+      ]
+    },
+    {
+      "ordinal": 383,
+      "id": "TOSH-ORD-0383",
+      "section": "COUNTERPOINT",
+      "name": "Forecast Candidate Continuations",
+      "function": "forecast_candidate_continuations",
+      "sha_id": "sha256:8aeded0654eea331e9eea0a9516178a8958803f56e6a27e3d6194b3bbefeb76a",
+      "vector": {
+        "17": 0.5,
+        "1": 0.5,
+        "49": 0.5,
+        "8": 0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0383.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:58870fe987dec874c87a881c7563fe2d11f45b5fb2c7f6ca3999c35a89c131b9"
+        },
+        {
+          "id": "TOSH-ORD-0383.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:f264ba273621ac07a918633b9387dc7ee41b8a5525b4dcd4e8a162b1c33c7b9f"
+        },
+        {
+          "id": "TOSH-ORD-0383.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:a517202de567182d999961296389e62159cbd67663a50d09aa0f27924a2d3277"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0384",
+        "TOSH-ORD-0385",
+        "TOSH-ORD-0386",
+        "TOSH-ORD-0387",
+        "TOSH-ORD-0388"
+      ]
+    },
+    {
+      "ordinal": 384,
+      "id": "TOSH-ORD-0384",
+      "section": "COUNTERPOINT",
+      "name": "Hold Parallel Hypothesis Field",
+      "function": "hold_parallel_hypothesis_field",
+      "sha_id": "sha256:6a02d12e61e53c96414604ce84dbc8ce6bdc7eea4fad93ae56936519b53ea43c",
+      "vector": {
+        "17": 0.4472136,
+        "50": 0.4472136,
+        "8": -0.4472136,
+        "12": -0.4472136,
+        "35": -0.4472136
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0384.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:9050f4e7caf629319d92996d3ee1f5a419897948257af7a0ef0cd98abb25df65"
+        },
+        {
+          "id": "TOSH-ORD-0384.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:e72547be07cede012b1046effc88d7a6914d4290ba0880bf7ec18e537c068ed9"
+        },
+        {
+          "id": "TOSH-ORD-0384.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:a9b8d86a6e377588e3fd81be0a02c41e1c44f0115948fa8e0f1350b9b8f99042"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0385",
+        "TOSH-ORD-0386",
+        "TOSH-ORD-0387",
+        "TOSH-ORD-0388",
+        "TOSH-ORD-0389"
+      ]
+    },
+    {
+      "ordinal": 385,
+      "id": "TOSH-ORD-0385",
+      "section": "COUNTERPOINT",
+      "name": "Score Branch Robustness",
+      "function": "score_branch_robustness",
+      "sha_id": "sha256:e66df6a52dacd27ec961cc9859fa7180bd252ec6dcab03b4c75a5533e3110989",
+      "vector": {
+        "17": 0.5,
+        "27": -0.5,
+        "24": 0.5,
+        "55": -0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0385.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:02fbfaa3aa6f020c6feef4bc273e81afa6ae00fd1c351c7c6a9d62747ab1a260"
+        },
+        {
+          "id": "TOSH-ORD-0385.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:a2868e1ea265e567c34ccf7a47c740dc7ee1b3f1a76b16d40bf525705e9ae444"
+        },
+        {
+          "id": "TOSH-ORD-0385.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:a8778c73207ac22312e6455cf63dad0fc94b41d958f0d90b3ee41aab74a6251e"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0386",
+        "TOSH-ORD-0387",
+        "TOSH-ORD-0388",
+        "TOSH-ORD-0389",
+        "TOSH-ORD-0390"
+      ]
+    },
+    {
+      "ordinal": 386,
+      "id": "TOSH-ORD-0386",
+      "section": "COUNTERPOINT",
+      "name": "Detect Setup Before Setup",
+      "function": "detect_setup_before_setup",
+      "sha_id": "sha256:173ff84a19ada34f848a5f459b7d8a1ea425b6814bdb72868a9822a0469c0b1f",
+      "vector": {
+        "17": 0.41285857,
+        "54": 0.41285857,
+        "7": -0.69903033,
+        "27": 0.41285857
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0386.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:4467ca8a628bf5cbd8884fa21ec50b4348038d7b71d082d9185e536674be12f8"
+        },
+        {
+          "id": "TOSH-ORD-0386.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:b6bc73e4095d446940aa6e34921517499a3fa1e2a0dac766ce976e7f2395cc4a"
+        },
+        {
+          "id": "TOSH-ORD-0386.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:e92293e2bdb212b3ee7519ee45f5ff8b794c3045cf81d0527b7d638221caa60a"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0387",
+        "TOSH-ORD-0388",
+        "TOSH-ORD-0389",
+        "TOSH-ORD-0390",
+        "TOSH-ORD-0391"
+      ]
+    },
+    {
+      "ordinal": 387,
+      "id": "TOSH-ORD-0387",
+      "section": "COUNTERPOINT",
+      "name": "Map Intent Cue Interpretation",
+      "function": "map_intent_cue_interpretation",
+      "sha_id": "sha256:186821ed2dce6782796ed70987890b923853ab62ca32a2b7bc33cdbcb22dac56",
+      "vector": {
+        "17": 0.4472136,
+        "63": 0.4472136,
+        "33": -0.4472136,
+        "23": 0.4472136,
+        "26": 0.4472136
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0387.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:d28fdfd39416b754069b1b18bf0233406fc3943746fa46f254ff25f3493c8a61"
+        },
+        {
+          "id": "TOSH-ORD-0387.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:8f85d87f4853cac9aeab90f4cc1c88418ac2d89c2878718e885bb15d2454de27"
+        },
+        {
+          "id": "TOSH-ORD-0387.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:e17dc6c2b37e6f681b28cf9d91d6bfe79cdfc029729897fafe626a9520882b8b"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0388",
+        "TOSH-ORD-0389",
+        "TOSH-ORD-0390",
+        "TOSH-ORD-0391",
+        "TOSH-ORD-0392"
+      ]
+    },
+    {
+      "ordinal": 388,
+      "id": "TOSH-ORD-0388",
+      "section": "COUNTERPOINT",
+      "name": "Generate Semantic Counterpoint",
+      "function": "generate_semantic_counterpoint",
+      "sha_id": "sha256:a1ceb1b2682089986342e29422b275f53dcbb822cdabca4955d84a3da2b5a9c8",
+      "vector": {
+        "17": 0.76749457,
+        "18": -0.45329466,
+        "39": 0.45329466
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0388.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:3471989f4fac7b8793bf9906197e64116a1318cf9909127b252b96d94238c9ea"
+        },
+        {
+          "id": "TOSH-ORD-0388.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:10295007154df05dc34eddd21f288c1cb8088aac272db1525bb014c0638fe445"
+        },
+        {
+          "id": "TOSH-ORD-0388.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:f63ade0cfb7a9692ab546cecbaa8a12f3500615404965988276b05b9ac163a6f"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0389",
+        "TOSH-ORD-0390",
+        "TOSH-ORD-0391",
+        "TOSH-ORD-0392",
+        "TOSH-ORD-0393"
+      ]
+    },
+    {
+      "ordinal": 389,
+      "id": "TOSH-ORD-0389",
+      "section": "COUNTERPOINT",
+      "name": "Search Distant Structural Rhyme",
+      "function": "search_distant_structural_rhyme",
+      "sha_id": "sha256:b261a870cf8ac30ac20aff30afd4a597f81251ba85811a4bb685624cc82204bf",
+      "vector": {
+        "17": 0.4472136,
+        "54": 0.4472136,
+        "3": -0.4472136,
+        "38": 0.4472136,
+        "18": -0.4472136
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0389.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:00d9788115aad0e05098deb04325fa8672f2beb410255bacbd1ace42d1e6923f"
+        },
+        {
+          "id": "TOSH-ORD-0389.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:1dba7c9d628cc400c237899f1f1b3471baf98392147d39fbf93060beb1320607"
+        },
+        {
+          "id": "TOSH-ORD-0389.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:d48099fef690b88ced054531a29b9e55d67a9cd2c3e5c2041c97179e3d3980f5"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0390",
+        "TOSH-ORD-0391",
+        "TOSH-ORD-0392",
+        "TOSH-ORD-0393",
+        "TOSH-ORD-0394"
+      ]
+    },
+    {
+      "ordinal": 390,
+      "id": "TOSH-ORD-0390",
+      "section": "COUNTERPOINT",
+      "name": "Run Analogical Compression",
+      "function": "run_analogical_compression",
+      "sha_id": "sha256:b3388eacb093bffa01efaf76ab9d23cc2be48d7341b551869fed5124e702dac5",
+      "vector": {
+        "17": 0.5,
+        "48": 0.5,
+        "14": 0.5,
+        "39": 0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0390.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:3c6a380431ae7e190983a9ae730ab72e1dadc757a344559ddb936834cbe312ae"
+        },
+        {
+          "id": "TOSH-ORD-0390.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:df178f6e04421f10a6c813cf24120847aad0b4ab9bd78507e972ee4f882c293e"
+        },
+        {
+          "id": "TOSH-ORD-0390.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:0fc97815adf8d7fa09d19f3bfb45181ced90b981dcde2ebd2a12084209438b76"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0391",
+        "TOSH-ORD-0392",
+        "TOSH-ORD-0393",
+        "TOSH-ORD-0394",
+        "TOSH-ORD-0395"
+      ]
+    },
+    {
+      "ordinal": 391,
+      "id": "TOSH-ORD-0391",
+      "section": "COUNTERPOINT",
+      "name": "Test Adversarial Continuations",
+      "function": "test_adversarial_continuations",
+      "sha_id": "sha256:f1f9ef2b290231dc68ae69d5a92400a2ed340da4dec23028b33cbda230b3e349",
+      "vector": {
+        "17": 0.5,
+        "23": -0.5,
+        "15": 0.5,
+        "8": 0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0391.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:cdaedd49e4d79ec978af8e5fd96905ec7d672ecaefa78d56bccf8b3b681fde5b"
+        },
+        {
+          "id": "TOSH-ORD-0391.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:f936e598c071717a4642d507f3bc657bb93c63cde6f2170f08030ed1181aa839"
+        },
+        {
+          "id": "TOSH-ORD-0391.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:0ae48f81a95c44bb19d7d7f58abcc5004ba4212c5a8f856524a487e312fe4972"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0392",
+        "TOSH-ORD-0393",
+        "TOSH-ORD-0394",
+        "TOSH-ORD-0395",
+        "TOSH-ORD-0396"
+      ]
+    },
+    {
+      "ordinal": 392,
+      "id": "TOSH-ORD-0392",
+      "section": "COUNTERPOINT",
+      "name": "Preserve Agent Autonomy",
+      "function": "preserve_agent_autonomy",
+      "sha_id": "sha256:f415829fd1cdf60b9bb4dbeedda9baf315e5c73a8afa72d4ccb42ccaf7234215",
+      "vector": {
+        "17": 0.5,
+        "2": -0.5,
+        "30": 0.5,
+        "12": 0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0392.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:1ea4e0197a614a0b85a0c4da2ba8f90e2836307f703b0246006024136d888dc3"
+        },
+        {
+          "id": "TOSH-ORD-0392.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:d89671eca7bc96d84e4a7e19de2d921972ce5920dab5ee42cc201d8b8a6a6c10"
+        },
+        {
+          "id": "TOSH-ORD-0392.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:bc62a46eb45c8d95a421eed8046a1f7bfee399763432a2f5d13d3f07ac9f53bd"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0393",
+        "TOSH-ORD-0394",
+        "TOSH-ORD-0395",
+        "TOSH-ORD-0396",
+        "TOSH-ORD-0397"
+      ]
+    },
+    {
+      "ordinal": 393,
+      "id": "TOSH-ORD-0393",
+      "section": "COUNTERPOINT",
+      "name": "Update Prediction Error",
+      "function": "update_prediction_error",
+      "sha_id": "sha256:979f436beaf4b041d540660b0103ad9c46864402904deb533a3dc41a6691a686",
+      "vector": {
+        "17": 0.5,
+        "35": -0.5,
+        "44": 0.5,
+        "1": 0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0393.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:900b5ad8ead9702b7cd3572b2c040ff7685bfb9279e687d8d3999c938028b96a"
+        },
+        {
+          "id": "TOSH-ORD-0393.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:e58dde013267e8f7821cf0b19452526d3d50f3322c41d3e57b8ebd4723561a2e"
+        },
+        {
+          "id": "TOSH-ORD-0393.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:d5e9abe255598c94298be2411c32bf85101641c01e14577c7dda664251e3c8f6"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0394",
+        "TOSH-ORD-0395",
+        "TOSH-ORD-0396",
+        "TOSH-ORD-0397",
+        "TOSH-ORD-0398"
+      ]
+    },
+    {
+      "ordinal": 394,
+      "id": "TOSH-ORD-0394",
+      "section": "COUNTERPOINT",
+      "name": "Archive Counterpoint Trace",
+      "function": "archive_counterpoint_trace",
+      "sha_id": "sha256:6eb30538fdafd6d32651a91d0062e7e7f1ad67a7fa58eca224925ef7ba26ea12",
+      "vector": {
+        "17": 0.76749457,
+        "51": -0.45329466,
+        "25": -0.45329466
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0394.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:7978f43712194f6b8c0fcdca886cdf17b9a7e1684e9d52f4aa847e49872c9d82"
+        },
+        {
+          "id": "TOSH-ORD-0394.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:d154a00238355ed23c3997b11839bb67939c9109f2ab96eff362b6dd58ffdc7c"
+        },
+        {
+          "id": "TOSH-ORD-0394.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:017f1b38f62cc6577d3a72333d8e561a783bec8e88042dba833b5bb874d23511"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0395",
+        "TOSH-ORD-0396",
+        "TOSH-ORD-0397",
+        "TOSH-ORD-0398",
+        "TOSH-ORD-0399"
+      ]
+    },
+    {
+      "ordinal": 395,
+      "id": "TOSH-ORD-0395",
+      "section": "COUNTERPOINT",
+      "name": "Export Counterpoint Capsule",
+      "function": "export_counterpoint_capsule",
+      "sha_id": "sha256:dd8fb3b6db108f011e47b0f9ba56e614d84314fafee71a000b2915074f51f801",
+      "vector": {
+        "17": 0.76749457,
+        "43": -0.45329466,
+        "6": -0.45329466
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0395.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:7fff000c3b483a647fd72d78a5c763f7ab4fc808a9c7b4810264db8680d5a60e"
+        },
+        {
+          "id": "TOSH-ORD-0395.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:90a11b9a26a3e18f0a5c3a02431d62bc765ce23812130ffec888809efa1d2531"
+        },
+        {
+          "id": "TOSH-ORD-0395.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:82bfcacc05df925fe88129434c0065f52a4396350764651babb2b1d53aa28762"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0396",
+        "TOSH-ORD-0397",
+        "TOSH-ORD-0398",
+        "TOSH-ORD-0399",
+        "TOSH-ORD-0400"
+      ]
+    },
+    {
+      "ordinal": 396,
+      "id": "TOSH-ORD-0396",
+      "section": "COUNTERPOINT",
+      "name": "Counterpoint Doctor",
+      "function": "counterpoint_doctor",
+      "sha_id": "sha256:4b7fc0df986befdc0e204fb39c33b6d1b20c1e6b61c49ec5a64527f5e241c45b",
+      "vector": {
+        "17": 0.861037,
+        "59": -0.50854232
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0396.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:6d974cd138ea1634a33bf6735478824409da489bc07f9efd0126a93bec927a8d"
+        },
+        {
+          "id": "TOSH-ORD-0396.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:c2249c4efc46fc3f7c3780b21100c5454cdb38da4af6ee316aec1cb1115c5df9"
+        },
+        {
+          "id": "TOSH-ORD-0396.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:cd696d50bba84f9cfcedba66d961e0658bd01c54d289e4d70bbdea9055f8e84b"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0397",
+        "TOSH-ORD-0398",
+        "TOSH-ORD-0399",
+        "TOSH-ORD-0400",
+        "TOSH-ORD-0401"
+      ]
+    },
+    {
+      "ordinal": 397,
+      "id": "TOSH-ORD-0397",
+      "section": "ROSA",
+      "name": "Create Immutable Source AST",
+      "function": "create_immutable_source_ast",
+      "sha_id": "sha256:4573427288f0e788d434a9d80efa8c282525af547791e14da4643129af3f67bb",
+      "vector": {
+        "12": 0.4472136,
+        "20": -0.4472136,
+        "62": -0.4472136,
+        "11": 0.4472136,
+        "17": -0.4472136
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0397.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:27c03c2026a7ae8742c801403fed27f179311a18020e64fc993f65b091b28c6b"
+        },
+        {
+          "id": "TOSH-ORD-0397.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:e2eb8be38cbd75da336dcdf32e44e7017f359466ee4cc1b9732b40470adc539f"
+        },
+        {
+          "id": "TOSH-ORD-0397.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:c026617df82bcae9007f33db15cd9c62e47aca67a13a280ef4c275fe161cace5"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0398",
+        "TOSH-ORD-0399",
+        "TOSH-ORD-0400",
+        "TOSH-ORD-0401",
+        "TOSH-ORD-0402"
+      ]
+    },
+    {
+      "ordinal": 398,
+      "id": "TOSH-ORD-0398",
+      "section": "ROSA",
+      "name": "Build Relativity Graph",
+      "function": "build_relativity_graph",
+      "sha_id": "sha256:5e5e68c9a5ef2a1aeb445b9c454acbc91ef0e28ca781945d782ba0dc5517749c",
+      "vector": {
+        "12": 0.5,
+        "36": -0.5,
+        "29": -0.5,
+        "35": 0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0398.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:f7b13850a63b9c50f4ebe2842c075783a989b74f9c54f9b4c419cf2a67324158"
+        },
+        {
+          "id": "TOSH-ORD-0398.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:aee5043f67702c29a31efd27856fdb81232e1381cecdaea6eb97879ff74c5fd7"
+        },
+        {
+          "id": "TOSH-ORD-0398.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:92c5366841268aee627883650fe742ad2fab94c2479d8720e608ece3594bdd2e"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0399",
+        "TOSH-ORD-0400",
+        "TOSH-ORD-0401",
+        "TOSH-ORD-0402",
+        "TOSH-ORD-0403"
+      ]
+    },
+    {
+      "ordinal": 399,
+      "id": "TOSH-ORD-0399",
+      "section": "ROSA",
+      "name": "Compute Irrelevance Radius",
+      "function": "compute_irrelevance_radius",
+      "sha_id": "sha256:9b4dc9ff2f81cc4c25c67419d0c7db8e25cff778eb2f8a3fc7f52be49a6778a3",
+      "vector": {
+        "12": 0.5,
+        "18": 0.5,
+        "47": -0.5,
+        "29": -0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0399.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:7b820c81a388abd9a0e1a9613945816dba93cc7cb420d20a6c6e9347fafb08f4"
+        },
+        {
+          "id": "TOSH-ORD-0399.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:e97ebf5a11e0ac5ab8890702a49b41980e3b1bbbfa726b7643f0211370cca581"
+        },
+        {
+          "id": "TOSH-ORD-0399.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:0813e2892e8867e0d2cf6c4d165e5fa4258f6bcf9646ce1e6ec20efd98f883d3"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0400",
+        "TOSH-ORD-0401",
+        "TOSH-ORD-0402",
+        "TOSH-ORD-0403",
+        "TOSH-ORD-0404"
+      ]
+    },
+    {
+      "ordinal": 400,
+      "id": "TOSH-ORD-0400",
+      "section": "ROSA",
+      "name": "Generate Forward Oscillator Wave",
+      "function": "generate_forward_oscillator_wave",
+      "sha_id": "sha256:e4b64f7d6e86bdb8c65dff7460316fb1013de4e81786041e53f2da39d16d0c95",
+      "vector": {
+        "12": 0.4472136,
+        "18": -0.4472136,
+        "60": 0.4472136,
+        "34": 0.4472136,
+        "11": 0.4472136
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0400.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:d5e9848659d8aaf7cc2ce26faea0e0e24ccbd10edde465b889fb9301763e266f"
+        },
+        {
+          "id": "TOSH-ORD-0400.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:48ccf04ed049f6137a9d81b41b5083f00259d8b9ca18d29e497200b0374f70c7"
+        },
+        {
+          "id": "TOSH-ORD-0400.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:ad83ac96393ed8d8c8fa6edb819a6d26022901254243aaf7cc6ee19e844401a6"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0401",
+        "TOSH-ORD-0402",
+        "TOSH-ORD-0403",
+        "TOSH-ORD-0404",
+        "TOSH-ORD-0405"
+      ]
+    },
+    {
+      "ordinal": 401,
+      "id": "TOSH-ORD-0401",
+      "section": "ROSA",
+      "name": "Generate Reverse Oscillator Wave",
+      "function": "generate_reverse_oscillator_wave",
+      "sha_id": "sha256:0ded70c494681cb6b51e3294eb7d380683c257558063fdb087341cc72c5c3f45",
+      "vector": {
+        "12": 0.4472136,
+        "18": -0.4472136,
+        "7": -0.4472136,
+        "34": 0.4472136,
+        "11": 0.4472136
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0401.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:5a8e640c7f395d105a296c1e4e1065367f2a32e7f7fae33388605f0f8c702640"
+        },
+        {
+          "id": "TOSH-ORD-0401.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:0dab083a78856ca5e6d882559d6824e3cdef2722399a0d743a0a7e8432fd625b"
+        },
+        {
+          "id": "TOSH-ORD-0401.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:458e0722daf8c76cd8afc1fc0c2df44d0b87df547d57e90d9ce60b92ac2c792e"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0402",
+        "TOSH-ORD-0403",
+        "TOSH-ORD-0404",
+        "TOSH-ORD-0405",
+        "TOSH-ORD-0406"
+      ]
+    },
+    {
+      "ordinal": 402,
+      "id": "TOSH-ORD-0402",
+      "section": "ROSA",
+      "name": "Emit Meta Telemetry Packet",
+      "function": "emit_meta_telemetry_packet",
+      "sha_id": "sha256:7270eb179431d26c1972493128605b65482ad35309839d4a06c97e42ad7b7f04",
+      "vector": {
+        "63": -0.57735027,
+        "62": 0.57735027,
+        "32": -0.57735027
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0402.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:2a735fcdd43ebff0e911021684026edc1901f9d7b15b533a14761c4482ab8989"
+        },
+        {
+          "id": "TOSH-ORD-0402.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:fbedb77330a930d6e494021e082da08d0cf53ef268aa741d17ad9293f7455603"
+        },
+        {
+          "id": "TOSH-ORD-0402.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:c556a42ba407d498cf2d884cd3ff51c53c6f04bd59104e182adfe17925ee55a4"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0403",
+        "TOSH-ORD-0404",
+        "TOSH-ORD-0405",
+        "TOSH-ORD-0406",
+        "TOSH-ORD-0407"
+      ]
+    },
+    {
+      "ordinal": 403,
+      "id": "TOSH-ORD-0403",
+      "section": "ROSA",
+      "name": "Create Shadow Layer",
+      "function": "create_shadow_layer",
+      "sha_id": "sha256:f6849cf122c1fe3ff84140e83be0555bc7d0bef1abde166c39ca25af97975d5b",
+      "vector": {
+        "12": 0.5,
+        "20": -0.5,
+        "38": -0.5,
+        "37": -0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0403.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:0a9d4d3669973ed3e1ca0cce4297b9e5c9b6d04693e153f6e1e6fb6cb715682e"
+        },
+        {
+          "id": "TOSH-ORD-0403.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:419b9441f44379e7e014a87f2f201b858edbfcb3418c93e57c54bd30f89e3bc7"
+        },
+        {
+          "id": "TOSH-ORD-0403.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:3d5220d2a7288f8dfe86ce4fe4ef494f43928ec615608c8b0d4de5f432a80c3c"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0404",
+        "TOSH-ORD-0405",
+        "TOSH-ORD-0406",
+        "TOSH-ORD-0407",
+        "TOSH-ORD-0408"
+      ]
+    },
+    {
+      "ordinal": 404,
+      "id": "TOSH-ORD-0404",
+      "section": "ROSA",
+      "name": "Mutate Shadow Ordering",
+      "function": "mutate_shadow_ordering",
+      "sha_id": "sha256:a1cb755dc1cd063137d840d1da5990d998b1ee23e494ec18d48a58f7d6292ad8",
+      "vector": {
+        "12": 0.5,
+        "34": -0.5,
+        "38": -0.5,
+        "18": 0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0404.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:cc57ae386e55bac145547b56831f1898269ed612c51b003764e721ca023bfbee"
+        },
+        {
+          "id": "TOSH-ORD-0404.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:d7b691c2e86a25b2f4b8c2b3da0a6e1ac871b66cf05711373502b4e23f437713"
+        },
+        {
+          "id": "TOSH-ORD-0404.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:4ea3f842428d3e0276495db865b78c88b8a71ca704206ec9bc68ca854e62e60d"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0405",
+        "TOSH-ORD-0406",
+        "TOSH-ORD-0407",
+        "TOSH-ORD-0408",
+        "TOSH-ORD-0409"
+      ]
+    },
+    {
+      "ordinal": 405,
+      "id": "TOSH-ORD-0405",
+      "section": "ROSA",
+      "name": "Insert Missing Bridge Node",
+      "function": "insert_missing_bridge_node",
+      "sha_id": "sha256:d8c2fdc3d40fda72cf8f1655c714af19db7811dac8a0c021adb46e5c61ef8ecf",
+      "vector": {
+        "12": 0.4472136,
+        "51": 0.4472136,
+        "31": 0.4472136,
+        "37": -0.4472136,
+        "16": -0.4472136
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0405.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:7f6e8139b8cefab241160a6feefab4026e08041ec89c8f25f37588ef75068242"
+        },
+        {
+          "id": "TOSH-ORD-0405.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:5f8d10897cda99389af009c5cb9ea192b7f87b74f9d89681d3a264ee54431af7"
+        },
+        {
+          "id": "TOSH-ORD-0405.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:2a1acf44c6aad819293e4450a76bd1ac834da87e028f6944b299a527da6bcb99"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0406",
+        "TOSH-ORD-0407",
+        "TOSH-ORD-0408",
+        "TOSH-ORD-0409",
+        "TOSH-ORD-0410"
+      ]
+    },
+    {
+      "ordinal": 406,
+      "id": "TOSH-ORD-0406",
+      "section": "ROSA",
+      "name": "Score Contradiction Boundary",
+      "function": "score_contradiction_boundary",
+      "sha_id": "sha256:b1cb7bc88c48649f46726c1584cd5d65239d0c76800d84bbdc52eab74c72e31e",
+      "vector": {
+        "12": 0.5,
+        "27": -0.5,
+        "14": -0.5,
+        "49": 0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0406.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:3467318dafce664dc46aee2141d575daf4dc51b3fc003bc69ce2410578df2490"
+        },
+        {
+          "id": "TOSH-ORD-0406.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:19f8c78f34302ee2350753eaac16d0f4f0007ff00db80f40857cf3b69643e7b3"
+        },
+        {
+          "id": "TOSH-ORD-0406.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:3bf3a7f34cbaacd0cf232d0d6a6ffc291e073fdd84ce88b2c1dbfc3b5be3de97"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0407",
+        "TOSH-ORD-0408",
+        "TOSH-ORD-0409",
+        "TOSH-ORD-0410",
+        "TOSH-ORD-0411"
+      ]
+    },
+    {
+      "ordinal": 407,
+      "id": "TOSH-ORD-0407",
+      "section": "ROSA",
+      "name": "Compute Positional Fitness",
+      "function": "compute_positional_fitness",
+      "sha_id": "sha256:39602f2a02e5b80b3ef3a369b10237523a36cb0e6ceac8ecab61b690c46bb771",
+      "vector": {
+        "12": 0.5,
+        "18": 0.5,
+        "6": 0.5,
+        "45": -0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0407.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:e69ebe5b2b29f325ba4767804bd120d400fc4436c28b8ac35b902b042ec8bea8"
+        },
+        {
+          "id": "TOSH-ORD-0407.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:6f199c5eb1afda7ac9c4a588eac330b683a7dd010598277412d137b16ba222ed"
+        },
+        {
+          "id": "TOSH-ORD-0407.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:ae6f36e5b5b80f151619f972ed20d7746a733eb92f24efa57063ca296f54aaa7"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0408",
+        "TOSH-ORD-0409",
+        "TOSH-ORD-0410",
+        "TOSH-ORD-0411",
+        "TOSH-ORD-0412"
+      ]
+    },
+    {
+      "ordinal": 408,
+      "id": "TOSH-ORD-0408",
+      "section": "ROSA",
+      "name": "Update Ghost Cache",
+      "function": "update_ghost_cache",
+      "sha_id": "sha256:422a57af9ea2df561ebe32ef5a48a169a556faee28cd6f6a065de4277b93a21d",
+      "vector": {
+        "12": 0.5,
+        "35": -0.5,
+        "13": 0.5,
+        "54": -0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0408.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:24d5608c4733f285cc72864506089919ace2ace1a6a6bfc1180fee19b925c769"
+        },
+        {
+          "id": "TOSH-ORD-0408.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:3ae3614b0f4b4f6462735028774192a93ae13892f03e9c076ffcecb3ec7ebfca"
+        },
+        {
+          "id": "TOSH-ORD-0408.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:60c0c1a63dc253b7f9bf9edb6449ce902874345e7b78cc15093cbc359f8b8f50"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0409",
+        "TOSH-ORD-0410",
+        "TOSH-ORD-0411",
+        "TOSH-ORD-0412",
+        "TOSH-ORD-0413"
+      ]
+    },
+    {
+      "ordinal": 409,
+      "id": "TOSH-ORD-0409",
+      "section": "ROSA",
+      "name": "Reactivate Historical Candidate",
+      "function": "reactivate_historical_candidate",
+      "sha_id": "sha256:a3f2f4d1112fb9d46f757636f8b8601342f22aa7e51a1d089e0eb80620d18a6e",
+      "vector": {
+        "12": 0.5,
+        "35": 0.5,
+        "39": 0.5,
+        "49": 0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0409.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:067e1fdf384d19ac382b6f0ce2959dd1208ed092daa2536680289463720d9388"
+        },
+        {
+          "id": "TOSH-ORD-0409.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:ea6569754ac7081ae362d96ad7e5d1c2ffa2b3028fe23e3f60009845ff0ff7d5"
+        },
+        {
+          "id": "TOSH-ORD-0409.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:5507a6622285122fbd726f30727142aa9056bff9a99c3232fc0140b2b514e059"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0410",
+        "TOSH-ORD-0411",
+        "TOSH-ORD-0412",
+        "TOSH-ORD-0413",
+        "TOSH-ORD-0414"
+      ]
+    },
+    {
+      "ordinal": 410,
+      "id": "TOSH-ORD-0410",
+      "section": "ROSA",
+      "name": "Run Shadow Stack Tournament",
+      "function": "run_shadow_stack_tournament",
+      "sha_id": "sha256:4b11675094e2a806140957942328aea3a74511622f95662956e2a764164c5089",
+      "vector": {
+        "12": 0.4472136,
+        "48": 0.4472136,
+        "38": -0.4472136,
+        "29": -0.4472136,
+        "58": 0.4472136
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0410.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:b28d594d057b4f612513bb61f47c4807d0987355c3929e7587ff11fb2c582d72"
+        },
+        {
+          "id": "TOSH-ORD-0410.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:b4ec70121349135363d3399df0a9e502fcea499600981420b34e372a753de0af"
+        },
+        {
+          "id": "TOSH-ORD-0410.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:396b7691e5ab6619ba2f9ace53c057491684a3f9e9b57809236d1c302163d26f"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0411",
+        "TOSH-ORD-0412",
+        "TOSH-ORD-0413",
+        "TOSH-ORD-0414",
+        "TOSH-ORD-0415"
+      ]
+    },
+    {
+      "ordinal": 411,
+      "id": "TOSH-ORD-0411",
+      "section": "ROSA",
+      "name": "Run Oracle Forecast",
+      "function": "run_oracle_forecast",
+      "sha_id": "sha256:c77a9e9643ad914de88e92dc93f79ecc602f9258ef22cc182b0470d8cd484ada",
+      "vector": {
+        "12": 0.5,
+        "48": 0.5,
+        "27": -0.5,
+        "1": 0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0411.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:1e3d51632f45e2cae655e48df2354a7c21acc8dbcf21d36e1b0d99e2e151b1bd"
+        },
+        {
+          "id": "TOSH-ORD-0411.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:711673419da8a6dc905348ade5ae22e7013e5bb2e744d59389bee6e78d943ef5"
+        },
+        {
+          "id": "TOSH-ORD-0411.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:6c799eee7e4b06f38e918a72f6803c4586aa2c8ec186ea1cd2163b28c8a9d8a6"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0412",
+        "TOSH-ORD-0413",
+        "TOSH-ORD-0414",
+        "TOSH-ORD-0415",
+        "TOSH-ORD-0416"
+      ]
+    },
+    {
+      "ordinal": 412,
+      "id": "TOSH-ORD-0412",
+      "section": "ROSA",
+      "name": "Compare Prophecy To Outcome",
+      "function": "compare_prophecy_to_outcome",
+      "sha_id": "sha256:7e6be06dfa338039b349f5dbe24d03465e9ca8e500356e6a730ec2a8022cabbf",
+      "vector": {
+        "12": 0.4472136,
+        "2": -0.4472136,
+        "9": -0.4472136,
+        "5": -0.4472136,
+        "29": 0.4472136
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0412.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:f555e2cabc3d6ba7ff33055f5bd48898f6ce46baa25bc4549585826a2215ac9e"
+        },
+        {
+          "id": "TOSH-ORD-0412.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:604b7f704198e2b9f7dc8282e74c06e3cd81bbf1c85f9d9fcaf6a465a12eb359"
+        },
+        {
+          "id": "TOSH-ORD-0412.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:c45b7a28d5cb1781c6e0dc8890018806c3c1a13fc4b6c78360cc52f529b23315"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0413",
+        "TOSH-ORD-0414",
+        "TOSH-ORD-0415",
+        "TOSH-ORD-0416",
+        "TOSH-ORD-0417"
+      ]
+    },
+    {
+      "ordinal": 413,
+      "id": "TOSH-ORD-0413",
+      "section": "ROSA",
+      "name": "Promote Best Derivative",
+      "function": "promote_best_derivative",
+      "sha_id": "sha256:03719d07dc8d2a88f28d31f9f1d3cd1c969ad8e7a8baccf5d479fc38d4891000",
+      "vector": {
+        "12": 0.5,
+        "5": 0.5,
+        "57": -0.5,
+        "42": 0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0413.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:7b5eaa7a5b351dbd9d73b9890263cda81dfcb98be35c63f3ca4c82bd38c6332a"
+        },
+        {
+          "id": "TOSH-ORD-0413.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:1f221f5f98e44f3431ff2701c0d0ceb853b63b233acb809e61599615ff2f0e31"
+        },
+        {
+          "id": "TOSH-ORD-0413.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:e2601031f731f98879f1687332f6ab16fa698756684119b8d342f1688841646f"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0414",
+        "TOSH-ORD-0415",
+        "TOSH-ORD-0416",
+        "TOSH-ORD-0417",
+        "TOSH-ORD-0418"
+      ]
+    },
+    {
+      "ordinal": 414,
+      "id": "TOSH-ORD-0414",
+      "section": "ROSA",
+      "name": "ROSA Doctor",
+      "function": "rosa_doctor",
+      "sha_id": "sha256:cfd1ff11052ce0d8ce4209112e6c7092804bd87494035e0b416af9dae39d7bb4",
+      "vector": {
+        "12": 0.861037,
+        "59": -0.50854232
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0414.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:d5b8a6b1ee1fcec82c5fea948e4f26182d79004b69f037451158e91354693b03"
+        },
+        {
+          "id": "TOSH-ORD-0414.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:390cb39b8f5e34f6d0510708ab9ac182779149130af696753c013debdef90c9f"
+        },
+        {
+          "id": "TOSH-ORD-0414.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:92115b9ba7cf79f9e64b26104a05b23a088b62623ef427f9e098d0a43c43ae45"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0415",
+        "TOSH-ORD-0416",
+        "TOSH-ORD-0417",
+        "TOSH-ORD-0418",
+        "TOSH-ORD-0419"
+      ]
+    },
+    {
+      "ordinal": 415,
+      "id": "TOSH-ORD-0415",
+      "section": "METATELEMETRY",
+      "name": "Backfill Chat Concept SHA IDs",
+      "function": "backfill_chat_concept_sha_ids",
+      "sha_id": "sha256:098ad3eaeda7d74b2ed12dbbcd398addcfe417a755cc2574b2b071a01f10d787",
+      "vector": {
+        "24": 0.40824829,
+        "44": -0.40824829,
+        "45": 0.40824829,
+        "63": -0.40824829,
+        "1": -0.40824829,
+        "25": -0.40824829
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0415.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:f06bc429bc471c4137f3bd0ec526ca3cbf7e62bfae6be6aff1d684e1fca8dbec"
+        },
+        {
+          "id": "TOSH-ORD-0415.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:ba67598746272245fcf5049f03ad37d2d132949dbb66ec89640fcc20f58b9647"
+        },
+        {
+          "id": "TOSH-ORD-0415.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:5660e2a61bd575b148e8a07569821dd8b9bc718e444cac796b926df0a51a5066"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0416",
+        "TOSH-ORD-0417",
+        "TOSH-ORD-0418",
+        "TOSH-ORD-0419",
+        "TOSH-ORD-0420"
+      ]
+    },
+    {
+      "ordinal": 416,
+      "id": "TOSH-ORD-0416",
+      "section": "METATELEMETRY",
+      "name": "Register Source Capsule Lineage",
+      "function": "register_source_capsule_lineage",
+      "sha_id": "sha256:fc3b09c4eb526d2b0cdc7af6bcb4064fdbb24cb328bd8412d3b387a79df43ac8",
+      "vector": {
+        "24": 0.4472136,
+        "33": 0.4472136,
+        "11": 0.4472136,
+        "6": -0.4472136,
+        "0": 0.4472136
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0416.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:b8ff6168443cc9585e684beb7ceace4201e7e6d5cfc1b63640db80aa64579002"
+        },
+        {
+          "id": "TOSH-ORD-0416.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:9313eed66ac8602dc4749d2a0ab1280b903df212a08d0eff18e8b2a5cad836a6"
+        },
+        {
+          "id": "TOSH-ORD-0416.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:ef9e9bcc5f16e911f1042af90f4ecd40e8f62f1af4027a421e514c515d3ac995"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0417",
+        "TOSH-ORD-0418",
+        "TOSH-ORD-0419",
+        "TOSH-ORD-0420",
+        "TOSH-ORD-0421"
+      ]
+    },
+    {
+      "ordinal": 417,
+      "id": "TOSH-ORD-0417",
+      "section": "METATELEMETRY",
+      "name": "Build Reverse SHA Lineage",
+      "function": "build_reverse_sha_lineage",
+      "sha_id": "sha256:388b9b0ad127591d062f4a14918969eb5038a8f96be30a6b7652d763a77b038c",
+      "vector": {
+        "24": 0.4472136,
+        "36": -0.4472136,
+        "7": -0.4472136,
+        "1": -0.4472136,
+        "0": 0.4472136
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0417.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:b9b3ab945b5e14b00fe8dae58268755b3c46db18978395ce3bb1729aaef8198a"
+        },
+        {
+          "id": "TOSH-ORD-0417.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:34bd466113facc76759aca48fa95c25b201e26cfe8d61a86e8a7818adea42591"
+        },
+        {
+          "id": "TOSH-ORD-0417.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:255c820b37d550d73f7ececbcc15609f1b811fd783b10429820aeea74f4eed5f"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0418",
+        "TOSH-ORD-0419",
+        "TOSH-ORD-0420",
+        "TOSH-ORD-0421",
+        "TOSH-ORD-0422"
+      ]
+    },
+    {
+      "ordinal": 418,
+      "id": "TOSH-ORD-0418",
+      "section": "METATELEMETRY",
+      "name": "Vectorize Current Session Capsule",
+      "function": "vectorize_current_session_capsule",
+      "sha_id": "sha256:0d33d81eaddca1c5f951b9e7017ac94f36485e948b6e5b1668b36b59b9afc0fb",
+      "vector": {
+        "24": 0.4472136,
+        "50": -0.4472136,
+        "55": 0.4472136,
+        "19": 0.4472136,
+        "6": -0.4472136
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0418.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:f2d9ac354cbc31a96381564b1acd3a37e51b17ffc689ab637495f74705fec8b7"
+        },
+        {
+          "id": "TOSH-ORD-0418.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:c710bfb1f3e2c10de8ad807fd0efb09db6a6a6b31bb1a37c5c1d4bc9f4b4f8d1"
+        },
+        {
+          "id": "TOSH-ORD-0418.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:83952d9c8bd90673e26ca631332de74f6b4484e1ab555b8b7822d834ee8f129a"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0419",
+        "TOSH-ORD-0420",
+        "TOSH-ORD-0421",
+        "TOSH-ORD-0422",
+        "TOSH-ORD-0423"
+      ]
+    },
+    {
+      "ordinal": 419,
+      "id": "TOSH-ORD-0419",
+      "section": "METATELEMETRY",
+      "name": "Append Neural Lattice Records",
+      "function": "append_neural_lattice_records",
+      "sha_id": "sha256:035b36b7b8d3adf5ce531f453d1dd948add781ae4b53aeb2be7ef6a5f3f1e80b",
+      "vector": {
+        "24": 0.37796447,
+        "46": 0.37796447,
+        "45": 0.37796447,
+        "59": 0.75592895
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0419.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:7dffb411bb60add1e02e75681f6b6c7fef607baef0458aaa0fb26ab2008b518c"
+        },
+        {
+          "id": "TOSH-ORD-0419.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:53c6ef1ae037cb1170bdce67d762d1231152ce9b0a928b20db91b55b64903ee7"
+        },
+        {
+          "id": "TOSH-ORD-0419.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:6d1ecf8dea67aa1711bbe2c465718945762cca1765617e7a4868fd98bd4d07f6"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0420",
+        "TOSH-ORD-0421",
+        "TOSH-ORD-0422",
+        "TOSH-ORD-0423",
+        "TOSH-ORD-0424"
+      ]
+    },
+    {
+      "ordinal": 420,
+      "id": "TOSH-ORD-0420",
+      "section": "METATELEMETRY",
+      "name": "Grade Node Utility",
+      "function": "grade_node_utility",
+      "sha_id": "sha256:5e1bc573697a07c18e6e7190802d115485e2dad4205846b9c1feeae8da3270a6",
+      "vector": {
+        "24": 0.5,
+        "50": 0.5,
+        "16": -0.5,
+        "31": 0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0420.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:5e82c4afbe05c8d5f99828f41cfd7954c37064c6191b34dd51a63d69892faca1"
+        },
+        {
+          "id": "TOSH-ORD-0420.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:b3e780243a6240ee1b83ecaad0abf4f289adf7944199a2e14d7c6b81fc94e804"
+        },
+        {
+          "id": "TOSH-ORD-0420.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:e0b9b1966a57107522c72bbeb8bd2b3dc6a21ab93d50b7537d1ddd205938956b"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0421",
+        "TOSH-ORD-0422",
+        "TOSH-ORD-0423",
+        "TOSH-ORD-0424",
+        "TOSH-ORD-0425"
+      ]
+    },
+    {
+      "ordinal": 421,
+      "id": "TOSH-ORD-0421",
+      "section": "METATELEMETRY",
+      "name": "Grade Node Contradiction",
+      "function": "grade_node_contradiction",
+      "sha_id": "sha256:91db41d9641c852955d20181317ca3eb38d31e3daedfa6c174d28946dfe53d79",
+      "vector": {
+        "24": 0.5,
+        "50": 0.5,
+        "16": -0.5,
+        "14": -0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0421.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:03b0634d9001bb51c08f2d9355ea97ff04cd3d6be9db00c65c0ae483fdc04087"
+        },
+        {
+          "id": "TOSH-ORD-0421.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:794434518bf7c9d7ec5fb3eef806f87c0841a342a4ac4957cd3361f350c24324"
+        },
+        {
+          "id": "TOSH-ORD-0421.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:515cb0f3ffa002e8595bfda65d4313a53904ae45961b53403fa93e18d7224cd3"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0422",
+        "TOSH-ORD-0423",
+        "TOSH-ORD-0424",
+        "TOSH-ORD-0425",
+        "TOSH-ORD-0426"
+      ]
+    },
+    {
+      "ordinal": 422,
+      "id": "TOSH-ORD-0422",
+      "section": "METATELEMETRY",
+      "name": "Grade Node Novelty",
+      "function": "grade_node_novelty",
+      "sha_id": "sha256:809e326e6f949ee5c806ad0dabb4d0f93e5e8b3412882d8311bb632a4f4b023d",
+      "vector": {
+        "24": 0.5,
+        "50": 0.5,
+        "16": -0.5,
+        "40": -0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0422.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:f12c06b339a88273c5517b3e02be9ec0c98c244c905783503cb8394e664edf9f"
+        },
+        {
+          "id": "TOSH-ORD-0422.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:83efd1c518518cdd71fd6335c71d4621e4b98b97a5119a31a6d21919a8e7b5ac"
+        },
+        {
+          "id": "TOSH-ORD-0422.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:1ccbed5d2d050ef47b2efaaefb776141add0ff954a3516c86055cdb15f8710bd"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0423",
+        "TOSH-ORD-0424",
+        "TOSH-ORD-0425",
+        "TOSH-ORD-0426",
+        "TOSH-ORD-0427"
+      ]
+    },
+    {
+      "ordinal": 423,
+      "id": "TOSH-ORD-0423",
+      "section": "METATELEMETRY",
+      "name": "Grade Context Compatibility",
+      "function": "grade_context_compatibility",
+      "sha_id": "sha256:02660039b58e61010b89d31f9d869bc06577150b8d0250741f8f0997a451fc24",
+      "vector": {
+        "24": 0.5,
+        "50": 0.5,
+        "9": -0.5,
+        "26": 0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0423.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:cd348d847e61a489b74cefaff440444e36aa1fd99d8590e9822d37a507801e0d"
+        },
+        {
+          "id": "TOSH-ORD-0423.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:f5a0b2c213d559f69aafe734983fad97d6240e8103f6d6ec10d0834373803443"
+        },
+        {
+          "id": "TOSH-ORD-0423.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:8ed9a486b919aef99f861c31db3cecbe9d3f68b5874f4be5e9114baf6951e289"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0424",
+        "TOSH-ORD-0425",
+        "TOSH-ORD-0426",
+        "TOSH-ORD-0427",
+        "TOSH-ORD-0428"
+      ]
+    },
+    {
+      "ordinal": 424,
+      "id": "TOSH-ORD-0424",
+      "section": "METATELEMETRY",
+      "name": "Archive Rejected Candidates",
+      "function": "archive_rejected_candidates",
+      "sha_id": "sha256:be6cf9e0a1b44381ab1b3680cbf6976ec36f0ab50274d8632953a32329e66cb6",
+      "vector": {
+        "51": -0.70710678,
+        "32": -0.70710678
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0424.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:ace1105e0510a7374bed50db43331b20186e1ba80149f7ca72542d9b69ff3442"
+        },
+        {
+          "id": "TOSH-ORD-0424.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:85eff0bd01a6bd388839632e2cd6ce31cb9f0f568f27456bb0403f389a1432cc"
+        },
+        {
+          "id": "TOSH-ORD-0424.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:cd2c08e810310540688aaf4b782f80468bb3ffc3fff4a3a8f014ac035a0b0bea"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0425",
+        "TOSH-ORD-0426",
+        "TOSH-ORD-0427",
+        "TOSH-ORD-0428",
+        "TOSH-ORD-0429"
+      ]
+    },
+    {
+      "ordinal": 425,
+      "id": "TOSH-ORD-0425",
+      "section": "METATELEMETRY",
+      "name": "Retain Failure Constraints",
+      "function": "retain_failure_constraints",
+      "sha_id": "sha256:1a3d3d81df8b6c992e9d6b840cf0847f693ee81e43aa08c867f47fe1b1410424",
+      "vector": {
+        "24": 0.5,
+        "32": -0.5,
+        "22": -0.5,
+        "41": 0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0425.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:91f565f9375373c47ba30de46440d8e2d50dbfbd939a1ee4431b2e5a7db0e97e"
+        },
+        {
+          "id": "TOSH-ORD-0425.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:d1e11df79639b47fea099d285acac59613068524b467eb6feece23517e23a86a"
+        },
+        {
+          "id": "TOSH-ORD-0425.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:6bbfbe01422845024e3e93d68d976ddbeaaa365938dd9df7be1bd451f5617dcb"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0426",
+        "TOSH-ORD-0427",
+        "TOSH-ORD-0428",
+        "TOSH-ORD-0429",
+        "TOSH-ORD-0430"
+      ]
+    },
+    {
+      "ordinal": 426,
+      "id": "TOSH-ORD-0426",
+      "section": "METATELEMETRY",
+      "name": "Build Evolution Ledger",
+      "function": "build_evolution_ledger",
+      "sha_id": "sha256:907996d8eb92e3d18baa32e0da84fcd189039bd3fe845264d11d7682c03de25d",
+      "vector": {
+        "24": 0.40824829,
+        "36": -0.40824829,
+        "14": 0.81649658
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0426.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:25100c3fad21a4919f676eb64feba89a397ea2940a78f86e46585779a5563be3"
+        },
+        {
+          "id": "TOSH-ORD-0426.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:b28ea53dabfdc819dc373e2e00ac05a40b75107254b4fc2a978f8937f1f2573d"
+        },
+        {
+          "id": "TOSH-ORD-0426.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:c856243bb53dd2d15b0570c7798d9a3525ceb1fb73b004c655aeb71f4b835dc3"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0427",
+        "TOSH-ORD-0428",
+        "TOSH-ORD-0429",
+        "TOSH-ORD-0430",
+        "TOSH-ORD-0431"
+      ]
+    },
+    {
+      "ordinal": 427,
+      "id": "TOSH-ORD-0427",
+      "section": "METATELEMETRY",
+      "name": "Refresh Combined Menu",
+      "function": "refresh_combined_menu",
+      "sha_id": "sha256:ca6acd0cb19f18c1c1941a4d477d13c652631de370950a7b3a63a03e6361f27a",
+      "vector": {
+        "24": 0.5,
+        "57": -0.5,
+        "42": 0.5,
+        "45": -0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0427.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:3cb82e5f8bfbca000330d064eb66465d1ea2001c13fe0afac51392debb4fec23"
+        },
+        {
+          "id": "TOSH-ORD-0427.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:a1896f8924e14e73c3170e440cd418286c9b6e3a9fd960ff53b89a770babb3df"
+        },
+        {
+          "id": "TOSH-ORD-0427.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:bfc7e21d603555f3da76a99d95514c7899c326933cba7110b420c11b17576186"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0428",
+        "TOSH-ORD-0429",
+        "TOSH-ORD-0430",
+        "TOSH-ORD-0431",
+        "TOSH-ORD-0432"
+      ]
+    },
+    {
+      "ordinal": 428,
+      "id": "TOSH-ORD-0428",
+      "section": "METATELEMETRY",
+      "name": "Refresh Every Submenu Ledger",
+      "function": "refresh_every_submenu_ledger",
+      "sha_id": "sha256:ec6a4e723fb14514a80bfe96114724e1e033bc698d4735f8c693dbfbe1d396ff",
+      "vector": {
+        "24": 0.4472136,
+        "57": -0.4472136,
+        "59": -0.4472136,
+        "61": 0.4472136,
+        "14": 0.4472136
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0428.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:27279b81c1bcd2ffc795ed24d07dadc93f2876b2f28d9b540b1b1cb351d85d97"
+        },
+        {
+          "id": "TOSH-ORD-0428.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:e65dfb4102767700124da5bd62d97a3c55d5618bbb2896558c43f5ee6be4b9d7"
+        },
+        {
+          "id": "TOSH-ORD-0428.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:53c65b740868dcb2d717a2f14f28866164ac2679f7f3fe2abbb1d4280098a4f0"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0429",
+        "TOSH-ORD-0430",
+        "TOSH-ORD-0431",
+        "TOSH-ORD-0432",
+        "TOSH-ORD-0361"
+      ]
+    },
+    {
+      "ordinal": 429,
+      "id": "TOSH-ORD-0429",
+      "section": "METATELEMETRY",
+      "name": "Seal Execution Receipt",
+      "function": "seal_execution_receipt",
+      "sha_id": "sha256:8ab9f5700b3fe78965ab253999b736a6ec52cff2189ee4dbd36bed529f78bb8a",
+      "vector": {
+        "24": 0.5,
+        "46": 0.5,
+        "17": 0.5,
+        "37": 0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0429.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:791c4b1c9d1e91569f9daad5731dc085f118bb88437052c667c2e7e63e64eba9"
+        },
+        {
+          "id": "TOSH-ORD-0429.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:c27df703b47f2a9e8d2947a474edfe0f1c21fcda6826282030a6099546d0698a"
+        },
+        {
+          "id": "TOSH-ORD-0429.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:97aae585186e65adc607e57549a1fc5440c1f20d37ece9b73a0b539cd6a9fdcf"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0430",
+        "TOSH-ORD-0431",
+        "TOSH-ORD-0432",
+        "TOSH-ORD-0361",
+        "TOSH-ORD-0362"
+      ]
+    },
+    {
+      "ordinal": 430,
+      "id": "TOSH-ORD-0430",
+      "section": "METATELEMETRY",
+      "name": "Synchronize Runtime Snapshot",
+      "function": "synchronize_runtime_snapshot",
+      "sha_id": "sha256:fa1c4828963f2ed570110316decae752b1924dfc46ea17a78a719a8302a85544",
+      "vector": {
+        "24": 0.5,
+        "26": 0.5,
+        "62": -0.5,
+        "56": -0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0430.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:bdc3d1fb972c2326e91ed64056c253a87bedbbb1ede53adf53c76909cd4e15fd"
+        },
+        {
+          "id": "TOSH-ORD-0430.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:c0fa39b985f45c520ff8f0a2fb04c9faf8400f1e92aa2ccd66f12ec827b3a1aa"
+        },
+        {
+          "id": "TOSH-ORD-0430.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:12b7b326c66de86ca00427e72a0e47b30b008f54615d2f253fc0c1a4307acaa3"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0431",
+        "TOSH-ORD-0432",
+        "TOSH-ORD-0361",
+        "TOSH-ORD-0362",
+        "TOSH-ORD-0363"
+      ]
+    },
+    {
+      "ordinal": 431,
+      "id": "TOSH-ORD-0431",
+      "section": "METATELEMETRY",
+      "name": "Export Meta Telemetry Capsule",
+      "function": "export_meta_telemetry_capsule",
+      "sha_id": "sha256:f3b975579c5cf00dcc702d0da3182dc8132bf87dc7fd4124531a726980d9015b",
+      "vector": {
+        "24": 0.4472136,
+        "43": -0.4472136,
+        "63": -0.4472136,
+        "62": 0.4472136,
+        "6": -0.4472136
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0431.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:b5881d73d9d435ee7f2ee091ced94328b97d7c3d519b9143b53013dd8f79f14f"
+        },
+        {
+          "id": "TOSH-ORD-0431.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:969c57aedabc19ddba81fee664fae2f5577d754c4dc0ce0ddb0481f1a9a69c42"
+        },
+        {
+          "id": "TOSH-ORD-0431.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:cfa45ca059c45ba9662a64ede256931d35a19e3cab6f5f720b2591e6b1cec229"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0432",
+        "TOSH-ORD-0361",
+        "TOSH-ORD-0362",
+        "TOSH-ORD-0363",
+        "TOSH-ORD-0364"
+      ]
+    },
+    {
+      "ordinal": 432,
+      "id": "TOSH-ORD-0432",
+      "section": "METATELEMETRY",
+      "name": "Meta Telemetry Doctor",
+      "function": "meta_telemetry_doctor",
+      "sha_id": "sha256:6e66adef9f5f8f3f5b3f6effc0fb5d4ed666b8a5093c3579628d2eaa72e19163",
+      "vector": {
+        "24": 0.5,
+        "63": -0.5,
+        "62": 0.5,
+        "59": -0.5
+      },
+      "subminions": [
+        {
+          "id": "TOSH-ORD-0432.S1",
+          "name": "validate inputs",
+          "sha_id": "sha256:1eda8dbf542ab9f73c8f03ef650f526457e0ac6336b3eafb8e10bba846b23f3f"
+        },
+        {
+          "id": "TOSH-ORD-0432.S2",
+          "name": "execute operation",
+          "sha_id": "sha256:856a3c8889b37f30c4aa70df17dec5ab444a21186b9c7c8d9e60193ea26eb62e"
+        },
+        {
+          "id": "TOSH-ORD-0432.S3",
+          "name": "trace and route outputs",
+          "sha_id": "sha256:c35cfce1f56c9583b91f76dbe3a215834f7d3788fdcd84a9ca26fe566f8819ba"
+        }
+      ],
+      "omnipath_next5": [
+        "TOSH-ORD-0361",
+        "TOSH-ORD-0362",
+        "TOSH-ORD-0363",
+        "TOSH-ORD-0364",
+        "TOSH-ORD-0365"
+      ]
+    }
+  ]
+}

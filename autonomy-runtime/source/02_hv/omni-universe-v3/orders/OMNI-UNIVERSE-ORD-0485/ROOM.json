@@ -1,0 +1,18 @@
+{
+  "ordinal": 485,
+  "order_id": "OMNI-UNIVERSE-ORD-0485",
+  "domain": "WORLD_CIVILIZATION",
+  "stage": "Inventory",
+  "name": "Inventory World Civilization",
+  "receipt_file": "O485_RECEIPT.json",
+  "receipt_sha256": "942e0baf816b8946134f9bab2fe22035f4e8e4a5f3743fbb18bf8bfd5b2bb236",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "ordinal": 498,
+  "status": "EXECUTED_VALIDATED",
+  "validated_at_epoch": 1792806519,
+  "name": "Validate Hivelocity",
+  "ssh_alias": "omni-hv",
+  "read_only_probe_ok": true,
+  "probe_detail": "OMNI_HV_OK\nLinux\nomni-hv1.omninode.local",
+  "validation": "read-only SSH identity/liveness probe; no remote mutation performed"
+}

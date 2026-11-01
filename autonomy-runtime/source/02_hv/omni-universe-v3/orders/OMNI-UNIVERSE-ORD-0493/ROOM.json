@@ -1,0 +1,18 @@
+{
+  "ordinal": 493,
+  "order_id": "OMNI-UNIVERSE-ORD-0493",
+  "domain": "TOSH_HARNESS",
+  "stage": "Validate",
+  "name": "Validate Tosh Harness",
+  "receipt_file": "O493_RECEIPT.json",
+  "receipt_sha256": "eaeef45f1c2a9fecacc6c7aa94d399a3962afdbf552065b671811e6ae12b08c6",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

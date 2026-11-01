@@ -1,0 +1,10 @@
+{
+  "ordinal": 503,
+  "status": "EXECUTED_VALIDATED",
+  "name": "Validate Architect Grade",
+  "profile_exists": true,
+  "profile_sha256": "9a5e252827ac2461b29a1852500e91d687dd464a111608d5aee078c8824e8d55",
+  "weight_sum": 1.0,
+  "policy": "MEASURED_EVIDENCE_NO_PERMANENT_WINNER",
+  "validation": "grading profile parseable and weights normalized"
+}

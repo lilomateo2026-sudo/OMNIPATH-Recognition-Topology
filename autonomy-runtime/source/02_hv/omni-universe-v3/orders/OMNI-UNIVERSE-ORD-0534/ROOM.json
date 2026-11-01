@@ -1,0 +1,18 @@
+{
+  "ordinal": 534,
+  "order_id": "OMNI-UNIVERSE-ORD-0534",
+  "domain": "OMNI_HARNESS",
+  "stage": "Index",
+  "name": "Index Omni Harness",
+  "receipt_file": "O534_RECEIPT.json",
+  "receipt_sha256": "11e218a3ec2c5ec514a09ab8a64b26b4fa3a2656bbf313548a7de62459a7802b",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

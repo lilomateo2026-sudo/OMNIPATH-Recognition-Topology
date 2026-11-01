@@ -1,0 +1,11 @@
+{
+  "ordinal": 485,
+  "status": "EXECUTED",
+  "name": "Inventory World Civilization",
+  "civilization_module_sha256": "af1301f4e41d603c884b243013cda937ab49c9e1c6867da59b0c56af3561d82d",
+  "species": 3,
+  "civilian_classes": 9,
+  "cultures": 3,
+  "military_branches": 4,
+  "loading_screen_scenes": 10
+}

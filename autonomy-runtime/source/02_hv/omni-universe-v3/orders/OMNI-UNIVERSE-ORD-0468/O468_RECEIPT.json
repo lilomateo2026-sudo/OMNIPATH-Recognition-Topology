@@ -1,0 +1,13 @@
+{
+  "ordinal": 468,
+  "name": "Inventory Vector Trace",
+  "status": "EXECUTED",
+  "sparse_512_records": 39174,
+  "dense_embeddings": [
+    {
+      "model": "nomic-embed-text:latest",
+      "dims": 768,
+      "count": 48
+    }
+  ]
+}

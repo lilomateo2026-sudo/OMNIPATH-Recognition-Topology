@@ -1,0 +1,18 @@
+{
+  "ordinal": 507,
+  "order_id": "OMNI-UNIVERSE-ORD-0507",
+  "domain": "SHA_LINEAGE",
+  "stage": "Normalize",
+  "name": "Normalize Sha Lineage",
+  "receipt_file": "O507_RECEIPT.json",
+  "receipt_sha256": "15ece9ded61ea2901561659e0190393b6f2b03731f334cc7350d98608b925119",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

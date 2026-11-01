@@ -1,0 +1,11 @@
+{
+  "schema": "omni.index.runtime-fabric.v1",
+  "ordinal": 540,
+  "domain": "ODYSSEY",
+  "source": "/data/data/com.termux/files/home/OmniDocuments/OMNI_UNIVERSE_PROJECT_ENGINE_V3/13_NORMALIZED/ODYSSEY.normalized.json",
+  "source_sha256": "366a093788550e7fb8757a7db9e90b2e0d036dd3c9a30a8c264d305af3b8e75a",
+  "sqlite_table": "runtime_fabric",
+  "status": "EXECUTED_INDEXED",
+  "name": "Index Odyssey",
+  "index_artifact": "/data/data/com.termux/files/home/OmniDocuments/OMNI_UNIVERSE_PROJECT_ENGINE_V3/15_INDEX/ODYSSEY.index.json"
+}

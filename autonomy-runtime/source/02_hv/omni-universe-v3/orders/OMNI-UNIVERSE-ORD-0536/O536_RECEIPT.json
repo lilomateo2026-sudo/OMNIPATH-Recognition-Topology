@@ -1,0 +1,11 @@
+{
+  "schema": "omni.index.runtime-fabric.v1",
+  "ordinal": 536,
+  "domain": "WAREHOUSE",
+  "source": "/data/data/com.termux/files/home/OmniDocuments/OMNI_UNIVERSE_PROJECT_ENGINE_V3/13_NORMALIZED/WAREHOUSE.normalized.json",
+  "source_sha256": "aedba8f66ff0aff22113c2598b26a4f3dbbb33357c57f91cebf92d4b3f742e49",
+  "sqlite_table": "runtime_fabric",
+  "status": "EXECUTED_INDEXED",
+  "name": "Index Warehouse",
+  "index_artifact": "/data/data/com.termux/files/home/OmniDocuments/OMNI_UNIVERSE_PROJECT_ENGINE_V3/15_INDEX/WAREHOUSE.index.json"
+}

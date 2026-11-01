@@ -1,0 +1,18 @@
+{
+  "ordinal": 503,
+  "order_id": "OMNI-UNIVERSE-ORD-0503",
+  "domain": "ARCHITECT_GRADE",
+  "stage": "Validate",
+  "name": "Validate Architect Grade",
+  "receipt_file": "O503_RECEIPT.json",
+  "receipt_sha256": "e74ce6c630645bd4ae2d2970b201922ec6dcb4cd4301a9c7b33637a2000aadcf",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

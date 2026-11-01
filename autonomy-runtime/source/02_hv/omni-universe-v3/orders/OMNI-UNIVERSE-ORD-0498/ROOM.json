@@ -1,0 +1,18 @@
+{
+  "ordinal": 498,
+  "order_id": "OMNI-UNIVERSE-ORD-0498",
+  "domain": "HIVELOCITY",
+  "stage": "Validate",
+  "name": "Validate Hivelocity",
+  "receipt_file": "O498_RECEIPT.json",
+  "receipt_sha256": "90e13e06e7be621381410fe3405e41fa85d23b513aa036d95a63988687fea354",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

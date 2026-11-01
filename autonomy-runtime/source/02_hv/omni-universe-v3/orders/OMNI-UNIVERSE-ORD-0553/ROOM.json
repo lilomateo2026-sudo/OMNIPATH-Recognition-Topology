@@ -1,0 +1,18 @@
+{
+  "ordinal": 553,
+  "order_id": "OMNI-UNIVERSE-ORD-0553",
+  "domain": "TOSH_HARNESS",
+  "stage": "Trace",
+  "name": "Trace Tosh Harness",
+  "receipt_file": "O553_RECEIPT.json",
+  "receipt_sha256": "9013c873be59bf65602bec538a5e8f81647b0944bda4d52d3f8f08acd1508224",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

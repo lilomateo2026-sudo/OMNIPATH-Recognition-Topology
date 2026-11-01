@@ -1,0 +1,10 @@
+{
+  "ordinal": 478,
+  "status": "EXECUTED",
+  "name": "Inventory Hivelocity",
+  "ssh_transport": "PASS",
+  "canonical_remote": "/root/OmniDocuments/.omni_engine/omni-universe-project-engine-v3/linked/OMNI_UNIVERSE_V3_LINKED_CAPSULE_2026-10-21.zip",
+  "remote_sha256": "e62d3956355b499483e02cbee13363d7ce853942e74f495aae0a9701d42f588f",
+  "sha_equal": true,
+  "remote_write": "PASS_STEPWISE_SSH_SCP"
+}

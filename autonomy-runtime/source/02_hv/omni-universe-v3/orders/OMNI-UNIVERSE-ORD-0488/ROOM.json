@@ -1,0 +1,18 @@
+{
+  "ordinal": 488,
+  "order_id": "OMNI-UNIVERSE-ORD-0488",
+  "domain": "VECTOR_TRACE",
+  "stage": "Validate",
+  "name": "Validate Vector Trace",
+  "receipt_file": "O488_RECEIPT.json",
+  "receipt_sha256": "17431b832eefe9072c892d6aecaa0fef29c8a7a0e1718257754341c5d90c3c61",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

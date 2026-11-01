@@ -1,0 +1,18 @@
+{
+  "ordinal": 514,
+  "order_id": "OMNI-UNIVERSE-ORD-0514",
+  "domain": "OMNI_HARNESS",
+  "stage": "Normalize",
+  "name": "Normalize Omni Harness",
+  "receipt_file": "O514_RECEIPT.json",
+  "receipt_sha256": "205121474f3c5b7b352623e3415b7ab9b5d0a0cabc5ddfe92e0c98d4cec96aa3",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

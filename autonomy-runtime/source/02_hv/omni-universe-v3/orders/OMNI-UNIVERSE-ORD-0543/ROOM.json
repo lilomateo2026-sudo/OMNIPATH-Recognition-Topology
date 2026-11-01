@@ -1,0 +1,18 @@
+{
+  "ordinal": 543,
+  "order_id": "OMNI-UNIVERSE-ORD-0543",
+  "domain": "ARCHITECT_GRADE",
+  "stage": "Index",
+  "name": "Index Architect Grade",
+  "receipt_file": "O543_RECEIPT.json",
+  "receipt_sha256": "104a057f382f98861b11d65e072c69a14d61e61dc383abaae8920d36f1f59ed2",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

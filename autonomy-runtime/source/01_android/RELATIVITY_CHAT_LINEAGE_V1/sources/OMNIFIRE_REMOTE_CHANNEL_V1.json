@@ -1,0 +1,35 @@
+{
+  "schema": "omni.omnifire.remote-channel/v1",
+  "name": "OMNIFIRECRAWLERRESEARCH Remote Channel Bridge",
+  "route": [
+    "ChatGPT execution orders",
+    "Android Termux",
+    "omni-online health gate",
+    "omni-hv authenticated SSH",
+    "Hivelocity Python orchestrator",
+    "autonomy supervisor",
+    "signed node outboxes"
+  ],
+  "android_cli": "omni-fire-hv",
+  "server_cli": "omnifire-hv-channel",
+  "server_runtime": "/opt/omni-sfc/omnifirecrawlerresearch/runtime/omnifire_remote_channel.py",
+  "event_classes": {
+    "falling_star": "single/normal execution-order carrier",
+    "asteroid_belt": "multi-node or high-priority fanout",
+    "meteorite_shower": "critical or broad fanout occurrence",
+    "radar_report": "explicit observation/status occurrence"
+  },
+  "broadcast": {
+    "station": "Galaxy News Radio",
+    "broadcaster": "Zim, the OMNIGARDIAN"
+  },
+  "policy": {
+    "arbitrary_shell_passthrough": false,
+    "generated_code_auto_execute": false,
+    "auto_push": false,
+    "auto_merge": false,
+    "auto_promote": false,
+    "lineage": "canonical JSON + SHA-256 packet and receipt",
+    "deferred_nodes": "spool-only until explicit admission"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "ordinal": 527,
+  "order_id": "OMNI-UNIVERSE-ORD-0527",
+  "domain": "SHA_LINEAGE",
+  "stage": "Index",
+  "name": "Index Sha Lineage",
+  "receipt_file": "O527_RECEIPT.json",
+  "receipt_sha256": "96f026e14d27f55974af311f2f21104bc0ac73b2a2f305a8fdfbb31efcd76050",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "ordinal": 519,
+  "status": "EXECUTED_NORMALIZED",
+  "name": "TERMUX",
+  "artifact": "13_NORMALIZED/TERMUX.normalized.json",
+  "schema": "omni.normalized.runtime.v1",
+  "domain": "TERMUX",
+  "role": "Android local control, staging and bridge node",
+  "home": "/data/data/com.termux/files/home",
+  "project_root": "/data/data/com.termux/files/home/OmniDocuments/OMNI_UNIVERSE_PROJECT_ENGINE_V3",
+  "platform": "Android-17-aarch64-64bit",
+  "python": "python3",
+  "ssh_alias": "omni-hv",
+  "contract": [
+    "stage",
+    "execute",
+    "route",
+    "verify"
+  ]
+}

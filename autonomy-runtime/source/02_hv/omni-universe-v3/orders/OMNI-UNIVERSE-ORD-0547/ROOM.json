@@ -1,0 +1,18 @@
+{
+  "ordinal": 547,
+  "order_id": "OMNI-UNIVERSE-ORD-0547",
+  "domain": "SHA_LINEAGE",
+  "stage": "Trace",
+  "name": "Trace Sha Lineage",
+  "receipt_file": "O547_RECEIPT.json",
+  "receipt_sha256": "491877956287ca9a579b4c5e5942bbe2b0bb3432b6e850f1fa33667ba9b8b47e",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

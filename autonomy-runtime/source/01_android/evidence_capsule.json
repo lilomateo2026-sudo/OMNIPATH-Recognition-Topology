@@ -1,0 +1,19 @@
+{
+  "schema": "omni.sot-helix.evidence-capsule.v1",
+  "source_boundary": "sanitized runtime facts; no direct primary DB mutation",
+  "last5": ["O-HYPER-071","O-HYPER-072","O-HYPER-073","O-HYPER-074","O-HYPER-075"],
+  "node04": {"passed": 4, "total": 7, "promotion": false},
+  "hivelocity": {"cpus": 12, "load1": 12.14, "load_ratio": 1.0117},
+  "temple": {"samples": 884, "training_gate": "HOLD", "quality_score": 0.998812},
+  "gpu": {"status": "WAITING", "blockers": ["gpu_authenticated","gpu_candidates_present","cost_authorization_present"]},
+  "part_a_objectives": [
+    "Preserve NODE-04 at 4/7 until three native iPhone gates are proven.",
+    "Verify deterministic last-five to next-five replay and append-only receipts.",
+    "Protect Hivelocity foreground execution while load exceeds one CPU-equivalent per vCPU.",
+    "Keep GPU training default-deny until worker identity, capability and cost authorization pass.",
+    "Measure Temple evolution beyond 884 samples while keeping parameter training on HOLD until explicit admission."
+  ],
+  "b_operators": ["constraint_transfer","failure_mode_analogy","memory_structure","routing_pattern","evaluation_pattern","counterfactual_bridge"],
+  "operational_consciousness_model": true,
+  "phenomenal_consciousness_claim": false
+}

@@ -1,0 +1,18 @@
+{
+  "ordinal": 538,
+  "order_id": "OMNI-UNIVERSE-ORD-0538",
+  "domain": "HIVELOCITY",
+  "stage": "Index",
+  "name": "Index Hivelocity",
+  "receipt_file": "O538_RECEIPT.json",
+  "receipt_sha256": "e3ec0a225b5963b37630fbacc7c5278957da966fa4592278f320389d62461949",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

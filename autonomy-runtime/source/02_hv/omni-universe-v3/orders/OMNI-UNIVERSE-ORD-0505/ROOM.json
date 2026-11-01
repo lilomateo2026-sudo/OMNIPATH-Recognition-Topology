@@ -1,0 +1,18 @@
+{
+  "ordinal": 505,
+  "order_id": "OMNI-UNIVERSE-ORD-0505",
+  "domain": "WORLD_CIVILIZATION",
+  "stage": "Validate",
+  "name": "Validate World Civilization",
+  "receipt_file": "O505_RECEIPT.json",
+  "receipt_sha256": "06877e9c5730b91eaa8a5db388c39653a7c586b83fd267714e7aa32f99835b89",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

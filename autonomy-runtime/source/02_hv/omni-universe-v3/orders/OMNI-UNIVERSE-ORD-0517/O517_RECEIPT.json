@@ -1,0 +1,19 @@
+{
+  "ordinal": 517,
+  "status": "EXECUTED_NORMALIZED",
+  "name": "FACTORY",
+  "artifact": "13_NORMALIZED/FACTORY.normalized.json",
+  "schema": "omni.normalized.runtime.v1",
+  "domain": "FACTORY",
+  "role": "build, benchmark, repair, reconstruct and compile descendants",
+  "local_root": "/data/data/com.termux/files/home/OmniDocuments/TOSH_ENGINE_FACTORY",
+  "file_count": 60,
+  "canonical_remote": "/srv/omni/tosh-engines/factory/omni-universe-v3",
+  "contract": [
+    "build",
+    "benchmark",
+    "repair",
+    "compile",
+    "emit_receipt"
+  ]
+}

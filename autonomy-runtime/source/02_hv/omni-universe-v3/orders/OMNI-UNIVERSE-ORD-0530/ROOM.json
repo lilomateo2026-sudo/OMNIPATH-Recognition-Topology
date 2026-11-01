@@ -1,0 +1,18 @@
+{
+  "ordinal": 530,
+  "order_id": "OMNI-UNIVERSE-ORD-0530",
+  "domain": "MENU_GEN",
+  "stage": "Index",
+  "name": "Index Menu Gen",
+  "receipt_file": "O530_RECEIPT.json",
+  "receipt_sha256": "89447998ba26049b65e49470a69dbab84cc8bbec51d5ea7d8638ec8d0cec2346",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

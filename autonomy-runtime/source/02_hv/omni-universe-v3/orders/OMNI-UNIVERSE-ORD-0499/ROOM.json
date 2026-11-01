@@ -1,0 +1,18 @@
+{
+  "ordinal": 499,
+  "order_id": "OMNI-UNIVERSE-ORD-0499",
+  "domain": "TERMUX",
+  "stage": "Validate",
+  "name": "Validate Termux",
+  "receipt_file": "O499_RECEIPT.json",
+  "receipt_sha256": "24ef244fe701e24b6d7b00af01a5dceb91cf22eda203ab9b3ff50d200106c251",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "ordinal": 520,
+  "order_id": "OMNI-UNIVERSE-ORD-0520",
+  "domain": "ODYSSEY",
+  "stage": "Normalize",
+  "name": "Normalize Odyssey",
+  "receipt_file": "O520_RECEIPT.json",
+  "receipt_sha256": "8b14b9fd03ddeef5be9c2d2ac7710dc42636794ce4fc09d359ece805eeb9f315",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

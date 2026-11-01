@@ -1,0 +1,68 @@
+{
+  "ordinal": 483,
+  "status": "EXECUTED",
+  "name": "Inventory Architect Grade",
+  "grading_profile_sha256": "9a5e252827ac2461b29a1852500e91d687dd464a111608d5aee078c8824e8d55",
+  "grading_profile": {
+    "order": 464,
+    "name": "Architect Grading System V3",
+    "policy": "MEASURED_EVIDENCE_NO_PERMANENT_WINNER",
+    "formula": "G = 100*(0.18A + 0.18D + 0.16P + 0.12L + 0.10M + 0.16T + 0.05R + 0.05X)",
+    "dimensions": {
+      "accuracy": 0.18,
+      "determinism": 0.18,
+      "provenance": 0.16,
+      "latency": 0.12,
+      "memory_efficiency": 0.1,
+      "task_fit": 0.16,
+      "recovery": 0.05,
+      "tool_reach": 0.05
+    },
+    "observed": {
+      "ANDROID_TERMUX": {
+        "deterministic_replay": 1.0,
+        "provenance": 1.0,
+        "route_state": "LIVE"
+      },
+      "HIVELOCITY_PYTHON": {
+        "deterministic_replay": 1.0,
+        "route_state": "LIVE"
+      },
+      "NOMIC_768_LOCAL": {
+        "records": 48,
+        "dims": 768,
+        "route_state": "LIVE"
+      },
+      "SPARSE_512": {
+        "records": 39174,
+        "dims": 512,
+        "route_state": "LIVE"
+      }
+    },
+    "routing_rules": [
+      {
+        "job": "deterministic_state_authority",
+        "prefer": [
+          "ANDROID_TERMUX",
+          "HIVELOCITY_PYTHON"
+        ]
+      },
+      {
+        "job": "semantic_retrieval",
+        "prefer": [
+          "NOMIC_768_LOCAL",
+          "SPARSE_512"
+        ]
+      },
+      {
+        "job": "low_memory_fallback",
+        "prefer": [
+          "SPARSE_512",
+          "NOMIC_768_LOCAL"
+        ]
+      }
+    ],
+    "federation_ack": "TERMUX_AND_HIVE_ROUTE_OBSERVED"
+  },
+  "policy": "measured evidence; task-specific winner; no permanent winner"
+}

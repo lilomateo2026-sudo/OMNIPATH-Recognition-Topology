@@ -1,0 +1,8 @@
+{
+  "ordinal": 467,
+  "name": "Inventory SHA Lineage",
+  "status": "EXECUTED",
+  "message_packets": 39174,
+  "source_file_sha_rows": 35,
+  "parent_collection_sha256": "fec2f70c1b845e4174ae24675877c8496dc79d79f9561c6e08bb25b837400155"
+}

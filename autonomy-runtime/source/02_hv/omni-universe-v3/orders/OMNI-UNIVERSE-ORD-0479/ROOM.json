@@ -1,0 +1,18 @@
+{
+  "ordinal": 479,
+  "order_id": "OMNI-UNIVERSE-ORD-0479",
+  "domain": "TERMUX",
+  "stage": "Inventory",
+  "name": "Inventory Termux",
+  "receipt_file": "O479_RECEIPT.json",
+  "receipt_sha256": "216b761eb39393ea7ce85c9806585984c5370c5bd5054d7d1fbc669157cb6fde",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

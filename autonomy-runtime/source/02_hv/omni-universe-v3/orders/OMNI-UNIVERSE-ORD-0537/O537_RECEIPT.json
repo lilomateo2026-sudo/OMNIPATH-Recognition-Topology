@@ -1,0 +1,11 @@
+{
+  "schema": "omni.index.runtime-fabric.v1",
+  "ordinal": 537,
+  "domain": "FACTORY",
+  "source": "/data/data/com.termux/files/home/OmniDocuments/OMNI_UNIVERSE_PROJECT_ENGINE_V3/13_NORMALIZED/FACTORY.normalized.json",
+  "source_sha256": "79c22a956804387a43ff39d7dff48ae4562778a79eeeba92dd7c4ce055e28375",
+  "sqlite_table": "runtime_fabric",
+  "status": "EXECUTED_INDEXED",
+  "name": "Index Factory",
+  "index_artifact": "/data/data/com.termux/files/home/OmniDocuments/OMNI_UNIVERSE_PROJECT_ENGINE_V3/15_INDEX/FACTORY.index.json"
+}

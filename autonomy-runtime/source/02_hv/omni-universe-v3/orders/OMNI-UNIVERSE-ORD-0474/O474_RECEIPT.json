@@ -1,0 +1,10 @@
+{
+  "ordinal": 474,
+  "status": "EXECUTED",
+  "name": "Inventory OMNI Harness",
+  "workspace_repo_files": 469,
+  "repo_forest_files": 88,
+  "harness_profile_sha256": "66a1c52b2e79945077a3b9b445ce32ff5774f2f66115b315647037f2dfb0d5ce",
+  "mirror_present": true,
+  "role": "provider-agnostic model/tool orchestration"
+}

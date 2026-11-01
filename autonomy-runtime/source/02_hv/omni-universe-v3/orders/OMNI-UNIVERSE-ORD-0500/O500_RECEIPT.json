@@ -1,0 +1,11 @@
+{
+  "ordinal": 500,
+  "status": "EXECUTED_VALIDATED",
+  "validated_at_epoch": 1792806519,
+  "name": "Validate Odyssey",
+  "odyssey_dir_exists": true,
+  "odyssey_files": 8,
+  "odyssey_cli_exists": true,
+  "odyssey_cli_sha256": "e03c072160d5ec8a7993456c7e2761a15caa15e1480f397af3412adbe5b5fc48",
+  "validation": "local Odyssey identity/configuration and CLI front door are present; no speculative remote state claimed"
+}

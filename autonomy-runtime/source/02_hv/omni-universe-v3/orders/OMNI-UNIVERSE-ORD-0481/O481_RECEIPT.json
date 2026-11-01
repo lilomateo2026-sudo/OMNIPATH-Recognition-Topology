@@ -1,0 +1,8 @@
+{
+  "ordinal": 481,
+  "status": "EXECUTED",
+  "name": "Inventory Semantic Map",
+  "semantic_files": 1,
+  "project_semantic_index_sha256": "c129a2c083edbe7ca75ee366335c08bdef26618f9067d8f1121628b17f873388",
+  "role": "neural-lattice semantic/vector mapping, lineage pointers, execution-output routing"
+}

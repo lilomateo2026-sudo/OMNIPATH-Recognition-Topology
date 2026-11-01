@@ -1,0 +1,18 @@
+{
+  "ordinal": 544,
+  "order_id": "OMNI-UNIVERSE-ORD-0544",
+  "domain": "IMAGE_REPLICATOR",
+  "stage": "Index",
+  "name": "Index Image Replicator",
+  "receipt_file": "O544_RECEIPT.json",
+  "receipt_sha256": "675bc7baee9bd8196b6faa5e40475f520917e42053de1caaf1e0a2d5fee6447e",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

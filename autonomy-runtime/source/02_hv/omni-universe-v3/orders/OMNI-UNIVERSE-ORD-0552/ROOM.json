@@ -1,0 +1,18 @@
+{
+  "ordinal": 552,
+  "order_id": "OMNI-UNIVERSE-ORD-0552",
+  "domain": "OMNIPATH",
+  "stage": "Trace",
+  "name": "Trace Omnipath",
+  "receipt_file": "O552_RECEIPT.json",
+  "receipt_sha256": "d98fc51718128a8f664d47ac3e5bb60fc583d48de8b3879b5f630eb0b08c72dc",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

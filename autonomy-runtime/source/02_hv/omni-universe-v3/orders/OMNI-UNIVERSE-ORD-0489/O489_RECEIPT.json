@@ -1,0 +1,13 @@
+{
+  "ordinal": 489,
+  "status": "EXECUTED_VALIDATED",
+  "name": "Validate RAG Locksmith",
+  "database_exists": true,
+  "tables": [
+    "conversations",
+    "embeddings",
+    "messages"
+  ],
+  "required_tables_present": true,
+  "validation": "retrieval substrate readable; hidden reasoning is not inferred"
+}

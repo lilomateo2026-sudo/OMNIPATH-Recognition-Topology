@@ -1,0 +1,18 @@
+{
+  "ordinal": 482,
+  "order_id": "OMNI-UNIVERSE-ORD-0482",
+  "domain": "MODEL_ARBITRATION",
+  "stage": "Inventory",
+  "name": "Inventory Model Arbitration",
+  "receipt_file": "O482_RECEIPT.json",
+  "receipt_sha256": "2033f6bdcbaed8a2d50d3130fdf55f048a202441e7de31ff642f3707eca4774e",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

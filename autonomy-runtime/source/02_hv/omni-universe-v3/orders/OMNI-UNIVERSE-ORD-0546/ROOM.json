@@ -1,0 +1,18 @@
+{
+  "ordinal": 546,
+  "order_id": "OMNI-UNIVERSE-ORD-0546",
+  "domain": "CHAT_CENSUS",
+  "stage": "Trace",
+  "name": "Trace Chat Census",
+  "receipt_file": "O546_RECEIPT.json",
+  "receipt_sha256": "87a12d0150173f37c6244cc30b92adb5a371571fcb04af5ebc22c7ffbe15d319",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

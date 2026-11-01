@@ -1,0 +1,18 @@
+{
+  "ordinal": 490,
+  "order_id": "OMNI-UNIVERSE-ORD-0490",
+  "domain": "MENU_GEN",
+  "stage": "Validate",
+  "name": "Validate Menu Gen",
+  "receipt_file": "O490_RECEIPT.json",
+  "receipt_sha256": "77387cee98b9a543ec96cdd9dd3317b9737583cd03ba037d3f5ac6878c840a84",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "executed_at": "2026-10-15T20:44:51.569203+00:00",
+  "orders": [
+    "TOSH-ORD-0099",
+    "TOSH-ORD-0100",
+    "TOSH-ORD-0101",
+    "TOSH-ORD-0102",
+    "TOSH-ORD-0103"
+  ],
+  "android_termux": "PASS",
+  "hivelocity": "PASS",
+  "local_sync_sha256": "a853c57349bbdf0052ad09ac6e5f0ae7811ed6486c0655c876097667c8cd4bc1",
+  "remote_sync_sha256": "a853c57349bbdf0052ad09ac6e5f0ae7811ed6486c0655c876097667c8cd4bc1",
+  "sha_equal": true,
+  "google_drive_rclone": "BLOCKED_QUOTA",
+  "github_push": "PASS",
+  "target": "/data/data/com.termux/files/home/OmniDocuments/TOSH_OMNIPATH_CHAT_V2",
+  "hivelocity_path": "/opt/omni-sfc/tosh-omnipath-chat-v2",
+  "next5": [
+    "TOSH-ORD-0104",
+    "TOSH-ORD-0105",
+    "TOSH-ORD-0106",
+    "TOSH-ORD-0107",
+    "TOSH-ORD-0108"
+  ],
+  "google_drive_error": "Google Drive storage quota exceeded (403 storageQuotaExceeded)",
+  "autossh_reverse_trace": {
+    "status": "PASS",
+    "existing_service": "omni-rag-autossh / omni-hyperlink reverse",
+    "android_local": "127.0.0.1:8790",
+    "hivelocity_loopback": "127.0.0.1:28792",
+    "exposure": "loopback-only",
+    "verified_file": "TOSH_CHAT_V2_STATE.json"
+  },
+  "updated_at": "2026-10-15T20:49:17.254813+00:00"
+}

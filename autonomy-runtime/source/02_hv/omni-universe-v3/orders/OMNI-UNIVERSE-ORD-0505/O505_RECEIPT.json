@@ -1,0 +1,9 @@
+{
+  "ordinal": 505,
+  "status": "EXECUTED_VALIDATED",
+  "name": "Validate World Civilization",
+  "standalone_world_exists": true,
+  "world_sha256": "af1301f4e41d603c884b243013cda937ab49c9e1c6867da59b0c56af3561d82d",
+  "registered_role": null,
+  "validation": "world engine artifact present"
+}

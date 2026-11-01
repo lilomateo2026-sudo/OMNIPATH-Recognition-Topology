@@ -1,0 +1,18 @@
+{
+  "ordinal": 541,
+  "order_id": "OMNI-UNIVERSE-ORD-0541",
+  "domain": "SEMANTIC_MAP",
+  "stage": "Index",
+  "name": "Index Semantic Map",
+  "receipt_file": "O541_RECEIPT.json",
+  "receipt_sha256": "f21cc5abda49f93348f2b89d20c79fa30b23179c406c77b9112e08b44b00ed2b",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

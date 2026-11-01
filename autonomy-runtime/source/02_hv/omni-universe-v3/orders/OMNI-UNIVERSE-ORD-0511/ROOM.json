@@ -1,0 +1,18 @@
+{
+  "ordinal": 511,
+  "order_id": "OMNI-UNIVERSE-ORD-0511",
+  "domain": "SMARTFLOW",
+  "stage": "Normalize",
+  "name": "Normalize Smartflow",
+  "receipt_file": "O511_RECEIPT.json",
+  "receipt_sha256": "99b7779a2feb14205b7454725b7f7de49d31a17bca4ad4ee38204e75f1fd8a63",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

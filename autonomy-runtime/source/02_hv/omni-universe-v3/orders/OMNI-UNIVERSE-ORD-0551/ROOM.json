@@ -1,0 +1,18 @@
+{
+  "ordinal": 551,
+  "order_id": "OMNI-UNIVERSE-ORD-0551",
+  "domain": "SMARTFLOW",
+  "stage": "Trace",
+  "name": "Trace Smartflow",
+  "receipt_file": "O551_RECEIPT.json",
+  "receipt_sha256": "9f985a49eb1f532288b7a4aa4d06665909aeb91cc911c53f6d60f19d161b8f10",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

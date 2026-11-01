@@ -1,0 +1,18 @@
+{
+  "ordinal": 469,
+  "order_id": "OMNI-UNIVERSE-ORD-0469",
+  "domain": "RAG_LOCKSMITH",
+  "stage": "Inventory",
+  "name": "Inventory Rag Locksmith",
+  "receipt_file": "O469_RECEIPT.json",
+  "receipt_sha256": "bb5b3712391d73701e60f0821aa0adee2ebbe57cf1e22005f3230887919e0bce",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}

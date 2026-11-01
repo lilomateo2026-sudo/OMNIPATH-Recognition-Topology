@@ -1,0 +1,13 @@
+{
+  "schema": "omni.relativity-lineage-ingest.v1",
+  "id": "RELATIVITY-CHAT-LINEAGE-20261020-V2",
+  "package": "OMNI_RELATIVITY_CHAT_LINEAGE_V1_20261020_v2.tar.gz",
+  "sha256": "8303b868dcd58f57a92a5ac038cd07476c3f3d908d7e17daa309622bffff1f06",
+  "supersedes": "RELATIVITY-CHAT-LINEAGE-20261020",
+  "room": "OMNI_RELATIVITY_CHAT_LINEAGE_V1",
+  "sector": "OMNI_RELATIVITY_CHAT_LINEAGE_V1",
+  "mode": "ingest_preserve_sources",
+  "facets": ["relativity","provenance","memory","semantic_continuity","causality","uncertainty","topology","scale","information","governance","omnipath","omniteach","recovery"],
+  "future_order_sync": "append_and_route_each_new_execution_order",
+  "source_state": "STAGED"
+}

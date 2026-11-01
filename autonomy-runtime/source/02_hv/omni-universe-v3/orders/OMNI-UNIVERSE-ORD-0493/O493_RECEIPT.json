@@ -1,0 +1,9 @@
+{
+  "ordinal": 493,
+  "status": "EXECUTED_VALIDATED",
+  "name": "Validate TOSH Harness",
+  "build_files": 5,
+  "root_files": 18,
+  "root_lineage_sha256": "240a6a1697156f08ba3cd163912054b7a72ea79201471aaeb00fd96d3b70db18",
+  "validation": "TOSH harness roots and lineage artifacts readable"
+}

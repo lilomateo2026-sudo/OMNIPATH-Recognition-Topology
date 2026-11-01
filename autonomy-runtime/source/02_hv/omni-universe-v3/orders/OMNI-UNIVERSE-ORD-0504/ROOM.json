@@ -1,0 +1,18 @@
+{
+  "ordinal": 504,
+  "order_id": "OMNI-UNIVERSE-ORD-0504",
+  "domain": "IMAGE_REPLICATOR",
+  "stage": "Validate",
+  "name": "Validate Image Replicator",
+  "receipt_file": "O504_RECEIPT.json",
+  "receipt_sha256": "a663d57f182a28f134b8638e530f452607832b52f2ba603983de60970a55bb92",
+  "destinations": [
+    "HIVE_CANONICAL",
+    "TOSH_WORKSTATION",
+    "TOSH_WAREHOUSE",
+    "TOSH_FACTORY",
+    "OMNIPATH_ORDER_ROOM",
+    "SEMANTIC_MAP",
+    "ODYSSEY"
+  ]
+}
