@@ -1,0 +1,14 @@
+{
+  "schema": "omni.forest.governance-promotion/v1",
+  "generated_at": "2026-11-01T01:14:29.826134+00:00",
+  "repo": "OMNIPATH-Recognition-Topology",
+  "classification": "safe_candidate",
+  "live_fingerprint": "1c6346f9b03035c1cda9ce33e353edd8f06e96141fc7cf8cdf0f16267e04ff31",
+  "previous_github_fingerprint": "91bca2ad33f19e5d051b2d1c560a1652a062eee0fba814c056627416268bc1aa",
+  "counts": {
+    "added": 0,
+    "removed": 8,
+    "modified": 0
+  },
+  "policy": "filtered source only; no raw exports, credentials, model weights, caches, runtime state or receipt swarms"
+}
